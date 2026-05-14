@@ -1,3 +1,16 @@
+---
+id: clk-safe-automation-rules
+title: 安全自动化规则
+owasp_anchor: []
+cwe: []
+severity_typical: meta
+playbook: ""
+last_updated: 2026-05-15
+sources: []
+maturity: stable
+note: meta — 不是漏洞清单而是 RoE 守门规则，被 recon_pipeline.py 强制执行
+---
+
 # 安全自动化规则
 
 ## 运行前必须确认

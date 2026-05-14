@@ -159,6 +159,35 @@
 | cve-osv-npm | osv | npm 漏洞 |
 | cve-zdi | zdi | ZDI advisories |
 
+## 11. 资源聚合站 / Aggregators（rss_generic + tag `aggregator`）
+
+> 这些站点本身不发原创，**转载或 AI 总结**业内最新内容。`grok_kb_validate.py` 和 `grok_kb_curate.py` 已配置：
+> - 来源带 `aggregator` tag → confidence 上限强制为 medium
+> - score 评分中 -3，避免污染 curated_300
+
+### A. 已 curl 验证可用（默认 enabled）
+
+| id | 描述 | density | region |
+|---|---|---|---|
+| gm7-aggregator | gm7.org 信息安全知识库（WordPress, AI 总结+转载） | M | cn |
+| vulners-aggregator | Vulners RSS — CVE/exploit 元聚合 | H | global |
+| exploit-db | Exploit-DB 一手 PoC 速报 | H | global |
+| packetstorm | Packet Storm Headlines | M | en |
+| thehackernews | The Hacker News（feedburner） | M | en |
+| bleepingcomputer | Bleeping Computer | M | en |
+| gbhackers | GBHackers | L | en |
+
+### B. 候选源（默认 enabled: false，待人工 curl 验证后切到 true）
+
+| id | 候选 URL | 备注 |
+|---|---|---|
+| isc-sans-diary | isc.sans.edu/rssfeed.xml | SANS ISC daily diary |
+| seclists-fulldisclosure | seclists.org/rss/fulldisclosure.rss | 邮件列表归档 |
+| sec-wiki | sec-wiki.com/news/rss | 中文每日聚合 |
+| 0e0w-notes | 0e0w.com/atom.xml | 中文红队笔记 (Hexo 默认 atom) |
+
+> 启用方式：`vim docs/intelligence/sources.yaml` 把对应 id 的 `enabled: false` 改成 `true`，然后跑 `make sources-pull SOURCE=<id>` 验证。
+
 ---
 
 ## 已知未自动化的源（人工 / Phase 4 待启用）

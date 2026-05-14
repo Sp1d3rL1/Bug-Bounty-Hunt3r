@@ -833,3 +833,109 @@
   density: H
   region: global
   tags: [cve, zdi]
+
+# ============================================================
+# 11. AGGREGATORS / DIGEST SITES (rss_generic + tag aggregator)
+# These sites republish or summarise other sources. validate.py /
+# curate.py downgrade them: confidence cap = medium, score - 3.
+# ============================================================
+
+# --- A. curl-200 verified, enabled by default ---
+- id: gm7-aggregator
+  name: gm7.org 信息安全知识库
+  url: https://www.gm7.org/feed
+  connector: rss_generic
+  cadence: 30 */2 * * *
+  density: M
+  region: cn
+  tags: [aggregator, news, ai-summary]
+- id: vulners-aggregator
+  name: Vulners RSS
+  url: https://vulners.com/rss.xml
+  connector: rss_generic
+  cadence: 0 */2 * * *
+  density: H
+  region: global
+  tags: [aggregator, cve, exploit]
+- id: exploit-db
+  name: Exploit-DB
+  url: https://www.exploit-db.com/rss.xml
+  connector: rss_generic
+  cadence: 15 */3 * * *
+  density: H
+  region: global
+  tags: [aggregator, exploit, poc]
+- id: packetstorm
+  name: Packet Storm Headlines
+  url: https://packetstorm.news/files/feed/index.rss
+  connector: rss_generic
+  cadence: 25 */3 * * *
+  density: M
+  region: en
+  enabled: false
+  tags: [aggregator, advisory, exploit]
+  # 2026-05-14: packetstorm.news returns a ToS interstitial HTML for the feed
+  # endpoint, blocking automated parsing. Re-enable after a manual visit
+  # accepts the ToS or when a stable feed mirror is found.
+- id: thehackernews
+  name: The Hacker News
+  url: https://feeds.feedburner.com/TheHackersNews
+  connector: rss_generic
+  cadence: 35 */3 * * *
+  density: M
+  region: en
+  tags: [aggregator, news]
+- id: bleepingcomputer
+  name: Bleeping Computer
+  url: https://www.bleepingcomputer.com/feed/
+  connector: rss_generic
+  cadence: 45 */3 * * *
+  density: M
+  region: en
+  tags: [aggregator, news, malware]
+- id: gbhackers
+  name: GBHackers
+  url: https://gbhackers.com/feed/
+  connector: rss_generic
+  cadence: 55 */3 * * *
+  density: L
+  region: en
+  tags: [aggregator, news]
+
+# --- B. plausible URL, disabled until human curl-verifies ---
+- id: isc-sans-diary
+  name: SANS ISC Diary
+  url: https://isc.sans.edu/rssfeed.xml
+  connector: rss_generic
+  cadence: 5 */3 * * *
+  density: H
+  region: en
+  enabled: false
+  tags: [aggregator, advisory]
+- id: seclists-fulldisclosure
+  name: seclists.org Full Disclosure
+  url: https://seclists.org/rss/fulldisclosure.rss
+  connector: rss_generic
+  cadence: 15 */6 * * *
+  density: M
+  region: en
+  enabled: false
+  tags: [aggregator, mailing-list]
+- id: sec-wiki
+  name: SecWiki 中文聚合
+  url: https://www.sec-wiki.com/news/rss
+  connector: rss_generic
+  cadence: 0 */4 * * *
+  density: M
+  region: cn
+  enabled: false
+  tags: [aggregator, news]
+- id: 0e0w-notes
+  name: 0e0w 红队笔记
+  url: https://www.0e0w.com/atom.xml
+  connector: rss_generic
+  cadence: 0 12 * * *
+  density: M
+  region: cn
+  enabled: false
+  tags: [aggregator, redteam, personal]

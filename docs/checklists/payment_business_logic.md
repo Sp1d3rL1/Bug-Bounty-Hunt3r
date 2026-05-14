@@ -1,3 +1,15 @@
+---
+id: clk-payment-business-logic
+title: 支付 / 业务逻辑 Checklist
+owasp_anchor: [API6:2023, WSTG-BUSL]
+cwe: [CWE-840, CWE-841, CWE-362, CWE-639]
+severity_typical: P1-P3
+playbook: playbooks/payment.yaml
+last_updated: 2026-05-15
+sources: []
+maturity: stable
+---
+
 # 支付 / 业务逻辑 Checklist
 
 > 只在项目明确允许支付测试时使用。优先 sandbox、test card、0 元订单、小额规则。不要制造真实损失。

@@ -1,3 +1,34 @@
+---
+# Machine-readable target metadata (consumed by Phase 3 match.py)
+program: ""           # 例 acme-bug-bounty / shopify-public
+platform: ""          # hackerone | bugcrowd | intigriti | yeswehack | self-hosted | cn-src
+scope_url: ""
+reward_range: ""      # 例 "$200 - $30000"
+last_updated: ""      # YYYY-MM-DD
+
+# 技术栈与攻击面信号 — 用于 intel-target 匹配
+tech_stack: []        # 例 [react, nodejs, fastapi, rails]
+cdn: []               # 例 [cloudflare, fastly, akamai]
+edge: []              # 例 [nginx, traefik, kong, envoy]
+iac: []               # 例 [terraform, pulumi, cloudformation]
+cicd: []              # 例 [github-actions, gitlab-ci, argocd, jenkins]
+cloud_provider: []    # 例 [aws, gcp, azure, alibaba]
+mobile_app_id: []     # 例 [com.acme.android, 1234567890 (iOS App Store id)]
+auth_stack: []        # 例 [auth0, okta, custom-jwt, saml-keycloak]
+data_stores: []       # 例 [postgres, mongodb, redis, elasticsearch]
+graphql: false        # true / false
+web3: false
+ai_features: false
+payment: false        # 是否处理真实支付
+multi_tenant: false
+
+# 项目 RoE 信号
+automation_allowed: false
+payment_testing_allowed: false
+test_accounts_allowed: false
+account_self_serve: false
+---
+
 # Target Dossier Template
 
 ## 基本信息

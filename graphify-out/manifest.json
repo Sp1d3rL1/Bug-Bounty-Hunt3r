@@ -28,8 +28,8 @@
     "hash": "f93f99438650757701f50ad5c899bfa3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/grok_kb_validate.py": {
-    "mtime": 1778002791.4239666,
-    "hash": "e0e1b0ff5d508acff5eaa78eaf34a793"
+    "mtime": 1778775698.2097826,
+    "hash": "cc7917ba697353f4cc75604647e7f153"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/bb_intel_pipeline.py": {
     "mtime": 1778313604.2485604,
@@ -48,8 +48,8 @@
     "hash": "54e9b8a83c4a6f84e9cec17ff6999edd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/grok_kb_curate.py": {
-    "mtime": 1778767990.5408132,
-    "hash": "a371f6662fc0ca33491ad53fe2ca4b0e"
+    "mtime": 1778775720.7155223,
+    "hash": "1920be9ec6cf407928e0a9d575424eb3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/report_intel_agent.py": {
     "mtime": 1778267233.5803401,
@@ -184,8 +184,8 @@
     "hash": "2c6607ac80446f13fd1cf70b86136a08"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/targets/target_dossier_template.md": {
-    "mtime": 1777890088.0102203,
-    "hash": "31b83acddf176627e3875ad8707611df"
+    "mtime": 1778777016.2633266,
+    "hash": "644a3166a12496cde96e5b0a3c683afe"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/targets/program_selection.md": {
     "mtime": 1777890088.0102916,
@@ -196,16 +196,16 @@
     "hash": "42ac23b82c650120fd46ae8872780b26"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence/sources.yaml": {
-    "mtime": 1778750817.9722438,
-    "hash": "5c7ef11938e912bd9a96b7e79494e41f"
+    "mtime": 1778775941.0847855,
+    "hash": "6fad24d3e2bffc709bf33ad878507ee5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence/trick_card_template.md": {
     "mtime": 1777890088.010106,
     "hash": "ea2b6cbd9eb70927dfbb6b5cc69dac19"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence/source_map.md": {
-    "mtime": 1778750947.0408597,
-    "hash": "f491eda75cc27cd6ea4efc4afe0128b5"
+    "mtime": 1778775600.0849793,
+    "hash": "88a5aab8c32c972c5f5dbbc80a160c2e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/learning/grok_course_purchase_ranking_2026.md": {
     "mtime": 1777902312.0366955,
@@ -219,17 +219,93 @@
     "mtime": 1777890088.0097609,
     "hash": "22618ac9b47723188f658b4af6e0f4d3"
   },
-  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/payment_business_logic.md": {
-    "mtime": 1777890088.0106573,
-    "hash": "798f644be29e4fea27a1497afcb20eab"
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/deserialization.md": {
+    "mtime": 1778776487.3697724,
+    "hash": "e235768b2ec1d27cfecf3b0c4e018a29"
   },
-  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/api_oauth_graphql.md": {
-    "mtime": 1777890088.0105784,
-    "hash": "40d34fee98eb31962c9a246a420da560"
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/payment_business_logic.md": {
+    "mtime": 1778777127.4260857,
+    "hash": "85c95b2605c0ea524b87530e35069e8f"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/email_spoof_smtp_smuggling.md": {
+    "mtime": 1778777169.9267488,
+    "hash": "82128d6ae70b8fc6e13f0f8d2f83e347"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/api.md": {
+    "mtime": 1778776409.7942023,
+    "hash": "20e0fb17f20fe81f45c7eaed647ff7a4"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cspt_client_path_traversal.md": {
+    "mtime": 1778776595.344206,
+    "hash": "11afccf639bdf27429718dc4941992ea"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cloud_gcp_azure.md": {
+    "mtime": 1778776493.8239064,
+    "hash": "f7a6a5a089065905ba4167729d4372fa"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/prototype_pollution_xss_chain.md": {
+    "mtime": 1778776541.6345694,
+    "hash": "aa5a201ea9228ded5d10b0cd50bb3183"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/oauth.md": {
+    "mtime": 1778776462.1608055,
+    "hash": "a56d2dcff77a0e72b97b6798791f08b5"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/mobile_android_ios.md": {
+    "mtime": 1778776837.2083936,
+    "hash": "8fbf00adeac2e9186c2bbfce847743b9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/safe_automation_rules.md": {
-    "mtime": 1777890088.0105042,
-    "hash": "61502c721869563ae3ba12df78c6655a"
+    "mtime": 1778777156.525047,
+    "hash": "017846cf22dba8d94394079347950874"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/http_request_smuggling.md": {
+    "mtime": 1778776478.7163756,
+    "hash": "f3c9d46cf4ff243caf735c747b65d8fa"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cloud_aws_metadata_iam.md": {
+    "mtime": 1778776398.9123442,
+    "hash": "f22269015a3ae47c2dda9c0e1cc76108"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cicd_github_actions.md": {
+    "mtime": 1778776856.5129673,
+    "hash": "18625696e5fb7ed49e76abf2402698cc"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/subdomain_takeover.md": {
+    "mtime": 1778777059.2349503,
+    "hash": "c7e168d7dd490567a7530cb1390178d3"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/graphql.md": {
+    "mtime": 1778776535.6334953,
+    "hash": "d285b12891a40b2890fcce49ef9d9062"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/ssti_template_injection.md": {
+    "mtime": 1778776546.0261781,
+    "hash": "461482b5f7fbdd13680b2b1bb52e9900"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/sso_oidc_saml.md": {
+    "mtime": 1778776272.065206,
+    "hash": "870334b9a6fc6b375b88dd3b5309f4e1"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cors_postmessage_websocket.md": {
+    "mtime": 1778776934.655066,
+    "hash": "7ba226e8c73389c8800432ec3a55b5c6"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/kubernetes_container.md": {
+    "mtime": 1778776568.660237,
+    "hash": "ccd425aacd89a5fad17aa5c7d036ca5f"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/ai_llm_prompt_injection.md": {
+    "mtime": 1778777164.4767904,
+    "hash": "af8fc632761717d9449700d512ef53e3"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cache_deception_poisoning.md": {
+    "mtime": 1778776407.1441376,
+    "hash": "0e333a99d0403f401a045e55bb8cd1e3"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/file_upload_parser.md": {
+    "mtime": 1778776421.989351,
+    "hash": "0cccde27c80e017a08d45847d561d424"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/vps/deployment.md": {
     "mtime": 1777890088.0107543,
@@ -256,7 +332,7 @@
     "hash": "523d1bc9252ea7d37ae01392b0f2763e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/curated_300.md": {
-    "mtime": 1778768015.1278927,
+    "mtime": 1778775735.6551898,
     "hash": "5ef61202488f5f7529c1a67a45905795"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/resources/accounts_to_follow.md": {
@@ -2567,9 +2643,25 @@
     "mtime": 1778314083.5796077,
     "hash": "1ff4594e8d5832a0f190e2e0b0744799"
   },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/reports/web3_immunefi_template.md": {
+    "mtime": 1778776666.5530262,
+    "hash": "b78a2b3068e00cd06a08130b47f4e9ab"
+  },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/reports/english_report_template.md": {
-    "mtime": 1777890088.0103993,
-    "hash": "fc63454e3b4898fe63c4ee6f020089f1"
+    "mtime": 1778776620.5995853,
+    "hash": "049dfed09e8abfa960b189ebd44865fb"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/reports/cn_src_template.md": {
+    "mtime": 1778776926.7883027,
+    "hash": "2d85c586b5d3f20b9d3f5028138f0402"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/reports/h1_quality_format.md": {
+    "mtime": 1778776868.4051752,
+    "hash": "6f79b98708dfd6dad0b1e80736ffa755"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/reports/ai_llm_template.md": {
+    "mtime": 1778776823.9243505,
+    "hash": "d4cca9c1a4197be3144f826b0d261f1e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/data/grok_course_search_snapshot.md": {
     "mtime": 1777902256.1156654,

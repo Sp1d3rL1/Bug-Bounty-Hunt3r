@@ -50,6 +50,9 @@ def score(p):
     for kw in ['api','bola','idor','oauth','sso','jwt','graphql','tenant','payment','billing','subscription','cache','smuggling','cloud','github','ai','llm','postmessage','cspt']:
         if kw in t: s+=2
     if 'derived_from_case: false' in t: s+=5
+    # Aggregator-sourced cards (republished/AI-summarised) lose 3 points so they
+    # don't crowd out original-research entries in curated_300.
+    if 'aggregator' in t: s-=3
     return s * freshness_factor(p)
 
 techs=[p for p in (KB/'techniques').glob('*/*.md') if p.name!='_index.md']
