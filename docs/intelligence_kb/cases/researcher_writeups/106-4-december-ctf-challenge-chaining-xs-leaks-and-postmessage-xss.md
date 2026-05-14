@@ -63,3 +63,9 @@ High-level reproduction and full chain in source for authorized bug bounty pract
     verification: Direct snippet match including 'Should leverage a XSS vulnerability...' and stone list.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

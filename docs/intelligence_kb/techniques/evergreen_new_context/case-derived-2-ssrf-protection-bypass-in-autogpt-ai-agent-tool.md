@@ -81,3 +81,11 @@ Hostname": - /url: https://joshua.hu/2025-bug-bounty-stories-fail§SSRF§Hostnam
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

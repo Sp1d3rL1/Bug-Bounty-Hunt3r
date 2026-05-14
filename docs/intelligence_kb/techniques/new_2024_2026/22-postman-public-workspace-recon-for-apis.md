@@ -139,3 +139,5 @@ Search Postman for target company workspaces → test endpoints
 - Postman 公开 workspace 泄露相关安全报告
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

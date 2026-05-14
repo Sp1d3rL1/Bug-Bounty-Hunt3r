@@ -83,3 +83,5 @@ Direct access to sensitive objects without auth token via missing object-level c
 ## 相关案例链接
 
 - https://x.com/shreerajaput/status/2048751213915906312
+
+<!-- backlink: docs/checklists/api.md -->

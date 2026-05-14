@@ -81,3 +81,5 @@ change fareid param in create_payment_info to free/unauthorized bundle ID bypass
 ## 相关案例链接
 
 - https://medium.com
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

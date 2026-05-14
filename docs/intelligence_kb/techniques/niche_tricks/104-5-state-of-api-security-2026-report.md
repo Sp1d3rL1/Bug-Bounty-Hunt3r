@@ -80,3 +80,7 @@ Enterprise APIs
     verification: Tavily 提取的报告要点
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

@@ -81,3 +81,7 @@ Inject scope/audience via returnTo param breaking out to top-level /authorize qu
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

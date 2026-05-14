@@ -76,3 +76,9 @@ High-level for authorized testing in bug bounty programs and labs only.
     verification: Direct browse confirmed upload date 2025-06-24, channel Bug Bounty Reports Explained, and detailed transcript on authorization, DoS, SQLi, schema disclosure, CSRF
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

@@ -81,3 +81,11 @@ PostMessage": - /url: https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-1
 ## 相关案例链接
 
 - https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-168-client-side-path-traversals-across-every-framework-with-xssdoctor
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

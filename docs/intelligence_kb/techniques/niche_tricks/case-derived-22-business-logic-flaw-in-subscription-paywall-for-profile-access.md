@@ -81,3 +81,5 @@ direct URL navigation to paid profile bypassing subscription gate
 ## 相关案例链接
 
 - https://medium.com/@ashiq.r.emon/subscription-paywall-bypass-leading-to-talent-profile-access-and-pii-disclosure-including-deleted-a3eb7cb09ca0
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

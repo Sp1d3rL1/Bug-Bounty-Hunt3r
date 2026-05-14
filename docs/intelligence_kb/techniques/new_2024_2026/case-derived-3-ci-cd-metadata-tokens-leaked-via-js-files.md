@@ -83,3 +83,7 @@ Scan packed JS for embedded pipeline metadata/artifact links (Docker/NPM/Maven)
 ## 相关案例链接
 
 - https://infosecwriteups.com/bug-bounty-recon-tokens-pii-and-ci-cd-metadata-leaked-via-javascript-76e3c2594957
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

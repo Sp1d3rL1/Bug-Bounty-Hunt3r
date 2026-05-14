@@ -71,3 +71,5 @@ Source snippet confirms exact title match: "GraphQL Bug Bounty 2026 — Introspe
     verification: tavily snippet verifies page content and title; direct browse confirms site structure though full text limited
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

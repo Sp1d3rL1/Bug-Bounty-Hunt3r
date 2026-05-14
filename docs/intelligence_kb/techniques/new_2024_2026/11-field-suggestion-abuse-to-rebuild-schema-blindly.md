@@ -130,3 +130,5 @@ GraphQL 引擎默认提供开发者友好提示，即使禁用 introspection 也
 - [GraphQL Pentesting for Bug Bounty Hunters](https://medium.com/@mpjani294/graphql-pentesting-for-bug-bounty-hunters-from-endpoint-discovery-to-high-impact-exploits-821f64a953b5)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

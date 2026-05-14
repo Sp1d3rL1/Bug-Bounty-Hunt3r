@@ -81,3 +81,7 @@ Swap invitation ID in updateUser mutation discovered via schema introspection
 ## 相关案例链接
 
 - https://medium.com/@parthnarula/idor-in-graphql-invitation-flow-leading-to-ato
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

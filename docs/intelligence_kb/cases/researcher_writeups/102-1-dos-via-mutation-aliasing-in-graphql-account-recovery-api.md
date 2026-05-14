@@ -63,3 +63,5 @@ HackerOne 报告披露了 GraphQL Account Recovery Phone Number Verification API
     verification: TAVILY 提取片段直接确认
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

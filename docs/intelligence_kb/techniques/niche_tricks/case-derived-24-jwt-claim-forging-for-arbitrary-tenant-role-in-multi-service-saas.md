@@ -81,3 +81,7 @@ Change alg to HS256 and forge tenant_id/role claims
 ## 相关案例链接
 
 - https://totalshiftleft.ai/blog/jwt-authentication-testing-guide
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

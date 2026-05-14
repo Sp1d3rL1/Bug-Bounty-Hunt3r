@@ -79,3 +79,5 @@ Replace admin Role-ID in PUT /security/[Role-ID]/businessroles/ with Manager coo
 ## 相关案例链接
 
 - https://medium.com/@mrro0o0tt/hunting-access-control-bugs-how-i-found-a-critical-idor-privilege-escalation-in-a-fort-knox-like-a4aeb46d8714
+
+<!-- backlink: docs/checklists/api.md -->

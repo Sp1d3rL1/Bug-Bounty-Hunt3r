@@ -139,3 +139,7 @@ WAF 规则编写者常依赖文档中的简单 contains 示例，认为足以限
 - [My 2025 Bug Bounty Stories](https://joshua.hu/2025-bug-bounty-stories-fail)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/waf_bypass.md -->

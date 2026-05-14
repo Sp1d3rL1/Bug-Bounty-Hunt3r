@@ -99,3 +99,5 @@ https://prateekpulastya.medium.com/how-i-found-a-graphql-endpoint-leaking-millio
     verification: Directly extracted from article with query examples and responses.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

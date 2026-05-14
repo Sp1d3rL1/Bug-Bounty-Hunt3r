@@ -79,3 +79,5 @@ Enabled introspection query reveals full schema including sensitive merchant fie
 ## 相关案例链接
 
 - https://hackerone.com/reports/2886723
+
+<!-- backlink: docs/checklists/graphql.md -->

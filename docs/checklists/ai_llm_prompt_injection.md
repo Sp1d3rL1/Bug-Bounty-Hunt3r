@@ -6,7 +6,53 @@ cwe: [CWE-77, CWE-200, CWE-269]
 severity_typical: P1-P3
 playbook: playbooks/ai_llm.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/3-invisible-prompt-injection-via-unicode-tag-characters-in-hackerone-hai-ai-assistant.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-comment-and-control-prompt-injection-to-credential-theft-in-claude-code-gemini-cli-git.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-leakage-of-hidden-elements-via-prompt-injection-in-llm-browser-agents.md
+  - docs/intelligence_kb/cases/researcher_writeups/107-2-comment-and-control-prompt-injection-to-credential-theft-in-claude-code-gemini-c.md
+  - docs/intelligence_kb/cases/researcher_writeups/15-servicenow-now-assist-second-order-prompt-injection-agent-to-agent-data-exfil.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-ai-bugs.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-prompt-injection-to-sandbox-escape-rce-in-google-antigravity-ai-ide.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-echoleak-cve-2025-32711-zero-click-indirect-prompt-injection-data-exfil-in-microsoft-3.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/cases/researcher_writeups/21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-actions.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-github-copilot-config-hijack-via-prompt-injection-month-of-ai-bugs.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-google-gemini-memory-pollution-via-malicious-email-prompt-injection.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-curxecute-cve-2025-54135-prompt-injection-rce-in-cursor-ide-via-mcp-config.md
+  - docs/intelligence_kb/cases/researcher_writeups/7-vanna-ai-prompt-injection-to-rce-cve-2024-5565-via-text-to-sql.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-slack-ai-indirect-prompt-injection-data-exfil-from-private-channels.md
+  - docs/intelligence_kb/cases/researcher_writeups/9-langchain-graphcypherqachain-prompt-injection-to-sqli-cve-2024-8309.md
+  - docs/intelligence_kb/review_queue/11-embrace-the-red-hacking-gemini-memory-with-prompt-injection-and-delayed-tool-invocati.md
+  - docs/intelligence_kb/review_queue/16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-chain.md
+  - docs/intelligence_kb/review_queue/19-google-threat-report-in-wild-prompt-injection-types-including-data-exfil-attempts.md
+  - docs/intelligence_kb/review_queue/22-hackerone-agentic-prompt-injection-testing-methodology-for-tool-misuse.md
+  - docs/intelligence_kb/review_queue/resource-11-embrace-the-red-hacking-gemini-memory-with-prompt-injection-and-delayed-tool.md
+  - docs/intelligence_kb/review_queue/resource-16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-ch.md
+  - docs/intelligence_kb/review_queue/resource-19-google-threat-report-in-wild-prompt-injection-types-including-data-exfil-att.md
+  - docs/intelligence_kb/review_queue/resource-22-hackerone-agentic-prompt-injection-testing-methodology-for-tool-misuse.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-18-prompt-injection-to-sandbox-escape-rce-in-google-antigravity-ai-ide.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/techniques/new_2024_2026/12-indirect-prompt-injection-via-pdf-upload-in-chat-with-doc-features.md
+  - docs/intelligence_kb/techniques/new_2024_2026/17-markdown-image-exfil-via-llm-output-handling-in-chatbots.md
+  - docs/intelligence_kb/techniques/new_2024_2026/20-agent-stdout-leakage-of-creds-via-debug-prints-in-llm-skills-supply-chain.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-comment-and-control-prompt-injection-to-credential-theft-in-claude-code-g.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-leakage-of-hidden-elements-via-prompt-injection-in-llm-browser-agents.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-15-servicenow-now-assist-second-order-prompt-injection-agent-to-agent-data.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-act.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-invisible-prompt-injection-via-unicode-tag-characters-in-hackerone-hai-ai.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-github-copilot-config-hijack-via-prompt-injection-month-of-ai-bugs.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-google-gemini-memory-pollution-via-malicious-email-prompt-injection.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-curxecute-cve-2025-54135-prompt-injection-rce-in-cursor-ide-via-mcp-confi.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-vanna-ai-prompt-injection-to-rce-cve-2024-5565-via-text-to-sql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-slack-ai-indirect-prompt-injection-data-exfil-from-private-channels.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-9-langchain-graphcypherqachain-prompt-injection-to-sqli-cve-2024-8309.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-a.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-2-echoleak-cve-2025-32711-zero-click-indirect-prompt-injection-data-exfil-i.md
 maturity: stable
 ---
 

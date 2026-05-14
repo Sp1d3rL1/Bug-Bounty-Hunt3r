@@ -58,3 +58,9 @@ Demonstrates concrete impact (API key/token exfil) from untrusted GitHub content
     verification: Snippet confirms TL;DR and impact on ANTHROPIC_API_KEY and other secrets
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

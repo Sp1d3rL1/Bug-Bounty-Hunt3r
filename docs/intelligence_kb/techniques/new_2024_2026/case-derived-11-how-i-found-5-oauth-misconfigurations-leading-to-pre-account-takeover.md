@@ -79,3 +79,11 @@ Multiple redirect_uri / state / PKCE / response_type flaws allowing code/token i
 ## 相关案例链接
 
 - https://medium.com/@KhaledAhmed107/how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover-in-public-bug-bounty-programs-021d4c8c6954
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

@@ -81,3 +81,11 @@ Nested": - /url: https://mizu.re/post/exploring-the-dompurify-library-bypasses-a
 ## 相关案例链接
 
 - https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/file_upload_parser.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

@@ -130,3 +130,5 @@ GraphQL 端点支持在单个 HTTP 请求中发送操作数组（array of operat
 - GraphQL 批量处理相关安全讨论
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

@@ -81,3 +81,7 @@ Manipulate redirect_uri to attacker-controlled domain to leak id_token/JWT in UR
 ## 相关案例链接
 
 - (from X hunter writeups referenced in searches)
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

@@ -81,3 +81,5 @@ Introspect /graphql on wiki subdomain exposing internal schema and user data
 ## 相关案例链接
 
 - https://medium.com/@ch3tan/graphql-introspection-on-wiki-subdomain
+
+<!-- backlink: docs/checklists/graphql.md -->

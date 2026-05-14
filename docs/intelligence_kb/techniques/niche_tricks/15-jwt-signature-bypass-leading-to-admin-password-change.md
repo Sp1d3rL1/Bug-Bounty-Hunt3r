@@ -79,3 +79,9 @@ Modify admin claims in JWT + bypass sig verification via kid header or alg confu
 ## 相关案例链接
 
 - https://medium.com/@uzayransari14/how-i-accidentally-changed-the-admins-password-jwt-signature-bypass-leading-to-account-takeover-fe7657532974
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

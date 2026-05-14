@@ -81,3 +81,15 @@ OOB DNS callback from PDF metadata parser using Interactsh
 ## 相关案例链接
 
 - X post high-signal list (real hunter)
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

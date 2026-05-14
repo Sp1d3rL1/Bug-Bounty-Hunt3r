@@ -81,3 +81,7 @@ Frontend HTTP/2 downgrade without header sanitization enables tunnelling to pois
 ## 相关案例链接
 
 - https://portswigger.net/web-security/request-smuggling
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

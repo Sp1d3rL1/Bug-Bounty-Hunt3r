@@ -81,3 +81,7 @@ Inspect CodeQL workflow debug artifacts for exposed GITHUB_TOKEN
 ## 相关案例链接
 
 - https://github.com/aw-junaid/bug-bounty/blob/main/methodologies/web%20technologies/CI-CD%20Security.md
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

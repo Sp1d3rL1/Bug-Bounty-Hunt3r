@@ -83,3 +83,7 @@ guess/manipulate invoice ID to access or trigger refund on other user invoices
 ## 相关案例链接
 
 - https://hackerone.com
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

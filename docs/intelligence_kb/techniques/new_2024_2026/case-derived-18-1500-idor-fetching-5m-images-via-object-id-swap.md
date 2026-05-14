@@ -81,3 +81,5 @@ Swap image/object ID in media API to access millions of private images
 ## 相关案例链接
 
 - https://x.com
+
+<!-- backlink: docs/checklists/api.md -->

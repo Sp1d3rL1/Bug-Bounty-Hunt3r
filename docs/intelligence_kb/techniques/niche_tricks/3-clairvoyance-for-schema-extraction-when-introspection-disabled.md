@@ -79,3 +79,7 @@ Fuzz malformed queries and parse "Did you mean..." errors to blindly reconstruct
 ## 相关案例链接
 
 - https://github.com/nikitastupin/clairvoyance
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

@@ -70,3 +70,5 @@ stacks discounts to near-zero order total in BB reports
 ## 相关案例链接
 
 - https://hackerone.com/reports/1849626
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

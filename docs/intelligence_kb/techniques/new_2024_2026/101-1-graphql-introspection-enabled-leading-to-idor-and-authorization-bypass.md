@@ -80,3 +80,7 @@ Web/API/SaaS GraphQL
     - https://infosecwriteups.com/graphql-security-how-i-found-and-exploited-critical-idor-and-authorization-bypass-in-a-42ab78e13642 (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

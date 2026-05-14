@@ -145,3 +145,15 @@ author_date: intigriti / 2025-02-28 tags: ["parameter-discovery", "recon", "sqli
 - Intigriti隐藏参数发现文章（2025）
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

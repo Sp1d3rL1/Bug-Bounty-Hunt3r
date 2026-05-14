@@ -79,3 +79,5 @@ re-send same payment.success webhook (no signature/event ID check) to trigger du
 ## 相关案例链接
 
 - https://medium.com/@mostTa/understanding-payment-method-bypass-vulnerabilities-business-logic-be6debffa52e
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

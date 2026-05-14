@@ -81,3 +81,13 @@ Chain": - /url: https://eib.hashnode.dev/crafting-a-full-read-ssrf-a-journey-thr
 ## 相关案例链接
 
 - https://eib.hashnode.dev/crafting-a-full-read-ssrf-a-journey-through-oauth-dcr-open-url-redirects-and-path-normalization
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

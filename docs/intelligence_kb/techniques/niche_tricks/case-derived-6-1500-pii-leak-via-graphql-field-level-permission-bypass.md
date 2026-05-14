@@ -79,3 +79,5 @@ Query suggestedCollaborators under Organization (public) instead of direct Proje
 ## 相关案例链接
 
 - https://medium.com/@tinopreter/1-500-pii-leak-via-graphql-field-level-permission-bypass-1e7ea2d1a019
+
+<!-- backlink: docs/checklists/graphql.md -->

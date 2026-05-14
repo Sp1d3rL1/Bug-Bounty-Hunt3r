@@ -82,3 +82,5 @@ X thread fully extracted; content matches title, author, date, and one_line_tric
     verification: Directly listed in post content.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

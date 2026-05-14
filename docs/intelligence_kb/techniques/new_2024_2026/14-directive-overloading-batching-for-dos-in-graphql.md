@@ -79,3 +79,5 @@ Repeat @aa directives 1000x combined with array batching to cause parser/resourc
 ## 相关案例链接
 
 - https://medium.com/@mpjani294/graphql-pentesting-for-bug-bounty-hunters-from-endpoint-discovery-to-high-impact-exploits-821f64a953b5
+
+<!-- backlink: docs/checklists/graphql.md -->

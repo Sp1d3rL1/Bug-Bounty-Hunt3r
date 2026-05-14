@@ -79,3 +79,9 @@ Use az storage container list with explicit keys vs anonymous for misconfig
 ## 相关案例链接
 
 - https://rodelllemit.medium.com/azure-pentesting-storage-account-cheat-sheets-9f9766845cdd
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/kubernetes_container.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

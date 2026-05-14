@@ -84,3 +84,5 @@ one_line_trick: Alias same mutation multiple times (e.g. 100x) in single query t
 ## 升级到 SuperGrok
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

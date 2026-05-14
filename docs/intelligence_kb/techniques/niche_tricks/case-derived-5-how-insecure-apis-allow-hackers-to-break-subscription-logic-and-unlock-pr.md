@@ -79,3 +79,5 @@ replay intercepted HTTP requests to AI generation endpoint after quota exhaustio
 ## 相关案例链接
 
 - https://ashikmd7.medium.com/how-insecure-apis-allow-hackers-to-break-subscription-logic-and-unlock-premium-features-606dd10fbcff
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

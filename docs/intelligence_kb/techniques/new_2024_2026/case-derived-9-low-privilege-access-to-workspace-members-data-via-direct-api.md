@@ -81,3 +81,5 @@ Direct GET /rest/workspaces/{id}/users as low-priv member
 ## 相关案例链接
 
 - https://medium.com/@montaser_mohsen/breaking-access-control-how-a-low-privilege-user-accessed-workspace-members-data-af2e72d64bb9
+
+<!-- backlink: docs/checklists/api.md -->

@@ -126,3 +126,5 @@ Praetorian GitHub:
 - [https://github.com/praetorian-code/gcloud-lockdown](https://github.com/praetorian-code/gcloud-lockdown)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

@@ -11,3 +11,11 @@
 ## Next action
 
 二次确认是否应加入 `resources/` 或转换为技法卡。
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/file_upload_parser.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

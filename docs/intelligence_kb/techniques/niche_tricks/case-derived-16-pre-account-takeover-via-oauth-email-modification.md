@@ -81,3 +81,9 @@ Login via Google OAuth then bypass frontend disabled attr to change profile emai
 ## 相关案例链接
 
 - https://www.reddit.com/r/bugbounty/comments/1jy0x4q/preaccount_takeover_via_oauth_email_modification/
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

@@ -79,3 +79,5 @@ use $0 VCC + API update-license to enterprise triggering dunning grace period wi
 ## 相关案例链接
 
 - https://medium.com/@eslamtemo125/how-i-bypassed-premium-subscription-escalated-privileges-using-a-0-vcc-business-logic-flaw-83a0b6515b73
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

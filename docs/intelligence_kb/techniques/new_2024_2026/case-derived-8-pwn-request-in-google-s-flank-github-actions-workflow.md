@@ -79,3 +79,7 @@ Craft branch/PR title with malicious payload on pull_request_target trigger
 ## 相关案例链接
 
 - https://adnanthekhan.com/2024/04/15/an-obscure-actions-workflow-vulnerability-in-googles-flank/
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

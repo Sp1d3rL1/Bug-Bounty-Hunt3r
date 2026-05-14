@@ -79,3 +79,5 @@ Query publicPost { author { sensitiveField } } to traverse and leak data bypassi
 ## 相关案例链接
 
 - https://x.com/0xacb/status/2040000000000000000
+
+<!-- backlink: docs/checklists/graphql.md -->

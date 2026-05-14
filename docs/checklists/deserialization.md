@@ -6,7 +6,18 @@ cwe: [CWE-502]
 severity_typical: P1
 playbook: playbooks/deserialization.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/researcher_writeups/14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-2024-chain.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-6783.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gala-research.md
+  - docs/intelligence_kb/review_queue/16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-chain.md
+  - docs/intelligence_kb/review_queue/resource-16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-ch.md
+  - docs/intelligence_kb/techniques/new_2024_2026/15-h2-cl-desync-via-early-response-gadgets-for-response-queue-poisoning.md
+  - docs/intelligence_kb/techniques/new_2024_2026/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-20.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-67.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gal.md
+  - docs/intelligence_kb/techniques/niche_tricks/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md
 maturity: stable
 ---
 

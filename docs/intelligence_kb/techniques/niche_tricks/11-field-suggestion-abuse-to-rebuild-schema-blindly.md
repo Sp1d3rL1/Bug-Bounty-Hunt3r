@@ -79,3 +79,5 @@ Fuzz fields with cewl-generated business wordlist and parse "Did you mean" respo
 ## 相关案例链接
 
 - https://medium.com/@mpjani294/graphql-pentesting-for-bug-bounty-hunters-from-endpoint-discovery-to-high-impact-exploits-821f64a953b5
+
+<!-- backlink: docs/checklists/graphql.md -->

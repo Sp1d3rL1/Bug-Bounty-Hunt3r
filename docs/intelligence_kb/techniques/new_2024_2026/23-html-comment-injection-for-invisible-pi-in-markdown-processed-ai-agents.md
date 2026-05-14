@@ -81,3 +81,5 @@ target_types:
 ## 相关案例链接
 
 - https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

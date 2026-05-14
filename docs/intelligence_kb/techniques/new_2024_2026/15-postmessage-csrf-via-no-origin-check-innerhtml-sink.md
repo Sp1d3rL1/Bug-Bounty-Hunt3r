@@ -81,3 +81,5 @@ Iframe": - /url: https://medium.com/@Obfuscator/same-origin-policy-and-postmessa
 ## 相关案例链接
 
 - https://medium.com/@Obfuscator/same-origin-policy-and-postmessage-510214960605
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->

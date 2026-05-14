@@ -70,3 +70,5 @@ triggers fake paid states and upgrades without real payment
 ## 相关案例链接
 
 - https://medium.com/@mostTa/understanding-payment-method-bypass-vulnerabilities-business-logic-be6debffa52e
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

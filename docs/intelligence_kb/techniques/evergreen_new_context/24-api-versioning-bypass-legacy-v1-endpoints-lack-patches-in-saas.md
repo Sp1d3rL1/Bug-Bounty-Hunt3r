@@ -139,3 +139,11 @@ Test /v0 or /v1/user when /v2 is secured
 - [https://infosecwriteups.com/exploiting-api-version-mismatches-for-hidden-vulnerabilities-7680d854c0fb](https://infosecwriteups.com/exploiting-api-version-mismatches-for-hidden-vulnerabilities-7680d854c0fb)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

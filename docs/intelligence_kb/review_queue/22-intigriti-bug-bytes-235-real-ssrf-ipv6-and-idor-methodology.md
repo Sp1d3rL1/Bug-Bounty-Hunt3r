@@ -3,3 +3,9 @@
 - Source: https://www.intigriti.com/researchers/blog/bug-bytes/intigriti-bug-bytes-235-april-2026
 - Author: Intigriti researchers
 - Why useful: Practical niche tricks from real hunters for 2026 SaaS/API hunting
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

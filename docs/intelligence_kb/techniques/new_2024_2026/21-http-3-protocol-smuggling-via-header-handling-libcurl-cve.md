@@ -83,3 +83,5 @@ Fundamental flaw in QUIC response headers across backends enables smuggling
 ## 相关案例链接
 
 - https://hackerone.com/reports/3479203
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

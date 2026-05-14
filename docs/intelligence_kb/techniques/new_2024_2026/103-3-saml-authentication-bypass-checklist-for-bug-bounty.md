@@ -120,3 +120,7 @@ X 帖子内容已通过原生抓取验证，checklist 与摘要一致。
     verification: 帖子直接列出 6 项 checklist
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

@@ -133,3 +133,5 @@ one_line_trick: Wrap ID as {"Account":{"Account":victimID}} in JSON body to evad
 - [https://x.com/vuln_X/status/2048709380166889642](https://x.com/vuln_X/status/2048709380166889642)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

@@ -6,7 +6,41 @@ cwe: [CWE-525, CWE-444]
 severity_typical: P1-P2
 playbook: playbooks/cache_attacks.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/researcher_writeups/1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-reverse-proxy.md
+  - docs/intelligence_kb/cases/researcher_writeups/11-sveltespill-cache-deception-in-sveltekit-vercel.md
+  - docs/intelligence_kb/cases/researcher_writeups/14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-kerish-s-web-cache-deception-css-append-on-dynamic-path-cloudflare.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-how-i-discovered-a-web-cache-deception-attack-exposing-pii-a-real-world-case-study.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-sitecore-html-cache-poisoning-leading-to-rce.md
+  - docs/intelligence_kb/cases/researcher_writeups/23-web-cache-deception-via-path-mapping-exploitation-portswigger-lab-real-world-variant.md
+  - docs/intelligence_kb/cases/researcher_writeups/3-web-cache-deception-when-a-404-still-leaks-sensitive-data.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-chatgpt-account-takeover-wildcard-web-cache-deception.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-request-smuggling.md
+  - docs/intelligence_kb/cases/researcher_writeups/7-gotta-cache-em-all-novel-cache-deception-and-poisoning-via-url-parsing-quirks.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-next-js-cache-poisoning-via-204-responses-cve-2025-49826.md
+  - docs/intelligence_kb/cases/researcher_writeups/9-next-js-cache-poisoning-race-condition-cve-2025-32421.md
+  - docs/intelligence_kb/cases/researcher_writeups/9-nextjs-auth0-insecure-session-cache-key-hijack.md
+  - docs/intelligence_kb/review_queue/18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md
+  - docs/intelligence_kb/review_queue/resource-18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md
+  - docs/intelligence_kb/review_queue/resource-25-top-10-web-hacking-techniques-of-2025-nominations-desync-endgame-chunk-trick.md
+  - docs/intelligence_kb/techniques/new_2024_2026/12-http-2-request-tunnelling-for-web-cache-poisoning-portswigger-lab-technique.md
+  - docs/intelligence_kb/techniques/new_2024_2026/15-h2-cl-desync-via-early-response-gadgets-for-response-queue-poisoning.md
+  - docs/intelligence_kb/techniques/new_2024_2026/9-github-actions-cache-poisoning-for-supply-chain.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-r.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-sveltespill-cache-deception-in-sveltekit-vercel.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-kerish-s-web-cache-deception-css-append-on-dynamic-path-cloudflare.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-how-i-discovered-a-web-cache-deception-attack-exposing-pii-a-real-world-c.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-sitecore-html-cache-poisoning-leading-to-rce.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-web-cache-deception-via-path-mapping-exploitation-portswigger-lab-real-w.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-chatgpt-account-takeover-wildcard-web-cache-deception.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-reque.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-gotta-cache-em-all-novel-cache-deception-and-poisoning-via-url-parsing-qu.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-next-js-cache-poisoning-via-204-responses-cve-2025-49826.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-3-web-cache-deception-when-a-404-still-leaks-sensitive-data.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-9-next-js-cache-poisoning-race-condition-cve-2025-32421.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-9-nextjs-auth0-insecure-session-cache-key-hijack.md
 maturity: stable
 ---
 

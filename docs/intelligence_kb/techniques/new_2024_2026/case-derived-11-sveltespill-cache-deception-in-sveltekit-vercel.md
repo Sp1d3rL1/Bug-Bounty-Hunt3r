@@ -83,3 +83,5 @@ __pathname= query param overrides path for immutable static cache key leaking se
 ## 相关案例链接
 
 - https://jorianwoltjer.com/blog/p/coding/cache-deception-on-my-new-site
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

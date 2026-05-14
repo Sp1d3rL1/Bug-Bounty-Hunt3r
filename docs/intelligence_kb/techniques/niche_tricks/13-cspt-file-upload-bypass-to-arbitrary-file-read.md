@@ -81,3 +81,7 @@ Traverse": - /url: https://blog.doyensec.com/2025/01/09/cspt-file-upload.html§C
 ## 相关案例链接
 
 - https://blog.doyensec.com/2025/01/09/cspt-file-upload.html
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/file_upload_parser.md -->

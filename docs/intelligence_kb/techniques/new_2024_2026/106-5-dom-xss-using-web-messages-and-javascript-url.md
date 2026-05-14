@@ -97,3 +97,9 @@ PortSwigger lab and GitHub repo linked in source.
     verification: Direct snippet: 'The webpage listens for `postMessage` events and directly injects received data into `innerHTML` without validating origin...'
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

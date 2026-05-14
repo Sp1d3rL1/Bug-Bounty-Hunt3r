@@ -114,3 +114,13 @@ X 帖子已验证，包含该技术作为 2026 方法论的一部分。
     verification: 帖子明确列出该技术
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

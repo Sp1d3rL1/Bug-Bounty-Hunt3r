@@ -81,3 +81,7 @@ Pollute prototype through deepMerge gadget to control lookups
 ## 相关案例链接
 
 - https://huntr.com/bounties/009f1cd9-401c-49a7-bd08-be35cff6faef
+
+<!-- backlink: docs/checklists/deserialization.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

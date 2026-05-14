@@ -79,3 +79,7 @@ Remove <Signature> entirely / empty value / swap NameID to victim / XML comment 
 ## 相关案例链接
 
 - https://x.com/vuln_X/status/2042936028990968055
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

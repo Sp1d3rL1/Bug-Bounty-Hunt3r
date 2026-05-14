@@ -133,3 +133,9 @@ GraphQL WebSocket 订阅端点独立于主 HTTP 路由，未继承 Express middl
 - CVE-2026-32594 Parse Server WebSocket Bypass 相关公告
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

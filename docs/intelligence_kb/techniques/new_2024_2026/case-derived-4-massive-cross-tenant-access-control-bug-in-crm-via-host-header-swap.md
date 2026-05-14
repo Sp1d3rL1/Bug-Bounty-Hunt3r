@@ -81,3 +81,5 @@ Swap Host header to victim tenant while replaying low-priv role API requests
 ## 相关案例链接
 
 - https://medium.com/@mrro0o0tt/i-found-a-massive-cross-tenant-access-control-bug-by-testing-multiple-roles-heres-what-i-learned-ed9c7b7f8b92
+
+<!-- backlink: docs/checklists/api.md -->

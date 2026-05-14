@@ -141,3 +141,9 @@ GitHub Actions cache 在 runner 间共享且 key 可预测/覆盖，后续 workf
 - Adnan Khan Angular 供应链研究文章
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

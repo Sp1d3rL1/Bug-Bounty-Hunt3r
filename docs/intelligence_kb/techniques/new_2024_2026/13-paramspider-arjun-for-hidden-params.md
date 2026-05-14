@@ -81,3 +81,9 @@ paramspider -d target + arjun -u url -m JSON
 ## 相关案例链接
 
 - https://github.com/amrelsagaei/Bug-Bounty-Hunting-Methodology-2025
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

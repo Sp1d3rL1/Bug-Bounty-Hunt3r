@@ -81,3 +81,5 @@ cat known_subs.txt | alterx -o perms.txt | shuffledns -r resolvers.txt
 ## 相关案例链接
 
 - https://medium.com/@batuhanaydinn/bug-bounty-recon-for-everyone-220ae026a42c
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

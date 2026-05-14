@@ -79,3 +79,5 @@ Prepend __schema query fragment to bypass auth middleware on otherwise private o
 ## 相关案例链接
 
 - https://hackerone.com/reports/3452015
+
+<!-- backlink: docs/checklists/graphql.md -->

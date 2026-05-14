@@ -81,3 +81,5 @@ Send invalid fields to trigger suggestion errors revealing users/user fields the
 ## 相关案例链接
 
 - https://medium.com/@prateekpulastya/graphql-endpoint-leaking-millions-users-without-auth
+
+<!-- backlink: docs/checklists/graphql.md -->

@@ -79,3 +79,5 @@ Alias same mutation multiple times (e.g. 100x) in single query to process as one
 ## 相关案例链接
 
 - https://x.com/viehgroup/status/2050210129921151286
+
+<!-- backlink: docs/checklists/graphql.md -->

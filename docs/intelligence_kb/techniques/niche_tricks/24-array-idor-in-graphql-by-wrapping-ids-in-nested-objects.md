@@ -79,3 +79,7 @@ Wrap target ID as {\"Account\": {\"Account\": 3333}} to bypass outer auth valida
 ## 相关案例链接
 
 - https://x.com/vuln_X/status/2050914267336265901
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

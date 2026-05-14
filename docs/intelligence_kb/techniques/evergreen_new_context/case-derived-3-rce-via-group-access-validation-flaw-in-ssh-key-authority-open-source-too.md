@@ -79,3 +79,5 @@ Edit group rules with CSRF token to provision SSH keys to arbitrary servers
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->

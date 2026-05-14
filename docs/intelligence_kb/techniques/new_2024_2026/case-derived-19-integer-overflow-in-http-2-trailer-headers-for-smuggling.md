@@ -83,3 +83,5 @@ Signedness mismatch in printf precision for HTTP/2 trailers enables smuggling
 ## 相关案例链接
 
 - https://hackerone.com/reports/3665363
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

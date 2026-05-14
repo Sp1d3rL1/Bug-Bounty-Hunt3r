@@ -79,3 +79,7 @@ Namespace confusion + void C14N in libxml2 to make signature validate empty hash
 ## 相关案例链接
 
 - https://portswigger.net/research/the-fragile-lock
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

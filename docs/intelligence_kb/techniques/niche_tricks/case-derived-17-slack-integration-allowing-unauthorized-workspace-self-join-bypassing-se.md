@@ -83,3 +83,5 @@ Exploit shared channel invite to join protected workspace
 ## 相关案例链接
 
 - https://hackerone.com/reports/
+
+<!-- backlink: docs/checklists/api.md -->

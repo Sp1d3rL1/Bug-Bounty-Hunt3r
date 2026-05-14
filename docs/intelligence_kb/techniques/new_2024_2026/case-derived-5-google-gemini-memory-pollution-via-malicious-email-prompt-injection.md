@@ -81,3 +81,5 @@ Email-embedded": - /url: https://dev.to/behi_sec/google-paid-me-15000-for-this-p
 ## 相关案例链接
 
 - https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

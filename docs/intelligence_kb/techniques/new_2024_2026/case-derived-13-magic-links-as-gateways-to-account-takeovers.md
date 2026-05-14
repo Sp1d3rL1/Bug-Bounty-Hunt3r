@@ -79,3 +79,9 @@ Tamper require_ad_spend / account_type params in magic link URL or reuse leaked 
 ## 相关案例链接
 
 - https://sl4x0.medium.com/magic-links-as-gateways-account-takeovers-e9c911ceb6f9
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

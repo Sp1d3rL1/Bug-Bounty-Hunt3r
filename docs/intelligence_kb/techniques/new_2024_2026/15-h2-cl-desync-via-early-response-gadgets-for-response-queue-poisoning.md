@@ -83,3 +83,9 @@ Leverage Expect quirks + 0.CL deadlocks for double-desync enabling cross-tenant 
 ## 相关案例链接
 
 - https://portswigger.net/research/http1-must-die
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/deserialization.md -->
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

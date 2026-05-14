@@ -6,7 +6,46 @@ cwe: [CWE-78, CWE-732, CWE-94]
 severity_typical: P1-P2
 playbook: playbooks/cicd_github_actions.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/11-unauth-idor-on-nasa-gitlab-users-api-pii-hostnames-exposed.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-artipacked-github-actions-artifact-token-leak.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-reverse-proxy.md
+  - docs/intelligence_kb/cases/researcher_writeups/107-2-comment-and-control-prompt-injection-to-credential-theft-in-claude-code-gemini-c.md
+  - docs/intelligence_kb/cases/researcher_writeups/107-4-ai-agents-identity-risk-supply-chain-attacks-trivy-action-compromise.md
+  - docs/intelligence_kb/cases/researcher_writeups/11-codeqleaked-debug-artifacts-exposing-github-tokens.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-hackerbot-claw-autonomous-github-actions-exploitation-2026.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-gitlab-read-api-token-write-mutation-via-missing-graphql-authz.md
+  - docs/intelligence_kb/cases/researcher_writeups/21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-actions.md
+  - docs/intelligence_kb/cases/researcher_writeups/25-cve-2026-3854-github-rce-via-git-push-pipeline.md
+  - docs/intelligence_kb/cases/researcher_writeups/3-ci-cd-metadata-tokens-leaked-via-js-files.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-element-handling.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-pwn-request-in-google-s-flank-github-actions-workflow.md
+  - docs/intelligence_kb/review_queue/15-bug-bounty-methodology-2025-ci-cd-cloud-section.md
+  - docs/intelligence_kb/review_queue/2-bug-bounty-recon-for-everyone.md
+  - docs/intelligence_kb/review_queue/resource-15-bug-bounty-methodology-2025-ci-cd-cloud-section.md
+  - docs/intelligence_kb/review_queue/resource-2-bug-bounty-recon-for-everyone.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/techniques/new_2024_2026/14-environment-var-exfil-via-ps-auxeww-in-agent-tool-calls-comment-and-control-variant.md
+  - docs/intelligence_kb/techniques/new_2024_2026/14-github-actions-pull-request-target-checkout-without-persist-credentials-false.md
+  - docs/intelligence_kb/techniques/new_2024_2026/19-github-actions-runner-image-rce-via-supply-chain.md
+  - docs/intelligence_kb/techniques/new_2024_2026/2-aws-account-takeover-via-github-actions-oidc-wildcard-trust.md
+  - docs/intelligence_kb/techniques/new_2024_2026/20-naabu-httpx-pipeline-after-subfinder.md
+  - docs/intelligence_kb/techniques/new_2024_2026/9-github-actions-cache-poisoning-for-supply-chain.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-artipacked-github-actions-artifact-token-leak.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-r.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-codeqleaked-debug-artifacts-exposing-github-tokens.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-unauth-idor-on-nasa-gitlab-users-api-pii-hostnames-exposed.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-hackerbot-claw-autonomous-github-actions-exploitation-2026.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-act.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-25-cve-2026-3854-github-rce-via-git-push-pipeline.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-ci-cd-metadata-tokens-leaked-via-js-files.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-pwn-request-in-google-s-flank-github-actions-workflow.md
+  - docs/intelligence_kb/techniques/niche_tricks/107-3-what-s-coming-to-our-github-actions-2026-security-roadmap.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-20-gitlab-read-api-token-write-mutation-via-missing-graphql-authz.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-ele.md
 maturity: stable
 ---
 

@@ -83,3 +83,5 @@ Delimiter (; # %00) and ../ normalization diffs between CDN/origin poison arbitr
 ## 相关案例链接
 
 - https://portswigger.net/research/gotta-cache-em-all
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

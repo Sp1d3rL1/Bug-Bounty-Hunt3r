@@ -83,3 +83,5 @@ target_types:
 ## 相关案例链接
 
 - https://thenextweb.com/news/lovable-vibe-coding-security-crisis-exposed
+
+<!-- backlink: docs/checklists/api.md -->

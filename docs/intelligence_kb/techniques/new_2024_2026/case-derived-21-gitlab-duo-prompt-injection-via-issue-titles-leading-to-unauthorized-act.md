@@ -81,3 +81,7 @@ Issue": - /url: https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-t
 ## 相关案例链接
 
 - https://www.securance.com/blog/prompt-injection-the-owasp-1-ai-threat-in-2026/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->

@@ -81,3 +81,9 @@ Stored": - /url: https://medium.com/@ZombieHack/apple-developer-stored-xss-5-000
 ## 相关案例链接
 
 - https://medium.com/@ZombieHack/apple-developer-stored-xss-5-000-bounty-writeup-2025-cc34a030a5bf
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

@@ -81,3 +81,9 @@ Google": - /url: https://x.com/AmirMSafari/status/1923065022508318798§DOMPurify
 ## 相关案例链接
 
 - https://x.com/AmirMSafari/status/1923065022508318798
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

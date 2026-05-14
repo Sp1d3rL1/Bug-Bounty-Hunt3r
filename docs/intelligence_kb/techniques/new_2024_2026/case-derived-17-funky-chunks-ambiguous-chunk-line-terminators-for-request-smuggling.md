@@ -81,3 +81,5 @@ Abuse chunked-body terminator ambiguity in extensions/oversized chunks for new d
 ## 相关案例链接
 
 - https://w4ke.info/2025/06/18/funky-chunks.html
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

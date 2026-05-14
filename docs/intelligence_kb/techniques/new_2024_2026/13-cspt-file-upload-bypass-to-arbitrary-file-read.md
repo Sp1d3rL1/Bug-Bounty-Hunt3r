@@ -129,3 +129,7 @@ Niche file-upload + CSPT chain; high BB payouts in authorized programs
 - [Bypassing File Upload Restrictions To Exploit Client-Side Path Traversal](https://blog.doyensec.com/2025/01/09/cspt-file-upload.html)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/file_upload_parser.md -->

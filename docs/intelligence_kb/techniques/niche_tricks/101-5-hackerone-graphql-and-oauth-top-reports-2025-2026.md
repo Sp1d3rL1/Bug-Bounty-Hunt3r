@@ -75,3 +75,11 @@ https://github.com/reddelexc/hackerone-reports
     verification: Confirmed via repository structure extraction.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

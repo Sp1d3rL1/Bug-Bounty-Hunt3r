@@ -81,3 +81,5 @@ target_types:
 ## 相关案例链接
 
 - https://www.intigriti.com/researchers/blog/bug-bytes/intigriti-bug-bytes-235-april-2026
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

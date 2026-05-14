@@ -70,3 +70,5 @@ Edge-case JSON parsing/validation bypasses in 2026 APIs; high payout enabler
 ## 相关案例链接
 
 - https://medium.com/@manojxshrestha/api-bug-bounty-mastery-2026-hunt-hidden-endpoints-to-land-10k-payouts-957832efc29c
+
+<!-- backlink: docs/checklists/api.md -->

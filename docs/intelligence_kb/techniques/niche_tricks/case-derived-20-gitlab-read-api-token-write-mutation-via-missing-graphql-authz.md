@@ -79,3 +79,7 @@ read_api scoped token executes write mutations because no resolver-level scope e
 ## 相关案例链接
 
 - https://gitlab.com/gitlab-org/gitlab/-/issues/462012
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

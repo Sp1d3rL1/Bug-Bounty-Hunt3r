@@ -79,3 +79,5 @@ Alias verifyAccountRecoveryPhoneNumber mutation dozens of times in one request t
 ## 相关案例链接
 
 - https://hackerone.com/reports/3287208
+
+<!-- backlink: docs/checklists/graphql.md -->

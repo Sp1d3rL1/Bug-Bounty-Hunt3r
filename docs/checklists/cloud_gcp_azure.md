@@ -6,7 +6,37 @@ cwe: [CWE-918, CWE-732]
 severity_typical: P1-P2
 playbook: playbooks/cloud_gcp_azure.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/6-real-ssrf-via-ipv6-redirects-on-hackerone.md
+  - docs/intelligence_kb/cases/public_reports/9-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass.md
+  - docs/intelligence_kb/cases/researcher_writeups/12-autogpt-ssrf-protection-bypass-to-internal-services.md
+  - docs/intelligence_kb/cases/researcher_writeups/13-azure-blob-storage-anonymous-access-gateway.md
+  - docs/intelligence_kb/cases/researcher_writeups/15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-ai-bugs.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/cases/researcher_writeups/23-azure-storage-account-cheat-sheet-recon-tricks.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/review_queue/22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md
+  - docs/intelligence_kb/review_queue/resource-22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-6-real-ssrf-via-ipv6-redirects-on-hackerone.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-9-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/17-cloud-recon-2-0-ephemeral-resources-multi-cloud-enum.md
+  - docs/intelligence_kb/techniques/new_2024_2026/201-5-claude-bug-bounty-hunter-ai-assisted-recon-for-oauth-and-graphql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/22-gcs-bucket-data-exfil-via-signed-url-copy.md
+  - docs/intelligence_kb/techniques/new_2024_2026/6-gcs-testpermissions-api-for-permission-enumeration.md
+  - docs/intelligence_kb/techniques/new_2024_2026/7-azure-blob-anonymous-container-access-check.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-azure-blob-storage-anonymous-access-gateway.md
+  - docs/intelligence_kb/techniques/niche_tricks/22-parameter-discovery-for-sqli-xss-ssrf-via-6-methods.md
+  - docs/intelligence_kb/techniques/niche_tricks/7-google-cloud-armor-waf-bypass-via-subdomain-host-header.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-12-autogpt-ssrf-protection-bypass-to-internal-services.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-a.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-23-azure-storage-account-cheat-sheet-recon-tricks.md
 maturity: stable
 ---
 

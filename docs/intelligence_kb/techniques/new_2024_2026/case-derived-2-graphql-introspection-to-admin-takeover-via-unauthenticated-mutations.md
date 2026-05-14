@@ -79,3 +79,7 @@ Introspect schema to discover searchOperatorUserTable and createOperatorUser mut
 ## 相关案例链接
 
 - https://medium.com/meetcyber/graphql-introspection-to-admin-takeover-exploiting-unauthenticated-apis-2f4c14c3170b
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

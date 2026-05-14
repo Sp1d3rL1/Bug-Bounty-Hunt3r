@@ -59,3 +59,5 @@ Source URL browse returned insufficient content (HackerOne report likely require
     - https://hackerone.com/reports/3591764 (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

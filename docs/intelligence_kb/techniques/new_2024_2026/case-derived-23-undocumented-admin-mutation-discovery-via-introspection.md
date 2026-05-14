@@ -79,3 +79,5 @@ Introspect schema to find hidden admin-only mutations not referenced in frontend
 ## 相关案例链接
 
 - https://x.com/rashed_hasan00/status/2045000000000000000
+
+<!-- backlink: docs/checklists/graphql.md -->

@@ -97,3 +97,17 @@ https://github.com/shuvonsec/claude-bug-bounty
     verification: Direct browse confirmed repo content, listed classes #19 OAuth ($500-$5K), #20 GraphQL ($1K-$10K)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

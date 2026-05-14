@@ -112,3 +112,5 @@ Authorized scope, Lab only, synthetic data, test accounts
     - https://medium.com/@shadyfarouk1986/cspt-client-side-path-traversal-d7d446a88da1 (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

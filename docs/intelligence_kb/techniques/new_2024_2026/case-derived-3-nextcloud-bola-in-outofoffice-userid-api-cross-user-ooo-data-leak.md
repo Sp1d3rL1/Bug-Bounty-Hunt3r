@@ -81,3 +81,5 @@ Swap {userId} path param in app-password auth requests to read any user's out-of
 ## 相关案例链接
 
 - https://hackerone.com/reports/3382343
+
+<!-- backlink: docs/checklists/api.md -->

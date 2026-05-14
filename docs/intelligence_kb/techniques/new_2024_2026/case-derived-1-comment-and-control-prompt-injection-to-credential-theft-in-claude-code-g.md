@@ -85,3 +85,7 @@ Malicious": - /url: https://oddguan.com/blog/comment-and-control-prompt-injectio
 ## 相关案例链接
 
 - https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

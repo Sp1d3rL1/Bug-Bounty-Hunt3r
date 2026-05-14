@@ -97,3 +97,7 @@ https://www.reddit.com/r/bugbounty/comments/1r8wkt4/writeup_which_bugs_to_hunt_f
     verification: Directly from post summary.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

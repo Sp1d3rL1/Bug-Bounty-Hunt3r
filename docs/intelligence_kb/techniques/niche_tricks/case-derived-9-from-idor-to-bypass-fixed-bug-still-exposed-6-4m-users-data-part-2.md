@@ -81,3 +81,5 @@ Post-fix residual IDOR via alternate param/path allowing continued cross-user ac
 ## 相关案例链接
 
 - https://medium.com/@Dedrknex/from-idor-to-bypass-how-a-fixed-bug-still-exposed-6-4-million-users-data-part-2-21f9dde7cc79
+
+<!-- backlink: docs/checklists/api.md -->

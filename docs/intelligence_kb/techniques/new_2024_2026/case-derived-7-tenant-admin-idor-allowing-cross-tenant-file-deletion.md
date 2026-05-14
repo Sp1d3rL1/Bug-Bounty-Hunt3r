@@ -81,3 +81,5 @@ Supply": - /url: https://medium.com/@sid_x95/tenant-admin-idor-cross-tenant-file
 ## 相关案例链接
 
 - https://medium.com/@sid_x95/tenant-admin-idor-cross-tenant-file-deletion-3k-bounty
+
+<!-- backlink: docs/checklists/api.md -->

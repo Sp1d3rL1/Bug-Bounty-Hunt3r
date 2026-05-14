@@ -79,3 +79,5 @@ tamper price during billing workflow validation in subscription purchase
 ## 相关案例链接
 
 - https://medium.com/@mo397283/how-i-discovered-a-price-manipulation-vulnerability-in-a-public-bug-bounty-program-344dc6e9c1ed
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

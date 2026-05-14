@@ -81,3 +81,5 @@ POST to /bugs.json with org_id + text_query digit to pull cross-org private repo
 ## 相关案例链接
 
 - https://hackerone.com/reports/2487889
+
+<!-- backlink: docs/checklists/api.md -->

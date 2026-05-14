@@ -81,3 +81,5 @@ Change userID param in authenticated /api/profile/{id} to access/edit/delete any
 ## 相关案例链接
 
 - https://infosecwriteups.com/finding-an-idor-in-user-profile-api-a-15-000-journey-to-critical-0f05e583c00b
+
+<!-- backlink: docs/checklists/api.md -->

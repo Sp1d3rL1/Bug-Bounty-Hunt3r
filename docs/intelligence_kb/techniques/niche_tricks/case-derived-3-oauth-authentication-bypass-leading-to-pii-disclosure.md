@@ -79,3 +79,7 @@ Send grant_type=client_credentials to /api/token endpoint without client_id/secr
 ## 相关案例链接
 
 - https://medium.com/@bugbounty0901/oauth-authentication-bypass-leading-to-pii-disclosure-5d243b62d532
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

@@ -83,3 +83,7 @@ Path traversal URL parser confusion (%2F..%2F) caches /api/auth/session under /s
 ## 相关案例链接
 
 - https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

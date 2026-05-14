@@ -81,3 +81,5 @@ PI": - /url: https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.ht
 ## 相关案例链接
 
 - https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.html
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

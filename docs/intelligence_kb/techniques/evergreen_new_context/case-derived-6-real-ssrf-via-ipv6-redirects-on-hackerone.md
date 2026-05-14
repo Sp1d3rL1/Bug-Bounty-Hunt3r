@@ -81,3 +81,9 @@ IPv6": - /url: https://medium.com/@red_darkin/a-real-ssrf-story-from-hackerone-f
 ## 相关案例链接
 
 - https://medium.com/@red_darkin/a-real-ssrf-story-from-hackerone-featuring-ipv6-redirects-9aa5e2ad8c2e
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

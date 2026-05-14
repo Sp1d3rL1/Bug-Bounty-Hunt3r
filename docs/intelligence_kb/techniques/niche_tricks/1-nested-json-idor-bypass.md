@@ -138,3 +138,5 @@ JSON 解析器与验证器在嵌套深度处理上的不一致：外层校验通
 （vuln_X 原帖）
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

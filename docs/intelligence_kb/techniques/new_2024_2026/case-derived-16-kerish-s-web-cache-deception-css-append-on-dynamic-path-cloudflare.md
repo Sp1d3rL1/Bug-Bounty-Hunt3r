@@ -81,3 +81,5 @@ Append .css to /account dynamic path on Cloudflare site to cache authenticated e
 ## 相关案例链接
 
 - https://medium.com
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

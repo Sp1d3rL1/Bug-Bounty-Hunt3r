@@ -81,3 +81,11 @@ Pollute via JSON source → lodash merge → DOM sink
 ## 相关案例链接
 
 - https://bugbounty.info/Attack-Surface/Web/Client-Side/Prototype-Pollution
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/deserialization.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

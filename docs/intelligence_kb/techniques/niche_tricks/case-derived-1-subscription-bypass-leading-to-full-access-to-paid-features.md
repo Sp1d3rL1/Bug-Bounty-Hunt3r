@@ -81,3 +81,5 @@ switch to dev plan for new 14-day trial then switch to Enterprise to retain full
 ## 相关案例链接
 
 - https://medium.com/@hossam_hamada/subscription-bypass-leading-to-full-access-to-paid-features-7c3a1bf6487c
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

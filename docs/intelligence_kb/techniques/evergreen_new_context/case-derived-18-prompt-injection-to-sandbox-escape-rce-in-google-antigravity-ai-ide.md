@@ -79,3 +79,5 @@ find_by_name tool injection bypasses Secure Mode to RCE
 ## 相关案例链接
 
 - https://www.pointguardai.com/ai-security-incidents/a-crafted-search-pattern-unlocked-rce-inside-googles-antigravity-ide
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

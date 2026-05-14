@@ -81,3 +81,9 @@ GraphQL query with staff account + swapped shop ID for unauthorized billing
 ## 相关案例链接
 
 - https://hackerone.com/reports/2207248
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

@@ -79,3 +79,7 @@ Force server to verify HS256 with public key extracted from RS256 or flip alg ha
 ## 相关案例链接
 
 - https://cybersecuritywriteups.com/5-jwt-logic-confusion-bypassing-authentication-b247f7910f70
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

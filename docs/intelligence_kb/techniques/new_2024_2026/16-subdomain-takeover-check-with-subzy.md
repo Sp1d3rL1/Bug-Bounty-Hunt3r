@@ -79,3 +79,5 @@ subzy -d subs.txt
 ## 相关案例链接
 
 - https://netlas.io/blog/bug_bounty_roadmap/
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

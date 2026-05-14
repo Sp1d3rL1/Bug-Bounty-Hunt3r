@@ -79,3 +79,5 @@ Race auth0.getAccessToken calls to steal victim sessions via weak caching key
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

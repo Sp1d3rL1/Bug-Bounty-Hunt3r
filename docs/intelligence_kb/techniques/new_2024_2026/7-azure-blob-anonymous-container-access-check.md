@@ -155,3 +155,7 @@ Azure默认允许容器级公开访问设置，但开发者常误配置“Contai
 - [https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9](https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/kubernetes_container.md -->

@@ -11,3 +11,7 @@
 ## Next action
 
 二次确认是否应加入 `resources/` 或转换为技法卡。
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

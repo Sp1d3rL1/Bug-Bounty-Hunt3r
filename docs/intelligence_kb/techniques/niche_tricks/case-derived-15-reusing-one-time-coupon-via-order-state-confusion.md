@@ -79,3 +79,5 @@ apply coupon cancel order then re-apply on new cart due to missing redemption tr
 ## 相关案例链接
 
 - https://medium.com/@tarekmohamed0106/reusing-a-one-time-coupon-code-multiple-times-business-logic-bug-664766230b53
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

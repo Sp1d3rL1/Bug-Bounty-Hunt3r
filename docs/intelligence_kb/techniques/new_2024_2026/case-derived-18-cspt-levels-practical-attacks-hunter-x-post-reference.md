@@ -81,3 +81,5 @@ Graded path traversal levels with fetch diversion
 ## 相关案例链接
 
 - https://matanber.com/blog/cspt-levels
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

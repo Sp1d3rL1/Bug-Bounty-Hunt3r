@@ -140,3 +140,5 @@ Intigriti官方博客：
 - [https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-broken-access-control-vulnerabilities](https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-broken-access-control-vulnerabilities)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

@@ -81,3 +81,5 @@ Web apps with client routers
     - https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1 (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

@@ -132,3 +132,7 @@ https://medium.com/ （GraphQL Hunter 原帖）
 ```
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

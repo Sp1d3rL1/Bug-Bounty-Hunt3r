@@ -114,3 +114,7 @@ Burp Suite Repeater Tab Groups 或自定义脚本并行发送请求。
     verification: Direct POC steps from post: Trigger refund, send multiple parallel requests, server processes all before status update.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

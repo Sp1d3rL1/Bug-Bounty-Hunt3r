@@ -79,3 +79,7 @@ Target ephemeral S3/GCS/Azure buckets via AI-driven subdomain + DNS recon
 ## 相关案例链接
 
 - https://www.linkedin.com/pulse/cloud-recon-20-techniques-find-exposed-assets-still-work-medeiros-l0qfc
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

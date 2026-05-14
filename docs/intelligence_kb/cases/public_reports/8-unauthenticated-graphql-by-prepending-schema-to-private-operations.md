@@ -42,3 +42,5 @@ Exposes schema and executes restricted queries in Enjin platform BB program
 ## 安全边界
 
 案例中涉及的目标、账号、数据均不可在未授权环境复现；真实项目中只使用自有测试账号和最小必要证据。
+
+<!-- backlink: docs/checklists/graphql.md -->

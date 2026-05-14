@@ -81,3 +81,11 @@ Rogue Sentry ID via traversal to trigger PUT
 ## 相关案例链接
 
 - https://x.com/joaxcar/status/1809706806647652424
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

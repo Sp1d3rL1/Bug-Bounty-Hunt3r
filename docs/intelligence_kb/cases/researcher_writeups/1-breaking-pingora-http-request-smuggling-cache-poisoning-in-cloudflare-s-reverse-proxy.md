@@ -42,3 +42,9 @@ Cross-user ACL bypass, session hijack, cache poisoning in default proxy config; 
 ## 安全边界
 
 案例中涉及的目标、账号、数据均不可在未授权环境复现；真实项目中只使用自有测试账号和最小必要证据。
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

@@ -81,3 +81,5 @@ Guest user inherits host tenant policies bypassing own org controls
 ## 相关案例链接
 
 - https://www.linkedin.com/pulse/microsoft-teams-guest-access-exposes-cross-tenant-ly48e
+
+<!-- backlink: docs/checklists/api.md -->

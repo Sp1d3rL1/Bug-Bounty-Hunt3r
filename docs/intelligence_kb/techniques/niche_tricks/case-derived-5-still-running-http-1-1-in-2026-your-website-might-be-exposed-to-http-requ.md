@@ -85,3 +85,5 @@ Conflicting CL + TE (zero chunk + hidden second GET) desyncs FE/BE parsers for q
 ## 相关案例链接
 
 - https://medium.com/@candywong_coffsec/still-running-http-1-1-in-2026-your-website-might-be-exposed-to-http-request-smuggling-attack-335633ca9766
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

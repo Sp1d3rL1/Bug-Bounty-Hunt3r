@@ -79,3 +79,5 @@ parallel POSTs to /apply-coupon bypassing single-use check
 ## 相关案例链接
 
 - https://hackerone.com/reports/1849626
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

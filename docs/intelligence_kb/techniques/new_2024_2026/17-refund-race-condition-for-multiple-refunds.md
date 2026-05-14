@@ -79,3 +79,7 @@ fire rapid duplicate refund requests before backend state update
 ## 相关案例链接
 
 - https://osintteam.blog/series-business-logic-flaws-uncovered-14b3bd5ee60c
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

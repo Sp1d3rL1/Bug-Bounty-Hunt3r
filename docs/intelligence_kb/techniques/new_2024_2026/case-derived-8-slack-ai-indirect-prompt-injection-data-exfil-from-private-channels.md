@@ -81,3 +81,5 @@ Malicious": - /url: https://www.promptarmor.com/resources/data-exfiltration-from
 ## 相关案例链接
 
 - https://www.promptarmor.com/resources/data-exfiltration-from-slack-ai-via-indirect-prompt-injection
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

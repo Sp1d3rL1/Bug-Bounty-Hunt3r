@@ -81,3 +81,9 @@ Bypass JWT validation by direct object ID swap in card viewer endpoint
 ## 相关案例链接
 
 - https://medium.com/@zaid.zrf/dor-in-a-jwt-protected-card-viewer-api-codereviewlab-writeup-57d437a5d481
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

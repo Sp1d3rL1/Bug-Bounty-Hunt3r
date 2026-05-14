@@ -81,3 +81,5 @@ PI in one agent propagates to second agent causing cross-tenant exfil
 ## 相关案例链接
 
 - https://www.appomni.com/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

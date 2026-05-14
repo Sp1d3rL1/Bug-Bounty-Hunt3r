@@ -81,3 +81,7 @@ Decode/manipulate state param in OAuth callback to leak tokens or bypass checks
 ## 相关案例链接
 
 - (X posts on state decoding)
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

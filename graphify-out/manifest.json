@@ -55,6 +55,10 @@
     "mtime": 1778267233.5803401,
     "hash": "f445a7943911d85a7df38234f354820e"
   },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/checklist_extend.py": {
+    "mtime": 1778784885.4076514,
+    "hash": "d89aaad5b502f2014b2b31ab823629a3"
+  },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/grok_kb_enrich.py": {
     "mtime": 1777946799.620699,
     "hash": "4d8b149e2a630412c7c9548386190b35"
@@ -63,25 +67,29 @@
     "mtime": 1778218366.5100415,
     "hash": "782bb59e28ddd40896404a7c0d40cb4d"
   },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/scripts/checklist_llm_helper.py": {
+    "mtime": 1778785308.8653123,
+    "hash": "fe02e0d39367aa04d56bd269cd1ee138"
+  },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/frontend/app.js": {
-    "mtime": 1778768908.2902744,
-    "hash": "6232d29b3c0948cb7492bfabff754ec1"
+    "mtime": 1778785789.6554859,
+    "hash": "9071ea13ab4355d0d423c24a2e1ed917"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/tests/test_suite.py": {
     "mtime": 1778313641.3243277,
     "hash": "94402352f711b6d6a63765076362d303"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/backend/server.py": {
-    "mtime": 1778768421.5942597,
-    "hash": "334ebc9aad5806b9c1ccbdb57ba35708"
+    "mtime": 1778785769.46776,
+    "hash": "f7470420686fe5d1ed513bb067e9b8f4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/backend/dedup.py": {
     "mtime": 1778768043.1975787,
     "hash": "5bde745defc35594ff274030acba887c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/backend/workflows.py": {
-    "mtime": 1778768450.7162633,
-    "hash": "9a03f839483deee60237b91aed4d0b2e"
+    "mtime": 1778785611.007195,
+    "hash": "1d7a51c2eac54bb2b021bb379ba939bd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/backend/scheduler.py": {
     "mtime": 1778768097.9440773,
@@ -220,92 +228,100 @@
     "hash": "22618ac9b47723188f658b4af6e0f4d3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/deserialization.md": {
-    "mtime": 1778776487.3697724,
-    "hash": "e235768b2ec1d27cfecf3b0c4e018a29"
+    "mtime": 1778785524.156552,
+    "hash": "bf1772adb96336f4fc8fc3e07c362ede"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/payment_business_logic.md": {
-    "mtime": 1778777127.4260857,
-    "hash": "85c95b2605c0ea524b87530e35069e8f"
+    "mtime": 1778785524.1867461,
+    "hash": "8ebb5f897b2b035ac421d37f515a851e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/email_spoof_smtp_smuggling.md": {
     "mtime": 1778777169.9267488,
     "hash": "82128d6ae70b8fc6e13f0f8d2f83e347"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/api.md": {
-    "mtime": 1778776409.7942023,
-    "hash": "20e0fb17f20fe81f45c7eaed647ff7a4"
+    "mtime": 1778785524.1003878,
+    "hash": "1d217c6f928aa86dcf4e10779bd277d9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cspt_client_path_traversal.md": {
-    "mtime": 1778776595.344206,
-    "hash": "11afccf639bdf27429718dc4941992ea"
+    "mtime": 1778785524.1491597,
+    "hash": "56c731e58609e2ab8f2f858849418d6c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cloud_gcp_azure.md": {
-    "mtime": 1778776493.8239064,
-    "hash": "f7a6a5a089065905ba4167729d4372fa"
+    "mtime": 1778785524.1350713,
+    "hash": "66b2dd879b24e9273c85f30ec7b3c795"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/prototype_pollution_xss_chain.md": {
-    "mtime": 1778776541.6345694,
-    "hash": "aa5a201ea9228ded5d10b0cd50bb3183"
+    "mtime": 1778785524.1950276,
+    "hash": "f130e48963c71d0e68ef115018c3689a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/oauth.md": {
-    "mtime": 1778776462.1608055,
-    "hash": "a56d2dcff77a0e72b97b6798791f08b5"
+    "mtime": 1778785524.1762767,
+    "hash": "0d4c4190df58a4abe1d4c59680932c87"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/recon_methodology.md": {
+    "mtime": 1778785524.203907,
+    "hash": "550ba7acae0df1710132172711af4e12"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/mobile_android_ios.md": {
-    "mtime": 1778776837.2083936,
-    "hash": "8fbf00adeac2e9186c2bbfce847743b9"
+    "mtime": 1778779602.5768106,
+    "hash": "a32d91c614747def6262a543d551a51e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/safe_automation_rules.md": {
     "mtime": 1778777156.525047,
     "hash": "017846cf22dba8d94394079347950874"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/http_request_smuggling.md": {
-    "mtime": 1778776478.7163756,
-    "hash": "f3c9d46cf4ff243caf735c747b65d8fa"
+    "mtime": 1778785524.1698673,
+    "hash": "a44d7282c11964444c9f373a8f6b2aa8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cloud_aws_metadata_iam.md": {
-    "mtime": 1778776398.9123442,
-    "hash": "f22269015a3ae47c2dda9c0e1cc76108"
+    "mtime": 1778785524.1310341,
+    "hash": "e4e4318c7e05af47d510dd40ca9981cd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cicd_github_actions.md": {
-    "mtime": 1778776856.5129673,
-    "hash": "18625696e5fb7ed49e76abf2402698cc"
+    "mtime": 1778785524.1251829,
+    "hash": "2dc1b1ad84947ac52ee2daa39e41b24d"
+  },
+  "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/waf_bypass.md": {
+    "mtime": 1778785524.2355227,
+    "hash": "b07b0f60a1a4b3d007edd590f8c4015a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/subdomain_takeover.md": {
-    "mtime": 1778777059.2349503,
-    "hash": "c7e168d7dd490567a7530cb1390178d3"
+    "mtime": 1778785524.2301729,
+    "hash": "f7984f89268e58955a43c97d036e6d9e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/graphql.md": {
-    "mtime": 1778776535.6334953,
-    "hash": "d285b12891a40b2890fcce49ef9d9062"
+    "mtime": 1778785524.161319,
+    "hash": "88303a7b9750e44e65e215df0cacd149"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/ssti_template_injection.md": {
     "mtime": 1778776546.0261781,
     "hash": "461482b5f7fbdd13680b2b1bb52e9900"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/sso_oidc_saml.md": {
-    "mtime": 1778776272.065206,
-    "hash": "870334b9a6fc6b375b88dd3b5309f4e1"
+    "mtime": 1778785524.215764,
+    "hash": "8768d5256ac92a85832156c7820696ce"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cors_postmessage_websocket.md": {
-    "mtime": 1778776934.655066,
-    "hash": "7ba226e8c73389c8800432ec3a55b5c6"
+    "mtime": 1778785524.1405826,
+    "hash": "d7fe26472673e0af444b419c0a6506e3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/kubernetes_container.md": {
-    "mtime": 1778776568.660237,
-    "hash": "ccd425aacd89a5fad17aa5c7d036ca5f"
+    "mtime": 1778785524.1733565,
+    "hash": "ec2344eb945ead36b6e6db6762b2a4c9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/ai_llm_prompt_injection.md": {
-    "mtime": 1778777164.4767904,
-    "hash": "af8fc632761717d9449700d512ef53e3"
+    "mtime": 1778785524.0889792,
+    "hash": "ba5b1b16060ab23673eb09fc6d21417f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/cache_deception_poisoning.md": {
-    "mtime": 1778776407.1441376,
-    "hash": "0e333a99d0403f401a045e55bb8cd1e3"
+    "mtime": 1778785524.1188679,
+    "hash": "cabd57b40678972f94169f7f0328182b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/checklists/file_upload_parser.md": {
-    "mtime": 1778776421.989351,
-    "hash": "0cccde27c80e017a08d45847d561d424"
+    "mtime": 1778785524.1584384,
+    "hash": "9862e5960666c1e826c252b620765e48"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/vps/deployment.md": {
     "mtime": 1777890088.0107543,
@@ -344,492 +360,492 @@
     "hash": "3f44667f09511bf598c58ab6ba49dd24"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/20-h1-2487889-idor-on-bugs-json-exposing-private-report-details.md": {
-    "mtime": 1777946782.1812086,
-    "hash": "d3e69cc216424aaedd8e06af49e4b10a"
+    "mtime": 1778785524.1013389,
+    "hash": "f8b8cabed824a14a9780ea3550f0d76c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/22-frontegg-workspace-level-cross-tenant-manipulation.md": {
     "mtime": 1777946782.1953733,
     "hash": "15b4f85727d1255fb05d4ff2070a4502"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/8-unauthenticated-graphql-by-prepending-schema-to-private-operations.md": {
-    "mtime": 1777946782.188149,
-    "hash": "3cf1d28ffe46d5b670e8a455d90d9452"
+    "mtime": 1778785524.1618843,
+    "hash": "d6d03253ca1cc0f76329c1973b3ac83f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/12-cross-tenant-idor-in-wearables-platform-affecting-multiple-tenants.md": {
-    "mtime": 1777946782.1939833,
-    "hash": "a57b83815fc72122f8fa8b2a116cb8b2"
+    "mtime": 1778785524.1008542,
+    "hash": "f87440946f8038ae2b7d20591da0977d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/3-nextcloud-bola-in-outofoffice-userid-api-cross-user-ooo-data-leak.md": {
-    "mtime": 1777946782.1781301,
-    "hash": "44bf0bc8ab31c66d6b21611b31d290c1"
+    "mtime": 1778785524.1017444,
+    "hash": "49d21cceec08f835d4d33b8f8511d595"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/11-business-logic-bypass-allows-setting-read-access-role-without-pro-plan-subscription.md": {
-    "mtime": 1777946782.1978197,
-    "hash": "e1c7502ee33d9dd1b3c25b139469b850"
+    "mtime": 1778785524.186876,
+    "hash": "91f691efc3a38366c23feb3c2aea4b24"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/19-integer-overflow-in-http-2-trailer-headers-for-smuggling.md": {
-    "mtime": 1777946782.2085485,
-    "hash": "b600696a4d1a48575d056542dd0eadb1"
+    "mtime": 1778785524.1700904,
+    "hash": "e1fd80d091ea5911fc4cfd4d4c982fc8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/8-cross-tenant-improper-access-control-in-import-flow.md": {
-    "mtime": 1777946782.1931047,
-    "hash": "4a457a13cf6890e59e7e588643c23e8d"
+    "mtime": 1778785524.1020525,
+    "hash": "1e53a8cfbe73b34cd8b4c9f87f8f9b6b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/6-unauthorized-cross-tenant-data-access-in-stripo-ai-hub-via-deleted-project.md": {
-    "mtime": 1777946782.1927123,
-    "hash": "9822bb84f0e11c904854360c48d7ae0b"
+    "mtime": 1778785524.101954,
+    "hash": "bba92e214b5a7fe7d3c8e3cfe1095af0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md": {
-    "mtime": 1777946782.2187908,
-    "hash": "bcfef2ac2d19b70511d2840fafe7b353"
+    "mtime": 1778785524.215985,
+    "hash": "976a70690cb39dc6b642cd1829d1bfaa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/13-prototype-pollution-to-rce-in-project-update-api.md": {
-    "mtime": 1777946782.2207057,
-    "hash": "664d53a06c622bea7f3fb8388b4bc59d"
+    "mtime": 1778785524.1951356,
+    "hash": "f17b129694b79f210742ba226640e0bb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/2-business-logic-vulnerability-in-dells-payment-api.md": {
-    "mtime": 1777946782.1961012,
-    "hash": "79c3698583396d9e3d92df59cde9e112"
+    "mtime": 1778785524.186969,
+    "hash": "9d9c572c16225eccd5d0570e15c2a398"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/6-real-ssrf-via-ipv6-redirects-on-hackerone.md": {
-    "mtime": 1777946782.219141,
-    "hash": "a691bdca690d77d71ad8de8f204198a5"
+    "mtime": 1778785524.1352205,
+    "hash": "fe2cd04740916ae5f819b320083b941f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/3-invisible-prompt-injection-via-unicode-tag-characters-in-hackerone-hai-ai-assistant.md": {
-    "mtime": 1777946782.2144184,
-    "hash": "4fcc02e1048e313cb35c81321f6c7fd4"
+    "mtime": 1778785524.0892496,
+    "hash": "ce2bbb64addc013edc62ccbca30d54cb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/7-dos-via-mutation-aliasing-in-graphql-account-recovery.md": {
-    "mtime": 1777946782.1875618,
-    "hash": "9556d0dab613155d1c4e6f5c32ada02d"
+    "mtime": 1778785524.1617787,
+    "hash": "70c315515afff63bff418eb27c7447a7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/11-unauth-idor-on-nasa-gitlab-users-api-pii-hostnames-exposed.md": {
-    "mtime": 1777946782.1797361,
-    "hash": "990449092286ad4bf97ed9fd28cbf7b5"
+    "mtime": 1778785524.1253183,
+    "hash": "485d952e8000844cfc9f7c83ed62e58f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/24-graphql-idor-in-shopify-staff-access-cross-shop-billing-data.md": {
-    "mtime": 1777946782.1818702,
-    "hash": "0b09c710041798208d4b13c34bdf6a44"
+    "mtime": 1778785524.1870606,
+    "hash": "be5798a34ae1d27d3f6a60df94d9281e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/18-shopify-partner-portal-limited-privilege-referral-creation.md": {
     "mtime": 1777946782.1948755,
     "hash": "9be5b9a5b79e37c61a5cad45fe0a146c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/4-hackerone-saml-signup-domain-enforcement-bypass.md": {
-    "mtime": 1777946782.1827655,
-    "hash": "a3a80d82974c415b35c99fd848d0cbcf"
+    "mtime": 1778785524.215892,
+    "hash": "42af07609e3b7cf38e827b68be813fd9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/17-slack-integration-allowing-unauthorized-workspace-self-join-bypassing-settings.md": {
-    "mtime": 1777946782.1946926,
-    "hash": "6d5236ee7ef4e86f97149d3da513e79d"
+    "mtime": 1778785524.1012266,
+    "hash": "95ec48d4e47851b12cc51b145990d351"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/1-improper-access-control-on-enterprise-invitation-endpoint-leading-to-account-takeover.md": {
-    "mtime": 1777946782.1914687,
-    "hash": "d57f96709ff302ff12b94a7d821f67ce"
+    "mtime": 1778785524.230298,
+    "hash": "4222389f042e72c4891ff4151d5fdff9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/13-asp-net-core-kestrel-request-smuggling-cve-2025-55315.md": {
-    "mtime": 1777946782.2074428,
-    "hash": "5557599960b0a9ad533be3508a3b27aa"
+    "mtime": 1778785524.169994,
+    "hash": "5ddbe48869c3ead82137b00ac42396bc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/10-graphql-introspection-enabled-on-shopify-storefront-api.md": {
-    "mtime": 1777946782.1887984,
-    "hash": "8555a6daf85a1ec6c70e9273b4bce5bf"
+    "mtime": 1778785524.1614456,
+    "hash": "0e23dd254918390903e9392d4cc7c09d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/25-business-logic-race-condition-idor-in-fintech-recharge-history-api.md": {
-    "mtime": 1777946782.2228026,
-    "hash": "4b8555cc59427a521701971122d20316"
+    "mtime": 1778785524.1871526,
+    "hash": "26bb861dc1264249b1a05b1b05c9dedb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/15-bulk-report-submission-via-named-query-batching-in-h1-graphql.md": {
-    "mtime": 1777946782.1896327,
-    "hash": "6c5e9e699063b09f2d3438150a106aea"
+    "mtime": 1778785524.1615565,
+    "hash": "79da2c18b98c53facb59726818941768"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/21-mass-assignment-idor-in-rest-api-for-privilege-escalation.md": {
-    "mtime": 1777946782.2221622,
-    "hash": "180b4488862a3dca2d0969fe8d04cd28"
+    "mtime": 1778785524.1014512,
+    "hash": "74fce8e16342d999b14135a779b4539d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/public_reports/_index.md": {
     "mtime": 1778314083.6009612,
     "hash": "23c192610cb7fbd599297533860abec2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/22-cspt-to-jsonp-xss-hunter-x-report.md": {
-    "mtime": 1777946782.204075,
-    "hash": "3a447de5c0782fd5d85f327ada3e8a83"
+    "mtime": 1778785524.1965692,
+    "hash": "9aa4efb7d84876cdc80d44e03ecba10c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/16-otp-qr-link-base64-idor-admin-session-hijack-via-employer-portal.md": {
-    "mtime": 1777946782.180582,
-    "hash": "a9fff1a0003de34dfb3bfd2c2ed0e7ac"
+    "mtime": 1778785524.1062672,
+    "hash": "dfb5a59ee119518d21fed1359cffe723"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/12-nested-object-traversal-for-authorization-bypass-in-graphql.md": {
-    "mtime": 1777946782.1891367,
-    "hash": "c78e4b708379fb1dd0a7564126285e62"
+    "mtime": 1778785524.1636546,
+    "hash": "5b0af53b769a0606f373f525e8404c99"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/4-unauthenticated-bola-on-managed-bbp-500-critical.md": {
-    "mtime": 1777946782.178374,
-    "hash": "7a96b33f6c358fdfdeae94f1a3fce805"
+    "mtime": 1778785524.1064606,
+    "hash": "996ba3dc6242634f228ad44757db1da2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/20-fastmail-dompurify-bb-sponsorship-css-sanitizer-bug-hunter-report.md": {
     "mtime": 1777946782.203631,
     "hash": "f4d28f6a657e9903a7d51b56abd2b8d2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/23-1-click-cspt-to-stored-id-rogue-sentry-put-csrf.md": {
-    "mtime": 1777946782.2043657,
-    "hash": "9330eff5908bfde371a7defd7ec34fe1"
+    "mtime": 1778785524.2184272,
+    "hash": "ecbbf73f81ed441944d4ee728ea3821c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/20-s3-xss-via-bucket-misconfig-bucketlist-tool.md": {
-    "mtime": 1777946782.2130108,
-    "hash": "dbcb3a2e9e8d1faff759838662adb740"
+    "mtime": 1778785524.1964653,
+    "hash": "9f11358db14079901f575a0c13b58a7e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/18-1500-idor-fetching-5m-images-via-object-id-swap.md": {
-    "mtime": 1777946782.1808534,
-    "hash": "e6633da9323affbab052fce2e6d2dcde"
+    "mtime": 1778785524.1063669,
+    "hash": "c49557b280ad9156664ef5e3e9d24e28"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/14-post-api-rooms-room-templates-idor-cross-org-template-creation.md": {
-    "mtime": 1777946782.180332,
-    "hash": "5b3a84cd03f0463038284c1309de258d"
+    "mtime": 1778785524.1061683,
+    "hash": "6a20e9699077067af24f4c14287cbf63"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/23-undocumented-admin-mutation-discovery-via-introspection.md": {
-    "mtime": 1777946782.1908338,
-    "hash": "cd3cdadac8ada9da8c55fb347090b73b"
+    "mtime": 1778785524.163759,
+    "hash": "d65cf68bb0213d249f187c0f23b38e4a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/x_threads/_index.md": {
     "mtime": 1778314083.6031718,
     "hash": "a6fecba59ecfe29f497467bc359ec9a0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-sign-in-as-anyone-bypassing-saml-sso-with-parser-differentials.md": {
-    "mtime": 1777946782.1823962,
-    "hash": "aa7111a93a0a294eec31fcdf728d5531"
+    "mtime": 1778785524.2172248,
+    "hash": "7ed289c53872c4edfe5b1ba4980c5485"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/107-4-ai-agents-identity-risk-supply-chain-attacks-trivy-action-compromise.md": {
-    "mtime": 1778272157.6285784,
-    "hash": "b6907827b8d603dedd96a086a965489e"
+    "mtime": 1778785524.204604,
+    "hash": "a84ed5d00da1adb35b5364c02e49cec1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-next-js-cache-poisoning-race-condition-cve-2025-32421.md": {
-    "mtime": 1777946782.2067292,
-    "hash": "3bef1ef73e4d83406abbfb191eeadb4f"
+    "mtime": 1778785524.1890166,
+    "hash": "26d1694356b843b8e13d11d3377e3033"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-prompt-injection-to-sandbox-escape-rce-in-google-antigravity-ai-ide.md": {
-    "mtime": 1777946782.221638,
-    "hash": "04ff19ab2c1d30e6d8bcd33d6ac22f18"
+    "mtime": 1778785524.0904794,
+    "hash": "0663a0eb7ffb784aecd75c1cc5d427dd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/13-magic-links-as-gateways-to-account-takeovers.md": {
-    "mtime": 1777946782.1843567,
-    "hash": "479b05a96a9100d80e61c97ce19e4ea6"
+    "mtime": 1778785524.2308836,
+    "hash": "88cd4aa874ca4615842bd0c91762b796"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/11-hidden-role-escalation-via-invite-api-in-organization.md": {
-    "mtime": 1777946782.1938093,
-    "hash": "5a8fef95c56b95cdbad61db383ed0057"
+    "mtime": 1778785524.230701,
+    "hash": "80d61ac5d5c8d2dd63dd0a96f5c6244f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md": {
-    "mtime": 1777946782.221961,
-    "hash": "9b31826ea6306cb1882df98e729fa61e"
+    "mtime": 1778785524.1359994,
+    "hash": "c2782d434b139fc3866a3e002b72624f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/105-1-business-logic-vulnerability-in-subscription-checkout.md": {
-    "mtime": 1778272157.6257236,
-    "hash": "3c1cb2eeeeb6061d170758df431dea9b"
+    "mtime": 1778785524.1876545,
+    "hash": "9642cbde795273631d9b783a0218f229"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/4-github-copilot-config-hijack-via-prompt-injection-month-of-ai-bugs.md": {
-    "mtime": 1777946782.2146327,
-    "hash": "ee295c319d9e6021213abac4a271a4c3"
+    "mtime": 1778785524.2058,
+    "hash": "ac9971ba2123e371e2a5c10ec8b88cda"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/3-oauth-authentication-bypass-leading-to-pii-disclosure.md": {
-    "mtime": 1777946782.1825945,
-    "hash": "a296c084817eccc8e3c0966535fbc6da"
+    "mtime": 1778785524.2178981,
+    "hash": "30e609f299f4e4e35bafb4e81c3361e3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/13-bola-in-lovable-vibe-coding-api-cross-project-source-db-leak.md": {
-    "mtime": 1777946782.1801586,
-    "hash": "8557bc943e1aa2152341bac21f1c6f0b"
+    "mtime": 1778785524.1032906,
+    "hash": "362b3abf1abcd222690910af8e224996"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/11-how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover.md": {
-    "mtime": 1777946782.183952,
-    "hash": "d104a4240e204cdc881ceace8a84f40d"
+    "mtime": 1778785524.2307942,
+    "hash": "2fee61344c1a0542b9301bb8c27e08fe"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/22-pingora-transfer-encoding-http-1-0-parsing-issues-cve-2026-2835.md": {
-    "mtime": 1777946782.2093573,
-    "hash": "24e8e97bc33d8cccfc0ed49594257da4"
+    "mtime": 1778785524.1707222,
+    "hash": "36c375f96a7aea498512e1411206325e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-reusing-a-one-time-coupon-code-multiple-times.md": {
-    "mtime": 1777946782.1968687,
-    "hash": "f1467373abec590d614ae2f6d3d937e1"
+    "mtime": 1778785524.1887028,
+    "hash": "22ff226ac90019fd6d4409085d007fa9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/19-500-uuid-swap-idor-in-device-management-api.md": {
-    "mtime": 1777946782.1810284,
-    "hash": "6f897fbc84bbc8144d5e5f7eafce954b"
+    "mtime": 1778785524.1036642,
+    "hash": "5e969cff60a2433557e926e528ac2eff"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/20-sitecore-html-cache-poisoning-leading-to-rce.md": {
-    "mtime": 1777946782.208913,
-    "hash": "117d47b14512ff3fa53b232d5d5478ba"
+    "mtime": 1778785524.1196504,
+    "hash": "eaf64de5403dcf2ca1e2f3d421422f79"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-from-idor-to-bypass-fixed-bug-still-exposed-6-4m-users-data-part-2.md": {
-    "mtime": 1777946782.179366,
-    "hash": "14ce1f62ba73f624f8083be14ddff877"
+    "mtime": 1778785524.105727,
+    "hash": "5cd94602b6df4867094a2e5a02854cad"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-akamai-http-request-smuggling-via-options-and-obsolete-line-folding-cve-2025-32094.md": {
-    "mtime": 1777946782.2069407,
-    "hash": "9aff164b80c36e13af27bd3639af1831"
+    "mtime": 1778785524.1704369,
+    "hash": "03b3e3979429cc4d648ff82af0990f7f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-oauth-param-injection-in-nextjs-auth0-returnto.md": {
-    "mtime": 1777946782.2241194,
-    "hash": "c73c99b34ca13e4957f276a775c6b1ea"
+    "mtime": 1778785524.2161613,
+    "hash": "94c9fa850df4e9d678bd611b2b9734d1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/103-1-jwt-alg-none-authentication-bypass-for-full-workspace-ato.md": {
-    "mtime": 1778272157.6235664,
-    "hash": "d2d3969eb86cf61df141c1f71810560e"
+    "mtime": 1778785524.2164378,
+    "hash": "4d65acf5aa0a8faaf391fe609ba06260"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/11-next-js-single-request-dos-via-framework-resource-leak.md": {
     "mtime": 1777946782.2243102,
     "hash": "5279d5dcc9059c1953bdfac908ca037a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-element-handling.md": {
-    "mtime": 1777946782.2003727,
-    "hash": "03b29d608066ccf816976fa74a45b8ee"
+    "mtime": 1778785524.196152,
+    "hash": "a39b5ce921c28c6fc493ffa36021a1d4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/16-pre-account-takeover-via-oauth-email-modification.md": {
-    "mtime": 1777946782.1851149,
-    "hash": "6421ab23fb5c01a47c21b7e27de14f9b"
+    "mtime": 1778785524.2309752,
+    "hash": "87226b5dd8ffbb1d4059cbcf3c872f81"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/24-cl-te-request-smuggling-bounty-win-via-desync-step-by-step.md": {
-    "mtime": 1777946782.2098439,
-    "hash": "bdf3312cd124045168d2f1558c8f99bc"
+    "mtime": 1778785524.1708279,
+    "hash": "3611275e2f52e7c85ab9a4e90138eba6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/201-4-1-500-graphql-pii-leak-via-field-level-permission-bypass.md": {
-    "mtime": 1778314083.414218,
-    "hash": "b01b3f00ed6fb09424f8bc5171558796"
+    "mtime": 1778785524.1629996,
+    "hash": "68ee55facbfcfa585c6fa5b2a9afa7c7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-reverse-proxy.md": {
-    "mtime": 1777946782.204832,
-    "hash": "110b579664901fa6de14ad1a8bc717ec"
+    "mtime": 1778785524.1703184,
+    "hash": "0f41d82bd0a359b2295ea7c4aa7f6d0a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/3-web-cache-deception-when-a-404-still-leaks-sensitive-data.md": {
-    "mtime": 1777946782.2052772,
-    "hash": "d7a86d713b68345855406b4e177974ce"
+    "mtime": 1778785524.1198502,
+    "hash": "3e68de6ddab75a37c8494b4375e43e70"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-subscription-bypass-leading-to-full-access-to-paid-features.md": {
-    "mtime": 1777946782.1958745,
-    "hash": "4ea5430cbe3572d08222bdb13705ae7f"
+    "mtime": 1778785524.1873364,
+    "hash": "b0d4da2de89f061bb31e36e0b254f18d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-graphql-endpoint-leaking-millions-of-users-without-auth.md": {
-    "mtime": 1777946782.1884432,
-    "hash": "6888764145f55740ddea7535ca51b9cf"
+    "mtime": 1778785524.163542,
+    "hash": "cd837797cd31f03f5681f2b2199768b9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-web-cache-deception-via-path-mapping-exploitation-portswigger-lab-real-world-variant.md": {
-    "mtime": 1777946782.2096035,
-    "hash": "2d2b250de239445d584ceebd66a5dfd9"
+    "mtime": 1778785524.1197498,
+    "hash": "f0315da993fd06ca258e28036c2804a7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md": {
-    "mtime": 1777946782.2189605,
-    "hash": "14d4dde40ab74868a4fc35447d25a28b"
+    "mtime": 1778785524.1361935,
+    "hash": "bd9d00c463c1f0203d2161d748bb2d36"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/13-azure-blob-storage-anonymous-access-gateway.md": {
-    "mtime": 1777946782.2118523,
-    "hash": "cb2bb4ac7cbab2ff0e219ed68069d49d"
+    "mtime": 1778785524.135594,
+    "hash": "3c3a199b6bebbe9a751430d5253cbc95"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-idor-in-graphql-invitation-flow-leading-to-ato.md": {
-    "mtime": 1777946782.1901004,
-    "hash": "1e41f64de6182442973f967f5a1910b5"
+    "mtime": 1778785524.162606,
+    "hash": "64718cca8c2d291fd71d4141726d5830"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-6783.md": {
-    "mtime": 1777946782.2029614,
-    "hash": "7136771bae8abdffd80e4d835a94f210"
+    "mtime": 1778785524.1959279,
+    "hash": "d91e52ed9aaefb582110bbc044b1cd54"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/24-account-takeover-via-google-oauth-misconfiguration.md": {
-    "mtime": 1777946782.1864686,
-    "hash": "751c0d4f568628a81f95b426c4ac3098"
+    "mtime": 1778785524.2314293,
+    "hash": "de6666169b116f5487631fd077ec1300"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-500-oauth-account-fusion-pre-takeover-attack.md": {
-    "mtime": 1777946782.1821837,
-    "hash": "44ba850ecdfb0ff59f257319c18e77ac"
+    "mtime": 1778785524.2303958,
+    "hash": "3b9df67add6c2cfacb6e3fc801886540"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/16-hackerbot-claw-autonomous-github-actions-exploitation-2026.md": {
-    "mtime": 1777946782.2123237,
-    "hash": "5581b9f2e709dc88345fc0eca918635d"
+    "mtime": 1778785524.2048965,
+    "hash": "913f25d7677da3ad336c72d1d1316c8f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md": {
-    "mtime": 1777946782.221011,
-    "hash": "822cd044c87f1b9799239c9c34998d30"
+    "mtime": 1778785524.2169654,
+    "hash": "9177da80468e996eb4b3e47fcce8e1dc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-request-smuggling.md": {
-    "mtime": 1777946782.205929,
-    "hash": "aab42ea2dee121e39b0d0299311c9f93"
+    "mtime": 1778785524.171048,
+    "hash": "70a3bf723e5f953fc5d68d9a91025752"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/21-logical-2fa-email-verification-bypass-via-pre-2fa-jwt-acceptance.md": {
-    "mtime": 1777946782.1859024,
-    "hash": "57e3778b44faf238040a1ab48d59fe38"
+    "mtime": 1778785524.2174027,
+    "hash": "0c265617792dc0b0755845b2e5860050"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-graphql-introspection-enabled-batch-query-idor-and-authorization-bypass-in-fintech.md": {
-    "mtime": 1777946782.1867187,
-    "hash": "ad56add6daf592f18dae22c6be80b80e"
+    "mtime": 1778785524.1619833,
+    "hash": "71a6ad9de4ad9516eb48e25e0e874898"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gala-research.md": {
-    "mtime": 1777946782.201081,
-    "hash": "3af8e74b789a39f55eab10d04c635ef2"
+    "mtime": 1778785524.1963546,
+    "hash": "8f5ccb56f382147034bffe8112786c0f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-github-hidden-unicode-bypass-of-utf-warning-filter.md": {
-    "mtime": 1777946782.2237203,
-    "hash": "96e33bda7b48726f291aa7c721332ef8"
+    "mtime": 1778785524.205918,
+    "hash": "bfe8ab724356773a83bcca50b08fe8da"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/25-cve-2026-3854-github-rce-via-git-push-pipeline.md": {
-    "mtime": 1777946782.2136164,
-    "hash": "cd27186aa9d7eff855d58c7537474b40"
+    "mtime": 1778785524.2054777,
+    "hash": "df369ebef4363638f32e3c409e084cc9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/12-autogpt-ssrf-protection-bypass-to-internal-services.md": {
-    "mtime": 1777946782.2245116,
-    "hash": "cc5e7117d915ce9089e0ef214b2db9af"
+    "mtime": 1778785524.2048008,
+    "hash": "a356a88d9d4273358239f4b7a99ff1e5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/25-graphql-introspection-on-wiki-subdomain-leading-to-schema-sensitive-data.md": {
-    "mtime": 1777946782.1912491,
-    "hash": "d1a2ac0a2a0704668f43652a5f9f54e3"
+    "mtime": 1778785524.1631193,
+    "hash": "86e7338cd396b5c42c811d311b4e7552"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-low-privilege-access-to-workspace-members-data-via-direct-api.md": {
-    "mtime": 1777946782.193293,
-    "hash": "808a97e77b14a776f40f8e1b009adb95"
+    "mtime": 1778785524.1058245,
+    "hash": "5c3b163ba2548322cfcd3a6b2fdca594"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-google-gemini-memory-pollution-via-malicious-email-prompt-injection.md": {
-    "mtime": 1777946782.2148502,
-    "hash": "31aa3f682eb5cd7f86337a7775390294"
+    "mtime": 1778785524.0909498,
+    "hash": "aad2b9a3602429f9532016b711b8c42f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/16-csrf-despite-x-frame-options-in-ai-workflow-endpoint.md": {
-    "mtime": 1777946782.2211978,
-    "hash": "6477a0622cb1d840d10dbda2009fc4d3"
+    "mtime": 1778785524.1416636,
+    "hash": "43929200e6225790441b33c699eb2396"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/103-5-graphql-security-how-i-found-and-exploited-critical-idor-and-authorization-bypas.md": {
-    "mtime": 1778272157.6243443,
-    "hash": "ef38929b8fbd632afe03ff2d89a566aa"
+    "mtime": 1778785524.1623127,
+    "hash": "eeeb09ca4b21548a749264d0bff11c5c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-business-logic-flaw-ability-to-bypass-user-limit-and-add-multiple-members-without-paym.md": {
-    "mtime": 1777946782.1972399,
-    "hash": "ad9314bf224d07cba3676b841e4859ea"
+    "mtime": 1778785524.1889126,
+    "hash": "0149c11f90807d4d102c7b749a7f7fea"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md": {
-    "mtime": 1777946782.2008667,
-    "hash": "2e72c70d3a11ce34233f35511a07a65b"
+    "mtime": 1778785524.196254,
+    "hash": "69365c32d69fddd7e6e493fcb64ad970"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/3-privilege-escalation-to-super-admin-via-mass-assessment-in-multi-tenant-laravel-app.md": {
     "mtime": 1777946782.192051,
     "hash": "9fed933360eefb6ef92a4d663c0ea1df"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-echoleak-cve-2025-32711-zero-click-indirect-prompt-injection-data-exfil-in-microsoft-3.md": {
-    "mtime": 1777946782.2141283,
-    "hash": "13777e11594507f667f45f2dce35060f"
+    "mtime": 1778785524.0905764,
+    "hash": "8561a6cb65f7c9044ce186f5f8f84847"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/15-reusing-one-time-coupon-via-order-state-confusion.md": {
-    "mtime": 1777946782.1983294,
-    "hash": "c69b1ec447e6ea611089bba09dcab5a5"
+    "mtime": 1778785524.1880908,
+    "hash": "62616b5511f871641245850bd62835d4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/11-idor-fetching-5-million-images-via-broken-access-control.md": {
-    "mtime": 1777946782.2202275,
-    "hash": "afedb6da6eadf8e7895fdc46f71eb2b1"
+    "mtime": 1778785524.103004,
+    "hash": "e3347d44f2171854c4b862f00a25f09d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-actions.md": {
-    "mtime": 1777946782.2176971,
-    "hash": "0dbc73a82b99d5578864a8dfb46fb910"
+    "mtime": 1778785524.1265538,
+    "hash": "3453391188512e83beac5c7c1e68fe66"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/17-graphql-field-duplication-for-resource-exhaustion.md": {
-    "mtime": 1777946782.189918,
-    "hash": "9dfd877311cefbc584f074d7bcebbed5"
+    "mtime": 1778785524.1625128,
+    "hash": "633609ce71b5a807b3aee2f6248f8943"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-how-insecure-apis-allow-hackers-to-break-subscription-logic-and-unlock-premium-feature.md": {
-    "mtime": 1777946782.196697,
-    "hash": "c2bbd368a7e83e8d472910be8e3cf7fc"
+    "mtime": 1778785524.1885984,
+    "hash": "5cec38fc670829513d42cb8b8558eb6c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/16-kerish-s-web-cache-deception-css-append-on-dynamic-path-cloudflare.md": {
-    "mtime": 1777946782.2079022,
-    "hash": "22fa201ff758cb029d9db3d91c2be1b7"
+    "mtime": 1778785524.1194472,
+    "hash": "d52a15b9d3d88f2651faa102f8959615"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-finding-an-idor-in-user-profile-api-a-15-000-journey-to-critical.md": {
-    "mtime": 1777946782.2182074,
-    "hash": "f9a6755e011aa26cf0795ed000a51b6e"
+    "mtime": 1778785524.102361,
+    "hash": "07c29f569dd273a930ca8c61e3f9fa8f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-full-workspace-account-takeover-via-jwt-alg-none.md": {
-    "mtime": 1777946782.1831253,
-    "hash": "e20aa02ef471d70a7cc5392718307c30"
+    "mtime": 1778785524.23172,
+    "hash": "99d21fb2361bb6aa1aed6c3ae2b71b47"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/3-high-impact-business-logic-bug-in-e-commerce-checkout.md": {
-    "mtime": 1777946782.1963143,
-    "hash": "88929d81472b0e86e45513bf393256aa"
+    "mtime": 1778785524.1883948,
+    "hash": "9983cd0a33f91ed69f2bb9a4a616b842"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/15-servicenow-now-assist-second-order-prompt-injection-agent-to-agent-data-exfil.md": {
-    "mtime": 1777946782.2169178,
-    "hash": "5cdc5e96a19b408d2868c893472e5834"
+    "mtime": 1778785524.089975,
+    "hash": "19881d0aeef91a64031af63821e4943b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/12-race-condition-broken-access-control-leading-to-super-admin-creation.md": {
-    "mtime": 1777946782.2204826,
-    "hash": "7ea71d75c565b6b8eb31466c0f1c3ec2"
+    "mtime": 1778785524.18799,
+    "hash": "0854f98d4721081f854718d81c23c8cc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/102-3-ruby-saml-parser-differential-saml-sso-authentication-bypass-cve-2025-25291-cve.md": {
-    "mtime": 1778272157.6229155,
-    "hash": "e4ce6d2b5d6543f9faa680ba3f79450d"
+    "mtime": 1778785524.2163448,
+    "hash": "854eba90f1203e56e201eeddf3299a1f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/17-funky-chunks-ambiguous-chunk-line-terminators-for-request-smuggling.md": {
-    "mtime": 1777946782.2080808,
-    "hash": "ea06559798e08a1ff55f5a060605a6c9"
+    "mtime": 1778785524.1706252,
+    "hash": "efe932293537e850b8dd7997245529d3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-stealing-jwt-via-oauth-redirect-uri-manipulation.md": {
-    "mtime": 1777946782.1854246,
-    "hash": "46a7c4a6f8d6f0a7f02443b7c47ed345"
+    "mtime": 1778785524.217138,
+    "hash": "ec452ad9441f67cc2fbc7fa59351d37b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/101-3-oauth-query-parameter-injection-in-next-js-withpageauthrequired.md": {
-    "mtime": 1778272157.6218216,
-    "hash": "b3627623a30d61431f47a679bdd8e828"
+    "mtime": 1778785524.216252,
+    "hash": "0c22ceb85263badc8689411e95ba12cb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-idor-in-user-profile-api-15k-critical-via-parameter-swap.md": {
-    "mtime": 1777946782.1779084,
-    "hash": "9047bdd75164b54b3b10e489e620d234"
+    "mtime": 1778785524.1038518,
+    "hash": "24f7fe05cb4bac15aaaf87d0337ba521"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-subscription-paywall-bypass-leading-to-talent-profile-access-and-pii-disclosure.md": {
-    "mtime": 1777946782.1970453,
-    "hash": "b754a6d0b5ec19a68400614b6bcc8b7e"
+    "mtime": 1778785524.1888072,
+    "hash": "c2ac68b23318daddfa544409cb738e44"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-uuid-idor-chained-with-id-leak-endpoint-critical-cross-tenant.md": {
-    "mtime": 1777946782.1786382,
-    "hash": "7d2cbd1790402f35a0e18c932a27452e"
+    "mtime": 1778785524.1049693,
+    "hash": "cd4da76bfcdc83ed02ee92681109cd23"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md": {
-    "mtime": 1777946782.2225258,
-    "hash": "da3b9771c29e46a5ad4ae8ee6d609ebb"
+    "mtime": 1778785524.1960325,
+    "hash": "e701952b19bd40f1c2a1c78ea209a07b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/11-sveltespill-cache-deception-in-sveltekit-vercel.md": {
-    "mtime": 1777946782.2071538,
-    "hash": "9306efa18ed4fadf3322e940bc08ff61"
+    "mtime": 1778785524.119215,
+    "hash": "02b916513f638a3a9182045785171b03"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/13-pillar-security-rce-in-google-antigravity-ai-agent-manager-via-pi-file-creation-tools.md": {
     "mtime": 1777946782.2165782,
     "hash": "cd8893d424058e64ce22cda3759a5a15"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/4-chatgpt-account-takeover-wildcard-web-cache-deception.md": {
-    "mtime": 1777946782.2054849,
-    "hash": "090840a9813740e8cb0dfaee26fb52b5"
+    "mtime": 1778785524.2315323,
+    "hash": "148819fa96c6ee37954c80230e93f304"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-leakage-of-hidden-elements-via-prompt-injection-in-llm-browser-agents.md": {
-    "mtime": 1777946782.216106,
-    "hash": "cfc6a2a5b7c8f8db06a736e0ee01f271"
+    "mtime": 1778785524.0895689,
+    "hash": "2cb5fb5405f5cd36a0301084b9884210"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-idor-hunting-with-burp-suite-1000-order-api-exposure.md": {
-    "mtime": 1777946782.179563,
-    "hash": "5e8a1ad2489e2a78920067c797ba1401"
+    "mtime": 1778785524.2044008,
+    "hash": "7e5a5aeb07dc880615ef54c3aeccab71"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-price-manipulation-in-public-bug-bounty-program-subscription-plans.md": {
-    "mtime": 1777946782.198659,
-    "hash": "4b9be271e9de24dcf4fe617a6b31afbd"
+    "mtime": 1778785524.1881917,
+    "hash": "cba7d6f07745fe5f2b4fb9d255da463f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-idor-scheduled-job-data-leaked-across-projects-by-projectid-singlestore.md": {
-    "mtime": 1777946782.1788526,
-    "hash": "f667de052b5d67b88865d86d4b9e4e9d"
+    "mtime": 1778785524.1050766,
+    "hash": "c69ff6ec8fd9b7007dab87a94c23ce01"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/12-dompurify-3-1-3-3-1-5-bypass-via-unicode-normalization-touppercase-context-switch.md": {
     "mtime": 1777946782.2018611,
     "hash": "95fc526e66ade9984cbec4f3a8855c28"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/17-idor-in-saved-payments-api-on-zomato-multi-tenant.md": {
-    "mtime": 1777946782.2213845,
-    "hash": "2d5e3862c0d90ff6d2bcb7d690d381e0"
+    "mtime": 1778785524.1034794,
+    "hash": "4a08bc79630f395b0ec76d9ca5d4d578"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/106-4-december-ctf-challenge-chaining-xs-leaks-and-postmessage-xss.md": {
-    "mtime": 1778272157.627545,
-    "hash": "c9ea09dd261a3681d866eb7a57c8e25d"
+    "mtime": 1778785524.1955948,
+    "hash": "f52d589bbc6b7391ee5c776145626499"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/105-3-business-logic-bypass-allows-setting-read-access-role-without-pro-plan-subscript.md": {
-    "mtime": 1778272157.6261115,
-    "hash": "77131143966cea19d34efef15525c684"
+    "mtime": 1778785524.1878662,
+    "hash": "9fef96b9d95cadd638736b7a164e1204"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-opera-ssh-key-authority-rce-via-group-access-rule-manipulation.md": {
     "mtime": 1777946782.2234368,
@@ -840,488 +856,488 @@
     "hash": "4563ee2208629d78eecd2e9f3b71080a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/14-oauth-query-parameter-injection-in-nextjs-auth0.md": {
-    "mtime": 1777946782.184529,
-    "hash": "b6195014ad8d2e3badf7e731fbb0b11d"
+    "mtime": 1778785524.2168765,
+    "hash": "b2128bc1ea6c852cc54e965d7f3ab092"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-i-found-an-idor-worth-20000-pii-exposure-via-staging-api-idor.md": {
-    "mtime": 1777946782.1775868,
-    "hash": "d2f9e08ced3fa3636f2dd6ee3853e355"
+    "mtime": 1778785524.1026037,
+    "hash": "e6ec92e14f23f10bc5e7a863ce8f0c3c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/22-business-logic-flaw-in-subscription-paywall-for-profile-access.md": {
-    "mtime": 1777946782.1992614,
-    "hash": "3d5f1a1b04e6f85e464b247f817d8ca4"
+    "mtime": 1778785524.1882958,
+    "hash": "ec9a67690d260a526740b95739e1118d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-vanna-ai-prompt-injection-to-rce-cve-2024-5565-via-text-to-sql.md": {
-    "mtime": 1777946782.2153137,
-    "hash": "550f3c548863d2c4e9a39de551dc2a4f"
+    "mtime": 1778785524.0913312,
+    "hash": "79660dcd77b7212b88ded2cd502775a5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-idor-in-jwt-protected-card-viewer-api.md": {
-    "mtime": 1777946782.1790438,
-    "hash": "7eede5ece15d6bc39f08c1ef8451a4f1"
+    "mtime": 1778785524.2181592,
+    "hash": "d2de977be8875ffe61b5372d9464c24f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/3-rce-via-group-access-validation-flaw-in-ssh-key-authority-open-source-tool.md": {
-    "mtime": 1777946782.2186193,
-    "hash": "500f6085ddbc39b93be57099d4adc553"
+    "mtime": 1778785524.1418524,
+    "hash": "50458e6e7fbf5a850bc229af845efec2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-trix-editor-1000-bounty-via-smart-paste-handling.md": {
     "mtime": 1777946782.2258003,
     "hash": "0fcdf7ecdb873a71cdb61a5ed6550559"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-multi-tenant-isolation-failure-via-client-controlled-x-prm-tenantid-header.md": {
-    "mtime": 1777946782.1925097,
-    "hash": "f2b22f4afb292f35780567a1add7300c"
+    "mtime": 1778785524.1047587,
+    "hash": "ac8f89b5004bdfdc46ea6490c770c87d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/105-2-business-logic-error-bypassing-payment-with-test-cards.md": {
-    "mtime": 1778272157.6259034,
-    "hash": "08e4f44ab2776253c5ff6e7867302200"
+    "mtime": 1778785524.1877637,
+    "hash": "32098ff6debc2e16e2488e02c2bad13c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-stored-xss-in-apple-developer-portal.md": {
-    "mtime": 1777946782.2200377,
-    "hash": "c42c1e5d126708918c11cab841497a4c"
+    "mtime": 1778785524.1955016,
+    "hash": "1044be19ef67f3a19f313ec469b761e3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-2024-chain.md": {
-    "mtime": 1777946782.202315,
-    "hash": "0a623b4a77b8136b9fd3b6dbe34a46d4"
+    "mtime": 1778785524.1956913,
+    "hash": "6e23ef5ee6dcd28f56adc727b9d297fd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-traversal.md": {
-    "mtime": 1777946782.1998897,
-    "hash": "5d5c51ae4275ea102244361eb86534fd"
+    "mtime": 1778785524.230496,
+    "hash": "ec5db41f9aed7bb898bf81893fa39036"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-slack-ai-indirect-prompt-injection-data-exfil-from-private-channels.md": {
-    "mtime": 1777946782.2156053,
-    "hash": "96cf14d63c2d2f0241d498d8a59e5302"
+    "mtime": 1778785524.0914285,
+    "hash": "b80d0e88be40e237c025e294cb013a90"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/24-jwt-claim-forging-for-arbitrary-tenant-role-in-multi-service-saas.md": {
-    "mtime": 1777946782.1956093,
-    "hash": "ce80621b2287560406ab596e61a7578b"
+    "mtime": 1778785524.2178106,
+    "hash": "3a885e60ab91604e236517db401b53c2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-still-running-http-1-1-in-2026-your-website-might-be-exposed-to-http-request-smuggling.md": {
-    "mtime": 1777946782.2056932,
-    "hash": "50daacc51f48ddbbba34d8c4a344f7a7"
+    "mtime": 1778785524.170939,
+    "hash": "04a1dfc5abddef7b63e841aa71b1c739"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/102-1-dos-via-mutation-aliasing-in-graphql-account-recovery-api.md": {
-    "mtime": 1778272157.62252,
-    "hash": "365f26c46d2c725a942833a67f25140f"
+    "mtime": 1778785524.1620946,
+    "hash": "f85854be33aa5b15317dbbf15a09ceb9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-gotta-cache-em-all-novel-cache-deception-and-poisoning-via-url-parsing-quirks.md": {
-    "mtime": 1777946782.2062762,
-    "hash": "a4038f6ba92e6fb029a3019c8b7f5d2f"
+    "mtime": 1778785524.1201572,
+    "hash": "0b730996953e1bccc53ae126af0487bc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-pwn-request-in-google-s-flank-github-actions-workflow.md": {
-    "mtime": 1777946782.21123,
-    "hash": "c7975ab45e38851425772483e03bc333"
+    "mtime": 1778785524.2060182,
+    "hash": "8bf77a45c83a8ecb13c8aa314c204e1a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-critical-idor-privilege-escalation-in-role-permission-management.md": {
-    "mtime": 1777946782.1918125,
-    "hash": "2cff53656e918dd72dccaf18a4d7b771"
+    "mtime": 1778785524.1037586,
+    "hash": "0e1455ab8802433b11a95a3e9a299eb9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md": {
-    "mtime": 1777946782.212721,
-    "hash": "874f1735ef0c49cd25d8582f5a041b31"
+    "mtime": 1778785524.205096,
+    "hash": "29289cd0e3d28c21c7afb8892161a294"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-azure-storage-account-cheat-sheet-recon-tricks.md": {
-    "mtime": 1777946782.2133577,
-    "hash": "956727c669f2147438707fa5880b9435"
+    "mtime": 1778785524.2052834,
+    "hash": "622ca8954f49e03933ed129a174beb7b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-langchain-graphcypherqachain-prompt-injection-to-sqli-cve-2024-8309.md": {
-    "mtime": 1777946782.2158663,
-    "hash": "9834380a63d419c0e61d0ac4b2e1b678"
+    "mtime": 1778785524.0915291,
+    "hash": "1e70fdc3c4b50c03b1e8df97503c299f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-cspt-levels-practical-attacks-hunter-x-post-reference.md": {
-    "mtime": 1777946782.2033184,
-    "hash": "fb630d643b69f6c8dac96b35c966fc96"
+    "mtime": 1778785524.1499066,
+    "hash": "a499f6523d87a896c188fa380c5fe6af"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/12-jwt-logic-confusion-bypassing-authentication.md": {
-    "mtime": 1777946782.1841648,
-    "hash": "0036801af8d41ac68df64c7e76c56eb8"
+    "mtime": 1778785524.2167063,
+    "hash": "2c98ea922793fe4c01cc6982d4154118"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/20-saml-xsw-novel-bypasses-via-void-canonicalization.md": {
-    "mtime": 1777946782.1857228,
-    "hash": "0b0f07e70199410828c26f1b6a898e03"
+    "mtime": 1778785524.2173133,
+    "hash": "19aa0e708e91e1095003d3ed3cf8cbf3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-next-js-cache-poisoning-via-204-responses-cve-2025-49826.md": {
-    "mtime": 1777946782.2065248,
-    "hash": "a97e7aad1cbbb4df2c62e6bf16f15b7b"
+    "mtime": 1778785524.1202593,
+    "hash": "e706b24f57443621233123e96bba074f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md": {
-    "mtime": 1777946782.207629,
-    "hash": "7f3e6be1e8d466a6372b59c49df1d78f"
+    "mtime": 1778785524.1705322,
+    "hash": "dfb9602530e2d630a76ad76eaeba5316"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/8-account-takeover-using-sso-login.md": {
-    "mtime": 1777946782.183471,
-    "hash": "975e5afefcbded8730661a785aacbb48"
+    "mtime": 1778785524.2319071,
+    "hash": "91946c447cc5be88dde1cd02ab301c5c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-business-logic-error-bypassing-payment-with-test-cards-in-production.md": {
-    "mtime": 1777946782.1976318,
-    "hash": "fb42319360b06443c28a49bd3b69c277"
+    "mtime": 1778785524.1874332,
+    "hash": "63a50f72713292fa0b471de41ac83996"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-automation-takeo.md": {
-    "mtime": 1777946782.201532,
-    "hash": "fd2ee01f85789d5a2f14eb0a73ae9b13"
+    "mtime": 1778785524.2305942,
+    "hash": "4528dafda7bd7b81220405b1a3153cac"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-idor-in-multi-tenant-api-via-uuid-swap-in-device-info-endpoint.md": {
-    "mtime": 1777946782.2193153,
-    "hash": "8fe247d290cff0c1070658519ad44546"
+    "mtime": 1778785524.1052775,
+    "hash": "7ce8f4091f63851f8bb31a525bda8d93"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/20-microsoft-teams-guest-access-cross-tenant-policy-bypass.md": {
-    "mtime": 1777946782.1951282,
-    "hash": "5e00d40a684e398a74cac9757a13b29e"
+    "mtime": 1778785524.1043217,
+    "hash": "e964a3e974217f691257c6ba25e7b42e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-permutation-found-staging2-internal-critical-vuln.md": {
-    "mtime": 1777946782.1769307,
-    "hash": "4083333582892cf710735d32f95efd98"
+    "mtime": 1778785524.205379,
+    "hash": "529a8ac3beb0911a766b02e3952f1967"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/5-oauth-misbinding-vulnerability-silent-account-takeover.md": {
-    "mtime": 1777946782.182942,
-    "hash": "b99d0506d346401bb6b40345d2a9d45e"
+    "mtime": 1778785524.2316263,
+    "hash": "0bc928242a03047c9df4031e44ad2ca2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-this-is-how-i-hacked-a-payment-flow-using-business-logic-abuse.md": {
-    "mtime": 1777946782.1974375,
-    "hash": "c3258f25612f4a0126f9f08ff5ed4d2b"
+    "mtime": 1778785524.1891165,
+    "hash": "630ef92a14f2caccbf0eee4fb5e01634"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/4-how-i-bypassed-premium-subscription-escalated-privileges-using-a-0-vcc.md": {
-    "mtime": 1777946782.1965106,
-    "hash": "91d1105f97328f185478d16f3472c28f"
+    "mtime": 1778785524.1884952,
+    "hash": "cf3f05cd4277701d905d46f6e78fb022"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/104-2-from-idor-to-sql-injection-in-graphql-websocket-escalated-to-pii-leak.md": {
-    "mtime": 1778272157.6248708,
-    "hash": "52b815defc8186bc1698a1530f19f11a"
+    "mtime": 1778785524.162418,
+    "hash": "2e93f74e81f2056770849ff6cbb8601f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/17-5500-recon-only-bug-via-passive-enum-to-internal-config.md": {
-    "mtime": 1777946782.1757507,
-    "hash": "2ee694b94a95cda5daa9d4d20b8fd131"
+    "mtime": 1778785524.2049944,
+    "hash": "e064f25e420b7d57fef5f812ef6230f1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/7-tenant-admin-idor-allowing-cross-tenant-file-deletion.md": {
-    "mtime": 1777946782.1929095,
-    "hash": "42f5c9575bd6204387ecd056e8bebd17"
+    "mtime": 1778785524.1056132,
+    "hash": "59c396641e226100641d03f53caa7f37"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/4-massive-cross-tenant-access-control-bug-in-crm-via-host-header-swap.md": {
-    "mtime": 1777946782.1922548,
-    "hash": "8a0d1126527e39537ac9256ab5df4a37"
+    "mtime": 1778785524.1046555,
+    "hash": "4134eb128613d333e67c4370fbcb3d4e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/9-nextjs-auth0-insecure-session-cache-key-hijack.md": {
-    "mtime": 1777946782.2239494,
-    "hash": "d0aa7886660e7fcd4ac0775d85299df8"
+    "mtime": 1778785524.232007,
+    "hash": "0d44e02690442730f0d627ea9cf8c615"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/_index.md": {
     "mtime": 1778314083.6266184,
     "hash": "2b238eeedb810291e6111128a5e4da10"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md": {
-    "mtime": 1777946782.2184474,
-    "hash": "1e72d3d8f75da7f3d375f62839013fa1"
+    "mtime": 1778785524.135902,
+    "hash": "dfdf66c0e1b4a168d0c241abab070ac0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-how-i-discovered-a-web-cache-deception-attack-exposing-pii-a-real-world-case-study.md": {
-    "mtime": 1777946782.2050512,
-    "hash": "2c6808adbc25c8426d786b4be4ba74bf"
+    "mtime": 1778785524.1195502,
+    "hash": "ad0b50a2bdc0f982f81077b78c48cf14"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/22-supportcandy-ticket-attachment-idor-cve-2026-1251-cross-ticket-file-access.md": {
-    "mtime": 1777946782.1815207,
-    "hash": "df120d2bd100c70a0c4565a3f1924840"
+    "mtime": 1778785524.1044414,
+    "hash": "82bfca2182ef57752d46673a5c055383"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-curxecute-cve-2025-54135-prompt-injection-rce-in-cursor-ide-via-mcp-config.md": {
-    "mtime": 1777946782.215084,
-    "hash": "aa84dc965111292529800a1cccfb6af4"
+    "mtime": 1778785524.0912406,
+    "hash": "16ea40ad5e3ff90069b5a1a9d4f7eb22"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-ai-bugs.md": {
-    "mtime": 1777946782.2173169,
-    "hash": "3d51f268cfdc34c2cf8aa8e7272465ac"
+    "mtime": 1778785524.1357994,
+    "hash": "4953d449c73839db39c09640c3ea1cfc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md": {
-    "mtime": 1777946782.186917,
-    "hash": "ac9343ea6f461bf34e64d4df88c927ed"
+    "mtime": 1778785524.2310658,
+    "hash": "fa23dba6fa5c0b18a3bc010866bfc722"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/23-cve-2025-22146-sentry-saml-sso-auth-bypass.md": {
-    "mtime": 1777946782.1862547,
-    "hash": "4642e4bd661602f79bc52b3ca059c156"
+    "mtime": 1778785524.2313294,
+    "hash": "ad4288ad06a739664c490207a864ba9d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/cases/researcher_writeups/6-1500-pii-leak-via-graphql-field-level-permission-bypass.md": {
-    "mtime": 1777946782.1873827,
-    "hash": "d987353b7eb8c25d580c3abcf150ce59"
+    "mtime": 1778785524.1632252,
+    "hash": "1e0db77e59113badba366e09c2d84bb1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-13-graphql-voyager-introspection-for-schema-mapping-in-bb.md": {
-    "mtime": 1777946782.189436,
-    "hash": "5f77f25977251ed350fdffa3b3c2e668"
+    "mtime": 1778785524.1641254,
+    "hash": "a2f03ad9e82e2a4d971670e4796ba24d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/19-backend-mastery-multi-tenant-isolation-failures-in-b2b-saas.md": {
     "mtime": 1777909746.6090717,
     "hash": "d0a3c2e01643b8baf6a634e0cc551667"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/10-cloudfox-cloud-attack-surface-mapper.md": {
-    "mtime": 1777909746.623607,
-    "hash": "8ab0e9b34c196db2374094c199563f00"
+    "mtime": 1778785524.2062092,
+    "hash": "88d82a3bf45118726fedc0669ba3bb4b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-23-vulnerability-chaining-for-multi-tenant-isolation-breaches-in-saas.md": {
     "mtime": 1777946782.1955376,
     "hash": "5b5c1104db01c7797ad5359f7609eb3d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-15-bug-bounty-methodology-2025-ci-cd-cloud-section.md": {
-    "mtime": 1777946782.2121449,
-    "hash": "1b2ec0ccf3a3f96406ac8d5b1b912f0a"
+    "mtime": 1778785524.2077198,
+    "hash": "40b50250b38a7110b922e23f64c9bc54"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/25-top-10-web-hacking-techniques-of-2025-nominations-desync-endgame-chunk-tricks.md": {
     "mtime": 1777909746.621096,
     "hash": "9b6cd399289a60b8dd3fffb45a05c887"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-21-ultimate-recon-guide-for-bug-bounty-hunters-2025.md": {
-    "mtime": 1777946782.176369,
-    "hash": "2aa5f3755053335af6cb9d3251bb6884"
+    "mtime": 1778785524.2081165,
+    "hash": "04904c8080e76dbab4d485024080ff05"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md": {
-    "mtime": 1777909746.6176822,
-    "hash": "525ed383d6ae954a1c4d95aae9c9ef47"
+    "mtime": 1778785524.1966662,
+    "hash": "adab9c3090195dc2ba3fce94237a731b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md": {
-    "mtime": 1777946782.2082725,
-    "hash": "bf183adad763dc065d57f4d5ec0d3c31"
+    "mtime": 1778785524.1712692,
+    "hash": "e1f84cd8a34181403f24200aeb2be35a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/17-hackernotes-dompurify-bypass-techniques-ep-111.md": {
     "mtime": 1777909746.6168969,
     "hash": "af30fec4b3e0ca5f4e2dc88fc6dc7bb1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-2-bug-bounty-recon-for-everyone.md": {
-    "mtime": 1777946782.173619,
-    "hash": "624736d3fda6af9e7f0cc91cb4f4518d"
+    "mtime": 1778785524.2078178,
+    "hash": "13fb372e301cb78cb2100e6ce1838bb8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/13-graphql-voyager-introspection-for-schema-mapping-in-bb.md": {
-    "mtime": 1777909746.6054688,
-    "hash": "3c5a8132f78a0890e21e4b84eb9cb665"
+    "mtime": 1778785524.1638598,
+    "hash": "89ac2be07c2975d2a504c30d3ebb9bd7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md": {
-    "mtime": 1777946782.2046,
-    "hash": "1e547b81718a5e93d639242770735534"
+    "mtime": 1778785524.196867,
+    "hash": "46ffc431cbcbb1d378aa10ad4c3919dd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/22-hackerone-agentic-prompt-injection-testing-methodology-for-tool-misuse.md": {
-    "mtime": 1777909746.6280046,
-    "hash": "c0b3b82d314454a9452ebcc13d1e172f"
+    "mtime": 1778785524.092032,
+    "hash": "f72ca3b47fb1789328224aeba819b4f3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/1-bug-bounty-hunting-methodology-2025.md": {
-    "mtime": 1777909746.5935068,
-    "hash": "b1817baa09ce4b4b33f7dc287f5d667d"
+    "mtime": 1778785524.2061148,
+    "hash": "9b867480514d9f07ad6061850598b07e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-11-embrace-the-red-hacking-gemini-memory-with-prompt-injection-and-delayed-tool.md": {
-    "mtime": 1777946782.2162988,
-    "hash": "1df757f34219d5cee241ab94e2f35cd2"
+    "mtime": 1778785524.0921206,
+    "hash": "6d980c58634e5e0a8f226c7f3a8b0c13"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/5-recon-for-bug-bounty-8-essential-tools.md": {
-    "mtime": 1777909746.5939107,
-    "hash": "08f3af2cecd15a047886f8c6060cd476"
+    "mtime": 1778785524.2071414,
+    "hash": "f4c2f6264aa096282debfa2fc2ab95e8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/15-bug-bounty-methodology-2025-ci-cd-cloud-section.md": {
-    "mtime": 1777909746.6239898,
-    "hash": "35090ef8317330002ab802818098b4e8"
+    "mtime": 1778785524.2063034,
+    "hash": "250124d130bf3c2c210b358510e6b5a0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md": {
-    "mtime": 1777909746.6205688,
-    "hash": "8ecce7b5c8205101263097ac01db6d93"
+    "mtime": 1778785524.1711478,
+    "hash": "f99ea770131b50cb4d5da663eb562f3b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-17-hackernotes-dompurify-bypass-techniques-ep-111.md": {
     "mtime": 1777946782.2032266,
     "hash": "c5f94c3a7846779c5285ae28b362ea55"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/17-common-oauth-vulnerabilities-checklist-bug-bounty-focus.md": {
-    "mtime": 1777909746.6024504,
-    "hash": "6d69781b2744724536a128036b0b7f39"
+    "mtime": 1778785524.218513,
+    "hash": "62fb4b6cafb6d1a59d0ce1afdb39a407"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/3-cspt-resources-compilation-hunter-blogs-reports-tools.md": {
-    "mtime": 1777909746.6156032,
-    "hash": "92c895a5cd0f5f59485544620592aec4"
+    "mtime": 1778785524.1967661,
+    "hash": "ed5db64fcd795c6fa50012d38c8ca3ca"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/25-intigriti-2025-bug-bounty-tips-mega-thread-20-niche.md": {
     "mtime": 1777909746.6347642,
     "hash": "94e26df1a82951e620e2e39a758e96ae"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/19-google-threat-report-in-wild-prompt-injection-types-including-data-exfil-attempts.md": {
-    "mtime": 1777909746.627747,
-    "hash": "d5960a768b4bb3e73a5ad2e9aa846719"
+    "mtime": 1778785524.0919418,
+    "hash": "a1f2448eaef147c55e608dffb0d6ac5c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-17-common-oauth-vulnerabilities-checklist-bug-bounty-focus.md": {
-    "mtime": 1777946782.185345,
-    "hash": "d67c114831a6d403b991f2baf2c1488d"
+    "mtime": 1778785524.218771,
+    "hash": "8e9c3d3052c182557f8f67b8e9fa4e88"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/11-embrace-the-red-hacking-gemini-memory-with-prompt-injection-and-delayed-tool-invocati.md": {
-    "mtime": 1777909746.6270278,
-    "hash": "6144c1c2222a1fb1abda63c9e36416c8"
+    "mtime": 1778785524.0916975,
+    "hash": "b03df586557c27edc956c14b47853eb6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/15-finding-broken-access-control-in-multi-tenant-systems-practical-techniques.md": {
-    "mtime": 1777909746.6087847,
-    "hash": "a86a9cd5f3bf04dbcb3f4c84e8d0e894"
+    "mtime": 1778785524.1066494,
+    "hash": "19f3023155920f0ac3d8aea8828749d0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-25-intigriti-2025-bug-bounty-tips-mega-thread-20-niche.md": {
     "mtime": 1777946782.2261996,
     "hash": "dbd8a3e0ff88499aa4018104ce9dc015"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-11-client-side-postmessage-bugs-video-exploitation-guide.md": {
-    "mtime": 1777946782.2017767,
-    "hash": "5e9cb796bed771fa93be5400f498ebd6"
+    "mtime": 1778785524.1427214,
+    "hash": "7306faa761ed216eaa069a1d459cf902"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/21-reconninja-v7-1-cloud-bucket-github-osint-plugin.md": {
-    "mtime": 1777909746.6244256,
-    "hash": "d28fa25c03c3abedd870ee3a93e2814e"
+    "mtime": 1778785524.2065907,
+    "hash": "b9275481113214dcd4520a8dc130749f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md": {
-    "mtime": 1777946782.2223554,
-    "hash": "bb257004383ef8aa3aab118abf380284"
+    "mtime": 1778785524.136387,
+    "hash": "b80500051624787ba3d77a89910bfb87"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/2-bug-bounty-recon-for-everyone.md": {
-    "mtime": 1777909746.5936458,
-    "hash": "21b75cf6b7e3403948be65f2028ab0f9"
+    "mtime": 1778785524.206399,
+    "hash": "2446584ea513e265d2995f217ea3f978"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/README.md": {
     "mtime": 1777906551.223895,
     "hash": "479226f8d44882c9b09ce4ae6e346b21"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-25-top-10-web-hacking-techniques-of-2025-nominations-desync-endgame-chunk-trick.md": {
-    "mtime": 1777946782.2101202,
-    "hash": "ba0720f15a09bc75fe36a963e31a5487"
+    "mtime": 1778785524.1713815,
+    "hash": "5112cbabe2d692058fdd3704e228217f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/25-critical-thinking-bug-bounty-podcast-attacking-oauth-2-1.md": {
-    "mtime": 1777909746.6030574,
-    "hash": "a0f76eab4986e6a63a76002aeefc1681"
+    "mtime": 1778785524.2185974,
+    "hash": "6effe6a175e6c60a19a5aebff21420c6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md": {
-    "mtime": 1777909746.6312487,
-    "hash": "c0e9e10b957863018cb969b700fd0185"
+    "mtime": 1778785524.136292,
+    "hash": "8d4b3f6293ac99fbaa57c3e0439a17aa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-22-hackerone-agentic-prompt-injection-testing-methodology-for-tool-misuse.md": {
-    "mtime": 1777946782.2178977,
-    "hash": "03a067480a073a705d0e1dec76e3c570"
+    "mtime": 1778785524.092512,
+    "hash": "76f515ce75276c0a5334bda64518c880"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/17-api-bug-bounty-mastery-2026-hidden-endpoints-bola-chains.md": {
-    "mtime": 1777909746.5991414,
-    "hash": "4bc28098e6e628328d9940db3c506bfe"
+    "mtime": 1778785524.1067436,
+    "hash": "0380fe2524a8c60357432014c1ecba37"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/4-a-complete-bug-bounty-roadmap-for-beginners-2026.md": {
     "mtime": 1777909746.5938394,
     "hash": "cc7ee0e3fa9c04f41c4643b2d5da18e4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-10-cloudfox-cloud-attack-surface-mapper.md": {
-    "mtime": 1777946782.2115226,
-    "hash": "a17a51865141a09034a4e867c0aad98c"
+    "mtime": 1778785524.2076209,
+    "hash": "f14567375966dd5396ac22adb84101c7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/23-vulnerability-chaining-for-multi-tenant-isolation-breaches-in-saas.md": {
     "mtime": 1777909746.6093724,
     "hash": "8ce73e8ad204f957c9b0a6308625aade"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-21-graphql-enum-tool-for-juicy-types-and-mutations.md": {
-    "mtime": 1777946782.1906486,
-    "hash": "5c02ea8553a19180399210b771dac391"
+    "mtime": 1778785524.2079206,
+    "hash": "9415e7b5368c46380e6bf84e56648690"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-19-google-threat-report-in-wild-prompt-injection-types-including-data-exfil-att.md": {
-    "mtime": 1777946782.2175305,
-    "hash": "c99d8423bec49ee203edcc332e83c15c"
+    "mtime": 1778785524.092402,
+    "hash": "a55bcf0edae379049b50c59d28fab76a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/24-how-i-discovered-price-manipulation-in-public-bb-program-subscription-focus.md": {
-    "mtime": 1777909746.6132715,
-    "hash": "a390e87157e116c20013d35374ffa95d"
+    "mtime": 1778785524.1893086,
+    "hash": "a589ac80177f9c7eb35915e3e994707b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/11-client-side-postmessage-bugs-video-exploitation-guide.md": {
-    "mtime": 1777909746.6164007,
-    "hash": "4028fb6b7feffb0d9215bead1c38536d"
+    "mtime": 1778785524.1424162,
+    "hash": "451aa5a253e6e1a7aa0dc283e22288b6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/16-payment-bypass-bug-lab-for-hands-on-techniques.md": {
-    "mtime": 1777909746.612632,
-    "hash": "4ce55613cb387669ebe34798cce541b2"
+    "mtime": 1778785524.1892126,
+    "hash": "c2f80d5b0d62186c51cd4d09f7619e4c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-ch.md": {
-    "mtime": 1777946782.2170944,
-    "hash": "6a766f63d0ee7bb2bf22a8760a1be6ad"
+    "mtime": 1778785524.1571279,
+    "hash": "867532135fead3e96717a411448bd0b0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-4-2025-github-recon-checklist-for-bug-hunters.md": {
-    "mtime": 1777946782.2107618,
-    "hash": "5960ff7c59001aad55dd4737a87cede3"
+    "mtime": 1778785524.208415,
+    "hash": "be37844ee54579ee26fcf63ffedd0b54"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-9-the-fragile-lock-novel-saml-authentication-bypasses.md": {
-    "mtime": 1777946782.1836567,
-    "hash": "125bb126476656a2b3f7429a2f55abfd"
+    "mtime": 1778785524.2222273,
+    "hash": "7411505ad2978807e524e649e8474d2c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/21-ultimate-recon-guide-for-bug-bounty-hunters-2025.md": {
-    "mtime": 1777909746.5956507,
-    "hash": "bb999b70367dd336c89d22874cea81ef"
+    "mtime": 1778785524.206684,
+    "hash": "9c2ab177677a271f7271aefbf80023f5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/9-the-fragile-lock-novel-saml-authentication-bypasses.md": {
-    "mtime": 1777909746.601841,
-    "hash": "3c88575c2104c40a9a8b805d5511241e"
+    "mtime": 1778785524.218683,
+    "hash": "2bfb0d664fe4e04b8680bb17948627a6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/21-graphql-enum-tool-for-juicy-types-and-mutations.md": {
-    "mtime": 1777909746.6060693,
-    "hash": "30826b6cf3dcafaf3edaced760a5239f"
+    "mtime": 1778785524.206497,
+    "hash": "03e7187afbc1fc19010834b278807887"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-5-recon-for-bug-bounty-8-essential-tools.md": {
-    "mtime": 1777946782.1739116,
-    "hash": "30af3df3a3943702d43a228cfa615cb5"
+    "mtime": 1778785524.208512,
+    "hash": "e808b49baa3c6ce1085948be0456fbfb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-16-payment-bypass-bug-lab-for-hands-on-techniques.md": {
-    "mtime": 1777946782.1985006,
-    "hash": "b0854936ebd1bb6b58f350b56642885d"
+    "mtime": 1778785524.1894157,
+    "hash": "247acc9e0d4077f1f4b2449657065e2a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-25-critical-thinking-bug-bounty-podcast-attacking-oauth-2-1.md": {
-    "mtime": 1777946782.1866457,
-    "hash": "871bd9c1549445e55d783f8ef0ccbf06"
+    "mtime": 1778785524.218908,
+    "hash": "9a3752600921c5ff67cd83b6d71de4e6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-24-how-i-discovered-price-manipulation-in-public-bb-program-subscription-focus.md": {
-    "mtime": 1777946782.1996427,
-    "hash": "e956ef38113842bb131c37328b37ad1b"
+    "mtime": 1778785524.1895144,
+    "hash": "88193990b316e59c2c04a6a9daeb0459"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-4-a-complete-bug-bounty-roadmap-for-beginners-2026.md": {
     "mtime": 1777946782.1738224,
     "hash": "0d05ba31afda5a8cc4a3d9ebad89852a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/3-my-complete-recon-workflow-for-bug-bounty-hunting-2025-edition.md": {
-    "mtime": 1777909746.5937467,
-    "hash": "80d7fcd5eda8c1bd226e6b771e9f7822"
+    "mtime": 1778785524.20687,
+    "hash": "d4ead7c994a9d31d4262f8a4f4e73dbe"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-17-api-bug-bounty-mastery-2026-hidden-endpoints-bola-chains.md": {
-    "mtime": 1777946782.1807797,
-    "hash": "28e4203839f1a94f391bf46c326e5ce5"
+    "mtime": 1778785524.1073322,
+    "hash": "edbff160301524a6deadf89b65a619ac"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-21-reconninja-v7-1-cloud-bucket-github-osint-plugin.md": {
-    "mtime": 1777946782.213193,
-    "hash": "655e6d8d635784362b99768eb128b741"
+    "mtime": 1778785524.2080197,
+    "hash": "d6a56cc81a7b3bdff0aaec49565f60b4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/4-2025-github-recon-checklist-for-bug-hunters.md": {
-    "mtime": 1777909746.6228783,
-    "hash": "dc5638386e046622cb8c86f76e6aa99b"
+    "mtime": 1778785524.2070336,
+    "hash": "3ae1e1d392eecd3663dcd4a5c0414f92"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/23-bugquest-2026-day-23-spot-basic-idor-advanced-variants-in-api.md": {
-    "mtime": 1777909746.5995946,
-    "hash": "2e91cd7c79ccf30121dd6941c86a5b60"
+    "mtime": 1778785524.1069305,
+    "hash": "766f3ca12aca9251bc73b5630fd4ac55"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/16-hugging-face-hub-llm-bug-bounty-unsafe-pickle-loads-in-model-demos-supply-chain.md": {
-    "mtime": 1777909746.6274853,
-    "hash": "274c8e3445e16887d0b28ef9606a01d5"
+    "mtime": 1778785524.157023,
+    "hash": "55bdda8e3e87dcff13eff66c6e4373b6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/6-recon-series-recap-ultimate-guide-to-bug-bounty-reconnaissance.md": {
-    "mtime": 1777909746.5939958,
-    "hash": "6fa0b5accae08a8ae1b8f56071c1e361"
+    "mtime": 1778785524.207234,
+    "hash": "ee47cd3797e3e8103993bcdb8fadf20a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-3-cspt-resources-compilation-hunter-blogs-reports-tools.md": {
-    "mtime": 1777946782.2002761,
-    "hash": "50f76458c52053f77a1f623fe0c13381"
+    "mtime": 1778785524.1969695,
+    "hash": "acd52492af87e0eba668826f24073c42"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-23-bugquest-2026-day-23-spot-basic-idor-advanced-variants-in-api.md": {
-    "mtime": 1777946782.1817036,
-    "hash": "af6e1e6895e57646c140e1b0441017db"
+    "mtime": 1778785524.1075163,
+    "hash": "0e088924b4f63aca622ffb63d675a8a7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-6-recon-series-recap-ultimate-guide-to-bug-bounty-reconnaissance.md": {
-    "mtime": 1777946782.1740048,
-    "hash": "d97fbb835a52de909081dbb065acfd90"
+    "mtime": 1778785524.2086112,
+    "hash": "f2c90ad8bf1ba41c85a498d2ab613b2f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-15-finding-broken-access-control-in-multi-tenant-systems-practical-techniques.md": {
-    "mtime": 1777946782.1944642,
-    "hash": "07dc64e05db59896fdb5f3b1300af74d"
+    "mtime": 1778785524.1072328,
+    "hash": "1316b868377b5561a4fd5e06a0f257c1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-19-backend-mastery-multi-tenant-isolation-failures-in-b2b-saas.md": {
     "mtime": 1777946782.1950593,
     "hash": "a74db965bbb846144c7d90702944ceaa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-1-bug-bounty-hunting-methodology-2025.md": {
-    "mtime": 1777946782.1734862,
-    "hash": "0250a2d482de8c17c2f10231b0f65f0e"
+    "mtime": 1778785524.2075076,
+    "hash": "528290d0f69f03ccc5c29cf48105c87b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/review_queue/resource-3-my-complete-recon-workflow-for-bug-bounty-hunting-2025-edition.md": {
-    "mtime": 1777946782.173732,
-    "hash": "c778d74e897d4a712600e0fbc385d427"
+    "mtime": 1778785524.208315,
+    "hash": "f117c5d08f43830728afe61ed607d1aa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/reports/gray_research_protocol.md": {
     "mtime": 1778313749.1894472,
@@ -1484,328 +1500,328 @@
     "hash": "fd48a3872dd6c0b42fd54441e8deb9f6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/9-github-actions-cache-poisoning-for-supply-chain.md": {
-    "mtime": 1777952102.204416,
-    "hash": "5f05b8eea27dcaacdc32703278f1aa26"
+    "mtime": 1778785524.211291,
+    "hash": "59be72598042e7c3a41114283cd6c016"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/25-mass-fuzzing-company-user-role-ids-in-multi-tenant-rbac-apis.md": {
-    "mtime": 1777953380.4330423,
-    "hash": "3425c2e937d455b4aa99f8c1f3e56e48"
+    "mtime": 1778785524.1115644,
+    "hash": "b0505ced30fcc1c49a22b5e06243a156"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/15-h2-cl-desync-via-early-response-gadgets-for-response-queue-poisoning.md": {
-    "mtime": 1777946799.5679238,
-    "hash": "c88e579da94e5d5fa899ea106206ce3d"
+    "mtime": 1778785524.1716356,
+    "hash": "f2073d0ca4a4ecafcb815f02c4e22bb7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-graphql-introspection-enabled-on-shopify-storefront-api.md": {
-    "mtime": 1777946799.568159,
-    "hash": "98af57f61b4639fa379367b6303123d0"
+    "mtime": 1778785524.1659079,
+    "hash": "e2fec39659f414c33e697083ba5ffed4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-kerish-s-web-cache-deception-css-append-on-dynamic-path-cloudflare.md": {
-    "mtime": 1777946799.5683126,
-    "hash": "f26b1c50a482a67bce1415a27811c66e"
+    "mtime": 1778785524.1222472,
+    "hash": "7b5ab7b2027a1c178fd5964f90c54346"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/23-html-comment-injection-for-invisible-pi-in-markdown-processed-ai-agents.md": {
-    "mtime": 1777946799.5684497,
-    "hash": "85f27b04f4794fc8eb218faf087b306e"
+    "mtime": 1778785524.2102828,
+    "hash": "5fd0463d3dfd3442b18ce7aaf6cc522e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/14-environment-var-exfil-via-ps-auxeww-in-agent-tool-calls-comment-and-control-variant.md": {
-    "mtime": 1777946799.568583,
-    "hash": "584feeec0f52f36c3e3ed0f9ac063780"
+    "mtime": 1778785524.2089348,
+    "hash": "32577e419c2196edddc8b732863fa01f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/19-circular-fragment-recursive-query-abuse-for-dos.md": {
-    "mtime": 1777959421.517086,
-    "hash": "73384669a6ad6e39f2f11a04d32e902a"
+    "mtime": 1778785524.1649852,
+    "hash": "2652d9ca7e9d9ce0afaca5ce8c7a988f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-shopify-partner-portal-limited-privilege-referral-creation.md": {
     "mtime": 1777946799.5691602,
     "hash": "9ce5b8e7d3dbc670508420c550f7457f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-sitecore-html-cache-poisoning-leading-to-rce.md": {
-    "mtime": 1777946799.5693107,
-    "hash": "0d3a3207753c26515b5b3eb1c07bc376"
+    "mtime": 1778785524.122576,
+    "hash": "d3d460e73a3d6b1ed7e7bed1236896f0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/6-gcs-testpermissions-api-for-permission-enumeration.md": {
-    "mtime": 1777959421.5165138,
-    "hash": "70a4d09790e2174921b1c2800236636e"
+    "mtime": 1778785524.2108872,
+    "hash": "58d821dec24e2fe01d578a2022b330d7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/13-testing-static-keywords-like-my-vs-tenant-id-for-cross-tenant-access.md": {
-    "mtime": 1777953721.452229,
-    "hash": "cfe15f48527a75fd84812da8a47b5c72"
+    "mtime": 1778785524.1100576,
+    "hash": "b3900ebf8cf6ed1ab11f61d206102e82"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-reusing-a-one-time-coupon-code-multiple-times.md": {
-    "mtime": 1777946799.569797,
-    "hash": "3426400321f7c08e46fd0dd715609a74"
+    "mtime": 1778785524.1914937,
+    "hash": "aa8cad4e68b56b7095537cbaa3b26d59"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/15-vhost-fuzzing-with-ffuf-on-ips.md": {
-    "mtime": 1777946799.5700495,
-    "hash": "58bd5e33cb89a228aaafaa632a2f4320"
+    "mtime": 1778785524.2093325,
+    "hash": "73cec4c8cdfbe14cd68cfa52f09165f7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-r.md": {
-    "mtime": 1777946799.5702026,
-    "hash": "71df2503983d7cb90871e92ffb966d2e"
+    "mtime": 1778785524.1718864,
+    "hash": "a133acfbb22515db7285d8beca670294"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-azure-blob-storage-anonymous-access-gateway.md": {
-    "mtime": 1777946799.570343,
-    "hash": "31b56d16a19e9205a3e1c823401afa19"
+    "mtime": 1778785524.1738546,
+    "hash": "f0dc774f3f3bb51b7af921739582e768"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/12-http-2-request-tunnelling-for-web-cache-poisoning-portswigger-lab-technique.md": {
-    "mtime": 1777946799.5704515,
-    "hash": "8a3ca1221aff8b4330eb4adfbf617e1f"
+    "mtime": 1778785524.1715095,
+    "hash": "e6c3b3fb26c5a91ee298b241cf884479"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/17-refund-race-condition-for-multiple-refunds.md": {
-    "mtime": 1777946799.5707457,
-    "hash": "0d399c6e33efec079acca3a4bdb45009"
+    "mtime": 1778785524.1904066,
+    "hash": "41933f14a6468adb8f98fba7f8c87437"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/13-negative-quantity-addon-for-discount-exploitation.md": {
     "mtime": 1777946799.5708385,
     "hash": "e47f8ffb1c376c91de262811fc26e19c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-google-gemini-memory-pollution-via-malicious-email-prompt-injection.md": {
-    "mtime": 1777946799.570945,
-    "hash": "c2450f38048b3e3acc57d4c3cc9f7b1c"
+    "mtime": 1778785524.0952756,
+    "hash": "76747e00dd1c515758a82c97f0004ce0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-17-funky-chunks-ambiguous-chunk-line-terminators-for-request-smuggling.md": {
-    "mtime": 1777946799.5710614,
-    "hash": "c20bfb11f69d8139a947d70b1f9a5379"
+    "mtime": 1778785524.1723669,
+    "hash": "3525ca885e85b2abbfa7f8acec4ecb01"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/102-2-oauth-account-fusion-pre-takeover-via-email-matching-bypass.md": {
-    "mtime": 1778272167.6219914,
-    "hash": "ac66fe7c6c5ab75697a39a2c0433edce"
+    "mtime": 1778785524.2321236,
+    "hash": "dc645400a97fd9f53bf887cf4b0a5c11"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-magic-links-as-gateways-to-account-takeovers.md": {
-    "mtime": 1777946799.5712438,
-    "hash": "5970eb8c1f13a8038934983ac3a263af"
+    "mtime": 1778785524.2336516,
+    "hash": "8fd5c06fad321940a55f34cb172911ad"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/104-3-idor-hunting-tips.md": {
-    "mtime": 1778272167.6221485,
-    "hash": "6a3294427f5b1d0c8a0f1741d48b8fa2"
+    "mtime": 1778785524.1645277,
+    "hash": "26cd08010c7c5921fb4478bd3c6087eb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-17-graphql-field-duplication-for-resource-exhaustion.md": {
-    "mtime": 1777946799.5714176,
-    "hash": "6e5a1d3322c2d94573315c7ae0214b99"
+    "mtime": 1778785524.1661065,
+    "hash": "ff98e7db38980025ec013beaa7451c3e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-15-servicenow-now-assist-second-order-prompt-injection-agent-to-agent-data.md": {
-    "mtime": 1777946799.5715122,
-    "hash": "914408473c6b36903481d4889d3220c7"
+    "mtime": 1778785524.0943937,
+    "hash": "3131cb5a7af309e723fe17cce5f14cf1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/101-2-graphql-endpoint-mass-user-enumeration.md": {
-    "mtime": 1778272167.622322,
-    "hash": "054c4fe1b753867701788527e44dab8c"
+    "mtime": 1778785524.164429,
+    "hash": "5f63684b32481acd9220f7d8450e6baa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-nextcloud-bola-in-outofoffice-userid-api-cross-user-ooo-data-leak.md": {
-    "mtime": 1777946799.5717497,
-    "hash": "2605a93e70d6d7877a0e00681ede1b3f"
+    "mtime": 1778785524.1140342,
+    "hash": "7290e684df1b737215074af27e5b3c02"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-post-api-rooms-room-templates-idor-cross-org-template-creation.md": {
-    "mtime": 1777946799.571953,
-    "hash": "209344b1ea978591756792e1be7f3f86"
+    "mtime": 1778785524.1129491,
+    "hash": "11cb890feb3f8473b9dec279f7a79059"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-h1-2487889-idor-on-bugs-json-exposing-private-report-details.md": {
-    "mtime": 1777946799.5721188,
-    "hash": "e0cd54f68dc7a7ab41900cf96c020872"
+    "mtime": 1778785524.1137369,
+    "hash": "aea79dd9a9c9c612f671a849d930caa5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-fastmail-dompurify-bb-sponsorship-css-sanitizer-bug-hunter-report.md": {
     "mtime": 1777946799.5722156,
     "hash": "468bf3ca113a691a9152356041e65573"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/19-broken-identity-binding-email-vs-sub-in-oauth.md": {
-    "mtime": 1777957996.6678636,
-    "hash": "20aae0cffc139ff1acc1e9231120312e"
+    "mtime": 1778785524.224008,
+    "hash": "8dd16ba938ba9ad29184e007fd1f93b3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-prompt-injection-in-github-actions-ai-agents-claude-copilot.md": {
-    "mtime": 1777946799.5725024,
-    "hash": "404c7faadc6b6b97145e0e7fdf32a431"
+    "mtime": 1778785524.212099,
+    "hash": "03660b33e7528c3f33c074696fe200dd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-asp-net-core-kestrel-request-smuggling-cve-2025-55315.md": {
-    "mtime": 1777946799.5725968,
-    "hash": "f8d2b5203e04ae0d8265b95100df1ee2"
+    "mtime": 1778785524.1721313,
+    "hash": "4ce3b8cfff29c8da1913e633b9341037"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover.md": {
-    "mtime": 1777946799.5727928,
-    "hash": "fbe8ee8f50e685d1c0df0e88531936c1"
+    "mtime": 1778785524.2334807,
+    "hash": "7983f4683582fdcc9e2d5be78535546f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/23-negative-cart-total-for-wallet-credit-exploit.md": {
-    "mtime": 1777946799.5728822,
-    "hash": "e2de91078e4c0520acf25250b64fa322"
+    "mtime": 1778785524.190826,
+    "hash": "f59cf711cf31184eddeee9066465f8bf"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/10-authenticated-katana-crawling.md": {
-    "mtime": 1777946799.572989,
-    "hash": "31e7b2c8612db97e6cae531e6364c6c0"
+    "mtime": 1778785524.2087162,
+    "hash": "119bad0a3223661f3ee78e40b6546c15"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/12-s3-misconfig-via-aws-s3-ls-no-sign-request-on-403.md": {
-    "mtime": 1777946799.5730824,
-    "hash": "9388de66ee3e6b9e6a76cf589f8bb1e1"
+    "mtime": 1778785524.2088263,
+    "hash": "753021940c42355c3760180c3caab3ca"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/5-graphql-alias-abuse-for-rate-limit-bypass.md": {
-    "mtime": 1777952568.1839175,
-    "hash": "15d43b58d8020825d3f1737f206a458c"
+    "mtime": 1778785524.1658103,
+    "hash": "ae665c503c21862d6936b5e43f6ea2d3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/2-cspt2csrf-client-side-path-traversal-to-cross-site-request-forgery.md": {
-    "mtime": 1777956111.054756,
-    "hash": "14e34688b3788f261d902c9a17c7df8d"
+    "mtime": 1778785524.1531477,
+    "hash": "93135a8ef8f57dac61d7431925c1525f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-bola-in-lovable-vibe-coding-api-cross-project-source-db-leak.md": {
-    "mtime": 1777946799.5735023,
-    "hash": "577d48e8b934d74000167c51d88b228b"
+    "mtime": 1778785524.1127543,
+    "hash": "7ef60de90d8adc0265e49c94cea8b05e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md": {
-    "mtime": 1777946799.5736048,
-    "hash": "bdc5fb72330e4c8912d56c880be92939"
+    "mtime": 1778785524.1722445,
+    "hash": "363c117de5a4886ad9f53f3c7d4846d1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-web-cache-deception-via-path-mapping-exploitation-portswigger-lab-real-w.md": {
-    "mtime": 1777946799.5737076,
-    "hash": "7a507e266422c12f867cb5e1e2a3a8ee"
+    "mtime": 1778785524.1227043,
+    "hash": "4ce7dff6527905dba550a7f24e8edf4b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-cspt-to-jsonp-xss-hunter-x-report.md": {
-    "mtime": 1777946799.5738087,
-    "hash": "d88fcc54b42d92430fbd30badf00d1e4"
+    "mtime": 1778785524.2001877,
+    "hash": "43e654a3cda2c7c994ba0e58fe63819e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-pingora-transfer-encoding-http-1-0-parsing-issues-cve-2026-2835.md": {
-    "mtime": 1777946799.5739155,
-    "hash": "2301899d643490bd6c70a7aa417e07c3"
+    "mtime": 1778785524.1725926,
+    "hash": "c498530556e19d529f7e07446d9daf95"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-otp-qr-link-base64-idor-admin-session-hijack-via-employer-portal.md": {
-    "mtime": 1777946799.5741007,
-    "hash": "ee314060bdc689cd234da30843264dfa"
+    "mtime": 1778785524.1130502,
+    "hash": "36d42757d08d0177e88b09fd6e772114"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-idor-in-user-profile-api-15k-critical-via-parameter-swap.md": {
-    "mtime": 1777946799.5743706,
-    "hash": "c40a62e1a3ca22177a210bbe7566b36a"
+    "mtime": 1778785524.1136236,
+    "hash": "edfe4e721687ac04b6b3f2f7632e98e4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/9-amass-track-for-new-subdomains.md": {
-    "mtime": 1777946799.5744956,
-    "hash": "bf80ab0b285491870cd3054fc64c4f1d"
+    "mtime": 1778785524.21117,
+    "hash": "044521c24281add689b933509e3a2ac7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-25-graphql-introspection-on-wiki-subdomain-leading-to-schema-sensitive-data.md": {
-    "mtime": 1777946799.5747097,
-    "hash": "80dd452cdd4f4a2a5a8cab4f7a16a711"
+    "mtime": 1778785524.1665924,
+    "hash": "1e5936977f4a8c88fa85d3d1b5e03500"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-19-500-uuid-swap-idor-in-device-management-api.md": {
-    "mtime": 1777946799.5748308,
-    "hash": "deab0776c5381dba735df71f6df4576f"
+    "mtime": 1778785524.1134243,
+    "hash": "47051cc8296f639f4e9e94dad0e7773f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-oauth-query-parameter-injection-in-nextjs-auth0.md": {
-    "mtime": 1777946799.574953,
-    "hash": "bac2e4e283b6d9b2aeb6f8320bed9109"
+    "mtime": 1778785524.2256715,
+    "hash": "10d834364d09f7978f697a56ea074333"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-1-click-cspt-to-stored-id-rogue-sentry-put-csrf.md": {
-    "mtime": 1777946799.5750566,
-    "hash": "f3149d06c64ad8cc2e9221ce2dd28540"
+    "mtime": 1778785524.2258823,
+    "hash": "2ad190797f2f103ac060066dd34aa8c2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/13-paramspider-arjun-for-hidden-params.md": {
-    "mtime": 1777946799.5751693,
-    "hash": "a3be51ad307764fb34e985dfe36da04c"
+    "mtime": 1778785524.198497,
+    "hash": "575cb2698678a67ac37b5caa4fda3ac8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/20-coupon-stacking-via-parallel-api-calls.md": {
-    "mtime": 1777909746.6129446,
-    "hash": "6722a64b60bf9f59478e6e8eef17be1d"
+    "mtime": 1778785524.190623,
+    "hash": "750c769d47d0753c084fa03e61d1d381"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/4-array-based-batching-for-brute-force-login-otp-bypass.md": {
-    "mtime": 1777952102.2026966,
-    "hash": "ecc4c2272a5480e3dceb290887e69a11"
+    "mtime": 1778785524.1656964,
+    "hash": "ee651698726733111fc25e0161bf52f5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/13-cspt-file-upload-bypass-to-arbitrary-file-read.md": {
-    "mtime": 1777955649.3805923,
-    "hash": "fdd1597f475f641c78bed9236da9502e"
+    "mtime": 1778785524.1587949,
+    "hash": "5d18ff521615bb9a87fd002cd106a77a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/10-saml-bug-bounty-checklist.md": {
-    "mtime": 1777946799.5759926,
-    "hash": "3b2b978853c98c69a94f23035977ef27"
+    "mtime": 1778785524.223342,
+    "hash": "8ddd88779b18826a4065126e6ca03ff0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-idor-scheduled-job-data-leaked-across-projects-by-projectid-singlestore.md": {
-    "mtime": 1777946799.5761344,
-    "hash": "4e91aabcef7ebb23194e3ee5093c25bb"
+    "mtime": 1778785524.1146922,
+    "hash": "1e868c8f64df41acc810cea821732207"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-17-5500-recon-only-bug-via-passive-enum-to-internal-config.md": {
-    "mtime": 1777946799.576327,
-    "hash": "88a16c2699e82f58e32c5c876285278e"
+    "mtime": 1778785524.2119935,
+    "hash": "8c322d3aa1d94a196306412652fc1029"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-19-integer-overflow-in-http-2-trailer-headers-for-smuggling.md": {
-    "mtime": 1777946799.5764368,
-    "hash": "c579a088eeed45bc44a3ba1962fd98e1"
+    "mtime": 1778785524.1724787,
+    "hash": "16c4aa8a007953f575eb18c2c8939a28"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-dos-via-mutation-aliasing-in-graphql-account-recovery.md": {
-    "mtime": 1777946799.5767152,
-    "hash": "9224a431c2e9d4f440c77544b36bd31f"
+    "mtime": 1778785524.1667953,
+    "hash": "68d43b34ffbbff211ae221fc99f11084"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/3-clairvoyance-for-schema-extraction-when-introspection-disabled.md": {
-    "mtime": 1777955649.3797278,
-    "hash": "f64fca385fd7098bf7b7956c89435490"
+    "mtime": 1778785524.2106512,
+    "hash": "89ad73a954214795909554b3cedb1163"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/8-asn-lookup-pivot-from-js-api-ips.md": {
     "mtime": 1777946799.5770278,
     "hash": "5b7012ce40b6192e9757d2d238c487a6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/21-http-3-protocol-smuggling-via-header-handling-libcurl-cve.md": {
-    "mtime": 1777946799.577203,
-    "hash": "78cf7a69563802222be21674c13464a0"
+    "mtime": 1778785524.1717649,
+    "hash": "eb91285b5c260325846f5323efd04093"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-high-impact-business-logic-bug-in-e-commerce-checkout.md": {
-    "mtime": 1777946799.57733,
-    "hash": "83fe80e6a0c10d7a9e0183ea4d0a4b5f"
+    "mtime": 1778785524.1913872,
+    "hash": "4fd1bd4f3a110f1c47294937595ccf55"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-sveltespill-cache-deception-in-sveltekit-vercel.md": {
-    "mtime": 1777946799.5774403,
-    "hash": "d6dbbb943a1e65f0c0cda72c1038034f"
+    "mtime": 1778785524.121994,
+    "hash": "085dfefcebac8e2a0d66c7245329fbae"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-cspt-levels-practical-attacks-hunter-x-post-reference.md": {
-    "mtime": 1777946799.5775554,
-    "hash": "6f1ae797476915d020b82f8ed2ddfce2"
+    "mtime": 1778785524.1542351,
+    "hash": "3ccfcd973b08d4f0da962accb10727f8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/16-websocket-subscription-introspection-bypass-in-parse-server.md": {
-    "mtime": 1777952102.202228,
-    "hash": "ffffcbc4d0feb9b180d0b505767c0156"
+    "mtime": 1778785524.190279,
+    "hash": "2c90cb4c39f1f03b3ea8e36f5075f6c4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/21-webhook-signature-missing-leading-to-spoofed-payment-success.md": {
-    "mtime": 1777909746.6130223,
-    "hash": "94d64781675085cd8dc2953a4401a663"
+    "mtime": 1778785524.1907244,
+    "hash": "3e05f3532ad27f9d104de4630c901ae0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/7-alterx-permutation-scanning.md": {
-    "mtime": 1777946799.5781116,
-    "hash": "240813382ff81d13d451a1816a93d6e6"
+    "mtime": 1778785524.2110543,
+    "hash": "a7b3361b3e0dee85ab263d828291f89b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md": {
-    "mtime": 1777909746.6172383,
-    "hash": "6ed3264d1103eb9b939aea7dbb9c5c44"
+    "mtime": 1778785524.1986074,
+    "hash": "52a61fa04ed7997a27d9e5571caee44a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/2-aws-account-takeover-via-github-actions-oidc-wildcard-trust.md": {
-    "mtime": 1777957815.3336658,
-    "hash": "0b9c04e993a1cf61b1839a3381a0384e"
+    "mtime": 1778785524.232584,
+    "hash": "e816cc9a81e06eca418f225792b6d588"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-how-i-discovered-a-web-cache-deception-attack-exposing-pii-a-real-world-c.md": {
-    "mtime": 1777946799.5784278,
-    "hash": "2be1be84c1774d449151561f264fd2bd"
+    "mtime": 1778785524.122366,
+    "hash": "b195a689193224c10460debf11643920"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-oauth-misbinding-vulnerability-silent-account-takeover.md": {
-    "mtime": 1777946799.5785732,
-    "hash": "3916eaf653c26439dd5646e6e8135a6a"
+    "mtime": 1778785524.2342386,
+    "hash": "46571e8cb877142b93763bf1881bcdf4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-multi-tenant-isolation-failure-via-client-controlled-x-prm-tenantid-heade.md": {
-    "mtime": 1777946799.5787435,
-    "hash": "deb4a775784d51c4ffeed7ae64dc1a76"
+    "mtime": 1778785524.114372,
+    "hash": "91ad4b3827a3b62c300c4b671e4ab7ae"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/18-csp-header-mining-for-internal-subs.md": {
     "mtime": 1777946799.5789275,
     "hash": "a66a464922c2d7ac0b58353db6a7dcd8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-idor-in-graphql-invitation-flow-leading-to-ato.md": {
-    "mtime": 1777946799.5790927,
-    "hash": "cd156b2f4c4ec4570eb050b19e6e2a86"
+    "mtime": 1778785524.1662095,
+    "hash": "eace34e4b9831daa75ac0ca05980aea0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-9-graphql-endpoint-leaking-millions-of-users-without-auth.md": {
-    "mtime": 1777946799.579268,
-    "hash": "19f943d65fc7ac8b3502ba4360d1d60e"
+    "mtime": 1778785524.166897,
+    "hash": "50b5315abfd1506e26f12ec8ccb4a455"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-1500-idor-fetching-5m-images-via-object-id-swap.md": {
-    "mtime": 1777946799.579391,
-    "hash": "ad5c0e8eeaf133bc5b7a58353cd752f3"
+    "mtime": 1778785524.1132097,
+    "hash": "1da9d530e1645ec222c5d7ea61bbd338"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/102-5-misconfigured-sso-leading-to-account-takeover.md": {
-    "mtime": 1778272167.6240978,
-    "hash": "00636b4a09499316c24987861c2b7282"
+    "mtime": 1778785524.2322366,
+    "hash": "c44fabe91c355b3b50f0b7cd4a27e088"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/8-json-nested-id-wrapping-bypass-for-outer-auth-validation.md": {
-    "mtime": 1777952568.1823497,
-    "hash": "6b4f7f4d5b147dcb01edf61b36ab0c90"
+    "mtime": 1778785524.1117957,
+    "hash": "8c554d12abc1efa360b4c1af5bff1406"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-privilege-escalation-to-super-admin-via-mass-assessment-in-multi-tenant-l.md": {
     "mtime": 1777946799.5796828,
@@ -1816,324 +1832,324 @@
     "hash": "b36aa860033dde27e7354a8aab24c103"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-undocumented-admin-mutation-discovery-via-introspection.md": {
-    "mtime": 1777946799.5800586,
-    "hash": "48e196bc9038c153a3878fc8c2c1b071"
+    "mtime": 1778785524.1663988,
+    "hash": "7d291827763c524efe8f09ea1cbb636b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-67.md": {
-    "mtime": 1777946799.5801637,
-    "hash": "7b4ab7a146eb490b804e5bd8b1e273f0"
+    "mtime": 1778785524.1997836,
+    "hash": "47fc9d5b644c5995572dee1eb34586cc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-next-js-cache-poisoning-via-204-responses-cve-2025-49826.md": {
-    "mtime": 1777946799.5802581,
-    "hash": "edd776d0fff8ee798ab38884f7710057"
+    "mtime": 1778785524.1235445,
+    "hash": "b272c4f1381f3b99fdf232c2b4495d44"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/25-postmessage-wildcard-origin-samesite-lax-to-pii-leak.md": {
-    "mtime": 1777909746.617765,
-    "hash": "f30dc49eb7a22e65337272b62afcbf35"
+    "mtime": 1778785524.1533918,
+    "hash": "3ba8136411a7f245d7cdd84804a6bef8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/6-dompurify-bypass-via-forcekeepattr-hook-uponsanitizeattribute-setattribute.md": {
-    "mtime": 1777956111.0556338,
-    "hash": "918b1a99e50ddd2e869da63b5f781402"
+    "mtime": 1778785524.1536295,
+    "hash": "581aa8420faf4856e41ceade3d085767"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/17-cloud-recon-2-0-ephemeral-resources-multi-cloud-enum.md": {
-    "mtime": 1777946799.580565,
-    "hash": "75bcae429a87e9c439dc23709459a9f9"
+    "mtime": 1778785524.2094388,
+    "hash": "b92ca84b2ba0e906eb3bdcb468bec6f9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-25-cve-2026-3854-github-rce-via-git-push-pipeline.md": {
-    "mtime": 1777946799.5806715,
-    "hash": "358a6ac00cf2ab86caf871ac687cc54c"
+    "mtime": 1778785524.2123425,
+    "hash": "85f645e0501275e77351a7769bf8ebe1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/201-5-claude-bug-bounty-hunter-ai-assisted-recon-for-oauth-and-graphql.md": {
-    "mtime": 1778314083.4147656,
-    "hash": "9a99a4ab72bbde2f210f8b74b51a71b6"
+    "mtime": 1778785524.22415,
+    "hash": "cbd99bf1f6b156460487c6fa1a99b916"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/15-method-switching-for-idor-impact-getpost-put-delete.md": {
-    "mtime": 1777952568.1829054,
-    "hash": "6cd2c21209c972aa79d93d9816b05a17"
+    "mtime": 1778785524.11018,
+    "hash": "bb6c3dc33a2c5252d802bea03fdb7def"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/5-s3-bucket-takeover-via-nosuchbucket-error.md": {
-    "mtime": 1777953721.452757,
-    "hash": "dd7ca05cb91eac2df7d5462ce2e432e6"
+    "mtime": 1778785524.2327485,
+    "hash": "8d0cbe08e642c1adaeed34e02374b143"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-9-low-privilege-access-to-workspace-members-data-via-direct-api.md": {
-    "mtime": 1777946799.581128,
-    "hash": "8abea73a54aee854e65e6dd33869378f"
+    "mtime": 1778785524.1151412,
+    "hash": "a50e648a19aac950cfe82db1321575ed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/20-naabu-httpx-pipeline-after-subfinder.md": {
-    "mtime": 1777946799.5813184,
-    "hash": "13e24ca41b5f8f5f7a76f55eeeaa8f40"
+    "mtime": 1778785524.209921,
+    "hash": "a728eded4c0e434df67d925c7585a70e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-12-cross-tenant-idor-in-wearables-platform-affecting-multiple-tenants.md": {
-    "mtime": 1777946799.581488,
-    "hash": "ef72f9c50ab5d1e3dd5c7285c75740d2"
+    "mtime": 1778785524.1125379,
+    "hash": "14981cf3c57ccce165ddf2ffd37cd999"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-curxecute-cve-2025-54135-prompt-injection-rce-in-cursor-ide-via-mcp-confi.md": {
-    "mtime": 1777946799.5815916,
-    "hash": "a02e269f95dc10983d68c76f226321c6"
+    "mtime": 1778785524.0955367,
+    "hash": "8877f1c65fd6968c1ca355eb62b80d79"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/21-capitalization-nested-object-tricks-for-bola-bypass-in-mass-assignment.md": {
-    "mtime": 1777909746.599445,
-    "hash": "3a677f7854752d5bd0cdebb62bc00266"
+    "mtime": 1778785524.11085,
+    "hash": "58d608ec7709aed34edfa14aec0de6d5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-gotta-cache-em-all-novel-cache-deception-and-poisoning-via-url-parsing-qu.md": {
-    "mtime": 1777946799.58185,
-    "hash": "b98717bb2031e1f5159773763080d28d"
+    "mtime": 1778785524.1232967,
+    "hash": "16733458e53b26940dd171f855a855f0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/106-3-cspt-client-side-path-traversal.md": {
-    "mtime": 1778272167.6248403,
-    "hash": "2744978a2bd0c0878b2ae30ebc450734"
+    "mtime": 1778785524.152568,
+    "hash": "4b2c7a5d4206d9a896d66d497025d546"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-20.md": {
-    "mtime": 1777946799.5819721,
-    "hash": "93140f9dfed88e8f90274aea21951520"
+    "mtime": 1778785524.1995282,
+    "hash": "e1a9937dd32a54de68b50e5b50df3563"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-massive-cross-tenant-access-control-bug-in-crm-via-host-header-swap.md": {
-    "mtime": 1777946799.5821435,
-    "hash": "5e095eaa3a709958b1ae459fbe1f8a83"
+    "mtime": 1778785524.1141357,
+    "hash": "220782f5fc5d6b385aefb60379e085b3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-21-gitlab-duo-prompt-injection-via-issue-titles-leading-to-unauthorized-act.md": {
-    "mtime": 1777946799.582272,
-    "hash": "dfdba600acabdcd06ca7012693616a08"
+    "mtime": 1778785524.1289885,
+    "hash": "e592b17c5874f75d0a2dad181e7f89cd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-unauthorized-cross-tenant-data-access-in-stripo-ai-hub-via-deleted-projec.md": {
-    "mtime": 1777946799.5824535,
-    "hash": "2b26a87a062e6f30b5ae6c457a3f22b5"
+    "mtime": 1778785524.1147923,
+    "hash": "0b7252783ef990b786054ff91666858a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/12-indirect-prompt-injection-via-pdf-upload-in-chat-with-doc-features.md": {
-    "mtime": 1777946799.5825808,
-    "hash": "d75efc4658e08f15a6d279fa027660dd"
+    "mtime": 1778785524.0933032,
+    "hash": "f358791f72c360247f6533fca31e0d8f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/12-webhook-replay-attack-for-multiple-upgrades-without-payment.md": {
-    "mtime": 1777946799.582703,
-    "hash": "2e5d498c33992295b75f83123d4d9def"
+    "mtime": 1778785524.1900635,
+    "hash": "7ab78e373036adf93f3449adf1ff88db"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-permutation-found-staging2-internal-critical-vuln.md": {
-    "mtime": 1777946799.582867,
-    "hash": "391e5e12e6eb690205932a0a3fadbec5"
+    "mtime": 1778785524.2122386,
+    "hash": "4512a5eb35053277210fc072e412ff9e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-unauthenticated-bola-on-managed-bbp-500-critical.md": {
-    "mtime": 1777946799.5832067,
-    "hash": "d2b2203f666f2bc682e07dd512f4dbc4"
+    "mtime": 1778785524.1142654,
+    "hash": "b9cae13a7e75ff7978692e8a260c6305"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/19-invoice-idor-for-unauthorized-access-refund-manipulation.md": {
-    "mtime": 1777946799.583302,
-    "hash": "a8ac99582d41b0a938eaf15914796bde"
+    "mtime": 1778785524.1905186,
+    "hash": "dfea9e3b79a56334b8ddbe47ed5a719a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-business-logic-vulnerability-in-dells-payment-api.md": {
-    "mtime": 1777946799.5833998,
-    "hash": "bb52d288c23be7f81ac96212e476b8a2"
+    "mtime": 1778785524.1911771,
+    "hash": "0a6e86e1b849196a99233f1863dd98a9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-hidden-role-escalation-via-invite-api-in-organization.md": {
-    "mtime": 1777946799.5836728,
-    "hash": "6bab72639e222eba39d5f91794988dab"
+    "mtime": 1778785524.2333672,
+    "hash": "b5476ddb93337899a717a4f214f1c2b7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/25-archive-gf-patterns-for-sensitive-files.md": {
     "mtime": 1777946799.5839877,
     "hash": "b6e55ae0db7e92bfe1750fafbda2b458"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-pwn-request-in-google-s-flank-github-actions-workflow.md": {
-    "mtime": 1777946799.584143,
-    "hash": "a4ebea5ce0fc746c9578356e58169582"
+    "mtime": 1778785524.2127585,
+    "hash": "78bcbdaf4ae8d4d96c92675efe77569c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/14-gau-wayback-for-historical-endpoints.md": {
-    "mtime": 1777946799.5842795,
-    "hash": "2d1d5c48581a8ede8d679f257348ae58"
+    "mtime": 1778785524.209078,
+    "hash": "697f988345a09017fe984c5d1610f8a3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-supportcandy-ticket-attachment-idor-cve-2026-1251-cross-ticket-file-acce.md": {
-    "mtime": 1777946799.584405,
-    "hash": "5eda58f4cba8ac5c1fe89dc0fe5efca9"
+    "mtime": 1778785524.113835,
+    "hash": "b5f503e1d6405c2fc46b7350b6d7adaa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/19-github-actions-runner-image-rce-via-supply-chain.md": {
-    "mtime": 1777953380.4326806,
-    "hash": "4b1b7dc7c59b027f939af219b7628216"
+    "mtime": 1778785524.209544,
+    "hash": "29a89b02f081d41e34f6ff70331ed9b5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/15-postmessage-csrf-via-no-origin-check-innerhtml-sink.md": {
-    "mtime": 1777946799.5845957,
-    "hash": "34ce9de1e0978837005029d59469a4b4"
+    "mtime": 1778785524.1446505,
+    "hash": "f5787e7821b10047f2e4833a189af1df"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-uuid-idor-chained-with-id-leak-endpoint-critical-cross-tenant.md": {
-    "mtime": 1777946799.5847318,
-    "hash": "f85e1d1c9a2a2f5aa296240e991db2b5"
+    "mtime": 1778785524.1144881,
+    "hash": "5c02cb4ca19f4694a0a704aa84dbe03f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/24-gowitness-nuclei-for-visual-template-scan.md": {
-    "mtime": 1777946799.585082,
-    "hash": "0db0fd0d5abcac5bb2cb09e4b72233a6"
+    "mtime": 1778785524.2105372,
+    "hash": "09d1e667b781f2c139c785587d9901ef"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-improper-access-control-on-enterprise-invitation-endpoint-leading-to-acco.md": {
-    "mtime": 1777946799.5855377,
-    "hash": "e7b90006e04850089b463c6954f48710"
+    "mtime": 1778785524.2330616,
+    "hash": "f8a8397aa04e21c38942941bcc8a991a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-vanna-ai-prompt-injection-to-rce-cve-2024-5565-via-text-to-sql.md": {
-    "mtime": 1777946799.585706,
-    "hash": "12c0f1e85e10d919b9071c0b12b8b2a7"
+    "mtime": 1778785524.0956604,
+    "hash": "21c9d9d72ca3d363eb3753ba4e06efd7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-stealing-jwt-via-oauth-redirect-uri-manipulation.md": {
-    "mtime": 1777946799.5858674,
-    "hash": "62821f7a68ca8acbec60cd699b003c89"
+    "mtime": 1778785524.2257802,
+    "hash": "3478907c04e49e7b700215a001b78dc8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-t.md": {
-    "mtime": 1777946799.5861158,
-    "hash": "30bbd967b5ecc6a1a45e3499bee653dd"
+    "mtime": 1778785524.232906,
+    "hash": "d0d487941b9ece118db45546c5a56200"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-akamai-http-request-smuggling-via-options-and-obsolete-line-folding-cve.md": {
-    "mtime": 1777946799.5862384,
-    "hash": "0c8491f2070e0a760eedd74032dc0599"
+    "mtime": 1778785524.1720235,
+    "hash": "95ddbe40a4a0425aa647179599d8093c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-idor-hunting-with-burp-suite-1000-order-api-exposure.md": {
-    "mtime": 1777946799.5863519,
-    "hash": "3bd11df82859b9e83cd9ce9e165b40d4"
+    "mtime": 1778785524.1123412,
+    "hash": "0d579b76d45f0de7776ee0cd02e3b0b8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-chatgpt-account-takeover-wildcard-web-cache-deception.md": {
-    "mtime": 1777946799.5864463,
-    "hash": "bf64dcc583ffa47d8b9840df933124ce"
+    "mtime": 1778785524.2340775,
+    "hash": "d82f92abdc34e4270d6ddf1daac01669"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md": {
-    "mtime": 1777956111.056509,
-    "hash": "f8aa5e8dbe1b25febcc9cc4652ce5d61"
+    "mtime": 1778785524.1988573,
+    "hash": "6407cb570897d97079e6e0107eec0387"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/17-markdown-image-exfil-via-llm-output-handling-in-chatbots.md": {
-    "mtime": 1777946799.5867352,
-    "hash": "7a46023694080bb27ec1c6348b71d34d"
+    "mtime": 1778785524.0934393,
+    "hash": "b982ed3c93651702785d08a5ad9425de"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-cl-te-request-smuggling-bounty-win-via-desync-step-by-step.md": {
-    "mtime": 1777946799.5868487,
-    "hash": "e7bc7e76eba3594f1a6133a3d6b3c1e0"
+    "mtime": 1778785524.1727097,
+    "hash": "16c1517b57c90a3e9703f4a73a484cd4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/16-subdomain-takeover-check-with-subzy.md": {
-    "mtime": 1777946799.586972,
-    "hash": "8be0b9770d4992227e9c03f50a708aaf"
+    "mtime": 1778785524.2324617,
+    "hash": "1e2fbdea8d184827af858f581ed0d70a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-graphql-idor-in-shopify-staff-access-cross-shop-billing-data.md": {
-    "mtime": 1777946799.5870821,
-    "hash": "7abbb2c75fd761fd2ab2108d1618d1e3"
+    "mtime": 1778785524.1912825,
+    "hash": "28ec578e2ba63288d420a8b497edbab3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-github-copilot-config-hijack-via-prompt-injection-month-of-ai-bugs.md": {
-    "mtime": 1777946799.5871758,
-    "hash": "e4e7f0669f2df7219e8fa44038408cd9"
+    "mtime": 1778785524.212621,
+    "hash": "5b8d091cb7d39eb016a38e14385623af"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/101-4-race-conditions-and-business-logic-in-microservices-for-2026-bug-bounties.md": {
-    "mtime": 1778272167.6261287,
-    "hash": "d23bb9da99330e518b5009bdbf2b38db"
+    "mtime": 1778785524.1898413,
+    "hash": "6836b0e6061c988e9809d0e785dab7a7"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/22-object-limit-overriding-with-large-pagination-in-queries.md": {
-    "mtime": 1777959421.5160062,
-    "hash": "e8f84fd986c94d36c96b136af359067c"
+    "mtime": 1778785524.1653516,
+    "hash": "1252200ac5a78be3037501fc7ea3d7e9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/24-array-idor-in-graphql-by-wrapping-ids-in-nested-objects.md": {
-    "mtime": 1777909746.6062882,
-    "hash": "563c4b9a9b263bd3fa196b63d9efef59"
+    "mtime": 1778785524.1654692,
+    "hash": "0fbcc298c3202b06780593af74cfdc83"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/14-fareid-parameter-tampering-for-unauthorized-subscription-pricing.md": {
-    "mtime": 1777909746.6124916,
-    "hash": "bade5ab0086dbac03aa9094258a9c4a6"
+    "mtime": 1778785524.1901689,
+    "hash": "b13bb4452405712342ac50e683f3854d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-i-found-an-idor-worth-20000-pii-exposure-via-staging-api-idor.md": {
-    "mtime": 1777946799.5877554,
-    "hash": "861ccdb4a2395259cc4e28968743821c"
+    "mtime": 1778785524.1121244,
+    "hash": "d2c7485be3dd48d06b92a672ef30c88c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-account-takeover-via-google-oauth-misconfiguration.md": {
-    "mtime": 1777946799.5879157,
-    "hash": "0748ece098e6f7dd2805d53c1602c234"
+    "mtime": 1778785524.2339094,
+    "hash": "8b5279fccc5603d58e16126426e821bc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/11-cloudenum-s3scanner-for-buckets.md": {
     "mtime": 1777946799.5880249,
     "hash": "8a45530b9335a856bc736ea38acb1bb2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-leakage-of-hidden-elements-via-prompt-injection-in-llm-browser-agents.md": {
-    "mtime": 1777946799.5881164,
-    "hash": "16953fe3e052f7af002594110e09714d"
+    "mtime": 1778785524.0941358,
+    "hash": "21c2999d26a184daf43396670e4e7aed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-9-langchain-graphcypherqachain-prompt-injection-to-sqli-cve-2024-8309.md": {
-    "mtime": 1777946799.588213,
-    "hash": "62fcc582811f388e768b32fddfa1bf99"
+    "mtime": 1778785524.0959153,
+    "hash": "681ca45988aaf8d2530eec744094a7d4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-3-invisible-prompt-injection-via-unicode-tag-characters-in-hackerone-hai-ai.md": {
-    "mtime": 1777946799.5884032,
-    "hash": "051ad9fb13d203270e1baeb63695ddde"
+    "mtime": 1778785524.0947313,
+    "hash": "1c26a3ce8a4e37f368033c5e856a0520"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-aut.md": {
-    "mtime": 1777946799.5885148,
-    "hash": "21bbfab39b5b1b64761722a4d5604a5f"
+    "mtime": 1778785524.2332153,
+    "hash": "53d70affd98da6569f7514a7ca27bbd8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/14-directive-overloading-batching-for-dos-in-graphql.md": {
-    "mtime": 1777946799.5889165,
-    "hash": "e8f503514412cdedb19efc3cf8e89065"
+    "mtime": 1778785524.1647534,
+    "hash": "530636255902da67f975ec81efd4dee5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/106-5-dom-xss-using-web-messages-and-javascript-url.md": {
-    "mtime": 1778272167.6266527,
-    "hash": "4bd474de9325c908a14a90adb61021a0"
+    "mtime": 1778785524.1983562,
+    "hash": "dc38419d4aaacd1e31e4fe7cd938da17"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-reque.md": {
-    "mtime": 1777946799.5890145,
-    "hash": "e45dbc37616136091724dadedff695c6"
+    "mtime": 1778785524.1728375,
+    "hash": "856dce710a24f4a8b39214b28fe9a71e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-hackerbot-claw-autonomous-github-actions-exploitation-2026.md": {
-    "mtime": 1777946799.5892088,
-    "hash": "af050cfcd54c17510597445094d0c954"
+    "mtime": 1778785524.211889,
+    "hash": "d4365c468c46097f8b4b62477c8bdf4d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-tenant-admin-idor-allowing-cross-tenant-file-deletion.md": {
-    "mtime": 1777946799.589369,
-    "hash": "302161ed276f70f26ba73b4982a86b9a"
+    "mtime": 1778785524.1149042,
+    "hash": "af17a5ff27fe5d65528762976de46e2f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gal.md": {
-    "mtime": 1777946799.5894828,
-    "hash": "6e8555935b6d9a5c8c19d960892e5bef"
+    "mtime": 1778785524.2002957,
+    "hash": "a1436b9e6fce0d62a08697d470a73b01"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/101-1-graphql-introspection-enabled-leading-to-idor-and-authorization-bypass.md": {
-    "mtime": 1778272167.6269531,
-    "hash": "2bd6656afd221533d382a2509daf5ea8"
+    "mtime": 1778785524.164327,
+    "hash": "d982421957d6b656952adc0f5dc7022f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/11-field-suggestion-abuse-to-rebuild-schema-blindly.md": {
-    "mtime": 1777955649.3800547,
-    "hash": "ae4a2057d89e137b20f739c78e5ec0cd"
+    "mtime": 1778785524.1646354,
+    "hash": "39ba58012e1ffd524ad472cccfefcae2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-slack-ai-indirect-prompt-injection-data-exfil-from-private-channels.md": {
-    "mtime": 1777946799.5898526,
-    "hash": "7ed7eced9241888d2eee04024d042b63"
+    "mtime": 1778785524.0957897,
+    "hash": "ac6f6133ffd5bfebc83815b31ed0aae6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-cross-tenant-improper-access-control-in-import-flow.md": {
-    "mtime": 1777946799.5901325,
-    "hash": "5e6c323370d13d638edce5b8417fdaab"
+    "mtime": 1778785524.1150243,
+    "hash": "d106dd49bf0e1a5759c5d6b6c9a01e40"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/21-referrer-policy-override-dompurify-bypass-for-oauth-ato.md": {
-    "mtime": 1777956111.0572512,
-    "hash": "03bbef4060820d8729c48c6dcc08d858"
+    "mtime": 1778785524.2243614,
+    "hash": "bf95814f44274212b51997444d716a6d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-15-bulk-report-submission-via-named-query-batching-in-h1-graphql.md": {
-    "mtime": 1777946799.5904024,
-    "hash": "4ee5a2c4ec6c2735b3a0c38fd67a3892"
+    "mtime": 1778785524.1660092,
+    "hash": "b799f4d3ca0d22201e367932c7720f34"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-critical-idor-privilege-escalation-in-role-permission-management.md": {
-    "mtime": 1777946799.5905569,
-    "hash": "67880413ab9710f4b503082a68c97d19"
+    "mtime": 1778785524.113522,
+    "hash": "2845fb5029b77ae7f480bdfa832ba938"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/9-cspt-in-desktop-apps-via-websocket-user-controlled-path.md": {
-    "mtime": 1777955649.380972,
-    "hash": "647a0bc8c30c17a8e2b73bd2bd6f7c6f"
+    "mtime": 1778785524.199003,
+    "hash": "a6b885064f5bb78838a9526e41ac98df"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/22-gcs-bucket-data-exfil-via-signed-url-copy.md": {
-    "mtime": 1777956487.03276,
-    "hash": "1c8535926bb5dc6dfcb8949adc5ff297"
+    "mtime": 1778785524.1374116,
+    "hash": "7b82f5e3f9cc1b526ba49104f1461466"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-unauth-idor-on-nasa-gitlab-users-api-pii-hostnames-exposed.md": {
-    "mtime": 1777946799.5908723,
-    "hash": "7fc3841f0d92cc423cac446d4e45c8a9"
+    "mtime": 1778785524.1286948,
+    "hash": "9188c5ca95e2443f7e594dd29db85492"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md": {
-    "mtime": 1777946799.591031,
-    "hash": "192fdb51f0b19f95d964e36134ca48e5"
+    "mtime": 1778785524.233784,
+    "hash": "a2548f8c601f423515f85876db8de832"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/103-3-saml-authentication-bypass-checklist-for-bug-bounty.md": {
-    "mtime": 1778272167.6274993,
-    "hash": "f92fdec3110641ae28c427c37b48b893"
+    "mtime": 1778785524.2236967,
+    "hash": "cd1cf3d01f52263a39279c97382456b3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/21-tenant-id-manipulation-in-graphql-field-selection-for-workspace-data.md": {
-    "mtime": 1777957815.3331213,
-    "hash": "2b3bf57941dec072484e3e186d47aceb"
+    "mtime": 1778785524.165223,
+    "hash": "c228f7524285f9bea8579f09e2c7b294"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/25-second-order-idor-via-scheduled-jobs-async-processing.md": {
-    "mtime": 1777952568.18356,
-    "hash": "914c0fb3a05bb6965d28bad1f6b09c67"
+    "mtime": 1778785524.1116705,
+    "hash": "326aad0ab6ceb2e4a41cd40625814dbc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-frontegg-workspace-level-cross-tenant-manipulation.md": {
     "mtime": 1777946799.5914626,
@@ -2144,216 +2160,216 @@
     "hash": "e46dea2daeeee49156c7705100272c8e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/20-agent-stdout-leakage-of-creds-via-debug-prints-in-llm-skills-supply-chain.md": {
-    "mtime": 1777946799.5916252,
-    "hash": "e7407bfc1a78a9669d70d57acb7f087b"
+    "mtime": 1778785524.0936697,
+    "hash": "519b2664118347be1b1787a97b0e75bc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/105-4-race-condition-multiple-refund-abuse.md": {
-    "mtime": 1778272167.6278145,
-    "hash": "b6b3b0b02af57545ed9ef457b604ca6d"
+    "mtime": 1778785524.1899529,
+    "hash": "c12e2b405b466a4cacfdf9ab49c7d324"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/7-azure-blob-anonymous-container-access-check.md": {
-    "mtime": 1777953721.4443302,
-    "hash": "d0d54d286e24bdd19c5bebbd639b6eb0"
+    "mtime": 1778785524.1737165,
+    "hash": "6ecc6fb9d55314e8e0f2776a269f6a1b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/16-role-context-validation-failure-in-multi-step-workflows.md": {
     "mtime": 1777946799.5918858,
     "hash": "8abcb251e9e7e68115ecd371b32bf3d8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-price-manipulation-in-public-bug-bounty-program-subscription-plans.md": {
-    "mtime": 1777946799.5919895,
-    "hash": "02ac405a32468be8f7d81e6c864b35cd"
+    "mtime": 1778785524.1910741,
+    "hash": "479516d7c36127a822aba3f68e9de7df"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/22-postman-public-workspace-recon-for-apis.md": {
-    "mtime": 1777952102.203213,
-    "hash": "02a2a342f793d4b43fd66d9e44843b28"
+    "mtime": 1778785524.2101402,
+    "hash": "deae31b7fc102fcfeac516b74e3d861c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/106-1-client-side-path-traversal-exploiting-csrf-in-header-based-auth-scenarios.md": {
-    "mtime": 1778272167.6280444,
-    "hash": "154861c60c879ced3bb78f854b68ac2c"
+    "mtime": 1778785524.1524312,
+    "hash": "2dbeab808c49af66cec369d6e987d3ed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-s3-xss-via-bucket-misconfig-bucketlist-tool.md": {
-    "mtime": 1777946799.5921977,
-    "hash": "85b6161ecf01213ec0a3b94b5e4e62e7"
+    "mtime": 1778785524.200015,
+    "hash": "c7bf3dd91eb321118005810ea1ddc5ce"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/24-graphql-introspection-batching-for-data-leak-abuse.md": {
-    "mtime": 1777956487.0335567,
-    "hash": "5d7ee70aa2babeccc6980af65707f1b3"
+    "mtime": 1778785524.20115,
+    "hash": "e3a2bb54cd9c517568440603d1987ad9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-1-500-oauth-account-fusion-pre-takeover-attack.md": {
-    "mtime": 1777946799.592569,
-    "hash": "526622542bab89b9fee9530e107100ff"
+    "mtime": 1778785524.2348006,
+    "hash": "b7f052d3cb21b8d286102813cb2e2fe5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-12-autogpt-ssrf-protection-bypass-to-internal-services.md": {
-    "mtime": 1777946799.5926683,
-    "hash": "522477d08a3c07113228a38590f893e5"
+    "mtime": 1778785524.1385565,
+    "hash": "a23e79c5ac96a1ce77dc8b83a4d29956"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-10-oauth-param-injection-in-nextjs-auth0-returnto.md": {
-    "mtime": 1777946799.5927606,
-    "hash": "82fac581b232007ef75a87cb39d1c026"
+    "mtime": 1778785524.2271392,
+    "hash": "fdbd9c6b8386df899b723dda3afb339c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-11-next-js-single-request-dos-via-framework-resource-leak.md": {
     "mtime": 1777946799.5928786,
     "hash": "d4816135de35745ee617892bdc6e882f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/16-subgroupid-manipulation-for-unauthorized-post-creation.md": {
-    "mtime": 1777953721.4479244,
-    "hash": "49ec4544d32f2cd4bac4e6eb35da82ac"
+    "mtime": 1778785524.1160204,
+    "hash": "62ad599b663d366a6508fccf8344ab71"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-24-jwt-claim-forging-for-arbitrary-tenant-role-in-multi-service-saas.md": {
-    "mtime": 1777946799.593101,
-    "hash": "7acb9298a8399e2ba1d0ba285f4775a5"
+    "mtime": 1778785524.2284997,
+    "hash": "6f6fa6ce0b3962399b61a83fa7e5cf96"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/201-1-what-bugs-you-should-look-for-in-a-graphql-api-bug-bounty-case-study.md": {
-    "mtime": 1778314083.4127543,
-    "hash": "9f9c8567e7bce0bde2d1fd31dcc66e2a"
+    "mtime": 1778785524.167735,
+    "hash": "f286626f4add17e3a91030a5e28c500d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/107-1-client-side-path-traversal-cspt-bug-bounty-reports-and-techniques.md": {
-    "mtime": 1778272167.6284115,
-    "hash": "de6863dfe29fe346ad492d592cca79c9"
+    "mtime": 1778785524.1547475,
+    "hash": "e9e6c64d1daea28950270b7b040940b0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/3-bac-via-http-method-swap-version-rollback-array-id-injection.md": {
-    "mtime": 1777952102.2037692,
-    "hash": "5dad4963a994c3eb9cbeb0166c3d7f01"
+    "mtime": 1778785524.2012956,
+    "hash": "e32276b12e43ed745a7ac3a59b5a741e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-15-reusing-one-time-coupon-via-order-state-confusion.md": {
-    "mtime": 1777946799.5933032,
-    "hash": "c0aa317ed0abe24ef4bb5a017980a06e"
+    "mtime": 1778785524.1923583,
+    "hash": "13516f7dba8b65b2d3956d1312f749b5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/201-2-graphql-bug-bounty-2026-introspection-abuse-injection-broken-authorization.md": {
-    "mtime": 1778314083.4135976,
-    "hash": "5e94a3f2f74eb019b72020d99b41989f"
+    "mtime": 1778785524.1678371,
+    "hash": "68017d834283111fadf34ce911651fc2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-8-business-logic-flaw-ability-to-bypass-user-limit-and-add-multiple-members.md": {
-    "mtime": 1777946799.5934014,
-    "hash": "a276486f792fc871257147b4cd1062ae"
+    "mtime": 1778785524.1932812,
+    "hash": "967964daaf9dba510dd1995fcc2aa4ba"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-9-next-js-cache-poisoning-race-condition-cve-2025-32421.md": {
-    "mtime": 1777946799.5935023,
-    "hash": "0a8eff5ead6787dbde0fee426d150d65"
+    "mtime": 1778785524.1935344,
+    "hash": "57529ff6a9a273b9c4492a2f7fba9850"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/14-checkout-bypass-via-parameter-tampering-in-e-com.md": {
     "mtime": 1777957996.667448,
     "hash": "1653db1e047043b9d627d9f24a2cc8c5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-8-github-hidden-unicode-bypass-of-utf-warning-filter.md": {
-    "mtime": 1777946799.5936854,
-    "hash": "aadd2e308b9c92398b67e589240b911e"
+    "mtime": 1778785524.2136714,
+    "hash": "b4927b13861b51673b10122813386934"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/17-react2shell-scanner-for-next-js-cve-bypass-waf.md": {
-    "mtime": 1777959421.517544,
-    "hash": "391f7a39c9fbb5156e0ab694f14f65df"
+    "mtime": 1778785524.2356884,
+    "hash": "66a394bf48b5e9c2d93cd6fbd01a5bf2"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/5-graphql-alias-abuse-for-rate-limit-bypass.md": {
-    "mtime": 1777946799.5939434,
-    "hash": "5e565c661ea9336d0cbd2dbbc71c02a4"
+    "mtime": 1778785524.1683483,
+    "hash": "5b10596932f3c51beb6925746518ea65"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-3-oauth-authentication-bypass-leading-to-pii-disclosure.md": {
-    "mtime": 1777946799.594085,
-    "hash": "eac52d314e6efc0164f9a436fa2bee62"
+    "mtime": 1778785524.228614,
+    "hash": "7f6e3c58ef2edb987c233bc46886f485"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/20-mobile-vs-desktop-user-agent-crawl-for-version-diffs.md": {
     "mtime": 1777956487.0329633,
     "hash": "e6e502ac96f1f5a143dbbdf554c4f989"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-2-sign-in-as-anyone-bypassing-saml-sso-with-parser-differentials.md": {
-    "mtime": 1777946799.5944467,
-    "hash": "6d81befbc9111e6552e3f0cba4730501"
+    "mtime": 1778785524.2278702,
+    "hash": "4762e8063d8f0733f571e061c26e5c4b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-23-cve-2025-22146-sentry-saml-sso-auth-bypass.md": {
-    "mtime": 1777946799.5946944,
-    "hash": "259d7dabd8847f3c7b31d6d91edbaf7a"
+    "mtime": 1778785524.235067,
+    "hash": "0147a0dc9e7f0f1b3c3fa3362078a946"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-9-nextjs-auth0-insecure-session-cache-key-hijack.md": {
-    "mtime": 1777946799.5947986,
-    "hash": "ab80ea7fb6709328abaca717bdc9424d"
+    "mtime": 1778785524.1239028,
+    "hash": "ddca99c5c2c757ec1354163712e217ec"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-18-chatgpt-azure-backdoor-via-domain-allow-list-prompt-injection-month-of-a.md": {
-    "mtime": 1777946799.5949028,
-    "hash": "cdce9069f50e81dcfc02409c43807e64"
+    "mtime": 1778785524.1386654,
+    "hash": "398a4fffd7924b7630cd8d0ab37f1e90"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/20-coupon-stacking-via-parallel-api-calls.md": {
-    "mtime": 1777946799.5951176,
-    "hash": "e9f2d91ec89bdc2dc096ea0f32ffcc1b"
+    "mtime": 1778785524.1919074,
+    "hash": "6531446d07012c64a59c2eda3a261448"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/18-firebase-rule-enumeration-data-leak-via-misconfig.md": {
     "mtime": 1777956487.0324757,
     "hash": "0b7795bf7f7ab56b13993261fdc2be8c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-3-web-cache-deception-when-a-404-still-leaks-sensitive-data.md": {
-    "mtime": 1777946799.5953164,
-    "hash": "2597781310ac43dd9ddeb51007358aee"
+    "mtime": 1778785524.123659,
+    "hash": "5f08d727bb74f74416a937fa34beb811"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-5-still-running-http-1-1-in-2026-your-website-might-be-exposed-to-http-requ.md": {
-    "mtime": 1777946799.5954356,
-    "hash": "d5ff9cb665b9798b3b78310aac2f3d67"
+    "mtime": 1778785524.172972,
+    "hash": "53642267729383b0d9dfcfda37e3a29d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/4-array-based-batching-for-brute-force-login-otp-bypass.md": {
-    "mtime": 1777946799.5956302,
-    "hash": "edd8a0905897731177d216b1e028b21b"
+    "mtime": 1778785524.1682556,
+    "hash": "8f30ce763afb0960b4c58945ed10d399"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/106-2-cspt-resources.md": {
-    "mtime": 1778272167.629101,
-    "hash": "c831144ce6d5224aa89106c3fd09d587"
+    "mtime": 1778785524.1546438,
+    "hash": "3a3e11ecc6b173599448e567563978fa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/13-cspt-file-upload-bypass-to-arbitrary-file-read.md": {
-    "mtime": 1777946799.5957594,
-    "hash": "7f36e4e64474b7fe98585c8a580bc060"
+    "mtime": 1778785524.1589231,
+    "hash": "09502e41a389cb5787d656b3ae6c86ef"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/3-clairvoyance-for-schema-extraction-when-introspection-disabled.md": {
-    "mtime": 1777946799.595884,
-    "hash": "42647d2d65ff7c9687ee049353464a86"
+    "mtime": 1778785524.213359,
+    "hash": "61dc6f67a61a3222c7972b1bf123c4b6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-16-pre-account-takeover-via-oauth-email-modification.md": {
-    "mtime": 1777946799.5960703,
-    "hash": "d3727343655360e03e4884677d290549"
+    "mtime": 1778785524.2349174,
+    "hash": "0e3874e49870eafc03f2fc856b298ec6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/16-websocket-subscription-introspection-bypass-in-parse-server.md": {
-    "mtime": 1777946799.5962317,
-    "hash": "fff2e976319b1a8666f3bb1a0e4053ce"
+    "mtime": 1778785524.1918037,
+    "hash": "a132bfa1fdb39733284c2199aaaba408"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/21-webhook-signature-missing-leading-to-spoofed-payment-success.md": {
     "mtime": 1777946799.5963337,
     "hash": "a03077229710969513d6e66b20fae559"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md": {
-    "mtime": 1777946799.5964365,
-    "hash": "19b8e4c89763917483296cd4d184f90a"
+    "mtime": 1778785524.2007866,
+    "hash": "bdcb1afe1a4a2fe7d50fdc2ec00886bb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-20-microsoft-teams-guest-access-cross-tenant-policy-bypass.md": {
-    "mtime": 1777946799.5965698,
-    "hash": "aaea7983c1330e0ec9a5611c98720b02"
+    "mtime": 1778785524.1173894,
+    "hash": "64e1d020f2e9b9882c75bd9ab8e7c94a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/8-json-nested-id-wrapping-bypass-for-outer-auth-validation.md": {
-    "mtime": 1777946799.5966985,
-    "hash": "ae6c490a0dd1390804161e6ea1732aa4"
+    "mtime": 1778785524.1168437,
+    "hash": "6fab260dce348289608f4aa07f950258"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/25-postmessage-wildcard-origin-samesite-lax-to-pii-leak.md": {
-    "mtime": 1777946799.596824,
-    "hash": "798e7ff6eca3dfaafa939374e6e036ae"
+    "mtime": 1778785524.1468976,
+    "hash": "dc22b0941b4c164bb20d972b0635855b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/107-3-what-s-coming-to-our-github-actions-2026-security-roadmap.md": {
-    "mtime": 1778272167.629446,
-    "hash": "b68c2c02307f5b71b12acd8f5276ec44"
+    "mtime": 1778785524.2129693,
+    "hash": "cc41e26b3ace2dab2e7f401f5a78c3bb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/6-dompurify-bypass-via-forcekeepattr-hook-uponsanitizeattribute-setattribute.md": {
     "mtime": 1777946799.5969472,
     "hash": "b82e1abdf4ff298dbd350d045a20917e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/21-otp-bypass-via-response-manipulation.md": {
-    "mtime": 1777946799.5970643,
-    "hash": "ead21e07d9b42050f1f83ded9c52b4f0"
+    "mtime": 1778785524.234683,
+    "hash": "24ae07c32708de74fb6005bdbc3752cc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-22-business-logic-flaw-in-subscription-paywall-for-profile-access.md": {
-    "mtime": 1777946799.5971587,
-    "hash": "39669caeffe7e38707dace8a7d85f4bf"
+    "mtime": 1778785524.1926813,
+    "hash": "6cb134d6978a1ffa283a11508b806bc6"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/104-5-state-of-api-security-2026-report.md": {
-    "mtime": 1778272167.6296315,
-    "hash": "22821937dbd11e4ab85966abfce64310"
+    "mtime": 1778785524.1674223,
+    "hash": "98439dd2accef94955da1982430a9ffd"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-2-echoleak-cve-2025-32711-zero-click-indirect-prompt-injection-data-exfil-i.md": {
-    "mtime": 1777946799.5972784,
-    "hash": "a722343493034daf82c063318d9f834d"
+    "mtime": 1778785524.0962524,
+    "hash": "f5ea58cdcfce3ba5c048683c05a20017"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-23-trix-editor-1000-bounty-via-smart-paste-handling.md": {
     "mtime": 1777946799.5973878,
@@ -2364,168 +2380,168 @@
     "hash": "9bf89be70f147d62e28a9f3d29711bfe"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-21-logical-2fa-email-verification-bypass-via-pre-2fa-jwt-acceptance.md": {
-    "mtime": 1777946799.5975866,
-    "hash": "ee3263d2aa41b27e10e839fbf418ccf2"
+    "mtime": 1778785524.2281692,
+    "hash": "4c15d2a58d6e606de858f541cf2cfcfc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/21-capitalization-nested-object-tricks-for-bola-bypass-in-mass-assignment.md": {
-    "mtime": 1777946799.597744,
-    "hash": "fc5a9e80def521ab27d6118c8b267969"
+    "mtime": 1778785524.1162374,
+    "hash": "1610c50d3a67ff6f02be58ca7a7426dc"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-9-from-idor-to-bypass-fixed-bug-still-exposed-6-4m-users-data-part-2.md": {
-    "mtime": 1777946799.5978553,
-    "hash": "e1b6b0f88e776f2619dd88f894804d0a"
+    "mtime": 1778785524.1177166,
+    "hash": "14c7bfa050e7660f687f6333d5f2fa5f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/104-4-graphql-pentesting-for-bug-bounty-hunters.md": {
-    "mtime": 1778272167.6299105,
-    "hash": "8903aaf87b4edfbd39cc8772a6d0e809"
+    "mtime": 1778785524.1673143,
+    "hash": "c7f011eb54ad7da30c072263ebd0ec54"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-7-subscription-paywall-bypass-leading-to-talent-profile-access-and-pii-disc.md": {
-    "mtime": 1777946799.5979488,
-    "hash": "f2d91d93819095bdc3e7223c73149522"
+    "mtime": 1778785524.193149,
+    "hash": "9fe8c87cc7d0aa58cb5566a0c67fc944"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-ele.md": {
-    "mtime": 1777946799.5980606,
-    "hash": "1e59f566792205bd7c86db8e7ec0a325"
+    "mtime": 1778785524.2015817,
+    "hash": "50ea989509e18ae14f34794cfc02726e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/1-nested-json-idor-bypass.md": {
-    "mtime": 1777957815.334133,
-    "hash": "5cf7e46f57c0260f6cc1ae90fef1ce6d"
+    "mtime": 1778785524.1152656,
+    "hash": "a01cb431dde6f39a03a15de8900c98da"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/101-5-hackerone-graphql-and-oauth-top-reports-2025-2026.md": {
-    "mtime": 1778272167.6301043,
-    "hash": "ab721b8cd3c56cac2aceffc75b1f6507"
+    "mtime": 1778785524.2262704,
+    "hash": "6ffe947611fd3f611e6d64ce124263e5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-20-saml-xsw-novel-bypasses-via-void-canonicalization.md": {
-    "mtime": 1777946799.5982757,
-    "hash": "558528b729bf102e658c537a650bc0ec"
+    "mtime": 1778785524.2280521,
+    "hash": "18bb9c465a23f74af5de2ee534d51f47"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-12-nested-object-traversal-for-authorization-bypass-in-graphql.md": {
-    "mtime": 1777946799.5984359,
-    "hash": "e9d98fe937d67983b443e7757d826ef4"
+    "mtime": 1778785524.1685624,
+    "hash": "efba431c1004439ad51c4dedb4545a8b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/22-parameter-discovery-for-sqli-xss-ssrf-via-6-methods.md": {
-    "mtime": 1777957996.6670194,
-    "hash": "728d854973e5df6e47b6f98c7239fb5d"
+    "mtime": 1778785524.2010026,
+    "hash": "710861c8a60f166bf5297cbd8249cee5"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-11-business-logic-bypass-allows-setting-read-access-role-without-pro-plan-s.md": {
-    "mtime": 1777946799.59862,
-    "hash": "cea8dfe5bbf73260718fb51c1bda692d"
+    "mtime": 1778785524.192247,
+    "hash": "c0d81c9ae0ef126929e06765d0230291"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-1-subscription-bypass-leading-to-full-access-to-paid-features.md": {
-    "mtime": 1777946799.5987165,
-    "hash": "227d963a460cc1560d4bc2578f835f8e"
+    "mtime": 1778785524.1920187,
+    "hash": "7e60b8980e48de05f19c4d637c9e6bcb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-17-slack-integration-allowing-unauthorized-workspace-self-join-bypassing-se.md": {
-    "mtime": 1777946799.5988963,
-    "hash": "523095c2b33102c821727c940861c97b"
+    "mtime": 1778785524.1172853,
+    "hash": "61a0a57b3d637b868a5a208ad2ee7c49"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-8-unauthenticated-graphql-by-prepending-schema-to-private-operations.md": {
-    "mtime": 1777946799.5990074,
-    "hash": "2271bf9aefd55db9767fa369ccc84c2f"
+    "mtime": 1778785524.1689546,
+    "hash": "5392705300a82519e445b8a2188468df"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-7-idor-in-jwt-protected-card-viewer-api.md": {
-    "mtime": 1777946799.5992737,
-    "hash": "e507ec0d3b56a73ecb08850c43e1ec8c"
+    "mtime": 1778785524.228914,
+    "hash": "b0a57345586b4febfdf4d9c67442e620"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-6-full-workspace-account-takeover-via-jwt-alg-none.md": {
-    "mtime": 1777946799.5995708,
-    "hash": "fc6180ed368c40c3442751d81af60bb7"
+    "mtime": 1778785524.2351832,
+    "hash": "8a46cd94785ffb8968e4a683bbcf8b6f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-6-opera-ssh-key-authority-rce-via-group-access-rule-manipulation.md": {
     "mtime": 1777946799.5996637,
     "hash": "5c43abf98c6881530ca467a88a3db8cb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md": {
-    "mtime": 1777946799.599766,
-    "hash": "586e7d403858d718cb47d101451da271"
+    "mtime": 1778785524.2014375,
+    "hash": "0f3301052e210d620eb8fca19b4176cb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/19-pdf-log4shell-payload-crafting-for-processors.md": {
-    "mtime": 1777957996.666782,
-    "hash": "0a48fcbeeef2cda8d9e2dbd229f9e234"
+    "mtime": 1778785524.2265697,
+    "hash": "9cdd11c419f333ff22158558f205cae8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-4-hackerone-saml-signup-domain-enforcement-bypass.md": {
-    "mtime": 1777946799.6,
-    "hash": "a686cfd9152ed7c44391c918ecf3183b"
+    "mtime": 1778785524.2287111,
+    "hash": "60a6302237201d9c82b577aff90a8cd3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-12-dompurify-3-1-3-3-1-5-bypass-via-unicode-normalization-touppercase-conte.md": {
     "mtime": 1777946799.6001022,
     "hash": "afeaffc9632a306219b2039543ce05c4"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/24-array-idor-in-graphql-by-wrapping-ids-in-nested-objects.md": {
-    "mtime": 1777946799.6002858,
-    "hash": "13515607100e9ab53b196fd91f3990ba"
+    "mtime": 1778785524.167934,
+    "hash": "32684f1455033ff3fb40ee6535d7fc72"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/14-fareid-parameter-tampering-for-unauthorized-subscription-pricing.md": {
-    "mtime": 1777946799.6003852,
-    "hash": "13357075ad008aea666579d4b1499324"
+    "mtime": 1778785524.1917012,
+    "hash": "cfbd0a6dcee8ce61504cd5ceda489efb"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/13-blind-xss-with-js-import-long-term-callback.md": {
-    "mtime": 1777946799.600481,
-    "hash": "9fecfcea269d25f3699b2a8fac9429b8"
+    "mtime": 1778785524.2006469,
+    "hash": "e8e958fda3b59618cb9ac04284dae4ec"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-1-graphql-introspection-enabled-batch-query-idor-and-authorization-bypass-i.md": {
-    "mtime": 1777946799.600651,
-    "hash": "5bb9a44daf0898c9e7c6f5d207515021"
+    "mtime": 1778785524.1684484,
+    "hash": "896a6c983942d3b46ac2a778f18d98ed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-12-jwt-logic-confusion-bypassing-authentication.md": {
-    "mtime": 1777946799.6008005,
-    "hash": "7a685e7dab7b70c332cb54c85c0cae2a"
+    "mtime": 1778785524.2272382,
+    "hash": "422a22fe63cb1886235536d2d2c96384"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-10-business-logic-error-bypassing-payment-with-test-cards-in-production.md": {
-    "mtime": 1777946799.6009119,
-    "hash": "e4ee481e19f1a6354bc7d2d3856ced16"
+    "mtime": 1778785524.192148,
+    "hash": "b5be5a536ca8ecdb59b8ca975dd0f27a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-9-this-is-how-i-hacked-a-payment-flow-using-business-logic-abuse.md": {
-    "mtime": 1777946799.6010234,
-    "hash": "1878e0e6170d0dae7810486cd9ff4a24"
+    "mtime": 1778785524.1936622,
+    "hash": "110cbc537c6e0fbbf978d049f050e38e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-6-1500-pii-leak-via-graphql-field-level-permission-bypass.md": {
-    "mtime": 1777946799.6011393,
-    "hash": "4aadc9ce4f13d08afa2bcf58cf8a32be"
+    "mtime": 1778785524.16876,
+    "hash": "e0102752e09460d1e00bf4db19c24430"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-4-how-i-bypassed-premium-subscription-escalated-privileges-using-a-0-vcc.md": {
-    "mtime": 1777946799.6012354,
-    "hash": "66025d34379105fa0474aa2fdc182bda"
+    "mtime": 1778785524.1928172,
+    "hash": "ad2747750416374e792c5bcbf0f9f934"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/11-field-suggestion-abuse-to-rebuild-schema-blindly.md": {
-    "mtime": 1777946799.6015408,
-    "hash": "d79579ca2c2519f3752637baa0cbbba7"
+    "mtime": 1778785524.1675355,
+    "hash": "f6e8974fd8e9a272941302366cd800ad"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/21-referrer-policy-override-dompurify-bypass-for-oauth-ato.md": {
-    "mtime": 1777946799.60165,
-    "hash": "bdb54492d924a1a3eb97cb951a445798"
+    "mtime": 1778785524.2268016,
+    "hash": "9e7fc827e090b681d4df0df960e70156"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-13-pillar-security-rce-in-google-antigravity-ai-agent-manager-via-pi-file-c.md": {
     "mtime": 1777946799.6017563,
     "hash": "a52c3e017c0e2d38bfd45f79685e5ac3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/15-wayback-for-private-post-file-access-post-removal.md": {
-    "mtime": 1777946799.6018534,
-    "hash": "79f6ae0406e848c6e344b73accc22b50"
+    "mtime": 1778785524.1159108,
+    "hash": "21eee7c94fe4643c4a912fcade4856be"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-8-account-takeover-using-sso-login.md": {
-    "mtime": 1777946799.6019776,
-    "hash": "25593cb89d80351370078383e35e2e0f"
+    "mtime": 1778785524.2352965,
+    "hash": "ec1ba5ad26a88a24480bcb29a34d6cf1"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/7-google-cloud-armor-waf-bypass-via-subdomain-host-header.md": {
-    "mtime": 1777955649.3793066,
-    "hash": "bc2c0c636762f9554150c1378b4bc4f3"
+    "mtime": 1778785524.2360868,
+    "hash": "539b1a05c678f34178b08ff088a21470"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-23-azure-storage-account-cheat-sheet-recon-tricks.md": {
-    "mtime": 1777946799.6021788,
-    "hash": "a5bbd5bb01985dc054f117b78dedf55e"
+    "mtime": 1778785524.2135696,
+    "hash": "e84e40e6d7b393f753d5f0ce7ae9af88"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/104-1-the-depths-of-bola-and-idor.md": {
-    "mtime": 1778272167.6311371,
-    "hash": "39c3af3897f96ac96684fba82a8286b8"
+    "mtime": 1778785524.1672022,
+    "hash": "6b2843f1f9349ca6a859dbd16abb3c46"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/2-asn-pivot-on-ips-from-js-api-responses.md": {
-    "mtime": 1777959421.5177798,
-    "hash": "993d5f7313487765af7520557eb18084"
+    "mtime": 1778785524.2132235,
+    "hash": "bbec41aa848ea48014a864246d92a3b0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/105-5-refunds-one-of-the-most-underrated-engineering-problems.md": {
-    "mtime": 1778272167.6312618,
-    "hash": "fc5232fd36d81c5e471b3fb5a3624116"
+    "mtime": 1778785524.1916003,
+    "hash": "9793749ac1a5fc04e8aef3d6a7a1f20b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-10-export-button-bypassing-team-permission-via-client-supplied-team-id.md": {
     "mtime": 1777946799.6025572,
@@ -2536,108 +2552,108 @@
     "hash": "c00e1ee0aa68e13a0d3102ca3ba5887c"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md": {
-    "mtime": 1777946799.6027427,
-    "hash": "4c4af28e95234304c43441bde8be8b9f"
+    "mtime": 1778785524.2017217,
+    "hash": "4bc18f1ea51b37bde26ed699445850b9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/case-derived-5-how-insecure-apis-allow-hackers-to-break-subscription-logic-and-unlock-pr.md": {
-    "mtime": 1777946799.6028745,
-    "hash": "f2614467b33df00d06a6c1f3bd25dfac"
+    "mtime": 1778785524.192923,
+    "hash": "b3122bd237f91cad00280f8814c1401e"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/niche_tricks/102-4-jwt-md-cheatsheet-with-2025-2026-real-world-cves.md": {
-    "mtime": 1778272167.6314821,
-    "hash": "69e620f7b975301ec4d1ebee38d85884"
+    "mtime": 1778785524.2263663,
+    "hash": "e9a59387366d7c78783fdc63f00e66e0"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/8-nested-json-object-wrapping-for-idor-bypass-in-api.md": {
-    "mtime": 1777957815.3345318,
-    "hash": "e99a24f197b3d623f751cb14c444dfff"
+    "mtime": 1778785524.107987,
+    "hash": "597aa325a1d0541e0412c28256ee4864"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-11-idor-fetching-5-million-images-via-broken-access-control.md": {
-    "mtime": 1777946799.6032145,
-    "hash": "8edd546c50c6a423d1d2caf1e2c5ba8b"
+    "mtime": 1778785524.108219,
+    "hash": "16071453d14324899bdebef87612f9a8"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/19-second-order-idor-via-profile-update-affecting-high-privilege-module.md": {
-    "mtime": 1777957815.33483,
-    "hash": "711246284757d46f878c854db6c4aa6a"
+    "mtime": 1778785524.197207,
+    "hash": "49366f713c87ed00c3626710bb15c2aa"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md": {
-    "mtime": 1777946799.6035404,
-    "hash": "ed620e528c0d27b8adb777157574973c"
+    "mtime": 1778785524.1367974,
+    "hash": "784a55af1b259540fee912e2442cd668"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-16-csrf-despite-x-frame-options-in-ai-workflow-endpoint.md": {
-    "mtime": 1777946799.6036499,
-    "hash": "4a8fbb80c0ec10a5cad0c2df0eff4ea3"
+    "mtime": 1778785524.14351,
+    "hash": "75daca68c1380e5b9ff8fa153c17fa46"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/24-api-versioning-bypass-legacy-v1-endpoints-lack-patches-in-saas.md": {
-    "mtime": 1777953721.4469807,
-    "hash": "587eb51725f4b5741bb1d62ffcb2abe6"
+    "mtime": 1778785524.1974776,
+    "hash": "d17ee8f69439d56857e49c720035e73d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-21-mass-assignment-idor-in-rest-api-for-privilege-escalation.md": {
-    "mtime": 1777946799.6038666,
-    "hash": "b30e7ba9cb9b863d09be80025fd7ab7c"
+    "mtime": 1778785524.108837,
+    "hash": "e38b0d4502c7753bb397a7997e2f02c9"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-1-finding-an-idor-in-user-profile-api-a-15-000-journey-to-critical.md": {
-    "mtime": 1777946799.6039774,
-    "hash": "374f4829a874adec94711f04a429bc1b"
+    "mtime": 1778785524.1081078,
+    "hash": "0ea7fe1239c0fd2f3e9b7f0a2f380b76"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md": {
-    "mtime": 1777946799.6041064,
-    "hash": "9272bdf11e57964b187f1bb137ea2ce7"
+    "mtime": 1778785524.222923,
+    "hash": "58b22a85e245691e5d9e49c1ec1efed3"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-18-prompt-injection-to-sandbox-escape-rce-in-google-antigravity-ai-ide.md": {
-    "mtime": 1777946799.6042159,
-    "hash": "a802bdc767f29f49c1a6b8168f14044a"
+    "mtime": 1778785524.092729,
+    "hash": "8264c2ea44d2cb381e03595ef43cab12"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md": {
-    "mtime": 1777946799.6043205,
-    "hash": "a2032ed321b95307259c6db0a43c503d"
+    "mtime": 1778785524.1978555,
+    "hash": "3ca198b28aec12eca6886271f23d5712"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-12-race-condition-broken-access-control-leading-to-super-admin-creation.md": {
-    "mtime": 1777946799.604423,
-    "hash": "a81b8e105e585c9c050ea7553edba219"
+    "mtime": 1778785524.1896236,
+    "hash": "5cd1767c8787156600eee502d2737054"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-3-rce-via-group-access-validation-flaw-in-ssh-key-authority-open-source-too.md": {
-    "mtime": 1777946799.6045258,
-    "hash": "e5efb23b863a34fdba87ddb4b70bccc4"
+    "mtime": 1778785524.1437244,
+    "hash": "2a10f71b45945e6d56161a11e022dc2f"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-13-prototype-pollution-to-rce-in-project-update-api.md": {
-    "mtime": 1777946799.604629,
-    "hash": "34f8fcd378f5a71846821f461d1776fe"
+    "mtime": 1778785524.1977453,
+    "hash": "3b2f67371503da0f40ef38a688c01785"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-10-stored-xss-in-apple-developer-portal.md": {
-    "mtime": 1777946799.6047301,
-    "hash": "484b379e24340ac952fc3a7fa498ef91"
+    "mtime": 1778785524.1976163,
+    "hash": "f25e0cccac5907ee8dac52eb37b7e1ed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md": {
-    "mtime": 1777946799.604832,
-    "hash": "17fb08ba12e0c9d77943b67f552f104a"
+    "mtime": 1778785524.1368968,
+    "hash": "08a4852f6019ca51dfe99ff1bfca2d5a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-25-business-logic-race-condition-idor-in-fintech-recharge-history-api.md": {
-    "mtime": 1777946799.604935,
-    "hash": "4182669c67698093e16ccd1cac5c0598"
+    "mtime": 1778785524.1897311,
+    "hash": "4fcaba71ad1083b4ce7ebbb5b6ded20a"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-6-real-ssrf-via-ipv6-redirects-on-hackerone.md": {
-    "mtime": 1777946799.6050444,
-    "hash": "a4eee37469d628b4bf18a9e1853c2c74"
+    "mtime": 1778785524.136998,
+    "hash": "e1262d2a41886c41daabf3933923502d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md": {
-    "mtime": 1777946799.6051438,
-    "hash": "eef39cf26bc35729569c68a95bda8755"
+    "mtime": 1778785524.1366997,
+    "hash": "ed4954dc9aeacffe4fb286e7909a5396"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature.md": {
-    "mtime": 1777946799.6052535,
-    "hash": "b38bb3b41f5980e69e235f4d42eae94b"
+    "mtime": 1778785524.1970937,
+    "hash": "eaf39e60f75df2341a202dfd2a5f5920"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-17-idor-in-saved-payments-api-on-zomato-multi-tenant.md": {
-    "mtime": 1777946799.60536,
-    "hash": "30ce773643323035673ca5b872cbfb70"
+    "mtime": 1778785524.1085298,
+    "hash": "f2cdb0bb9a8bb53562559cabdb0939ed"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-7-idor-in-multi-tenant-api-via-uuid-swap-in-device-info-endpoint.md": {
-    "mtime": 1777946799.6054587,
-    "hash": "1d5d0f216e598165734856bae9ac740d"
+    "mtime": 1778785524.109281,
+    "hash": "1f4517cfe8f8331db8573f5bdf74564d"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/case-derived-15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md": {
-    "mtime": 1777946799.60556,
-    "hash": "d95579eac32740edaa4474a322e75ce7"
+    "mtime": 1778785524.2223918,
+    "hash": "95c0d433824427168c34e1d18598d326"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/docs/intelligence_kb/techniques/evergreen_new_context/_index.md": {
     "mtime": 1778314083.5796077,
@@ -3240,8 +3256,8 @@
     "hash": "2b371579e5b864805fc2163f5fe19e8b"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/frontend/index.html": {
-    "mtime": 1778768787.6875184,
-    "hash": "110fdc0bbad527a019fcd51ca4af056e"
+    "mtime": 1778785734.094507,
+    "hash": "7762c2acc022a99748c226945a234380"
   },
   "/Users/spider/Development/codex_workspace/Bug Bounty Hunting/apps/grok-kb-agent-suite/deploy/wechat-rss/README.md": {
     "mtime": 1778769227.183009,

@@ -81,3 +81,7 @@ JWT issued before OTP/magic link verification accepted on protected endpoints
 ## 相关案例链接
 
 - (X writeup referenced)
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

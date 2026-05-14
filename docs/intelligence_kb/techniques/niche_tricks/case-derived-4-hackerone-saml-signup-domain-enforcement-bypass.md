@@ -81,3 +81,7 @@ Append %0d%0a control chars to email param in POST /users to split and bypass do
 ## 相关案例链接
 
 - https://hackerone.com/reports/2101076
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

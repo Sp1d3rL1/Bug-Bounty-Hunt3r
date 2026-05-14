@@ -71,3 +71,11 @@ Source snippet confirms exact title match: "BB Day18: OAuth 2.0 Bug Bounty 2026 
     verification: tavily snippet verifies page content and title; direct browse confirms site structure
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

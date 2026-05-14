@@ -79,3 +79,5 @@ Duplicate fields (content content content) in batched queries to force repeated 
 ## 相关案例链接
 
 - https://kizerh.medium.com/exploiting-graphql-a-full-spectrum-security-assessment-covering-introspection-injection-and-560f49a44f36
+
+<!-- backlink: docs/checklists/graphql.md -->

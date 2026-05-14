@@ -83,3 +83,7 @@ CacheKey construction ignores Host header enabling host collision poisoning
 ## 相关案例链接
 
 - https://blog.cloudflare.com/pingora-oss-smuggling-vulnerabilities/
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

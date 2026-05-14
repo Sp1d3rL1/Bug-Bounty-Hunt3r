@@ -81,3 +81,9 @@ PoC": - /url: https://ch4ndan.medium.com/how-i-found-xss-cve-2025-0133-using-sho
 ## 相关案例链接
 
 - https://ch4ndan.medium.com/how-i-found-xss-cve-2025-0133-using-shodan-39a37eae7807
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

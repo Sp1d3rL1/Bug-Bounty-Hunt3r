@@ -77,6 +77,63 @@ def _source_health(sid: str) -> dict:
     return {'id': sid, 'last_metric': _last_metric_for(sid)}
 
 
+def _checklists_summary() -> dict:
+    """List checklists + their linked sources + bucket expected counts.
+
+    Re-uses the bucket logic in scripts/checklist_extend.py so the dashboard
+    sees the same numbers as `make checklist-report`.
+    """
+    import re as _re
+    cl_dir = PROJECT_ROOT / 'docs' / 'checklists'
+    rows: list[dict] = []
+    expected: dict[str, int] = {}
+    try:
+        import sys as _s
+        scripts_dir = PROJECT_ROOT / 'scripts'
+        if str(scripts_dir) not in _s.path:
+            _s.path.insert(0, str(scripts_dir))
+        import checklist_extend as _ce  # type: ignore
+        buckets = _ce.bucket_kb()
+        per_checklist = _ce.expected_for_each_checklist(buckets)
+        for cid, paths in per_checklist.items():
+            expected[cid] = len(paths)
+    except Exception as e:  # noqa: BLE001
+        # bucket logic optional; fall back to just sources count
+        expected = {}
+    for path in sorted(cl_dir.glob('*.md')):
+        text = path.read_text(encoding='utf-8')
+        if not text.startswith('---\n'):
+            continue
+        end = text.find('\n---\n', 4)
+        if end < 0:
+            continue
+        fm = text[4:end]
+        cid = path.stem
+        anchor = ''
+        m = _re.search(r'^owasp_anchor:\s*\[(.*?)\]', fm, _re.M)
+        if m:
+            anchor = m.group(1)
+        maturity = ''
+        m = _re.search(r'^maturity:\s*([A-Za-z\-]+)', fm, _re.M)
+        if m:
+            maturity = m.group(1)
+        # count sources entries (block-style preferred)
+        block = _re.search(r'^sources:\s*\n((?:\s+-\s+.*\n?)+)', fm, _re.M)
+        sources_count = len(block.group(1).strip().splitlines()) if block else 0
+        if not block:
+            inline = _re.search(r'^sources:\s*\[(.*?)\]', fm, _re.M)
+            if inline and inline.group(1).strip():
+                sources_count = len([s for s in inline.group(1).split(',') if s.strip()])
+        rows.append({
+            'id': cid,
+            'sources': sources_count,
+            'expected': expected.get(cid, sources_count),
+            'owasp_anchor': anchor,
+            'maturity': maturity,
+        })
+    return {'count': len(rows), 'checklists': rows}
+
+
 def json_bytes(obj, status=200):
     return status, 'application/json; charset=utf-8', json.dumps(obj, ensure_ascii=False, indent=2).encode('utf-8')
 
@@ -129,10 +186,12 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(*json_bytes(_source_health(src_id)))
             if path == '/api/playbooks':
                 return self._send(*json_bytes({
-                    'enabled': False,
-                    'message': 'Phase 3 — playbooks runtime not yet enabled.',
-                    'planned_count': 6,
+                    'enabled': True,
+                    'message': 'Phase 2.5 — checklist health summary; see /api/checklists',
+                    'checklist_count': _checklists_summary().get('count', 0),
                 }))
+            if path == '/api/checklists':
+                return self._send(*json_bytes(_checklists_summary()))
             if path == '/api/match':
                 return self._send(*json_bytes({
                     'enabled': False,

@@ -81,3 +81,7 @@ Introspect full schema then send array of batched queries to exploit IDOR on oth
 ## 相关案例链接
 
 - https://infosecwriteups.com/graphql-security-how-i-found-and-exploited-critical-idor-and-authorization-bypass-in-a-42ab78e13642
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

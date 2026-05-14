@@ -81,3 +81,5 @@ CL.TE desync in real target leading to full exploitation chain
 ## 相关案例链接
 
 - https://undercodetesting.com/how-i-earned-a-00-bounty-with-clte-request-smuggling-a-step-by-step-guide-to-exploiting-http-desync-attacks-video/
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

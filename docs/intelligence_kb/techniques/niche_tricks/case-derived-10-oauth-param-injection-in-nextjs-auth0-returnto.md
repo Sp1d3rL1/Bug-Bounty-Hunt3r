@@ -79,3 +79,7 @@ Inject & or ? in returnTo param to override scope audience etc. in login flow
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

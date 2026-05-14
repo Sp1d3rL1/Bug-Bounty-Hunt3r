@@ -81,3 +81,5 @@ Malicious": - /url: https://www.bugcrowd.com/blog/a-guide-to-the-hidden-threat-o
 ## 相关案例链接
 
 - https://www.bugcrowd.com/blog/a-guide-to-the-hidden-threat-of-prompt-injection/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

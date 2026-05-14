@@ -81,3 +81,7 @@ Swap enterprise_id in POST invitation request to add self as Owner to any enterp
 ## 相关案例链接
 
 - https://infosecwriteups.com/breaking-and-reporting-bugs-the-story-behind-my-comet-and-black-hole-wins-on-yeswehack-15d5f0d39d50
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

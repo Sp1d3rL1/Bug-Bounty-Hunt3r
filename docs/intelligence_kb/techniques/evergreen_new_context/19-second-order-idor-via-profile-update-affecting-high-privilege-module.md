@@ -134,3 +134,11 @@ SaaS 用户管理系统，尤其是包含 Profile 自助更新 + 内部高权限
 X post technical tips (real hunter) by @theXSSrat
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

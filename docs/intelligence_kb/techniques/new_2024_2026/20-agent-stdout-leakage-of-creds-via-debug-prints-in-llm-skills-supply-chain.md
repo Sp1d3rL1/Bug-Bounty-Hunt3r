@@ -81,3 +81,5 @@ Console.log/print() in agent skills captured by framework into LLM context for q
 ## 相关案例链接
 
 - https://x.com/ihtesham2005/status/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

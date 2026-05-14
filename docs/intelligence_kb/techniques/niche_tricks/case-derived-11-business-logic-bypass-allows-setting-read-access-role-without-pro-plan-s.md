@@ -79,3 +79,5 @@ manipulate free-tier requests to assign Pro-only roles/permissions via API logic
 ## 相关案例链接
 
 - https://hackerone.com/reports/3591764
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

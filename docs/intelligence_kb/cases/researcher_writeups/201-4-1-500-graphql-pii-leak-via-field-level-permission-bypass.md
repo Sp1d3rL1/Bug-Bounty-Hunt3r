@@ -56,3 +56,5 @@ Source: direct article verification confirms bounty amount, PII impact, and Grap
     verification: Direct browse confirmed exact match to provided title, author, and technical details
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->

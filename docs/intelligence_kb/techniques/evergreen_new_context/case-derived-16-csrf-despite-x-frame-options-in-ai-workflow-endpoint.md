@@ -79,3 +79,5 @@ Bypass": - /url: https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-161-ai
 ## 相关案例链接
 
 - https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-161-ai-workflows-csrf-despite-xfo-and-dtmf-exfil
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->

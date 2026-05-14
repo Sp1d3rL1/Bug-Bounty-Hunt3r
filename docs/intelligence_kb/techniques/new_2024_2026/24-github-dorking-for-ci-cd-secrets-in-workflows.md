@@ -83,3 +83,5 @@ Dork .github/workflows for hardcoded keys/tokens in CI/CD YAML
 ## 相关案例链接
 
 - https://medium.com/@thenewdate24/github-dorking-the-complete-2026-hunters-guide-to-finding-exposed-secrets-9a72331ed5bb
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

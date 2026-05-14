@@ -81,3 +81,11 @@ Race condition: DL artifact mid-run to extract GITHUB_TOKEN from .git/config/log
 ## 相关案例链接
 
 - https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

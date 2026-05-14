@@ -142,3 +142,7 @@ AWS允许任何账户创建未被占用的桶名；CNAME仍指向该桶时，错
 - [https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9](https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

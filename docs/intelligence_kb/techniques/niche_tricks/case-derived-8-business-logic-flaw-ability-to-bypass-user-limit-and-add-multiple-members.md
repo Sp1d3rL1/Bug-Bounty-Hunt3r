@@ -79,3 +79,5 @@ deactivate user to free slot add new then parallel reactivate requests via Burp 
 ## 相关案例链接
 
 - https://medium.com/@hgr00x/business-logic-flaw-ability-to-bypass-user-limit-and-add-multiple-members-without-payment-45ccc3d32a89
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

@@ -81,3 +81,9 @@ Open redirect_uri or missing validation allows code exchange on attacker domain
 ## 相关案例链接
 
 - https://cybersecuritywriteups.com/account-takeover-via-google-auth-misconfiguration-af4a59dd82e7
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

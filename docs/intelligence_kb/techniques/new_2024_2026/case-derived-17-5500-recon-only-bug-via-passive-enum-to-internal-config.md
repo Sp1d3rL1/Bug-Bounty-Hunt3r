@@ -79,3 +79,5 @@ Amass Subfinder CRT.sh waybackurls → internal-dashboard → /admin-config.json
 ## 相关案例链接
 
 - https://infosecwriteups.com/how-i-found-a-5-500-bug-using-just-reconnaissance-2768fdba5ff2
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

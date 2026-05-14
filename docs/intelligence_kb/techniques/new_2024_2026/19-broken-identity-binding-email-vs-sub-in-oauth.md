@@ -138,3 +138,7 @@ sub是IdP提供的稳定唯一ID，而email可被用户/攻击者更改，导致
 - 其他已披露OAuth identity binding BB报告
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

@@ -144,3 +144,9 @@ PDF处理器在解析文件时常生成包含用户输入的日志消息，Log4J
 - Intigriti Log4Shell研究文章（2025）
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

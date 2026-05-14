@@ -65,3 +65,9 @@ Start with IDOR on GraphQL operation ID then escalate via WebSocket error-based 
     - https://medium.com/@DarkyOS/sql-injection-in-graphql-websocket-escalated-to-pii-document-leak-09ba7ad2800a (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

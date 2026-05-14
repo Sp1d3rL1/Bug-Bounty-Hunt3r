@@ -114,3 +114,11 @@ OAuth 流程常依赖 Referrer 传递状态，而现代浏览器默认严格 Ref
 - [https://x.com/AmirMSafari/status/1923065022508318798](https://x.com/AmirMSafari/status/1923065022508318798)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

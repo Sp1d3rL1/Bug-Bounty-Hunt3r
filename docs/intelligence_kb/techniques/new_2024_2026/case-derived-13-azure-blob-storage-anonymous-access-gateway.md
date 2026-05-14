@@ -79,3 +79,7 @@ Enable anonymous read on containers leading to data exfil
 ## 相关案例链接
 
 - https://infosecwriteups.com/azure-blob-storage-misconfigurations-attackers-gateway-to-data-b7d8e957440e
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/kubernetes_container.md -->

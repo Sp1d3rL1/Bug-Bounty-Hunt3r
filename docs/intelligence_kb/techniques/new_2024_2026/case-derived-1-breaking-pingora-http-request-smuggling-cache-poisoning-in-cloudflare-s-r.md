@@ -81,3 +81,9 @@ Upgrade header triggers premature passthrough smuggling pipelined requests past 
 ## 相关案例链接
 
 - https://xclow3n.github.io/post/6/
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

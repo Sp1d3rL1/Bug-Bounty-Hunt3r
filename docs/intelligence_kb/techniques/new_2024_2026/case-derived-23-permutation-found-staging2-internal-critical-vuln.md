@@ -79,3 +79,5 @@ alterx/puredns on base subs → staging2.internal → full exploit chain
 ## 相关案例链接
 
 - https://wolfsec1337.medium.com/ultimate-recon-guide-bug-bounty-2025
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

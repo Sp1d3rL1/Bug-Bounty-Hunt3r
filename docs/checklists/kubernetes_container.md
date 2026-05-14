@@ -6,7 +6,11 @@ cwe: [CWE-269, CWE-732]
 severity_typical: P1-P2
 playbook: playbooks/kubernetes_container.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/researcher_writeups/23-azure-storage-account-cheat-sheet-recon-tricks.md
+  - docs/intelligence_kb/techniques/new_2024_2026/7-azure-blob-anonymous-container-access-check.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-azure-blob-storage-anonymous-access-gateway.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-23-azure-storage-account-cheat-sheet-recon-tricks.md
 maturity: stable
 ---
 

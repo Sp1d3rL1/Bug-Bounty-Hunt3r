@@ -59,3 +59,5 @@ Source URL browse failed with insufficient content (likely paywall or access res
     - https://infosecwriteups.com/business-logic-error-bypassing-payment-with-test-cards-77c6e3c36f16 (tavily_extract_failed)
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

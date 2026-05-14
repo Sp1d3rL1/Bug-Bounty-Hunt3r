@@ -59,3 +59,5 @@ tags: [bug-bounty, multi-tenant, rbac, idor, fuzzing]
 
 
 > 安全边界：本卡仅用于授权项目、靶场或自有环境；任何涉及凭证、CI/CD、支付、账号状态或真实用户数据的验证都必须使用合成数据和最小影响证明。
+
+<!-- backlink: docs/checklists/api.md -->

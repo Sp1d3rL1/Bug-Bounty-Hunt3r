@@ -83,3 +83,5 @@ Wrap ID as {\"Account\":{\"Account\":victimID}} in JSON body to evade top-level 
 ## 相关案例链接
 
 - https://x.com/vuln_X/status/2048709380166889642
+
+<!-- backlink: docs/checklists/api.md -->

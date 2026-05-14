@@ -81,3 +81,9 @@ Bypass SSO identity provider checks during account linking to hijack existing us
 ## 相关案例链接
 
 - https://rikeshbaniya.medium.com/account-takeover-using-sso-logins-fa35f28a358b
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

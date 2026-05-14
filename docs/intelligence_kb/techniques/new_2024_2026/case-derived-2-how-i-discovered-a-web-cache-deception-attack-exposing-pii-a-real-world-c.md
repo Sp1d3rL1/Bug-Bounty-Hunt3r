@@ -83,3 +83,5 @@ URL/file extension (.html) + Cache-Control misconfig caches dynamic authenticate
 ## 相关案例链接
 
 - https://infosecwriteups.com/how-i-discovered-a-web-cache-deception-attack-exposing-pii-a-real-world-case-study-49aabe4258a3
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

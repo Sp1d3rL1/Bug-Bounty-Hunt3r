@@ -81,3 +81,5 @@ OPTIONS + obsolete line folding + Expect:100-continue desyncs parsing in body
 ## 相关案例链接
 
 - https://portswigger.net/research/http1-must-die
+
+<!-- backlink: docs/checklists/http_request_smuggling.md -->

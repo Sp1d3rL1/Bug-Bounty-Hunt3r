@@ -138,3 +138,5 @@ tags: [idor, json, parser-mismatch, api, saas] confidence: high
 （@vuln_X 原帖）
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

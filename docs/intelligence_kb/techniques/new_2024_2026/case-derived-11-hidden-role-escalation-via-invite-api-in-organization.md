@@ -79,3 +79,5 @@ Inject hidden role param in invite POST to escalate to org owner
 ## 相关案例链接
 
 - https://medium.com/@0xm394tr0n/hidden-role-via-invite-api-org-owner-takeover
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

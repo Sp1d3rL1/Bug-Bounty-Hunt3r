@@ -73,3 +73,7 @@ GitHub Actions CI/CD in authorized SaaS/cloud environments
     verification: Snippet confirms three-layer security approach and supply-chain hardening
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

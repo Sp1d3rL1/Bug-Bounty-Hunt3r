@@ -81,3 +81,9 @@ Bypass": - /url: https://www.redpacketsecurity.com/hackerone-bugbounty-disclosur
 ## 相关案例链接
 
 - https://www.redpacketsecurity.com/hackerone-bugbounty-disclosure-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass-eclipse/
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

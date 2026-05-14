@@ -79,3 +79,5 @@ Use query name-based batching to submit multiple reports in one GraphQL operatio
 ## 相关案例链接
 
 - https://hackerone.com/reports/2166697
+
+<!-- backlink: docs/checklists/graphql.md -->

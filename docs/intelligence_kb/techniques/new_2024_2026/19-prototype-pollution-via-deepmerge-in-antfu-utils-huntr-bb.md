@@ -70,3 +70,9 @@ Leads to XSS/RCE chains in modern JS libs; authorized disclosure
 ## 相关案例链接
 
 - https://huntr.com/bounties/009f1cd9-401c-49a7-bd08-be35cff6faef
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/deserialization.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

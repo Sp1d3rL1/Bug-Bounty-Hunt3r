@@ -99,3 +99,9 @@ $150 赏金，SSO vs 密码登录令牌处理缺陷。
     verification: browse_page 提取直接确认
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

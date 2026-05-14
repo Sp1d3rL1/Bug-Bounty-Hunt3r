@@ -81,3 +81,7 @@ Agent": - /url: https://oddguan.com/blog/comment-and-control-prompt-injection-cr
 ## 相关案例链接
 
 - https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

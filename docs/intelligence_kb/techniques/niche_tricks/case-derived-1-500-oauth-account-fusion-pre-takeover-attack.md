@@ -79,3 +79,9 @@ Unverified email/password acct + same email OAuth signup fuses and bypasses veri
 ## 相关案例链接
 
 - https://medium.com/@tinopreter/500-oauth-account-fusion-pre-takeover-attack-477484aa3813
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

@@ -6,7 +6,12 @@ cwe: [CWE-434, CWE-22, CWE-22]
 severity_typical: P1-P2
 playbook: playbooks/file_upload_parser.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/review_queue/3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/review_queue/resource-3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/techniques/new_2024_2026/13-cspt-file-upload-bypass-to-arbitrary-file-read.md
+  - docs/intelligence_kb/techniques/niche_tricks/13-cspt-file-upload-bypass-to-arbitrary-file-read.md
+  - docs/intelligence_kb/techniques/niche_tricks/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md
 maturity: stable
 ---
 

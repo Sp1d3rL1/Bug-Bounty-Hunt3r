@@ -81,3 +81,7 @@ Concurrent access to /v2/rechargeTransactionHistory without auth
 ## 相关案例链接
 
 - https://hackerone.com/reports/2746709
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

@@ -6,7 +6,33 @@ cwe: [CWE-444]
 severity_typical: P1
 playbook: playbooks/smuggling.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/13-asp-net-core-kestrel-request-smuggling-cve-2025-55315.md
+  - docs/intelligence_kb/cases/public_reports/19-integer-overflow-in-http-2-trailer-headers-for-smuggling.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-reverse-proxy.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-akamai-http-request-smuggling-via-options-and-obsolete-line-folding-cve-2025-32094.md
+  - docs/intelligence_kb/cases/researcher_writeups/14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md
+  - docs/intelligence_kb/cases/researcher_writeups/17-funky-chunks-ambiguous-chunk-line-terminators-for-request-smuggling.md
+  - docs/intelligence_kb/cases/researcher_writeups/22-pingora-transfer-encoding-http-1-0-parsing-issues-cve-2026-2835.md
+  - docs/intelligence_kb/cases/researcher_writeups/24-cl-te-request-smuggling-bounty-win-via-desync-step-by-step.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-still-running-http-1-1-in-2026-your-website-might-be-exposed-to-http-request-smuggling.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-request-smuggling.md
+  - docs/intelligence_kb/review_queue/18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md
+  - docs/intelligence_kb/review_queue/resource-18-the-ultimate-bug-bounty-guide-to-http-request-smuggling-with-cpdos-examples.md
+  - docs/intelligence_kb/review_queue/resource-25-top-10-web-hacking-techniques-of-2025-nominations-desync-endgame-chunk-trick.md
+  - docs/intelligence_kb/techniques/new_2024_2026/12-http-2-request-tunnelling-for-web-cache-poisoning-portswigger-lab-technique.md
+  - docs/intelligence_kb/techniques/new_2024_2026/15-h2-cl-desync-via-early-response-gadgets-for-response-queue-poisoning.md
+  - docs/intelligence_kb/techniques/new_2024_2026/21-http-3-protocol-smuggling-via-header-handling-libcurl-cve.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-breaking-pingora-http-request-smuggling-cache-poisoning-in-cloudflare-s-r.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-akamai-http-request-smuggling-via-options-and-obsolete-line-folding-cve.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-asp-net-core-kestrel-request-smuggling-cve-2025-55315.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-cloudflare-pingora-default-cache-key-poisoning-host-ignored.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-17-funky-chunks-ambiguous-chunk-line-terminators-for-request-smuggling.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-19-integer-overflow-in-http-2-trailer-headers-for-smuggling.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-pingora-transfer-encoding-http-1-0-parsing-issues-cve-2026-2835.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-cl-te-request-smuggling-bounty-win-via-desync-step-by-step.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-6-cache-poisoning-reloaded-deep-dive-into-cve-2025-4366-and-pingora-s-reque.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-5-still-running-http-1-1-in-2026-your-website-might-be-exposed-to-http-requ.md
 maturity: stable
 ---
 

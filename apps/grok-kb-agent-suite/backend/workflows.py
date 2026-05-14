@@ -227,4 +227,19 @@ def build_command(action: str, payload: dict[str, Any], job: dict[str, Any]) -> 
         if payload.get('dry_run'):
             cmd.append('--dry-run')
         return cmd
+    if action == 'checklist_extend':
+        script = PROJECT_ROOT / 'scripts/checklist_extend.py'
+        mode = (payload.get('mode') or 'apply').strip()
+        if mode == 'bucket':
+            return [py, str(script), '--bucket']
+        if mode == 'diff':
+            return [py, str(script), '--diff']
+        if mode == 'validate':
+            return [py, str(script), '--validate']
+        if mode == 'report':
+            return [py, str(script), '--report']
+        cmd = [py, str(script), '--apply']
+        if payload.get('commit'):
+            cmd.append('--commit')
+        return cmd
     raise ValueError(f'unknown action: {action}')

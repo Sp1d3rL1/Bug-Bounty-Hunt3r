@@ -976,3 +976,63 @@ window.addEventListener('hashchange', () => {
   if (location.hash === '#sources') refreshSources();
 });
 if (location.hash === '#sources') refreshSources();
+
+// ---------------------------------------------------------------------------
+// #playbooks route — checklist health table
+// ---------------------------------------------------------------------------
+
+async function refreshChecklists() {
+  const tbody = document.querySelector('#checklistTable tbody');
+  const summary = document.getElementById('checklistSummary');
+  if (!tbody) return;
+  summary.textContent = 'loading…';
+  tbody.innerHTML = '';
+  try {
+    const r = await fetch('/api/checklists');
+    const data = await r.json();
+    if (data.error) throw new Error(data.error);
+    const rows = data.checklists || [];
+    const totalLinked = rows.reduce((a, x) => a + (x.sources || 0), 0);
+    summary.textContent = `${rows.length} checklists · ${totalLinked} total KB links · click [Re-extend] above to refresh from KB`;
+    rows.forEach(c => {
+      const tr = document.createElement('tr');
+      const ratio = c.expected ? `${c.sources}/${c.expected}` : `${c.sources}`;
+      const status = c.sources === c.expected ? '✓' : (c.sources < c.expected ? '⚠' : '↑');
+      tr.innerHTML = `
+        <td><code>${c.id}</code> ${status}</td>
+        <td><strong>${c.sources}</strong></td>
+        <td>${c.expected}</td>
+        <td><small>${c.owasp_anchor || '—'}</small></td>
+        <td>${c.maturity || ''}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  } catch (e) {
+    summary.textContent = `error: ${e.message}`;
+  }
+}
+
+document.getElementById('checklistRefreshBtn')?.addEventListener('click', refreshChecklists);
+document.getElementById('checklistExtendBtn')?.addEventListener('click', async () => {
+  if (!confirm('Run checklist_extend --apply --commit? Will write to disk.')) return;
+  try {
+    const r = await fetch('/api/jobs', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'checklist_extend', mode: 'apply', commit: true })
+    });
+    const data = await r.json();
+    showToast(`queued re-extend: job ${data.job?.id || '?'}`);
+    setTimeout(refreshChecklists, 4000);
+  } catch (e) {
+    showToast(`re-extend failed: ${e.message}`);
+  }
+});
+document.getElementById('checklistDiscoverBtn')?.addEventListener('click', () => {
+  showToast('Run via CLI: make checklist-discover');
+});
+
+window.addEventListener('hashchange', () => {
+  if (location.hash === '#playbooks') refreshChecklists();
+});
+if (location.hash === '#playbooks') refreshChecklists();

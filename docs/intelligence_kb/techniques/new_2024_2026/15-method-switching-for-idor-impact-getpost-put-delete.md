@@ -142,3 +142,5 @@ one_line_trick: Test ID swap not just in GET but POST/PUT/DELETE bodies for modi
 - [https://infosecwriteups.com/bug-bounty-bootcamp-34-idor-beyond-get-modifying-deleting-and-method-switching-for-maximum-159554377462](https://infosecwriteups.com/bug-bounty-bootcamp-34-idor-beyond-get-modifying-deleting-and-method-switching-for-maximum-159554377462)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

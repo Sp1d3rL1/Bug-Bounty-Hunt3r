@@ -81,3 +81,5 @@ PI forces browser agent to leak hidden DOM elements/secrets from visited pages
 ## 相关案例链接
 
 - https://huntr.com/bounties/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

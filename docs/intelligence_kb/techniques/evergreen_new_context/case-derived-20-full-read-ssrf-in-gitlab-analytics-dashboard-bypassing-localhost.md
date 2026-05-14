@@ -79,3 +79,11 @@ Cube": - /url: https://gitlab.com/gitlab-org/gitlab/-/issues/491060§SSRF§Cube 
 ## 相关案例链接
 
 - https://gitlab.com/gitlab-org/gitlab/-/issues/491060
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

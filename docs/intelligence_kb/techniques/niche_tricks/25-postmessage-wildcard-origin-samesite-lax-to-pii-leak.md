@@ -83,3 +83,5 @@ target_types:
 ## 相关案例链接
 
 - https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-postmessage-vulnerabilities
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->

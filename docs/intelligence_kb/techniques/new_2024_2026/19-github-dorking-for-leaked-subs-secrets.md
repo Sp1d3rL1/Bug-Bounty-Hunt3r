@@ -79,3 +79,5 @@ site:github.com target.com "password" OR "api_key"
 ## 相关案例链接
 
 - https://www.intigriti.com/researchers/blog/hacking-tools/recon-for-bug-bounty-8-essential-tools-for-performing-effective-reconnaissance
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

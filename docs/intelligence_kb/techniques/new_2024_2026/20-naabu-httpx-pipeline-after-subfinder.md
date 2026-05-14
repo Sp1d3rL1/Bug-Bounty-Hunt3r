@@ -79,3 +79,7 @@ echo target | subfinder -silent | naabu -silent | httpx -title -tech-detect
 ## 相关案例链接
 
 - https://hacklido.com/blog/1359-my-complete-recon-workflow-for-bug-bounty-hunting-2025-edition
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

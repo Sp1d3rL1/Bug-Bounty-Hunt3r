@@ -533,15 +533,28 @@
 
     <section class="view" data-route="playbooks" id="playbooks-section" aria-labelledby="playbooks-title">
       <header class="view-header">
-        <h1 id="playbooks-title">Playbooks · 清单驱动测试</h1>
-        <p class="view-sub">把 docs/checklists/*.md 升级为可运行的测试动作。</p>
+        <h1 id="playbooks-title">Checklist Health · 知识库 → 清单链接</h1>
+        <p class="view-sub">每个 checklist 旁列出当前已链接的 KB 卡片数与桶的预期值。点击 <em>Re-extend</em> 触发流水线刷新。</p>
+        <div class="row-actions">
+          <button type="button" id="checklistRefreshBtn" class="button-link">刷新</button>
+          <button type="button" id="checklistExtendBtn" class="button-link primary">全量 Re-extend (commit)</button>
+          <button type="button" id="checklistDiscoverBtn" class="button-link">Grok Discover 新桶</button>
+        </div>
       </header>
       <section class="card">
-        <p><strong>Phase 3 待启用</strong>。当前 Phase 1 仅落地 connector 抽象层；playbook 运行时
-          将在 Phase 3 上线，配套 6 个首批 playbook（sso_oidc / cache_poisoning / cspt /
-          subdomain_takeover / api_idor_bola / cloud_metadata）。</p>
-        <p class="muted">Roadmap: <code>apps/grok-kb-agent-suite/backend/playbook_runner.py</code> +
-          <code>docs/playbooks/*.yaml</code>。</p>
+        <div id="checklistSummary" class="muted">loading…</div>
+        <table id="checklistTable" class="data-table" aria-label="Checklists">
+          <thead>
+            <tr>
+              <th>checklist id</th>
+              <th>linked sources</th>
+              <th>expected (KB)</th>
+              <th>OWASP anchor</th>
+              <th>maturity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </section>
     </section>
 

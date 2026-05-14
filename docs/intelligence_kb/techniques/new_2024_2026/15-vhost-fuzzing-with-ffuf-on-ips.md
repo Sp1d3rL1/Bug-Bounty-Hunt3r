@@ -79,3 +79,5 @@ ffuf -u - link "http://IP": - /url: http://IP - text: "-H \"Host: FUZZ.target.co
 ## 相关案例链接
 
 - https://www.yeswehack.com/learn-bug-bounty/recon-series-recap-reconnaissance-footprinting
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

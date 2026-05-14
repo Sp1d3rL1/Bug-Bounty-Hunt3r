@@ -79,3 +79,9 @@ Connect to GraphQL WS endpoint bypassing Express middleware for unauth introspec
 ## 相关案例链接
 
 - https://github.com/aw-junaid/bug-bounty/blob/main/resources/cheatsheets/GraphQL.md
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

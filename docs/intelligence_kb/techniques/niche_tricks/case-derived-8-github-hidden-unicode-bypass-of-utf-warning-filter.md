@@ -79,3 +79,5 @@ Insert invisible Unicode (U+85A4 etc.) after commands in queries to skip GitHub 
 ## 相关案例链接
 
 - https://joshua.hu/2025-bug-bounty-stories-fail
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

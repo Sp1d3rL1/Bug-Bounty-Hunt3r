@@ -83,3 +83,9 @@ Weak/missing": - /url: https://www.amrelsagaei.com/client-side-01-postmessage-bu
 ## 相关案例链接
 
 - https://www.amrelsagaei.com/client-side-01-postmessage-bugs
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

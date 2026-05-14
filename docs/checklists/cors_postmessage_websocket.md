@@ -6,7 +6,63 @@ cwe: [CWE-346, CWE-942, CWE-829]
 severity_typical: P2-P3
 playbook: playbooks/cross_origin.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-traversal.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-automation-takeo.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-stored-xss-in-apple-developer-portal.md
+  - docs/intelligence_kb/cases/researcher_writeups/104-2-from-idor-to-sql-injection-in-graphql-websocket-escalated-to-pii-leak.md
+  - docs/intelligence_kb/cases/researcher_writeups/106-4-december-ctf-challenge-chaining-xs-leaks-and-postmessage-xss.md
+  - docs/intelligence_kb/cases/researcher_writeups/14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-2024-chain.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-csrf-despite-x-frame-options-in-ai-workflow-endpoint.md
+  - docs/intelligence_kb/cases/researcher_writeups/23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md
+  - docs/intelligence_kb/cases/researcher_writeups/3-rce-via-group-access-validation-flaw-in-ssh-key-authority-open-source-tool.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-element-handling.md
+  - docs/intelligence_kb/cases/researcher_writeups/7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md
+  - docs/intelligence_kb/cases/x_threads/20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/cases/x_threads/22-cspt-to-jsonp-xss-hunter-x-report.md
+  - docs/intelligence_kb/cases/x_threads/23-1-click-cspt-to-stored-id-rogue-sentry-put-csrf.md
+  - docs/intelligence_kb/review_queue/11-client-side-postmessage-bugs-video-exploitation-guide.md
+  - docs/intelligence_kb/review_queue/24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md
+  - docs/intelligence_kb/review_queue/3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/review_queue/resource-11-client-side-postmessage-bugs-video-exploitation-guide.md
+  - docs/intelligence_kb/review_queue/resource-24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md
+  - docs/intelligence_kb/review_queue/resource-3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/19-second-order-idor-via-profile-update-affecting-high-privilege-module.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/24-api-versioning-bypass-legacy-v1-endpoints-lack-patches-in-saas.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-10-stored-xss-in-apple-developer-portal.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-16-csrf-despite-x-frame-options-in-ai-workflow-endpoint.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-3-rce-via-group-access-validation-flaw-in-ssh-key-authority-open-source-too.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md
+  - docs/intelligence_kb/techniques/new_2024_2026/103-4-oauth-redirect-uri-manipulation-for-token-theft.md
+  - docs/intelligence_kb/techniques/new_2024_2026/106-1-client-side-path-traversal-exploiting-csrf-in-header-based-auth-scenarios.md
+  - docs/intelligence_kb/techniques/new_2024_2026/106-5-dom-xss-using-web-messages-and-javascript-url.md
+  - docs/intelligence_kb/techniques/new_2024_2026/13-paramspider-arjun-for-hidden-params.md
+  - docs/intelligence_kb/techniques/new_2024_2026/15-postmessage-csrf-via-no-origin-check-innerhtml-sink.md
+  - docs/intelligence_kb/techniques/new_2024_2026/16-websocket-subscription-introspection-bypass-in-parse-server.md
+  - docs/intelligence_kb/techniques/new_2024_2026/2-cspt2csrf-client-side-path-traversal-to-cross-site-request-forgery.md
+  - docs/intelligence_kb/techniques/new_2024_2026/25-postmessage-wildcard-origin-samesite-lax-to-pii-leak.md
+  - docs/intelligence_kb/techniques/new_2024_2026/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md
+  - docs/intelligence_kb/techniques/new_2024_2026/9-cspt-in-desktop-apps-via-websocket-user-controlled-path.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-t.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-aut.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-20.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-cspt-to-jsonp-xss-hunter-x-report.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-1-click-cspt-to-stored-id-rogue-sentry-put-csrf.md
+  - docs/intelligence_kb/techniques/niche_tricks/13-blind-xss-with-js-import-long-term-callback.md
+  - docs/intelligence_kb/techniques/niche_tricks/16-websocket-subscription-introspection-bypass-in-parse-server.md
+  - docs/intelligence_kb/techniques/niche_tricks/201-1-what-bugs-you-should-look-for-in-a-graphql-api-bug-bounty-case-study.md
+  - docs/intelligence_kb/techniques/niche_tricks/201-3-oauth-2-0-bug-bounty-2026-csrf-in-oauth-token-leakage-account-takeover-chains.md
+  - docs/intelligence_kb/techniques/niche_tricks/22-parameter-discovery-for-sqli-xss-ssrf-via-6-methods.md
+  - docs/intelligence_kb/techniques/niche_tricks/24-graphql-introspection-batching-for-data-leak-abuse.md
+  - docs/intelligence_kb/techniques/niche_tricks/25-postmessage-wildcard-origin-samesite-lax-to-pii-leak.md
+  - docs/intelligence_kb/techniques/niche_tricks/3-bac-via-http-method-swap-version-rollback-array-id-injection.md
+  - docs/intelligence_kb/techniques/niche_tricks/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-ele.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md
 maturity: stable
 ---
 

@@ -134,3 +134,7 @@ Manipulate": - /url: https://blog.doyensec.com/2024/07/02/cspt2csrf.html§CSPT§
 - Doyensec CSPT2CSRF Whitepaper（授权环境验证参考）
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

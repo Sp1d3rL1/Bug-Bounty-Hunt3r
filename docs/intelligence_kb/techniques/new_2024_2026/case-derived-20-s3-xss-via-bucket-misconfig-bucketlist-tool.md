@@ -81,3 +81,11 @@ Upload HTML/JS to misconfigured public S3 bucket
 ## 相关案例链接
 
 - https://x.com/0x0smilex/status/1979227178966581468
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

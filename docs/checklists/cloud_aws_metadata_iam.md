@@ -6,7 +6,34 @@ cwe: [CWE-918, CWE-732, CWE-269]
 severity_typical: P1-P2
 playbook: playbooks/cloud_aws.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/6-real-ssrf-via-ipv6-redirects-on-hackerone.md
+  - docs/intelligence_kb/cases/public_reports/9-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass.md
+  - docs/intelligence_kb/cases/researcher_writeups/12-autogpt-ssrf-protection-bypass-to-internal-services.md
+  - docs/intelligence_kb/cases/researcher_writeups/15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/cases/x_threads/20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/review_queue/16-payment-bypass-bug-lab-for-hands-on-techniques.md
+  - docs/intelligence_kb/review_queue/22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md
+  - docs/intelligence_kb/review_queue/resource-16-payment-bypass-bug-lab-for-hands-on-techniques.md
+  - docs/intelligence_kb/review_queue/resource-22-intigriti-bug-bytes-235-real-ssrf-ipv6-and-idor-methodology.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-2-ssrf-protection-bypass-in-autogpt-ai-agent-tool.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-6-real-ssrf-via-ipv6-redirects-on-hackerone.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-9-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/12-s3-misconfig-via-aws-s3-ls-no-sign-request-on-403.md
+  - docs/intelligence_kb/techniques/new_2024_2026/2-aws-account-takeover-via-github-actions-oidc-wildcard-trust.md
+  - docs/intelligence_kb/techniques/new_2024_2026/201-5-claude-bug-bounty-hunter-ai-assisted-recon-for-oauth-and-graphql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/5-s3-bucket-takeover-via-nosuchbucket-error.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/techniques/niche_tricks/22-parameter-discovery-for-sqli-xss-ssrf-via-6-methods.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-12-autogpt-ssrf-protection-bypass-to-internal-services.md
 maturity: stable
 ---
 

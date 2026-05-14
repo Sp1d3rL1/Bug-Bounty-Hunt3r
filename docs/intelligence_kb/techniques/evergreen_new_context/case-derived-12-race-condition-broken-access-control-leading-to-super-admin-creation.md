@@ -79,3 +79,7 @@ Concurrent requests to create/update role in API bypass locking
 ## 相关案例链接
 
 - https://infosecwriteups.com/how-i-found-a-10-800-business-impact-bug-race-condition-broken-access-control-de40c9897e91
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

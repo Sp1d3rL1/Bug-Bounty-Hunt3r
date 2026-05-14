@@ -42,3 +42,7 @@ High-signal gov-adjacent BB disclosure; shows IDOR in GitLab-like instances
 ## 安全边界
 
 案例中涉及的目标、账号、数据均不可在未授权环境复现；真实项目中只使用自有测试账号和最小必要证据。
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->

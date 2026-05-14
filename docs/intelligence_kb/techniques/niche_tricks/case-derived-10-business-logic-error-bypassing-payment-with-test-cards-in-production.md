@@ -79,3 +79,5 @@ submit Stripe test card details in live checkout as gateway lacks production fil
 ## 相关案例链接
 
 - https://infosecwriteups.com/business-logic-error-bypassing-payment-with-test-cards-77c6e3c36f16
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

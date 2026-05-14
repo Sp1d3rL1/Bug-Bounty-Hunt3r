@@ -79,3 +79,5 @@ tamper cart_total to negative/low value or submit status:success in /payment/ver
 ## 相关案例链接
 
 - https://spyboy.blog/2026/01/05/this-is-how-i-hacked-a-payment-flow-using-business-logic-abuse/
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

@@ -81,3 +81,7 @@ PI": - /url: https://www.theregister.com/2025/08/28/microsoft_copilot_copirate/�
 ## 相关案例链接
 
 - https://www.theregister.com/2025/08/28/microsoft_copilot_copirate/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

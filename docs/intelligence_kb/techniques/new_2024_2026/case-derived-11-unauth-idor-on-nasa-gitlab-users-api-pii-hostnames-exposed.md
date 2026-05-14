@@ -81,3 +81,7 @@ Direct /users/{id} API access without auth leaking internal data
 ## 相关案例链接
 
 - https://www.bugcrowd.com
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->

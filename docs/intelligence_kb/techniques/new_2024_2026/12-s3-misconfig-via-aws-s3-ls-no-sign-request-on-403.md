@@ -79,3 +79,7 @@ Test 403 read-only buckets with unauth write via aws s3 cp --no-sign-request
 ## 相关案例链接
 
 - https://infosecwriteups.com/s3-bucket-recon-finding-exposed-aws-buckets-like-a-pro-106be5ab9e1d
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

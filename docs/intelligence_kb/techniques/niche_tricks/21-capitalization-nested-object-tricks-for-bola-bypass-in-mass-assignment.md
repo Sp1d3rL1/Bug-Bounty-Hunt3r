@@ -81,3 +81,5 @@ Use \"IsAdmin\":true or nested {\"user\":{\"id\":victim}} to evade filters
 ## 相关案例链接
 
 - https://medium.com/@manojxshrestha/api-bug-bounty-mastery-2026-hunt-hidden-endpoints-to-land-10k-payouts-957832efc29c
+
+<!-- backlink: docs/checklists/api.md -->

@@ -81,3 +81,5 @@ Unicode": - /url: https://hackerone.com/reports/2372363§prompt_injection§Unico
 ## 相关案例链接
 
 - https://hackerone.com/reports/2372363
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->

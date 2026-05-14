@@ -67,3 +67,7 @@ https://joshua.hu/2025-bug-bounty-stories-fail
     verification: Directly stated in extracted content.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

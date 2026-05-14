@@ -83,3 +83,5 @@ Increment object IDs across tenant boundaries without checks
 ## 相关案例链接
 
 - https://hackerone.com/reports/XXXXXX
+
+<!-- backlink: docs/checklists/api.md -->

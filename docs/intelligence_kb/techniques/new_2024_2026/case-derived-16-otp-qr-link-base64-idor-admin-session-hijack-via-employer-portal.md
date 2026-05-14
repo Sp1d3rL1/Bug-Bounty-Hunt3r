@@ -81,3 +81,5 @@ Decode Base64 in OTP QR and swap ID param for admin access
 ## 相关案例链接
 
 - https://x.com/al1enr00t/status/2050323911317819496
+
+<!-- backlink: docs/checklists/api.md -->

@@ -79,3 +79,5 @@ Send array of 1000 login/OTP mutations in one HTTP request to brute passwords in
 ## 相关案例链接
 
 - https://x.com/0xacb/status/2036003602875990153
+
+<!-- backlink: docs/checklists/graphql.md -->

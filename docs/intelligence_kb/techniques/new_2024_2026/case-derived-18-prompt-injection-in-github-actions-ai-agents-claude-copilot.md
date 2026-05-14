@@ -81,3 +81,9 @@ Craft PR title/issue comment to hijack AI agent and leak API keys
 ## 相关案例链接
 
 - https://www.theregister.com/2026/04/15/claude_gemini_copilot_agents_hijacked/
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

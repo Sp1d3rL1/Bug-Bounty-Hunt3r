@@ -123,3 +123,5 @@ vuln_class: Recon target_type: JS-heavy web apps confidence: high type: techniqu
 - [https://x.com/obscaries/status/2050569465163874655](https://x.com/obscaries/status/2050569465163874655)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

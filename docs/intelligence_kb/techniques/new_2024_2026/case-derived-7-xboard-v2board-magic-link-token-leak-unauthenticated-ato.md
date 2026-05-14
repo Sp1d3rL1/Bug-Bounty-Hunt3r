@@ -81,3 +81,9 @@ Call loginWithMailLink endpoint unauth to receive full magic link/token in HTTP 
 ## 相关案例链接
 
 - https://chocapikk.com/posts/2026/xboard-v2board-account-takeover/
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

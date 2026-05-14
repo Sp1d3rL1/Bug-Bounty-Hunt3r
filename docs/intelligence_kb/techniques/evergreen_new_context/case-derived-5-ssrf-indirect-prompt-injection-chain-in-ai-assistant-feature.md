@@ -81,3 +81,11 @@ Crafted": - /url: https://www.linkedin.com/posts/syedowais43_bugbounty-ssrf-prom
 ## 相关案例链接
 
 - https://www.linkedin.com/posts/syedowais43_bugbounty-ssrf-promptinjection-activity-7445394337062105089-WeaS
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cloud_aws_metadata_iam.md -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->

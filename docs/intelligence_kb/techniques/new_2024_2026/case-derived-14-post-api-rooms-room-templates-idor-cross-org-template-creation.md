@@ -81,3 +81,5 @@ Swap room_id in POST body to create templates pulling victim org data
 ## 相关案例链接
 
 - https://x.com/Ahmed78752911
+
+<!-- backlink: docs/checklists/api.md -->

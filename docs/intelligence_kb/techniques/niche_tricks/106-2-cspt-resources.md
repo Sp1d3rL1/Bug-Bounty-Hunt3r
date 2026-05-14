@@ -86,3 +86,5 @@ Source: https://blog.doyensec.com/2025/03/27/cspt-resources.html
     verification: Direct snippet match: 'Maxence Schmitt: Exploiting Client-Side Path Traversal...' etc.
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

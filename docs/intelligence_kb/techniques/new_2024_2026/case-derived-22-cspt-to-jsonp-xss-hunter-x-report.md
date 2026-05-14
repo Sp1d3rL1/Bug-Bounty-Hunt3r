@@ -81,3 +81,9 @@ Path traversal redirects fetch to JSONP endpoint
 ## 相关案例链接
 
 - https://x.com/HusseiN98D/status/1809164551822172616
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

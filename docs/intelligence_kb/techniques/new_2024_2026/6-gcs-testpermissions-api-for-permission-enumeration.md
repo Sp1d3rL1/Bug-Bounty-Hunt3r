@@ -129,3 +129,7 @@ Python 脚本 + 已知 bucket 列表批量调用 testPermissions；集成到云�
 - [https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9](https://medium.com/@anas-nady/everything-about-cloud-bucket-hacking-s3-gcs-azure-firebase-c027e9441ff9)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cloud_gcp_azure.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

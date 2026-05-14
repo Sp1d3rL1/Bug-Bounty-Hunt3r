@@ -6,7 +6,75 @@ cwe: [CWE-639, CWE-285, CWE-770, CWE-200]
 severity_typical: P1-P3
 playbook: playbooks/graphql.yaml
 last_updated: 2026-05-15
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/10-graphql-introspection-enabled-on-shopify-storefront-api.md
+  - docs/intelligence_kb/cases/public_reports/15-bulk-report-submission-via-named-query-batching-in-h1-graphql.md
+  - docs/intelligence_kb/cases/public_reports/24-graphql-idor-in-shopify-staff-access-cross-shop-billing-data.md
+  - docs/intelligence_kb/cases/public_reports/7-dos-via-mutation-aliasing-in-graphql-account-recovery.md
+  - docs/intelligence_kb/cases/public_reports/8-unauthenticated-graphql-by-prepending-schema-to-private-operations.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-graphql-introspection-enabled-batch-query-idor-and-authorization-bypass-in-fintech.md
+  - docs/intelligence_kb/cases/researcher_writeups/102-1-dos-via-mutation-aliasing-in-graphql-account-recovery-api.md
+  - docs/intelligence_kb/cases/researcher_writeups/103-1-jwt-alg-none-authentication-bypass-for-full-workspace-ato.md
+  - docs/intelligence_kb/cases/researcher_writeups/103-5-graphql-security-how-i-found-and-exploited-critical-idor-and-authorization-bypas.md
+  - docs/intelligence_kb/cases/researcher_writeups/104-2-from-idor-to-sql-injection-in-graphql-websocket-escalated-to-pii-leak.md
+  - docs/intelligence_kb/cases/researcher_writeups/17-graphql-field-duplication-for-resource-exhaustion.md
+  - docs/intelligence_kb/cases/researcher_writeups/18-idor-in-graphql-invitation-flow-leading-to-ato.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md
+  - docs/intelligence_kb/cases/researcher_writeups/20-gitlab-read-api-token-write-mutation-via-missing-graphql-authz.md
+  - docs/intelligence_kb/cases/researcher_writeups/201-4-1-500-graphql-pii-leak-via-field-level-permission-bypass.md
+  - docs/intelligence_kb/cases/researcher_writeups/25-graphql-introspection-on-wiki-subdomain-leading-to-schema-sensitive-data.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-1500-pii-leak-via-graphql-field-level-permission-bypass.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-full-workspace-account-takeover-via-jwt-alg-none.md
+  - docs/intelligence_kb/cases/researcher_writeups/9-graphql-endpoint-leaking-millions-of-users-without-auth.md
+  - docs/intelligence_kb/cases/x_threads/12-nested-object-traversal-for-authorization-bypass-in-graphql.md
+  - docs/intelligence_kb/cases/x_threads/23-undocumented-admin-mutation-discovery-via-introspection.md
+  - docs/intelligence_kb/review_queue/13-graphql-voyager-introspection-for-schema-mapping-in-bb.md
+  - docs/intelligence_kb/review_queue/21-graphql-enum-tool-for-juicy-types-and-mutations.md
+  - docs/intelligence_kb/review_queue/resource-13-graphql-voyager-introspection-for-schema-mapping-in-bb.md
+  - docs/intelligence_kb/review_queue/resource-21-graphql-enum-tool-for-juicy-types-and-mutations.md
+  - docs/intelligence_kb/techniques/new_2024_2026/101-1-graphql-introspection-enabled-leading-to-idor-and-authorization-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/101-2-graphql-endpoint-mass-user-enumeration.md
+  - docs/intelligence_kb/techniques/new_2024_2026/104-3-idor-hunting-tips.md
+  - docs/intelligence_kb/techniques/new_2024_2026/11-field-suggestion-abuse-to-rebuild-schema-blindly.md
+  - docs/intelligence_kb/techniques/new_2024_2026/14-directive-overloading-batching-for-dos-in-graphql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/16-websocket-subscription-introspection-bypass-in-parse-server.md
+  - docs/intelligence_kb/techniques/new_2024_2026/19-circular-fragment-recursive-query-abuse-for-dos.md
+  - docs/intelligence_kb/techniques/new_2024_2026/201-5-claude-bug-bounty-hunter-ai-assisted-recon-for-oauth-and-graphql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/21-tenant-id-manipulation-in-graphql-field-selection-for-workspace-data.md
+  - docs/intelligence_kb/techniques/new_2024_2026/22-object-limit-overriding-with-large-pagination-in-queries.md
+  - docs/intelligence_kb/techniques/new_2024_2026/24-array-idor-in-graphql-by-wrapping-ids-in-nested-objects.md
+  - docs/intelligence_kb/techniques/new_2024_2026/3-clairvoyance-for-schema-extraction-when-introspection-disabled.md
+  - docs/intelligence_kb/techniques/new_2024_2026/4-array-based-batching-for-brute-force-login-otp-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/5-graphql-alias-abuse-for-rate-limit-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-graphql-introspection-enabled-on-shopify-storefront-api.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-15-bulk-report-submission-via-named-query-batching-in-h1-graphql.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-17-graphql-field-duplication-for-resource-exhaustion.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-18-idor-in-graphql-invitation-flow-leading-to-ato.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-23-undocumented-admin-mutation-discovery-via-introspection.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-graphql-idor-in-shopify-staff-access-cross-shop-billing-data.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-25-graphql-introspection-on-wiki-subdomain-leading-to-schema-sensitive-data.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-dos-via-mutation-aliasing-in-graphql-account-recovery.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-9-graphql-endpoint-leaking-millions-of-users-without-auth.md
+  - docs/intelligence_kb/techniques/niche_tricks/101-5-hackerone-graphql-and-oauth-top-reports-2025-2026.md
+  - docs/intelligence_kb/techniques/niche_tricks/104-1-the-depths-of-bola-and-idor.md
+  - docs/intelligence_kb/techniques/niche_tricks/104-4-graphql-pentesting-for-bug-bounty-hunters.md
+  - docs/intelligence_kb/techniques/niche_tricks/104-5-state-of-api-security-2026-report.md
+  - docs/intelligence_kb/techniques/niche_tricks/11-field-suggestion-abuse-to-rebuild-schema-blindly.md
+  - docs/intelligence_kb/techniques/niche_tricks/16-websocket-subscription-introspection-bypass-in-parse-server.md
+  - docs/intelligence_kb/techniques/niche_tricks/201-1-what-bugs-you-should-look-for-in-a-graphql-api-bug-bounty-case-study.md
+  - docs/intelligence_kb/techniques/niche_tricks/201-2-graphql-bug-bounty-2026-introspection-abuse-injection-broken-authorization.md
+  - docs/intelligence_kb/techniques/niche_tricks/24-array-idor-in-graphql-by-wrapping-ids-in-nested-objects.md
+  - docs/intelligence_kb/techniques/niche_tricks/24-graphql-introspection-batching-for-data-leak-abuse.md
+  - docs/intelligence_kb/techniques/niche_tricks/3-clairvoyance-for-schema-extraction-when-introspection-disabled.md
+  - docs/intelligence_kb/techniques/niche_tricks/4-array-based-batching-for-brute-force-login-otp-bypass.md
+  - docs/intelligence_kb/techniques/niche_tricks/5-graphql-alias-abuse-for-rate-limit-bypass.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-1-graphql-introspection-enabled-batch-query-idor-and-authorization-bypass-i.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-12-nested-object-traversal-for-authorization-bypass-in-graphql.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-20-gitlab-read-api-token-write-mutation-via-missing-graphql-authz.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-6-1500-pii-leak-via-graphql-field-level-permission-bypass.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-6-full-workspace-account-takeover-via-jwt-alg-none.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-8-unauthenticated-graphql-by-prepending-schema-to-private-operations.md
 maturity: stable
 ---
 

@@ -81,3 +81,5 @@ Replace UUID in device endpoint despite sequential guessing resistance
 ## 相关案例链接
 
 - https://medium.com
+
+<!-- backlink: docs/checklists/api.md -->

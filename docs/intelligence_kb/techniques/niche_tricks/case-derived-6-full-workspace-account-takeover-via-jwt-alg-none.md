@@ -79,3 +79,11 @@ Change alg to none in JWT header + modify sub/owner claims + empty signature
 ## 相关案例链接
 
 - https://medium.com/@belalshohaip222/my-first-bug-bounty-how-i-hijacked-an-entire-workspace-using-a-jwt-alg-none-attack-fef78ad00df8
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

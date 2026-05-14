@@ -1,7 +1,9 @@
 SHELL := /bin/bash
 .PHONY: check-scope dry-run tree \
 	sources-list sources-pull sources-tick sources-health \
-	wechat-rss-up wechat-rss-down wechat-rss-status
+	wechat-rss-up wechat-rss-down wechat-rss-status \
+	checklist-bucket checklist-diff checklist-extend checklist-extend-commit \
+	checklist-validate checklist-report checklist-discover
 
 # ---------------------------------------------------------------------------
 # Existing recon-pipeline targets
@@ -64,3 +66,39 @@ wechat-rss-down:
 
 wechat-rss-status:
 	cd $(WECHAT_DIR) && docker compose ps
+
+# ---------------------------------------------------------------------------
+# Phase 2.5: KB → Checklist source-link pipeline
+# ---------------------------------------------------------------------------
+
+EXTEND := scripts/checklist_extend.py
+LLM    := scripts/checklist_llm_helper.py
+
+# Step 1 — bucket KB cards by vuln_class
+checklist-bucket:
+	python3 $(EXTEND) --bucket
+
+# Step 3 — show per-checklist diff (dry)
+checklist-diff:
+	python3 $(EXTEND) --diff
+
+# Step 4-5 — patch sources + add backlinks (dry-run)
+checklist-extend:
+	python3 $(EXTEND) --apply
+
+# Step 4-5 — write to disk
+checklist-extend-commit:
+	python3 $(EXTEND) --apply --commit
+
+# Step 6 — verify all link targets exist
+checklist-validate:
+	python3 $(EXTEND) --validate
+
+# Coverage report
+checklist-report:
+	python3 $(EXTEND) --report
+
+# Use Grok with realtime search to surface emerging vuln classes we haven't
+# bucketed yet. Engine defaults to grok because this needs realtime data.
+checklist-discover:
+	python3 $(LLM) --task discover --engine grok

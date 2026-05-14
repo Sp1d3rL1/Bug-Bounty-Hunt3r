@@ -81,3 +81,5 @@ Burp Repeater + Intruder fuzz object IDs in e-commerce /api/orders/{id}
 ## 相关案例链接
 
 - https://herish.me/blog/idor-bug-bounty-burp-suite/
+
+<!-- backlink: docs/checklists/api.md -->

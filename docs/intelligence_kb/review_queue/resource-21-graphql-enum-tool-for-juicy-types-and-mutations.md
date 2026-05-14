@@ -11,3 +11,7 @@
 ## Next action
 
 二次确认是否应加入 `resources/` 或转换为技法卡。
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

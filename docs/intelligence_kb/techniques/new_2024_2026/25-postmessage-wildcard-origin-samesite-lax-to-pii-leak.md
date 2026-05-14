@@ -71,3 +71,7 @@ Leads to data exfil in auth widgets; high-signal overlooked BB class
 ## 相关案例链接
 
 - https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-postmessage-vulnerabilities
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->

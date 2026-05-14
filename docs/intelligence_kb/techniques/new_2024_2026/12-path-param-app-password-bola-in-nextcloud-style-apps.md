@@ -141,3 +141,5 @@ Nextcloud 类协作应用中，/ocs/v2.php/apps/dav/api/v1/outOfOffice/{userId} 
 - [https://hackerone.com/reports/3382343](https://hackerone.com/reports/3382343)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->

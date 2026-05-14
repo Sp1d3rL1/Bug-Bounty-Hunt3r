@@ -6,7 +6,49 @@ cwe: [CWE-99, CWE-353]
 severity_typical: P2-P3
 playbook: playbooks/subdomain_takeover.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/1-improper-access-control-on-enterprise-invitation-endpoint-leading-to-account-takeover.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-500-oauth-account-fusion-pre-takeover-attack.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-traversal.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-automation-takeo.md
+  - docs/intelligence_kb/cases/researcher_writeups/11-hidden-role-escalation-via-invite-api-in-organization.md
+  - docs/intelligence_kb/cases/researcher_writeups/11-how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover.md
+  - docs/intelligence_kb/cases/researcher_writeups/13-magic-links-as-gateways-to-account-takeovers.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-pre-account-takeover-via-oauth-email-modification.md
+  - docs/intelligence_kb/cases/researcher_writeups/2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md
+  - docs/intelligence_kb/cases/researcher_writeups/23-cve-2025-22146-sentry-saml-sso-auth-bypass.md
+  - docs/intelligence_kb/cases/researcher_writeups/24-account-takeover-via-google-oauth-misconfiguration.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-chatgpt-account-takeover-wildcard-web-cache-deception.md
+  - docs/intelligence_kb/cases/researcher_writeups/5-oauth-misbinding-vulnerability-silent-account-takeover.md
+  - docs/intelligence_kb/cases/researcher_writeups/6-full-workspace-account-takeover-via-jwt-alg-none.md
+  - docs/intelligence_kb/cases/researcher_writeups/7-xboard-v2board-magic-link-token-leak-unauthenticated-ato.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-account-takeover-using-sso-login.md
+  - docs/intelligence_kb/cases/researcher_writeups/9-nextjs-auth0-insecure-session-cache-key-hijack.md
+  - docs/intelligence_kb/techniques/new_2024_2026/102-2-oauth-account-fusion-pre-takeover-via-email-matching-bypass.md
+  - docs/intelligence_kb/techniques/new_2024_2026/102-5-misconfigured-sso-leading-to-account-takeover.md
+  - docs/intelligence_kb/techniques/new_2024_2026/15-jwt-signature-bypass-leading-to-admin-password-change.md
+  - docs/intelligence_kb/techniques/new_2024_2026/16-subdomain-takeover-check-with-subzy.md
+  - docs/intelligence_kb/techniques/new_2024_2026/2-aws-account-takeover-via-github-actions-oidc-wildcard-trust.md
+  - docs/intelligence_kb/techniques/new_2024_2026/5-s3-bucket-takeover-via-nosuchbucket-error.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-t.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-improper-access-control-on-enterprise-invitation-endpoint-leading-to-acco.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-aut.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-hidden-role-escalation-via-invite-api-in-organization.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-11-how-i-found-5-oauth-misconfigurations-leading-to-pre-account-takeover.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-13-magic-links-as-gateways-to-account-takeovers.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-2-graphql-introspection-to-admin-takeover-via-unauthenticated-mutations.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-24-account-takeover-via-google-oauth-misconfiguration.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-4-chatgpt-account-takeover-wildcard-web-cache-deception.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-5-oauth-misbinding-vulnerability-silent-account-takeover.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-7-xboard-v2board-magic-link-token-leak-unauthenticated-ato.md
+  - docs/intelligence_kb/techniques/niche_tricks/15-jwt-signature-bypass-leading-to-admin-password-change.md
+  - docs/intelligence_kb/techniques/niche_tricks/201-3-oauth-2-0-bug-bounty-2026-csrf-in-oauth-token-leakage-account-takeover-chains.md
+  - docs/intelligence_kb/techniques/niche_tricks/21-otp-bypass-via-response-manipulation.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-1-500-oauth-account-fusion-pre-takeover-attack.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-16-pre-account-takeover-via-oauth-email-modification.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-23-cve-2025-22146-sentry-saml-sso-auth-bypass.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-6-full-workspace-account-takeover-via-jwt-alg-none.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-8-account-takeover-using-sso-login.md
 maturity: stable
 ---
 

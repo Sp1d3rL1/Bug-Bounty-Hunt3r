@@ -81,3 +81,5 @@ Poison HTML cache with malicious payload via cache key manipulation
 ## 相关案例链接
 
 - https://medium.com
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

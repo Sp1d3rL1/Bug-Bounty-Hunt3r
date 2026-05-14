@@ -81,3 +81,7 @@ Pollute undefined b[0] property flowing to document.cookie assignment
 ## 相关案例链接
 
 - https://yinzhicao.org/ProbetheProto/FollowMyFlow.pdf
+
+<!-- backlink: docs/checklists/deserialization.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

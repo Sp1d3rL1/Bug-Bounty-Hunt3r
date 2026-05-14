@@ -81,3 +81,5 @@ Sequential ID swap in image API without auth check
 ## 相关案例链接
 
 - X post (high engagement hunter thread)
+
+<!-- backlink: docs/checklists/api.md -->

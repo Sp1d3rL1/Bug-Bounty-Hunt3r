@@ -93,3 +93,7 @@ app.get('/api/v2/accounts/:id', async (req, res) => {
     verification: Tavily 提取的代码片段与描述匹配
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/graphql.md -->

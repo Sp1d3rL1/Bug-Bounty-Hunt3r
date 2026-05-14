@@ -6,7 +6,55 @@ cwe: [CWE-1321, CWE-79]
 severity_typical: P2-P3
 playbook: playbooks/proto_pollution.yaml
 last_updated: 2026-05-14
-sources: []
+sources:
+  - docs/intelligence_kb/cases/public_reports/13-prototype-pollution-to-rce-in-project-update-api.md
+  - docs/intelligence_kb/cases/public_reports/4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md
+  - docs/intelligence_kb/cases/researcher_writeups/1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-traversal.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-automation-takeo.md
+  - docs/intelligence_kb/cases/researcher_writeups/10-stored-xss-in-apple-developer-portal.md
+  - docs/intelligence_kb/cases/researcher_writeups/106-4-december-ctf-challenge-chaining-xs-leaks-and-postmessage-xss.md
+  - docs/intelligence_kb/cases/researcher_writeups/14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-2024-chain.md
+  - docs/intelligence_kb/cases/researcher_writeups/16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-6783.md
+  - docs/intelligence_kb/cases/researcher_writeups/23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md
+  - docs/intelligence_kb/cases/researcher_writeups/4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-element-handling.md
+  - docs/intelligence_kb/cases/researcher_writeups/7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md
+  - docs/intelligence_kb/cases/researcher_writeups/8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gala-research.md
+  - docs/intelligence_kb/cases/x_threads/20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/cases/x_threads/22-cspt-to-jsonp-xss-hunter-x-report.md
+  - docs/intelligence_kb/review_queue/24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md
+  - docs/intelligence_kb/review_queue/3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/review_queue/resource-24-client-side-bugs-roadmap-xss-postmessage-pp-csp-bypass.md
+  - docs/intelligence_kb/review_queue/resource-3-cspt-resources-compilation-hunter-blogs-reports-tools.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/19-second-order-idor-via-profile-update-affecting-high-privilege-module.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/24-api-versioning-bypass-legacy-v1-endpoints-lack-patches-in-saas.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-10-stored-xss-in-apple-developer-portal.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-13-prototype-pollution-to-rce-in-project-update-api.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs.md
+  - docs/intelligence_kb/techniques/evergreen_new_context/case-derived-4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721.md
+  - docs/intelligence_kb/techniques/new_2024_2026/103-4-oauth-redirect-uri-manipulation-for-token-theft.md
+  - docs/intelligence_kb/techniques/new_2024_2026/106-5-dom-xss-using-web-messages-and-javascript-url.md
+  - docs/intelligence_kb/techniques/new_2024_2026/13-paramspider-arjun-for-hidden-params.md
+  - docs/intelligence_kb/techniques/new_2024_2026/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md
+  - docs/intelligence_kb/techniques/new_2024_2026/21-referrer-policy-override-dompurify-bypass-for-oauth-ato.md
+  - docs/intelligence_kb/techniques/new_2024_2026/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md
+  - docs/intelligence_kb/techniques/new_2024_2026/9-cspt-in-desktop-apps-via-websocket-user-controlled-path.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-1-client-side-path-traversal-cspt-to-account-takeover-xss-via-profile-url-t.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-10-postmessage-listener-with-target-com-wildcard-cors-misconfig-to-home-aut.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-14-prototype-pollution-to-xss-via-lodash-merge-gadget-on-shopify-updated-20.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-16-gala-dynamic-analysis-finds-133-zero-day-pp-gadgets-incl-vue-cve-2024-67.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-20-s3-xss-via-bucket-misconfig-bucketlist-tool.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-22-cspt-to-jsonp-xss-hunter-x-report.md
+  - docs/intelligence_kb/techniques/new_2024_2026/case-derived-8-prototype-pollution-gadget-in-meta-fbevents-js-to-cookie-manipulation-gal.md
+  - docs/intelligence_kb/techniques/niche_tricks/13-blind-xss-with-js-import-long-term-callback.md
+  - docs/intelligence_kb/techniques/niche_tricks/19-prototype-pollution-via-deepmerge-in-antfu-utils-huntr-bb.md
+  - docs/intelligence_kb/techniques/niche_tricks/21-referrer-policy-override-dompurify-bypass-for-oauth-ato.md
+  - docs/intelligence_kb/techniques/niche_tricks/22-parameter-discovery-for-sqli-xss-ssrf-via-6-methods.md
+  - docs/intelligence_kb/techniques/niche_tricks/24-graphql-introspection-batching-for-data-leak-abuse.md
+  - docs/intelligence_kb/techniques/niche_tricks/3-bac-via-http-method-swap-version-rollback-array-id-injection.md
+  - docs/intelligence_kb/techniques/niche_tricks/5-dompurify-mxss-bypass-via-node-flattening-namespace-confusion-3-1-0.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-4-dompurify-prototype-pollution-to-xss-bypass-cve-2026-41238-via-custom-ele.md
+  - docs/intelligence_kb/techniques/niche_tricks/case-derived-7-client-side-postmessage-origin-validation-bypass-to-dom-xss.md
 maturity: stable
 ---
 

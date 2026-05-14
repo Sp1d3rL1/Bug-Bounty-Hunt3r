@@ -79,3 +79,9 @@ Craft SAML assertion with REXML/Nokogiri diffs (DOCTYPE/namespace/attribute poll
 ## 相关案例链接
 
 - https://github.blog/security/sign-in-as-anyone-bypassing-saml-sso-authentication-with-parser-differentials/
+
+<!-- backlink: docs/checklists/oauth.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->
+
+<!-- backlink: docs/checklists/sso_oidc_saml.md -->

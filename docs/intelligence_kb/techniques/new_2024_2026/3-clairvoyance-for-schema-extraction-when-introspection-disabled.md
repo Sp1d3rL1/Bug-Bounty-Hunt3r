@@ -131,3 +131,7 @@ GraphQL 引擎为开发者友好，默认返回字段建议错误，即使 intro
 - [Clairvoyance GitHub](https://github.com/nikitastupin/clairvoyance)
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/graphql.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->

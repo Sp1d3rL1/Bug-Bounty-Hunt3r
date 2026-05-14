@@ -81,3 +81,5 @@ Append fake .css extension to dynamic profile path (/settings/profile/anything.c
 ## 相关案例链接
 
 - https://systemweakness.com/web-cache-deception-when-a-404-still-leaks-sensitive-data-61338e04b10f
+
+<!-- backlink: docs/checklists/cache_deception_poisoning.md -->

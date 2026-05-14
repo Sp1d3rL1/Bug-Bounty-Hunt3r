@@ -11,3 +11,7 @@
 ## Next action
 
 二次确认是否应加入 `resources/` 或转换为技法卡。
+
+<!-- backlink: docs/checklists/ai_llm_prompt_injection.md -->
+
+<!-- backlink: docs/checklists/deserialization.md -->

@@ -79,3 +79,5 @@ Manipulate server response (e.g. change OTP success flag) to bypass verification
 ## 相关案例链接
 
 - https://nervhym.medium.com/otp-bypass-menuju-account-takeover-via-response-manipulation-905e33771387
+
+<!-- backlink: docs/checklists/subdomain_takeover.md -->

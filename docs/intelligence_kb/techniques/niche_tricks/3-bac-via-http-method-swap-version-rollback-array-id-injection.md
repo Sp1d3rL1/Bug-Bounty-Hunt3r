@@ -142,3 +142,11 @@ Burp Intruder 使用 payload 列表自动化方法切换、版本枚举和数组
 - BAC 逻辑绕过通用方法论
 
 <!-- GROK_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/api.md -->
+
+<!-- backlink: docs/checklists/cors_postmessage_websocket.md -->
+
+<!-- backlink: docs/checklists/cspt_client_path_traversal.md -->
+
+<!-- backlink: docs/checklists/prototype_pollution_xss_chain.md -->

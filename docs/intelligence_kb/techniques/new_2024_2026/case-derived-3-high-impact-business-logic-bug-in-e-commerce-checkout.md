@@ -79,3 +79,5 @@ intercept checkout request and tamper price field from high value to near-zero b
 ## 相关案例链接
 
 - https://medium.com/@impyhacker/how-i-found-a-high-impact-business-logic-bug-in-an-e-commerce-checkout-57e0493c9675
+
+<!-- backlink: docs/checklists/payment_business_logic.md -->

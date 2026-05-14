@@ -58,3 +58,7 @@ Real 2026 supply-chain incident affecting CI/CD pipelines with AI/SaaS tooling; 
     verification: Snippet confirms date, actor TeamPCP, impact on Aqua Security Trivy and downstream SaaS
 
 <!-- GROK_API_EXPANSION_END -->
+
+<!-- backlink: docs/checklists/cicd_github_actions.md -->
+
+<!-- backlink: docs/checklists/recon_methodology.md -->
