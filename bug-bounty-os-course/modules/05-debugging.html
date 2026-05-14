@@ -1,0 +1,267 @@
+<section class="module" id="module-5" style="background: var(--color-bg)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">05</span>
+      <h1 class="module-title">当出现问题时</h1>
+      <p class="module-subtitle">调试直觉、提交前的安全检查、以及如何让 AI 帮你更聪明地工作</p>
+    </header>
+
+    <div class="module-body">
+
+      <!-- Screen 1: The debugging mindset -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">培养调试直觉</h2>
+        <p>系统不能用了。你不知道哪里出了问题。大多数人这时候会感到恐慌——但这套系统被设计得可以系统性地诊断问题。</p>
+        <p>就像医生诊断病人：不是随机猜测，而是按症状缩小范围。先问"哪一层出了问题？"</p>
+
+        <div class="icon-rows animate-in">
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-actor-2)">1</div>
+            <div>
+              <strong>配置层问题</strong>
+              <p>pipeline 直接报错退出 → 检查 legal_ack 是否为 true、scope JSON 格式是否正确</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-actor-3)">2</div>
+            <div>
+              <strong>工具层问题</strong>
+              <p>某步骤没有输出 → 检查对应工具是否安装（which subfinder、which httpx）</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-actor-5)">3</div>
+            <div>
+              <strong>Scope 过滤太严</strong>
+              <p>subdomains.scoped.txt 为空 → 用 make check-scope 验证 scope 配置能否匹配你的种子域名</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-actor-1)">4</div>
+            <div>
+              <strong>API 层问题（Grok Agent）</strong>
+              <p>情报收集失败 → 检查 .env 里的 API key 是否有效、是否超出速率限制</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: Dry run -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">最有价值的调试工具：dry-run</h2>
+        <p>系统提供了一个 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg-warm); padding: 2px 6px; border-radius: 4px;">--dry-run</code> 模式，它会打印出"如果真的运行会执行什么命令"，但不实际执行。就像飞行模拟器——帮你练习而不冒真实风险。</p>
+
+        <div class="translation-block animate-in">
+          <div class="translation-code">
+            <span class="translation-label">CODE</span>
+            <pre><code><span class="code-line"><span class="code-comment"># 安全测试：不会真的跑任何工具</span></span>
+<span class="code-line">python3 scripts/recon_pipeline.py \</span>
+<span class="code-line">  --config config/scope.example.json \</span>
+<span class="code-line">  --dry-run</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="code-comment"># 验证 scope 是否配置正确</span></span>
+<span class="code-line">make check-scope</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="code-comment"># 查看项目目录结构</span></span>
+<span class="code-line">make tree</span></code></pre>
+          </div>
+          <div class="translation-english">
+            <span class="translation-label">PLAIN ENGLISH</span>
+            <div class="translation-lines">
+              <p class="tl">注释行：这个模式不会真正运行任何东西</p>
+              <p class="tl">运行 Python 脚本 recon_pipeline.py，用反斜杠续行</p>
+              <p class="tl">读取示例 scope 配置文件</p>
+              <p class="tl">dry-run 标志：打印命令但不执行</p>
+              <p class="tl">（空行）</p>
+              <p class="tl">另一个检查命令：用示例 hosts 测试 scope 过滤是否工作</p>
+              <p class="tl">make 命令：读取 Makefile 里预设的命令</p>
+              <p class="tl">（空行）</p>
+              <p class="tl">列出项目目录结构，快速查看文件组织</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">🛩️</div>
+          <div class="callout-content">
+            <strong class="callout-title">Makefile 是什么？</strong>
+            <p><span class="term" data-definition="Makefile：一个存放常用命令快捷方式的文件。就像手机上的常用联系人——你不用每次都输完整的电话号码，直接说'打给妈妈'就行。make check-scope 就是'运行 scope 检查脚本'的快捷方式。">Makefile</span> 是命令的快捷方式集合。当你不记得某个脚本的完整参数时，<code>make tree</code> 比<code>find . -maxdepth 3 -type f | sort</code>容易记多了。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: The safety checklist before submitting -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">提交报告前的安全检查</h2>
+        <p>在你按下"提交"之前，这套系统有一张最终检查清单。每一条都是血泪教训的总结：</p>
+
+        <div class="badge-list animate-in">
+          <div class="badge-item">
+            <code class="badge-code">✅ 授权确认</code>
+            <span class="badge-desc">这个资产在项目的官方 scope 里，不只是"看起来像"</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">✅ 双账号验证</code>
+            <span class="badge-desc">用你自己的两个测试账号复现，不是用真实用户数据</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">✅ 影响证明</code>
+            <span class="badge-desc">能说清楚"攻击者可以用这个做什么"，不只是"这里有个异常"</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">✅ 脱敏截图</code>
+            <span class="badge-desc">截图中的 token、cookie、邮箱、真实 ID 全部打码</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">✅ 英文报告格式</code>
+            <span class="badge-desc">按 english_report_template.md 的格式：标题、摘要、步骤、影响、建议修复</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">✅ 未触碰真实用户</code>
+            <span class="badge-desc">整个测试过程只用测试账号，没有读取或修改任何真实用户数据</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: How to use AI more effectively -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">如何让 AI 帮你更聪明地工作</h2>
+        <p>现在你理解了系统内部是怎么工作的，你就有了一个强大的能力：当 AI 说错话时，你能立刻察觉。</p>
+
+        <div class="chat-window" id="chat-ai-usage">
+          <div class="chat-messages">
+            <div class="chat-message" data-msg="0" data-sender="you" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">你</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">你（聪明的提问方式）</span>
+                <p>"我想给 scope 配置加一个新域名，同时保持 rate limit 在 20 以下。修改 config/scope.example.json 还是另建一个新文件？"</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="1" data-sender="ai" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-3)">AI</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-3)">AI</span>
+                <p>新建一个 config/scope.myprogram.json，不要修改 example 文件。Example 是模板，保持干净方便以后参考。</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="2" data-sender="you" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">你</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">你（带着系统知识验证）</span>
+                <p>对，而且 .gitignore 里已经排除了 scope.*.json（除了 example），所以 API key 不会意外提交。AI 说的和系统设计一致，可信。</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="3" data-sender="you-warn" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-error)">⚠️</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-error)">识别 AI 错误的时刻</span>
+                <p>如果 AI 说"直接把 legal_ack 改成 true 就能测任何目标"——这是错的！legal_ack=true 只有在你获得了该目标的官方授权后才能设置。AI 有时不理解这个安全含义。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-typing" id="chat-ai-usage-typing" style="display:none">
+            <div class="chat-avatar" id="chat-ai-usage-typing-avatar">?</div>
+            <div class="chat-typing-dots">
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+            </div>
+          </div>
+
+          <div class="chat-controls">
+            <button class="btn chat-next-btn">下一条</button>
+            <button class="btn chat-all-btn">全部播放</button>
+            <button class="btn chat-reset-btn">重播</button>
+            <span class="chat-progress"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 5: Final quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">综合知识检验</h2>
+
+        <div class="quiz-container" id="quiz-module5">
+          <div class="quiz-question-block"
+               data-correct="opt-b"
+               data-explanation-right="完全正确！先用 dry-run 验证命令会做什么，检查 log 文件找报错，然后对照 scope 配置验证白名单设置。这是系统性调试，不是随机猜测。"
+               data-explanation-wrong="想想系统提供了哪些调试工具。有没有一种方式可以在不实际执行的情况下，先看看 pipeline 会做什么？">
+            <h3 class="quiz-question">你的 recon_pipeline.py 跑完了，但 subdomains.scoped.txt 里是空的。你应该怎么诊断？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>重新安装所有工具，再跑一次</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>先运行 make check-scope 验证 scope 配置，再查看日志文件，找到 scope_guard.py 的输出</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>把 out_of_scope_domains 清空，再跑一次</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-question-block"
+               data-correct="opt-c"
+               data-explanation-right="正确！你理解了报告模板要求的内容：具体的影响、复现步骤、使用自己的测试账号证明漏洞存在。'看起来像 IDOR'不够——你需要证明攻击者能用它做什么。"
+               data-explanation-wrong="再想想报告模板里要求的内容。一个好的漏洞报告需要什么才能让平台认可？回顾 english_report_template.md 里的 Impact 和 Proof of Concept 部分。">
+            <h3 class="quiz-question">你发现一个 API 端点可能存在 IDOR（用户 A 可以访问用户 B 的数据）。按照这套系统的报告流程，你应该准备什么？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>截一张"API 返回了不应该返回的数据"的截图，附上 URL</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>提交 Nuclei 的扫描报告，说明这是自动化发现的</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>用两个测试账号复现，记录完整的 HTTP 请求/响应（打码 token），写清楚跨账号访问的影响，按英文模板格式提交</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-question-block"
+               data-correct="opt-a"
+               data-explanation-right="太棒了！你抓住了这里的陷阱。Grok Agent 的指令明确要求来源验证——'每条声明必须有来源 URL'。没有来源的声明会被 grok_kb_validate.py 拒绝。这防止了 AI 编造内容污染你的知识库。"
+               data-explanation-wrong="仔细看看系统的质量把关机制。grok_kb_validate.py 对每张卡片有哪些必填字段要求？如果来源 URL 不存在或是编造的，会发生什么？">
+            <h3 class="quiz-question">Grok API Agent 生成了一张技巧卡片，内容很有价值，但来源 URL 是 https://nonexistent-blog.example.com/post/xyz——这个域名根本不存在。这张卡片会怎样？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>被 grok_kb_validate.py 或 Tavily 验证失败，不会写入知识库</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>正常写入知识库，因为内容本身有价值</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>系统会自动搜索替代来源补全这张卡片</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <button class="quiz-check-btn" onclick="checkQuiz('quiz-module5')">检查答案</button>
+          <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module5')">重新作答</button>
+        </div>
+
+        <div class="callout callout-accent" style="margin-top: var(--space-12)">
+          <div class="callout-icon">🎉</div>
+          <div class="callout-content">
+            <strong class="callout-title">你完成了这门课程！</strong>
+            <p>你现在理解了这套系统的每一层：它是什么、各部件如何协作、情报如何流动、侦察如何保持安全、出问题时从哪里开始排查。现在，用这些知识去指导 AI 帮你构建和扩展它——你已经知道 AI 说错话时该怎么纠正它了。</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>

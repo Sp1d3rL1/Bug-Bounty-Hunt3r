@@ -1,0 +1,18 @@
+{
+  "authorization_confirmed": true,
+  "source_id": "fixture_authorized_newsletter",
+  "items": [
+    {
+      "title": "Fixture disclosed report summary",
+      "url": "https://example.com/public-disclosed-report",
+      "source_platform": "newsletter",
+      "program_or_vendor": "Example Program",
+      "reporter_or_author": "Example Author",
+      "disclosed_at": "2026-02-03",
+      "vuln_class": "Business logic",
+      "summary": "Short authorized fixture summary only.",
+      "confidence": "medium",
+      "learning_value": "medium"
+    }
+  ]
+}

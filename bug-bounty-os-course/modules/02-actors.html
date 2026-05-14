@@ -1,0 +1,243 @@
+<section class="module" id="module-2" style="background: var(--color-bg-warm)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">02</span>
+      <h1 class="module-title">认识系统里的演员</h1>
+      <p class="module-subtitle">六个核心部件，每个都有明确的角色——就像乐队里各自的乐器</p>
+    </header>
+
+    <div class="module-body">
+
+      <!-- Screen 1: The cast -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">谁在台上？</h2>
+        <p>一个成熟的乐团有指挥、小提琴手、打击乐——每个人都很重要，但各有分工。这套系统也一样。点击下面任何一个组件，了解它的职责：</p>
+
+        <div class="arch-diagram animate-in">
+          <div class="arch-zone" style="border-color: var(--color-actor-2)">
+            <h4 class="arch-zone-label">🧠 情报层</h4>
+            <div class="arch-component" data-desc="Grok API Agent：用 xAI 的 Grok API 自动搜索 X/Twitter 和网页，把猎人帖子、disclosed 报告、研究文章提炼成结构化的'技巧卡片'存进知识库。这是整个系统的大脑——把碎片化的社区智慧变成你可以立刻行动的情报。" onclick="showArchDesc(this)">
+              <div class="arch-icon">🤖</div>
+              <span>Grok API Agent</span>
+            </div>
+            <div class="arch-component" data-desc="Report Intel Agent：专门挖掘 HackerOne、Bugcrowd、GitHub Security Lab 上已公开的漏洞报告，加上相关博客和 X 讨论。只存摘要+链接+证据片段，从不存完整报告体。" onclick="showArchDesc(this)">
+              <div class="arch-icon">📋</div>
+              <span>Report Intel Agent</span>
+            </div>
+          </div>
+
+          <div class="arch-zone" style="border-color: var(--color-actor-5)">
+            <h4 class="arch-zone-label">🤖 自动化侦察层</h4>
+            <div class="arch-component" data-desc="Recon Pipeline（recon_pipeline.py）：VPS 上运行的侦察编排器。先被动收集子域名（subfinder），再 DNS 解析（dnsx），再 HTTP 探活（httpx），最后跑低风险 Nuclei 扫描。每次运行都 diff 上次结果，只有变化才通知你。" onclick="showArchDesc(this)">
+              <div class="arch-icon">🔍</div>
+              <span>Recon Pipeline</span>
+            </div>
+            <div class="arch-component" data-desc="Scope Guard（scope_guard.py）：每个域名/URL 在进入 pipeline 之前，必须经过这道守门员。它检查 scope 配置里的 in_scope_domains 和 out_of_scope_domains，不在白名单里的一律拒绝，避免越界测试。" onclick="showArchDesc(this)">
+              <div class="arch-icon">🛡️</div>
+              <span>Scope Guard</span>
+            </div>
+          </div>
+
+          <div class="arch-zone" style="border-color: var(--color-actor-1)">
+            <h4 class="arch-zone-label">📝 知识与模板层</h4>
+            <div class="arch-component" data-desc="知识库（Intelligence KB）：用 Obsidian Markdown 格式存储的活知识库，包含 307+ 技巧卡、181+ 案例卡、30+ 报告卡。自动建立索引，定期验证来源链接，用 grok_kb_validate.py 做质量把关。" onclick="showArchDesc(this)">
+              <div class="arch-icon">📚</div>
+              <span>Intelligence KB</span>
+            </div>
+            <div class="arch-component" data-desc="检查清单与模板：API/OAuth/GraphQL 专项清单、支付/业务逻辑清单、目标档案模板、英文报告模板。这些是你手工测试的作战地图——系统帮你想好了'在这种目标上要检查哪些点'。" onclick="showArchDesc(this)">
+              <div class="arch-icon">☑️</div>
+              <span>Checklists & Templates</span>
+            </div>
+          </div>
+
+          <div class="arch-description" id="arch-desc">点击任意组件，了解它的职责</div>
+        </div>
+      </section>
+
+      <!-- Screen 2: File tree -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">文件在哪里？</h2>
+        <p>知道每个文件夹是谁的"地盘"，你就能在 AI 给你指路时立刻判断它说的对不对：</p>
+
+        <div class="file-tree animate-in">
+          <div class="ft-folder open">
+            <span class="ft-name">Bug Bounty Hunting/</span>
+            <span class="ft-desc">项目根目录</span>
+            <div class="ft-children">
+              <div class="ft-folder">
+                <span class="ft-name">config/</span>
+                <span class="ft-desc">授权 scope 配置 + 工具配置模板</span>
+              </div>
+              <div class="ft-folder">
+                <span class="ft-name">docs/</span>
+                <span class="ft-desc">所有文档：课程、情报、目标、报告、检查清单、VPS</span>
+                <div class="ft-children">
+                  <div class="ft-file"><span class="ft-name">checklists/</span><span class="ft-desc">API/OAuth/GraphQL、支付/业务逻辑专项</span></div>
+                  <div class="ft-file"><span class="ft-name">intelligence/</span><span class="ft-desc">X/Grok 工作流、情报来源图、技巧卡模板</span></div>
+                  <div class="ft-file"><span class="ft-name">learning/</span><span class="ft-desc">6个月计划、课程购买矩阵、2026年排名</span></div>
+                  <div class="ft-file"><span class="ft-name">targets/</span><span class="ft-desc">项目筛选标准、目标档案模板</span></div>
+                  <div class="ft-file"><span class="ft-name">reports/</span><span class="ft-desc">英文漏洞报告模板</span></div>
+                </div>
+              </div>
+              <div class="ft-folder">
+                <span class="ft-name">scripts/</span>
+                <span class="ft-desc">19个 Python/Bash 脚本：recon、KB、notify、verify</span>
+              </div>
+              <div class="ft-folder">
+                <span class="ft-name">apps/grok-kb-agent-suite/</span>
+                <span class="ft-desc">完整的 Web Agent 套件（后端+前端+技能插件）</span>
+              </div>
+              <div class="ft-folder">
+                <span class="ft-name">data/</span>
+                <span class="ft-desc">运行输出，不进 git（子域名、扫描结果、diff）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: The safety philosophy -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">系统的安全哲学</h2>
+        <p>这套系统有一条贯穿始终的原则：<strong>自动化是"变化提醒"，不是"攻击武器"。</strong></p>
+
+        <div class="icon-rows animate-in">
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-success)">✅</div>
+            <div>
+              <strong>默认只做被动收集</strong>
+              <p>subfinder、dnsx、httpx、低风险 Nuclei——这些都是"看"，不是"打"</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-error)">🚫</div>
+            <div>
+              <strong>默认排除危险操作</strong>
+              <p>DoS、brute-force、intrusive、RCE、LFI、SQLi 相关的 Nuclei 模板全部排除</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-info)">🔐</div>
+            <div>
+              <strong>必须先确认授权</strong>
+              <p>scope 配置里 legal_ack=true 才能运行 pipeline，这是硬性门槛</p>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-circle" style="background: var(--color-actor-4)">👁️</div>
+            <div>
+              <strong>人工验证是必须的最后一步</strong>
+              <p>所有自动化输出只是"候选"，报告前必须手工确认真实影响</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-warning">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-content">
+            <strong class="callout-title">为什么这很重要？</strong>
+            <p>Bug Bounty 是在授权范围内测试。越界测试不只是违规——它可能触犯法律。这套系统的每个默认值都在保护你，不要绕过它们。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: Chat animation -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">组件之间如何沟通</h2>
+        <p>当 VPS 跑完一次侦察，下面是各组件之间发生的对话：</p>
+
+        <div class="chat-window" id="chat-actors">
+          <div class="chat-messages">
+            <div class="chat-message" data-msg="0" data-sender="recon" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-5)">R</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-5)">Recon Pipeline</span>
+                <p>发现了！api.v2.target.com 是新出现的子域名，今天之前没有这个域名。</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="1" data-sender="scope" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-3)">S</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-3)">Scope Guard</span>
+                <p>等等，先让我检查。api.v2.target.com 匹配 *.target.com，在授权白名单里，不在排除列表里。放行！</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="2" data-sender="diff" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-4)">D</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-4)">Diff Engine</span>
+                <p>对比上次运行记录，确认这是新资产。生成 diff 报告，标记为 "+ api.v2.target.com"。</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="3" data-sender="notify" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-2)">N</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-2)">Notify</span>
+                <p>发送 Discord 通知：只发 diff 摘要（新增1个子域名），不发任何 token、cookie 或敏感响应体。</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="4" data-sender="hunter" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">你</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">你（猎人）</span>
+                <p>收到通知，打开 Burp Suite，手工测试这个新 API 端点——这才是真正的"找漏洞"开始的地方。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-typing" id="chat-actors-typing" style="display:none">
+            <div class="chat-avatar" id="chat-actors-typing-avatar">?</div>
+            <div class="chat-typing-dots">
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+            </div>
+          </div>
+
+          <div class="chat-controls">
+            <button class="btn chat-next-btn">下一条消息</button>
+            <button class="btn chat-all-btn">全部播放</button>
+            <button class="btn chat-reset-btn">重播</button>
+            <span class="chat-progress"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 5: Quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">组件知识检验</h2>
+
+        <div class="dnd-container" id="dnd-actors">
+          <p style="margin-bottom: var(--space-4); color: var(--color-text-secondary); font-size: var(--text-sm)">把组件名称拖到对应的职责描述框里：</p>
+          <div class="dnd-chips">
+            <div class="dnd-chip" draggable="true" data-answer="scope-guard">Scope Guard</div>
+            <div class="dnd-chip" draggable="true" data-answer="grok-agent">Grok API Agent</div>
+            <div class="dnd-chip" draggable="true" data-answer="recon-pipeline">Recon Pipeline</div>
+            <div class="dnd-chip" draggable="true" data-answer="intel-kb">Intelligence KB</div>
+          </div>
+          <div class="dnd-zones">
+            <div class="dnd-zone" data-correct="grok-agent">
+              <p class="dnd-zone-label">从 X/Twitter 和网页自动提取漏洞技巧，存成结构化卡片</p>
+              <div class="dnd-zone-target">拖到这里</div>
+            </div>
+            <div class="dnd-zone" data-correct="scope-guard">
+              <p class="dnd-zone-label">检查域名是否在授权白名单内，拒绝越界资产进入流水线</p>
+              <div class="dnd-zone-target">拖到这里</div>
+            </div>
+            <div class="dnd-zone" data-correct="recon-pipeline">
+              <p class="dnd-zone-label">协调 subfinder、dnsx、httpx、nuclei 的完整侦察流程</p>
+              <div class="dnd-zone-target">拖到这里</div>
+            </div>
+            <div class="dnd-zone" data-correct="intel-kb">
+              <p class="dnd-zone-label">存储 307+ 技巧卡片，自动建索引，定期验证来源</p>
+              <div class="dnd-zone-target">拖到这里</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" style="margin-top: var(--space-4)" onclick="checkDnD('dnd-actors')">检查匹配</button>
+          <button class="btn" style="margin-top: var(--space-4); margin-left: var(--space-3)" onclick="resetDnD('dnd-actors')">重置</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>

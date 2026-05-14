@@ -1,0 +1,9 @@
+{
+  "required_for_safe_pipeline": ["subfinder", "dnsx", "httpx", "nuclei"],
+  "optional": ["amass", "katana", "gau", "waybackurls", "gowitness", "gitleaks", "trufflehog", "ffuf", "arjun", "kr"],
+  "notes": {
+    "kr": "kiterunner binary is often installed as kr.",
+    "screenshots": "Enable screenshots only when allowed by program rules and local storage is sufficient.",
+    "ffuf_arjun": "Do not use brute-force/fuzzing modes unless program rules clearly allow it. Keep them manual by default."
+  }
+}

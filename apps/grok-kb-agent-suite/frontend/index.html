@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grok KB Guided Workbench</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <a class="skip-link" href="#main" data-i18n="skip.workspace">跳到工作区</a>
+
+  <aside class="app-sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#home" data-route-link="home" aria-label="Grok KB Agent Suite home">
+      <span class="brand-mark" aria-hidden="true">∴</span>
+      <span><strong>Grok KB</strong><em>Guided Workbench</em></span>
+    </a>
+
+    <nav class="side-nav" aria-label="Workspaces">
+      <a href="#home" data-route-link="home"><span>⌂</span><b data-i18n="nav.home">首页</b><small data-i18n="nav.homeSub">状态与下一步</small></a>
+      <a href="#collect" data-route-link="collect"><span>▶</span><b data-i18n="nav.collect">采集</b><small data-i18n="nav.collectSub">报告 / 技法 / 全量</small></a>
+      <a href="#review" data-route-link="review"><span>✓</span><b data-i18n="nav.review">复核</b><small data-i18n="nav.reviewSub">任务、核查与质量门</small></a>
+      <a href="#settings" data-route-link="settings"><span>◇</span><b data-i18n="nav.settings">设置</b><small data-i18n="nav.settingsSub">来源、渠道与能力</small></a>
+      <a href="#sources" data-route-link="sources"><span>⚭</span><b data-i18n="nav.sources">情报源</b><small data-i18n="nav.sourcesSub">connector 健康度</small></a>
+      <a href="#playbooks" data-route-link="playbooks"><span>▤</span><b data-i18n="nav.playbooks">Playbooks</b><small data-i18n="nav.playbooksSub">清单驱动测试 (Phase 3)</small></a>
+      <a href="#match" data-route-link="match"><span>⊕</span><b data-i18n="nav.match">情报匹配</b><small data-i18n="nav.matchSub">目标 ↔ 技巧 (Phase 3)</small></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-choice="zh-CN">中文</button>
+        <button type="button" data-lang-choice="en">EN</button>
+      </div>
+      <span class="badge" id="sidebarStatus">health pending</span>
+    </div>
+  </aside>
+
+  <main class="app-main" id="main">
+    <header class="mobile-topbar" aria-label="mobile navigation">
+      <a class="brand" href="#home" data-route-link="home" aria-label="Grok KB Agent Suite home">
+        <span class="brand-mark" aria-hidden="true">∴</span>
+        <span><strong>Grok KB</strong><em>Workbench</em></span>
+      </a>
+      <div class="mobile-actions">
+        <div class="language-switch compact" role="group" aria-label="Language">
+          <button type="button" data-lang-choice="zh-CN">中</button>
+          <button type="button" data-lang-choice="en">EN</button>
+        </div>
+        <button id="openNav" class="nav-toggle" type="button" aria-expanded="false" data-i18n="button.menu">菜单</button>
+      </div>
+    </header>
+
+    <section class="view route-home" data-route="home" aria-labelledby="home-title">
+      <section class="hero panel command-hero">
+        <div class="hero-copy">
+          <div>
+            <p class="eyebrow" data-i18n="home.eyebrow">证据优先 · 分步采集 · 可复核输出</p>
+            <h1 id="home-title" data-i18n="home.title">Bug Bounty 情报工作台</h1>
+            <p class="lede" data-i18n="home.lede">首页只保留系统状态、推荐下一步和核心入口。复杂表单已收进采集、复核与设置，让你从“该做什么”开始，而不是从参数堆里找路。</p>
+          </div>
+          <div class="hero-actions" aria-label="primary actions">
+            <a class="button-link primary" href="#collect" data-route-link="collect" data-i18n="home.cta.collect">开始采集</a>
+            <a class="button-link" href="#review" data-route-link="review" data-i18n="home.cta.review">查看任务</a>
+            <a class="button-link ghost" href="#settings" data-route-link="settings" data-i18n="home.cta.settings">检查设置</a>
+          </div>
+        </div>
+        <aside class="status-card" aria-label="live service health">
+          <div class="status-card-head"><span data-i18n="home.health">服务健康</span><span class="status-dot" aria-hidden="true"></span></div>
+          <div id="health" class="health-grid">checking...</div>
+        </aside>
+      </section>
+
+      <section class="home-grid">
+        <article class="panel next-action" aria-labelledby="next-action-title">
+          <p class="eyebrow" data-i18n="home.next.eyebrow">推荐下一步</p>
+          <h2 id="nextActionTitle">—</h2>
+          <p id="nextActionBody">—</p>
+          <a id="nextActionButton" class="button-link primary" href="#collect" data-route-link="collect">—</a>
+        </article>
+
+        <section class="panel runway" aria-labelledby="runway-title">
+          <div class="section-head tight">
+            <div><p class="eyebrow" data-i18n="home.runway.eyebrow">运行状态</p><h2 id="runway-title" data-i18n="home.runway.title">准备情况</h2></div>
+            <span class="badge" id="lastRefresh">waiting for refresh</span>
+          </div>
+          <div class="kpi-grid" aria-live="polite">
+            <article class="kpi"><span data-i18n="kpi.keys">API Key</span><strong id="kpiKeys">—</strong><em data-i18n="kpi.keysSub">已配置供应商</em></article>
+            <article class="kpi"><span data-i18n="kpi.sources">来源面</span><strong id="kpiSources">—</strong><em data-i18n="kpi.sourcesSub">目录 / Watchlist / 手动索引</em></article>
+            <article class="kpi"><span data-i18n="kpi.jobs">任务队列</span><strong id="kpiJobs">—</strong><em data-i18n="kpi.jobsSub">成功 / 运行 / 失败</em></article>
+            <article class="kpi"><span data-i18n="kpi.latest">最近任务</span><strong id="kpiLatest">—</strong><em data-i18n="kpi.latestSub">最新 action</em></article>
+          </div>
+        </section>
+      </section>
+
+      <section class="quick-actions" aria-label="quick actions">
+        <a class="workflow-card primary-workflow" href="#collect" data-route-link="collect">
+          <span class="module-icon">▶</span>
+          <strong data-i18n="quick.pipeline.title">全量采集</strong>
+          <em data-i18n="quick.pipeline.body">串联来源目录、报告、技法与质量检查。</em>
+          <small data-action-status="intel_pipeline">—</small>
+        </a>
+        <a class="workflow-card" href="#collect" data-route-link="collect">
+          <span class="module-icon">▦</span>
+          <strong data-i18n="quick.reports.title">公开报告采集</strong>
+          <em data-i18n="quick.reports.body">寻找真实公开报告，并转为可学习卡片。</em>
+          <small data-action-status="report_discover,report_cluster,report_enrich,report_apply">—</small>
+        </a>
+        <a class="workflow-card" href="#collect" data-route-link="collect">
+          <span class="module-icon">✦</span>
+          <strong data-i18n="quick.techniques.title">技法情报采集</strong>
+          <em data-i18n="quick.techniques.body">收集 2025–2026 技法、案例和研究线索。</em>
+          <small data-action-status="discover,expand,batch_submit">—</small>
+        </a>
+        <a class="workflow-card" href="#review" data-route-link="review">
+          <span class="module-icon">✓</span>
+          <strong data-i18n="quick.review.title">结果复核</strong>
+          <em data-i18n="quick.review.body">查看任务、失败原因、核查与 KB 质量门。</em>
+          <small data-action-status="validate,tavily_verify">—</small>
+        </a>
+      </section>
+    </section>
+
+    <section class="view" data-route="collect" aria-labelledby="collect-title">
+      <div class="workspace-head">
+        <div><p class="eyebrow" data-i18n="collect.eyebrow">采集工作流</p><h1 id="collect-title" data-i18n="collect.title">从目标任务开始</h1><p data-i18n="collect.lede">这里按“全量、报告、技法”组织，而不是按底层脚本名组织。常用字段直接显示，低频参数收进高级操作。</p></div>
+        <a class="button-link" href="#review" data-route-link="review" data-i18n="collect.openReview">打开复核</a>
+      </div>
+
+      <div class="workflow-board">
+        <section class="panel workflow-panel" aria-labelledby="pipeline-title">
+          <div class="feature-head">
+            <span class="module-icon">▶</span>
+            <div><h2 id="pipeline-title" data-i18n="pipeline.title">全量采集</h2><p data-i18n="pipeline.what">一键串联目录、报告、技法、核查与质量门，适合日常稳定运行。</p></div>
+            <span class="badge" data-action-status="intel_pipeline">—</span>
+          </div>
+          <dl class="feature-facts">
+            <div><dt data-i18n="card.output">产出</dt><dd data-i18n="pipeline.output">候选、聚类、卡片、索引与验证结果。</dd></div>
+            <div><dt data-i18n="card.next">下一步</dt><dd data-i18n="pipeline.next">运行后到复核页查看失败项与输出目录。</dd></div>
+          </dl>
+          <ol class="stepper" aria-label="pipeline steps">
+            <li>Catalog</li><li>Reports</li><li>Techniques</li><li>Verify</li><li>QA</li>
+          </ol>
+          <form class="form compact-form" id="pipelineForm">
+            <label><span data-i18n="form.mode">模式</span>
+              <select name="mode">
+                <option value="smoke">smoke</option>
+                <option value="steady" selected>steady</option>
+                <option value="wide">wide</option>
+              </select>
+            </label>
+            <div class="form-row two">
+              <label><span data-i18n="form.fromDate">开始日期</span><input name="from_date" value="2025-01-01" /></label>
+              <label><span data-i18n="form.toDate">结束日期</span><input name="to_date" value="2026-05-09" /></label>
+            </div>
+            <details class="advanced-block">
+              <summary data-i18n="advanced.pipeline">高级参数</summary>
+              <div class="form-row three">
+                <label><span data-i18n="form.reportLimit">报告限制/来源</span><input name="report_limit" type="number" value="10" min="1" max="100" /></label>
+                <label><span data-i18n="form.enrichLimit">增强限制/轮</span><input name="enrich_limit" type="number" value="3" min="1" max="8" /></label>
+                <label><span data-i18n="form.techniqueLimit">技法限制/主题</span><input name="technique_limit" type="number" value="8" min="1" max="50" /></label>
+              </div>
+              <label><span data-i18n="form.startBatch">起始批次</span><input name="start_batch" type="number" value="201" min="1" /></label>
+              <label class="row"><input name="reports_only" type="checkbox" /> <span data-i18n="form.reportsOnly">只运行报告</span></label>
+              <label class="row"><input name="techniques_only" type="checkbox" /> <span data-i18n="form.techniquesOnly">只运行技法</span></label>
+              <label class="row"><input name="dry_run" type="checkbox" /> <span data-i18n="form.dryRun">仅试运行</span></label>
+            </details>
+            <button data-i18n="button.runPipeline">启动全量采集</button>
+          </form>
+        </section>
+
+        <section class="panel workflow-panel" aria-labelledby="reports-title">
+          <div class="feature-head">
+            <span class="module-icon">▦</span>
+            <div><h2 id="reports-title" data-i18n="reports.title">报告采集</h2><p data-i18n="reports.what">从公开平台、研究员博客和新闻源中寻找真实 Bug Bounty 报告。</p></div>
+            <span class="badge" data-action-status="report_discover,report_cluster,report_enrich,report_apply">—</span>
+          </div>
+          <dl class="feature-facts">
+            <div><dt data-i18n="card.output">产出</dt><dd data-i18n="reports.output">报告候选列表、来源链接、聚类与报告卡片。</dd></div>
+            <div><dt data-i18n="card.next">下一步</dt><dd data-i18n="reports.next">先 Discover，再 Cluster / Enrich / Apply。</dd></div>
+          </dl>
+          <ol class="stepper" aria-label="report steps">
+            <li>Discover</li><li>Cluster</li><li>Enrich</li><li>Apply</li><li>QA</li>
+          </ol>
+          <form class="form compact-form" id="reportDiscoverForm">
+            <div class="form-row two">
+              <label><span data-i18n="form.sourcePreset">来源预设</span>
+                <select name="sources">
+                  <option value="public_all">public_all</option>
+                  <option value="hackerone">hackerone</option>
+                  <option value="bugcrowd">bugcrowd</option>
+                  <option value="github">github</option>
+                  <option value="github_security_lab">github_security_lab</option>
+                  <option value="blogs_x">blogs_x</option>
+                </select>
+              </label>
+              <label><span data-i18n="form.limit">限制</span><input name="limit" type="number" value="25" min="1" max="100" /></label>
+            </div>
+            <label><span data-i18n="form.topic">主题</span><input name="topic" value="public disclosed bug bounty reports SaaS API business logic OAuth" /></label>
+            <label><span data-i18n="form.vulnClass">漏洞类型</span><input name="vuln_class" data-i18n-placeholder="placeholder.vulnClass" placeholder="IDOR / OAuth / payment / GraphQL" /></label>
+            <div class="form-row two">
+              <label><span data-i18n="form.fromDate">开始日期</span><input name="from_date" value="2025-01-01" /></label>
+              <label><span data-i18n="form.toDate">结束日期</span><input name="to_date" value="2026-05-09" /></label>
+            </div>
+            <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+            <button data-i18n="button.discoverReports">发现报告</button>
+          </form>
+
+          <details class="advanced-block">
+            <summary data-i18n="advanced.reportSteps">高级操作：聚类、增强、写入</summary>
+            <div class="form-stack">
+              <form class="form compact-form" id="reportClusterForm">
+                <h3 data-i18n="reports.cluster.title">报告聚类</h3>
+                <label><span data-i18n="form.runDir">运行目录</span><input name="run_dir" data-i18n-placeholder="placeholder.reportRunDir" placeholder="apps/grok-kb-agent-suite/data/runs/report_<job>" /></label>
+                <label><span data-i18n="form.inputOverride">输入覆盖</span><input name="input" data-i18n-placeholder="placeholder.candidates" placeholder="<run_dir>/discovery/candidates.jsonl" /></label>
+                <p class="hint" data-i18n="reports.cluster.hint">按 canonical URL / 平台 report id / title+program+class 去重聚类。</p>
+                <button data-i18n="button.clusterReports">聚类报告</button>
+              </form>
+              <form class="form compact-form" id="reportEnrichForm">
+                <h3 data-i18n="reports.enrich.title">报告增强</h3>
+                <label><span data-i18n="form.runDir">运行目录</span><input name="run_dir" data-i18n-placeholder="placeholder.reportRunDir" placeholder="apps/grok-kb-agent-suite/data/runs/report_<job>" /></label>
+                <label><span data-i18n="form.inputOverride">输入覆盖</span><input name="input" data-i18n-placeholder="placeholder.clusters" placeholder="<run_dir>/clusters/clusters.json" /></label>
+                <label><span data-i18n="form.limit">限制</span><input name="limit" type="number" value="5" min="1" max="8" /></label>
+                <label class="row"><input name="skip_tavily" type="checkbox" /> <span data-i18n="form.skipTavily">跳过 Tavily Extract</span></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <button data-i18n="button.enrichReports">增强报告</button>
+              </form>
+              <form class="form compact-form" id="reportApplyForm">
+                <h3 data-i18n="reports.apply.title">写入报告卡片</h3>
+                <label><span data-i18n="form.runDir">运行目录</span><input name="run_dir" data-i18n-placeholder="placeholder.reportRunDir" placeholder="apps/grok-kb-agent-suite/data/runs/report_<job>" /></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="reports.apply.hint">写入 reports/*，更新 report index 与 report_ledger.tsv。</p>
+                <button data-i18n="button.applyReports">写入报告卡片</button>
+              </form>
+            </div>
+          </details>
+        </section>
+
+        <section class="panel workflow-panel" aria-labelledby="techniques-title">
+          <div class="feature-head">
+            <span class="module-icon">✦</span>
+            <div><h2 id="techniques-title" data-i18n="techniques.title">技法采集</h2><p data-i18n="techniques.what">收集 X/Web 中近两年技法、旧洞新挖与可迁移研究线索。</p></div>
+            <span class="badge" data-action-status="discover,expand,batch_submit">—</span>
+          </div>
+          <dl class="feature-facts">
+            <div><dt data-i18n="card.output">产出</dt><dd data-i18n="techniques.output">候选技法、来源 URL、扩展批次与 KB 卡片。</dd></div>
+            <div><dt data-i18n="card.next">下一步</dt><dd data-i18n="techniques.next">先 Discover Topic，高质量后再 Expand / Batch。</dd></div>
+          </dl>
+          <ol class="stepper" aria-label="technique steps">
+            <li>Discover</li><li>Verify</li><li>Expand</li><li>Apply</li><li>QA</li>
+          </ol>
+          <form class="form compact-form" id="discoverForm">
+            <label><span data-i18n="form.topic">主题</span><textarea name="topic" rows="5">2025-2026 bug bounty OAuth GraphQL SaaS tenant isolation business logic X posts disclosed reports</textarea></label>
+            <label><span data-i18n="form.limit">限制</span><input name="limit" type="number" value="25" min="5" max="50" /></label>
+            <label class="row"><input name="tavily_context" type="checkbox" /> <span data-i18n="form.attachTavily">附加 Tavily web context</span></label>
+            <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+            <button data-i18n="button.discoverTechniques">提交技法发现</button>
+          </form>
+
+          <details class="advanced-block">
+            <summary data-i18n="advanced.techniqueSteps">高级操作：扩展批次与 Batch API</summary>
+            <div class="form-stack">
+              <form class="form compact-form" id="expandForm">
+                <h3 data-i18n="techniques.expand.title">扩展批次</h3>
+                <div class="form-row two">
+                  <label><span data-i18n="form.fromBatch">起始批次</span><input name="from_batch" type="number" value="11" min="1" /></label>
+                  <label><span data-i18n="form.toBatch">结束批次</span><input name="to_batch" type="number" value="12" min="1" /></label>
+                </div>
+                <label class="row"><input name="use_search" type="checkbox" checked /> <span data-i18n="form.useSearch">使用 X/Web Search</span></label>
+                <label class="row"><input name="tavily_preverify" type="checkbox" /> <span data-i18n="form.tavilyPreverify">Tavily 预核查 web 来源</span></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <button data-i18n="button.expand">提交扩展</button>
+              </form>
+              <form class="form compact-form" id="batchForm">
+                <h3 data-i18n="techniques.batch.title">Batch API</h3>
+                <div class="form-row two">
+                  <label><span data-i18n="form.fromBatch">起始批次</span><input name="from_batch" type="number" value="11" min="1" /></label>
+                  <label><span data-i18n="form.toBatch">结束批次</span><input name="to_batch" type="number" value="60" min="1" /></label>
+                </div>
+                <label class="row"><input name="use_search" type="checkbox" checked /> <span data-i18n="form.useSearch">使用 X/Web Search</span></label>
+                <label class="row"><input name="tavily_preverify" type="checkbox" /> <span data-i18n="form.tavilyPreverify">Batch 前 Tavily 预核查</span></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunRequest">仅生成请求 JSON</span></label>
+                <button data-i18n="button.batch">准备 / 提交 Batch</button>
+              </form>
+            </div>
+          </details>
+        </section>
+      </div>
+    </section>
+
+    <section class="view" data-route="review" id="jobs-section" aria-labelledby="review-title">
+      <div class="workspace-head">
+        <div><p class="eyebrow" data-i18n="review.eyebrow">复核与反馈</p><h1 id="review-title" data-i18n="review.title">任务、核查与质量门</h1><p data-i18n="review.lede">这里集中展示运行状态、失败原因、Tavily 核查和 KB 验证。采集完成后优先看这里。</p></div>
+        <button id="refreshJobs" type="button" data-i18n="button.refresh">刷新</button>
+      </div>
+
+      <section class="review-grid">
+        <article class="panel review-summary" aria-labelledby="review-summary-title">
+          <p class="eyebrow" data-i18n="review.summary.eyebrow">最近状态</p>
+          <h2 id="review-summary-title" data-i18n="review.summary.title">任务摘要</h2>
+          <div id="reviewSummary" class="summary-list">—</div>
+        </article>
+        <section class="panel workflow-panel" aria-labelledby="qa-title">
+          <div class="feature-head">
+            <span class="module-icon">✓</span>
+            <div><h2 id="qa-title" data-i18n="qa.title">质量门</h2><p data-i18n="qa.what">重建索引并运行 KB validator；Apply 后建议执行。</p></div>
+            <span class="badge" data-action-status="validate,tavily_verify">—</span>
+          </div>
+          <form class="form compact-form" id="validateForm">
+            <p data-i18n="qa.validate.body">用于确认索引、frontmatter、ledger 和合规边界仍然有效。</p>
+            <button data-i18n="button.runQa">运行质量门</button>
+          </form>
+          <details class="advanced-block">
+            <summary data-i18n="advanced.tavily">高级操作：Tavily 单独核查</summary>
+            <form class="form compact-form" id="tavilyVerifyForm">
+              <label><span data-i18n="form.runDir">运行目录</span><input name="run_dir" data-i18n-placeholder="placeholder.grokRunDir" placeholder="data/grok_api/runs/<run_id>" /></label>
+              <label><span data-i18n="form.mode">模式</span>
+                <select name="mode">
+                  <option value="default">default: uncertain only</option>
+                  <option value="all">all cards</option>
+                  <option value="needs_review">needs_review only</option>
+                  <option value="conflicts">conflicts only</option>
+                  <option value="low_confidence">low confidence only</option>
+                </select>
+              </label>
+              <label class="row"><input name="write_back" type="checkbox" checked /> <span data-i18n="form.writeBack">写回 cards JSON</span></label>
+              <label class="row"><input name="search_missing" type="checkbox" /> <span data-i18n="form.searchMissing">搜索替代来源</span></label>
+              <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+              <button data-i18n="button.verifyTavily">用 Tavily 核查来源</button>
+            </form>
+          </details>
+        </section>
+      </section>
+
+      <section class="panel jobs-panel" aria-labelledby="jobs-title">
+        <div class="section-head tight"><div><p class="eyebrow" data-i18n="jobs.eyebrow">执行日志</p><h2 id="jobs-title" data-i18n="jobs.title">最近任务</h2></div><span class="badge" id="jobsCount">—</span></div>
+        <div id="jobs" class="jobs"></div>
+      </section>
+    </section>
+
+    <section class="view" data-route="settings" id="settings-section" aria-labelledby="settings-title">
+      <div class="workspace-head">
+        <div><p class="eyebrow" data-i18n="settings.eyebrow">设置与高级能力</p><h1 id="settings-title" data-i18n="settings.title">来源、渠道与系统能力</h1><p data-i18n="settings.lede">这里保留低频但必要的配置型功能。默认折叠，避免干扰日常采集。</p></div>
+        <a class="button-link" href="#collect" data-route-link="collect" data-i18n="settings.backCollect">返回采集</a>
+      </div>
+
+      <section class="settings-grid">
+        <article class="panel settings-card">
+          <p class="eyebrow" data-i18n="settings.keys.eyebrow">凭证状态</p>
+          <h2 data-i18n="settings.keys.title">API Key 与来源状态</h2>
+          <p data-i18n="settings.keys.body">这里只显示是否生效，不展示密钥内容。若缺少关键 key，首页会优先提示修复设置。</p>
+          <div id="settingsProviderSummary" class="provider-summary">—</div>
+        </article>
+
+        <section class="panel workflow-panel" aria-labelledby="source-catalog-title">
+          <div class="feature-head">
+            <span class="module-icon">◇</span>
+            <div><h2 id="source-catalog-title" data-i18n="catalog.title">来源目录</h2><p data-i18n="catalog.what">生成或更新公开平台、聚合器、newsletter、Web3、社区与灰色元数据 watchlist。</p></div>
+            <span class="badge" data-action-status="report_catalog_build,report_discover_catalog,report_discover_source">—</span>
+          </div>
+          <form class="form compact-form" id="reportCatalogForm">
+            <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+            <button data-i18n="button.buildCatalog">构建来源目录</button>
+          </form>
+
+          <details class="advanced-block">
+            <summary data-i18n="advanced.catalog">高级操作：目录发现、单源发现、人工导入</summary>
+            <div class="form-stack">
+              <form class="form compact-form" id="reportCatalogDiscoverForm">
+                <h3 data-i18n="catalog.discover.title">按目录发现</h3>
+                <label><span data-i18n="form.preset">预设</span>
+                  <select name="preset">
+                    <option value="maximum_coverage">maximum_coverage</option>
+                    <option value="public_only" selected>public_only</option>
+                    <option value="paid_authorized">paid_authorized</option>
+                    <option value="gray_metadata_only">gray_metadata_only</option>
+                    <option value="web3_reports">web3_reports</option>
+                    <option value="legitimate_gated">legitimate_gated</option>
+                    <option value="vendor_official">vendor_official</option>
+                    <option value="wp_ecosystem">wp_ecosystem</option>
+                    <option value="research_blogs">research_blogs</option>
+                    <option value="web3_extended">web3_extended</option>
+                    <option value="gray_public_surfaces">gray_public_surfaces</option>
+                  </select>
+                </label>
+                <label><span data-i18n="form.tier">Tier</span>
+                  <select name="tier">
+                    <option value="">use preset</option>
+                    <option value="platform_public">platform_public</option>
+                    <option value="curated_aggregators">curated_aggregators</option>
+                    <option value="newsletter_podcast">newsletter_podcast</option>
+                    <option value="web3_audit_bounty">web3_audit_bounty</option>
+                    <option value="community_social">community_social</option>
+                    <option value="gray_trade_watchlist">gray_trade_watchlist</option>
+                  </select>
+                </label>
+                <label><span data-i18n="form.topic">主题</span><input name="topic" value="public disclosed bug bounty reports SaaS API OAuth payment" /></label>
+                <label><span data-i18n="form.vulnClass">漏洞类型</span><input name="vuln_class" data-i18n-placeholder="placeholder.vulnClass" placeholder="IDOR / OAuth / payment / GraphQL" /></label>
+                <div class="form-row two">
+                  <label><span data-i18n="form.fromDate">开始日期</span><input name="from_date" value="2025-01-01" /></label>
+                  <label><span data-i18n="form.toDate">结束日期</span><input name="to_date" value="2026-05-09" /></label>
+                </div>
+                <label><span data-i18n="form.limit">限制</span><input name="limit" type="number" value="25" min="1" max="100" /></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="catalog.discover.hint">gray_metadata_only 只生成 channel metadata，不进入 enrich/apply。</p>
+                <button data-i18n="button.discoverCatalog">按目录发现</button>
+              </form>
+
+              <form class="form compact-form" id="reportSourceDiscoverForm">
+                <h3 data-i18n="catalog.source.title">单源发现</h3>
+                <label><span data-i18n="form.sourceId">Source ID</span><input name="source_id" value="pentesterland_writeups" /></label>
+                <label><span data-i18n="form.topic">主题</span><input name="topic" value="public disclosed bug bounty report writeup" /></label>
+                <label><span data-i18n="form.vulnClass">漏洞类型</span><input name="vuln_class" placeholder="business logic / OAuth / API" /></label>
+                <div class="form-row two">
+                  <label><span data-i18n="form.fromDate">开始日期</span><input name="from_date" value="2025-01-01" /></label>
+                  <label><span data-i18n="form.toDate">结束日期</span><input name="to_date" value="2026-05-09" /></label>
+                </div>
+                <label><span data-i18n="form.limit">限制</span><input name="limit" type="number" value="25" min="1" max="100" /></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <button data-i18n="button.discoverSource">发现单源</button>
+              </form>
+
+              <form class="form compact-form" id="reportManualImportForm">
+                <h3 data-i18n="catalog.manual.title">授权导入</h3>
+                <label><span data-i18n="form.inputJson">输入 JSON</span><input name="input" data-i18n-placeholder="placeholder.authorizedExport" placeholder="path/to/authorized_export.json" /></label>
+                <label><span data-i18n="form.runDir">运行目录</span><input name="run_dir" data-i18n-placeholder="placeholder.optionalRunDir" placeholder="optional output run dir" /></label>
+                <label class="row"><input name="authorization_confirmed" type="checkbox" /> <span data-i18n="form.authConfirmed">我确认拥有该导出的合法使用权</span></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="catalog.manual.hint">用于付费 newsletter/Discord/Telegram 私域的用户授权导出；仍只保存摘要、链接、证据短片段/hash。</p>
+                <button data-i18n="button.importAuthorized">导入授权导出</button>
+              </form>
+            </div>
+          </details>
+        </section>
+
+        <section class="panel workflow-panel" aria-labelledby="manual-channel-title">
+          <div class="feature-head">
+            <span class="module-icon">◎</span>
+            <div><h2 id="manual-channel-title" data-i18n="manual.title">手动渠道研究</h2><p data-i18n="manual.what">用于记录合法入口、发现路径、trashcan 元数据和待复核线索。</p></div>
+            <span class="badge" data-action-status="manual_channel_prompts,import_manual_channel_results,apply_manual_channel_catalog,validate_discovery_records,export_manual_channel_index,report_triage_sources">—</span>
+          </div>
+          <details class="advanced-block" open>
+            <summary data-i18n="advanced.manual">高级操作：提示词、导入、验证与索引</summary>
+            <div class="form-stack">
+              <form class="form compact-form" id="manualChannelPromptsForm">
+                <h3 data-i18n="manual.prompts.title">生成调研提示词</h3>
+                <label><span data-i18n="form.outputDir">输出目录</span><input name="out_dir" data-i18n-placeholder="placeholder.optionalPromptDir" placeholder="optional prompt output dir" /></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="manual.prompts.hint">生成 Grok Expert 调研 prompt，用于收集合法付费/私域/小众渠道入口与完整发现记录。</p>
+                <button data-i18n="button.generatePrompts">生成提示词</button>
+              </form>
+              <form class="form compact-form" id="manualChannelImportForm">
+                <h3 data-i18n="manual.import.title">导入 Grok TSV</h3>
+                <label><span data-i18n="form.inputFile">输入 TSV/JSONL</span><input name="input" placeholder="apps/grok-kb-agent-suite/tests/fixtures/manual_channel_results.tsv" /></label>
+                <label><span data-i18n="form.researchTopic">研究主题</span><input name="research_topic" placeholder="paid_private_communities / vendor_official / web3" /></label>
+                <label><span data-i18n="form.promptQuery">Prompt / Query</span><input name="prompt_or_query" placeholder="short prompt or query used" /></label>
+                <label><span data-i18n="form.toolUsed">使用工具</span>
+                  <select name="tool_used">
+                    <option value="grok_expert">grok_expert</option>
+                    <option value="browser">browser</option>
+                    <option value="tavily">tavily</option>
+                    <option value="manual" selected>manual</option>
+                  </select>
+                </label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="manual.import.hint">导入时自动分流：合法入口 / Trashcan / 待复核。不保存私邀、付款、附件或全文。</p>
+                <button data-i18n="button.importChannels">导入渠道结果</button>
+              </form>
+              <form class="form compact-form" id="manualChannelApplyForm">
+                <h3 data-i18n="manual.apply.title">应用到来源目录</h3>
+                <label><span data-i18n="form.inputOverride">输入覆盖</span><input name="input" placeholder="optional TSV/JSONL; empty means stored discovery records" /></label>
+                <label class="row"><input name="replace" type="checkbox" /> <span data-i18n="form.replaceSource">替换已有 source_id</span></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <button data-i18n="button.applyChannels">应用到来源目录</button>
+              </form>
+              <form class="form compact-form" id="manualChannelValidateForm">
+                <h3 data-i18n="manual.validate.title">验证发现记录</h3>
+                <p class="hint" data-i18n="manual.validate.hint">检查私邀、付款页、附件 URL、长正文、缺失合法获取方式等问题；硬阻断项以 warning 进入 trashcan。</p>
+                <button data-i18n="button.validateRecords">验证手动记录</button>
+              </form>
+              <form class="form compact-form" id="manualChannelExportForm">
+                <h3 data-i18n="manual.export.title">Trashcan 与索引</h3>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.dryRunFirst">先试运行</span></label>
+                <p class="hint" data-i18n="manual.export.hint">导出 Obsidian 导航页：合法入口 / Trashcan / 待复核。</p>
+                <button data-i18n="button.exportIndex">导出渠道索引</button>
+              </form>
+              <form class="form compact-form" id="reportTriageSourcesForm">
+                <h3 data-i18n="manual.triage.title">来源排序</h3>
+                <label><span data-i18n="form.tierPreset">Tier / Preset</span><input name="tier" placeholder="public_only / web3_audit_bounty / gray_trade_watchlist" /></label>
+                <label class="row"><input name="dry_run" type="checkbox" checked /> <span data-i18n="form.printOnly">仅打印</span></label>
+                <button data-i18n="button.triageSources">排序来源</button>
+              </form>
+            </div>
+          </details>
+        </section>
+
+        <section class="panel workflow-panel" id="skills-section" aria-labelledby="powerups-title">
+          <div class="feature-head">
+            <span class="module-icon">◆</span>
+            <div><h2 id="powerups-title" data-i18n="powerups.title">系统能力</h2><p data-i18n="powerups.what">当前平台加载的 powerup/skill 说明。默认作为高级参考，不放在首页。</p></div>
+            <button id="refreshSkills" type="button" data-i18n="button.refresh">刷新</button>
+          </div>
+          <details class="advanced-block">
+            <summary data-i18n="advanced.powerups">查看 Powerup Skills</summary>
+            <div id="skills" class="skills"></div>
+          </details>
+        </section>
+      </section>
+    </section>
+
+    <section class="view" data-route="sources" id="sources-section" aria-labelledby="sources-title">
+      <header class="view-header">
+        <h1 id="sources-title">情报源 · Connector Health</h1>
+        <p class="view-sub">所有 sources.yaml 中声明的来源，按 connector 分组。点击源名可触发一次拉取。</p>
+        <div class="row-actions">
+          <button type="button" id="sourcesRefreshBtn" class="button-link">刷新列表</button>
+          <button type="button" id="sourcesPullAllBtn" class="button-link primary">全部拉取</button>
+        </div>
+      </header>
+      <section class="card">
+        <div id="sourcesSummary" class="muted">loading…</div>
+        <table id="sourcesTable" class="data-table" aria-label="Sources">
+          <thead>
+            <tr>
+              <th>id</th><th>name</th><th>connector</th><th>cadence</th>
+              <th>density</th><th>region</th><th>last fetched</th>
+              <th>fetched/persisted/dedup</th><th>actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </section>
+
+    <section class="view" data-route="playbooks" id="playbooks-section" aria-labelledby="playbooks-title">
+      <header class="view-header">
+        <h1 id="playbooks-title">Playbooks · 清单驱动测试</h1>
+        <p class="view-sub">把 docs/checklists/*.md 升级为可运行的测试动作。</p>
+      </header>
+      <section class="card">
+        <p><strong>Phase 3 待启用</strong>。当前 Phase 1 仅落地 connector 抽象层；playbook 运行时
+          将在 Phase 3 上线，配套 6 个首批 playbook（sso_oidc / cache_poisoning / cspt /
+          subdomain_takeover / api_idor_bola / cloud_metadata）。</p>
+        <p class="muted">Roadmap: <code>apps/grok-kb-agent-suite/backend/playbook_runner.py</code> +
+          <code>docs/playbooks/*.yaml</code>。</p>
+      </section>
+    </section>
+
+    <section class="view" data-route="match" id="match-section" aria-labelledby="match-title">
+      <header class="view-header">
+        <h1 id="match-title">情报匹配 · Target × Intel</h1>
+        <p class="view-sub">把目标的 dossier YAML × intelligence_kb 技巧库做相似度匹配。</p>
+      </header>
+      <section class="card">
+        <p><strong>Phase 3 待启用</strong>。<code>backend/match.py</code> 将在 Phase 3 实装；
+          它从 <code>docs/targets/&lt;program&gt;.dossier.md</code> 的 frontmatter 抽取
+          tech_stack / cdn / cloud_provider，与 <code>docs/intelligence_kb/techniques/</code>
+          的 tag 集合做 Jaccard 距离匹配。</p>
+      </section>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

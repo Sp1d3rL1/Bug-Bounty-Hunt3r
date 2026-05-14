@@ -1,0 +1,227 @@
+<section class="module" id="module-4" style="background: var(--color-bg-warm)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">04</span>
+      <h1 class="module-title">自动化侦察引擎</h1>
+      <p class="module-subtitle">用 VPS 每天静默扫描——只在"有变化"时才叫醒你</p>
+    </header>
+
+    <div class="module-body">
+
+      <!-- Screen 1: The metaphor -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">它是一个永不睡觉的助手</h2>
+        <p>想象你雇了一个助手，他的工作是：每天凌晨3点去目标公司门口，记录门口有几辆车、多少员工进出、有没有新开的侧门——然后只有当今天和昨天<strong>不一样</strong>时，才来敲你的门。</p>
+        <p>这就是 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg); padding: 2px 6px; border-radius: 4px;">recon_pipeline.py</code> 的工作模式。它在你睡觉的时候运行，发现变化时才通过 Discord 或 Telegram 通知你。</p>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">🖥️</div>
+          <div class="callout-content">
+            <strong class="callout-title">什么是 VPS？</strong>
+            <p><span class="term" data-definition="VPS（Virtual Private Server，虚拟私有服务器）：你在云端租一台一直开着的电脑，即使你关掉自己的笔记本它也在运行。就像在餐厅租了一个保险柜，你不在的时候它仍然在那里。通常每月几美元。">VPS</span> 是你在互联网上租的一台永远开着的服务器，可以7×24小时运行脚本。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: The pipeline steps -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">Pipeline 的7个步骤</h2>
+        <p>每次运行 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg); padding: 2px 6px; border-radius: 4px;">recon_pipeline.py</code>，按这个顺序执行：</p>
+
+        <div class="step-cards animate-in">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <strong>检查授权（legal_ack 守门）</strong>
+              <p>读取 scope 配置，<code style="font-family: var(--font-mono); font-size: var(--text-xs)">legal_ack=false</code> 时直接退出，拒绝运行。这是第一道护栏。</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <strong>随机延迟启动</strong>
+              <p>随机等待1-4秒再开始，避免每次都在整点触发，减少被目标检测到的风险</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <strong>被动子域名收集（subfinder）</strong>
+              <p><span class="term" data-definition="subfinder：一个在证书透明度日志、DNS 数据库等被动数据源里查找子域名的工具。它不主动扫描目标服务器，只是查询公开记录——就像查图书馆目录而不是闯进图书馆。">subfinder</span> 从公开数据源（证书透明度日志、DNS 数据库）找出所有子域名，完全被动</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <strong>Scope 过滤（scope_guard）</strong>
+              <p>每个发现的子域名都过 scope_guard.py，不在白名单里的全部丢弃</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              <strong>DNS 解析（dnsx）</strong>
+              <p><span class="term" data-definition="DNS 解析：把域名（如 api.example.com）转换成 IP 地址的过程。就像查电话簿，你有名字但需要找到实际的电话号码才能拨出去。">DNS 解析</span>确认哪些子域名实际上有服务器在响应，过滤掉已失效的域名</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">6</div>
+            <div class="step-body">
+              <strong>HTTP 探活（httpx）</strong>
+              <p><span class="term" data-definition="httpx：向域名发送 HTTP 请求，检测服务是否在运行，收集标题、技术栈、状态码等信息。就像敲门看有没有人应答，同时记录下门上贴的告示。">httpx</span> 探测哪些资产有 Web 服务，收集页面标题、技术栈信息，速率限制25次/秒</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">7</div>
+            <div class="step-body">
+              <strong>低风险 Nuclei 扫描</strong>
+              <p>只跑 exposure、misconfig、takeover、tech 标签，排除所有 dos/rce/sqli/exploit 相关模板</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: The config code -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">scope 配置文件如何控制一切</h2>
+        <p>整个 pipeline 的行为由一个 JSON 配置文件控制。这是真实的 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg-warm); padding: 2px 6px; border-radius: 4px;">scope.example.json</code> 里的关键部分：</p>
+
+        <div class="translation-block animate-in">
+          <div class="translation-code">
+            <span class="translation-label">CODE</span>
+            <pre><code><span class="code-line">{</span>
+<span class="code-line">  <span class="code-property">"legal_ack"</span>: <span class="code-keyword">false</span>,</span>
+<span class="code-line">  <span class="code-property">"in_scope_domains"</span>: [</span>
+<span class="code-line">    <span class="code-string">"example.com"</span>,</span>
+<span class="code-line">    <span class="code-string">"*.example.com"</span></span>
+<span class="code-line">  ],</span>
+<span class="code-line">  <span class="code-property">"out_of_scope_domains"</span>: [</span>
+<span class="code-line">    <span class="code-string">"*.internal.example.com"</span></span>
+<span class="code-line">  ],</span>
+<span class="code-line">  <span class="code-property">"recon"</span>: {</span>
+<span class="code-line">    <span class="code-property">"active_crawl"</span>: <span class="code-keyword">false</span>,</span>
+<span class="code-line">    <span class="code-property">"nuclei_low_risk"</span>: <span class="code-keyword">true</span></span>
+<span class="code-line">  },</span>
+<span class="code-line">  <span class="code-property">"limits"</span>: {</span>
+<span class="code-line">    <span class="code-property">"httpx_rate"</span>: <span class="code-number">25</span></span>
+<span class="code-line">  }</span>
+<span class="code-line">}</span></code></pre>
+          </div>
+          <div class="translation-english">
+            <span class="translation-label">PLAIN ENGLISH</span>
+            <div class="translation-lines">
+              <p class="tl">开始这个大括号里的配置</p>
+              <p class="tl">false = 不运行！只有你确认授权后才改成 true</p>
+              <p class="tl">允许测试的域名列表开始</p>
+              <p class="tl">example.com 本身可以测试</p>
+              <p class="tl">所有 *.example.com 子域名（如 api.example.com）都可以</p>
+              <p class="tl">绝对不能碰的域名列表</p>
+              <p class="tl">internal 子域名是内部系统，不能碰</p>
+              <p class="tl">侦察行为设置</p>
+              <p class="tl">主动爬虫关闭——只被动收集，不主动爬取页面</p>
+              <p class="tl">低风险 Nuclei 扫描开启</p>
+              <p class="tl">速率限制设置</p>
+              <p class="tl">httpx 每秒最多发25个请求，不轰炸目标服务器</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: Scope guard code -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">scope_guard.py 如何过滤域名</h2>
+        <p>这是 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg-warm); padding: 2px 6px; border-radius: 4px;">scope_guard.py</code> 里最关键的逻辑——只有30行，但它是整个系统的安全底线：</p>
+
+        <div class="translation-block animate-in">
+          <div class="translation-code">
+            <span class="translation-label">CODE</span>
+            <pre><code><span class="code-line"><span class="code-keyword">def</span> <span class="code-function">is_allowed</span>(host: str, cfg: dict) -> bool:</span>
+<span class="code-line">    ins = cfg.get(<span class="code-string">'in_scope_domains'</span>, [])</span>
+<span class="code-line">    outs = cfg.get(<span class="code-string">'out_of_scope_domains'</span>, [])</span>
+<span class="code-line">    <span class="code-keyword">if not</span> any(host_matches(host, p) <span class="code-keyword">for</span> p <span class="code-keyword">in</span> ins):</span>
+<span class="code-line">        <span class="code-keyword">return</span> <span class="code-keyword">False</span></span>
+<span class="code-line">    <span class="code-keyword">if</span> any(host_matches(host, p) <span class="code-keyword">for</span> p <span class="code-keyword">in</span> outs):</span>
+<span class="code-line">        <span class="code-keyword">return</span> <span class="code-keyword">False</span></span>
+<span class="code-line">    <span class="code-keyword">return</span> <span class="code-keyword">True</span></span></code></pre>
+          </div>
+          <div class="translation-english">
+            <span class="translation-label">PLAIN ENGLISH</span>
+            <div class="translation-lines">
+              <p class="tl">定义一个函数：给定域名和配置，判断能不能测</p>
+              <p class="tl">读取配置里的白名单域名列表</p>
+              <p class="tl">读取配置里的黑名单（排除）域名列表</p>
+              <p class="tl">如果这个域名不在白名单里的任何一条记录里...</p>
+              <p class="tl">...立刻返回"不允许"（宁可漏掉，也不越界）</p>
+              <p class="tl">如果这个域名匹配黑名单里的任何一条记录...</p>
+              <p class="tl">...也返回"不允许"（明确禁止就是禁止）</p>
+              <p class="tl">两道检查都过了，才返回"允许"</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <strong class="callout-title">"双重否定"设计</strong>
+            <p>注意这个函数先检查"是否在白名单"，再检查"是否在黑名单"。这是"默认拒绝"原则——不明确允许的域名，一律不测。这比"只检查黑名单"安全得多，因为你不可能事先列出所有不该测的域名。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 5: Quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">侦察引擎知识检验</h2>
+
+        <div class="quiz-container" id="quiz-module4">
+          <div class="quiz-question-block"
+               data-correct="opt-b"
+               data-explanation-right="完全正确！这是'默认拒绝'原则。不在授权白名单里的域名，scope_guard 会拒绝，不管它看起来多像授权目标。如果你要测新域名，先更新 scope 配置，再跑 pipeline。"
+               data-explanation-wrong="不对。scope_guard.py 的逻辑是：必须在白名单里才允许，不然一律拒绝。你需要先把新域名加入 in_scope_domains，设置 legal_ack=true，才能测试它。">
+            <h3 class="quiz-question">你的目标公司新增了一个域名 beta.target.com，但你的 scope 配置里只写了 *.target.com（注意：beta.target.com 不在 in_scope_domains 里）。运行 pipeline 后会发生什么？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>beta.target.com 会被自动包含，因为它是 target.com 的子域名</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>beta.target.com 会被 scope_guard 拒绝，不会进入 pipeline，除非你在 in_scope_domains 里添加 *.target.com</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>pipeline 会报错退出，要求你手动审批每个新域名</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-question-block"
+               data-correct="opt-c"
+               data-explanation-right="对！diff_assets.py 比较两次运行的结果，只有新增或消失的资产才会出现在 diff 里，然后通过 notify.py 发给你。这就是为什么只有变化时才通知你——避免每天被相同的结果刷屏。"
+               data-explanation-wrong="再想想——pipeline 的通知设计原则是'只在变化时叫醒你'。哪个组件负责比较前后两次的差异？">
+            <h3 class="quiz-question">你设置了每天凌晨3点跑一次 recon_pipeline.py。假设目标公司三天没有任何变化，你会收到几次 Discord 通知？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>3次（每天一次，报告没有变化）</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>0次（pipeline 只在出错时通知）</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>0次（diff 为空，notify 没有内容可发）</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <button class="quiz-check-btn" onclick="checkQuiz('quiz-module4')">检查答案</button>
+          <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module4')">重新作答</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>

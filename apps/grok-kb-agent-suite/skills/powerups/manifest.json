@@ -1,0 +1,15 @@
+{
+  "suite": "grok-kb-agent-suite",
+  "powerups": [
+    "source_finder",
+    "prompt_compressor",
+    "structured_expander",
+    "boundary_sanitizer",
+    "source_verifier",
+    "kb_writer",
+    "cost_observer",
+    "qa_gate",
+    "tavily_verifier",
+    "report_intelligence"
+  ]
+}

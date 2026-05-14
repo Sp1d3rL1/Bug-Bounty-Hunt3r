@@ -1,0 +1,28 @@
+# evergreen_new_context
+
+Count: 24
+
+- [[techniques/evergreen_new_context/14-blind-ssrf-via-dns-in-pdf-generator-of-saas-export-feature|Blind SSRF via DNS in PDF Generator of SaaS Export Feature]]
+- [[techniques/evergreen_new_context/19-second-order-idor-via-profile-update-affecting-high-privilege-module|Second-Order IDOR via Profile Update Affecting High-Privilege Module]]
+- [[techniques/evergreen_new_context/24-api-versioning-bypass-legacy-v1-endpoints-lack-patches-in-saas|API Versioning Bypass: Legacy /v1/ Endpoints Lack Patches in SaaS]]
+- [[techniques/evergreen_new_context/8-nested-json-object-wrapping-for-idor-bypass-in-api|Nested JSON Object Wrapping for IDOR Bypass in API]]
+- [[techniques/evergreen_new_context/case-derived-1-finding-an-idor-in-user-profile-api-a-15-000-journey-to-critical|Derived technique from case: Finding an IDOR in User Profile API: A $15,000 Journey to Critical]]
+- [[techniques/evergreen_new_context/case-derived-10-stored-xss-in-apple-developer-portal|Derived technique from case: Stored XSS in Apple Developer Portal]]
+- [[techniques/evergreen_new_context/case-derived-11-idor-fetching-5-million-images-via-broken-access-control|Derived technique from case: IDOR Fetching 5 Million Images via Broken Access Control]]
+- [[techniques/evergreen_new_context/case-derived-12-race-condition-broken-access-control-leading-to-super-admin-creation|Derived technique from case: Race Condition + Broken Access Control Leading to Super Admin Creation]]
+- [[techniques/evergreen_new_context/case-derived-13-prototype-pollution-to-rce-in-project-update-api|Derived technique from case: Prototype Pollution to RCE in Project Update API]]
+- [[techniques/evergreen_new_context/case-derived-15-oauth-dynamic-client-registration-open-redirect-to-full-read-ssrf|Derived technique from case: OAuth Dynamic Client Registration + Open Redirect to Full-Read SSRF]]
+- [[techniques/evergreen_new_context/case-derived-16-csrf-despite-x-frame-options-in-ai-workflow-endpoint|Derived technique from case: CSRF Despite X-Frame-Options in AI Workflow Endpoint]]
+- [[techniques/evergreen_new_context/case-derived-17-idor-in-saved-payments-api-on-zomato-multi-tenant|Derived technique from case: IDOR in Saved Payments API on Zomato (multi-tenant)]]
+- [[techniques/evergreen_new_context/case-derived-18-prompt-injection-to-sandbox-escape-rce-in-google-antigravity-ai-ide|Derived technique from case: Prompt Injection to Sandbox Escape RCE in Google Antigravity AI IDE]]
+- [[techniques/evergreen_new_context/case-derived-2-ssrf-protection-bypass-in-autogpt-ai-agent-tool|Derived technique from case: SSRF Protection Bypass in AutoGPT AI Agent Tool]]
+- [[techniques/evergreen_new_context/case-derived-20-full-read-ssrf-in-gitlab-analytics-dashboard-bypassing-localhost|Derived technique from case: Full-Read SSRF in GitLab Analytics Dashboard Bypassing Localhost]]
+- [[techniques/evergreen_new_context/case-derived-21-mass-assignment-idor-in-rest-api-for-privilege-escalation|Derived technique from case: Mass Assignment + IDOR in REST API for Privilege Escalation]]
+- [[techniques/evergreen_new_context/case-derived-23-xss-via-shodan-in-globalprotect-affects-bug-bounty-programs|Derived technique from case: XSS via Shodan in GlobalProtect (Affects Bug Bounty Programs)]]
+- [[techniques/evergreen_new_context/case-derived-25-business-logic-race-condition-idor-in-fintech-recharge-history-api|Derived technique from case: Business Logic Race Condition + IDOR in Fintech Recharge History API]]
+- [[techniques/evergreen_new_context/case-derived-3-rce-via-group-access-validation-flaw-in-ssh-key-authority-open-source-too|Derived technique from case: RCE via Group Access Validation Flaw in ssh-key-authority Open Source Tool]]
+- [[techniques/evergreen_new_context/case-derived-4-reflected-xss-in-cloudflare-ai-playground-oauth-handler-cve-2026-1721|Derived technique from case: Reflected XSS in Cloudflare AI Playground OAuth Handler (CVE-2026-1721)]]
+- [[techniques/evergreen_new_context/case-derived-5-ssrf-indirect-prompt-injection-chain-in-ai-assistant-feature|Derived technique from case: SSRF + Indirect Prompt Injection Chain in AI Assistant Feature]]
+- [[techniques/evergreen_new_context/case-derived-6-real-ssrf-via-ipv6-redirects-on-hackerone|Derived technique from case: Real SSRF via IPv6 Redirects on HackerOne]]
+- [[techniques/evergreen_new_context/case-derived-7-idor-in-multi-tenant-api-via-uuid-swap-in-device-info-endpoint|Derived technique from case: IDOR in Multi-Tenant API via UUID Swap in Device Info Endpoint]]
+- [[techniques/evergreen_new_context/case-derived-9-unauthenticated-ssrf-via-public-reference-api-sharing-token-bypass|Derived technique from case: Unauthenticated SSRF via Public Reference API Sharing Token Bypass]]

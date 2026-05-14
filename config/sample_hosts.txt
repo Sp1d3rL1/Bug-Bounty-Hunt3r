@@ -1,0 +1,5 @@
+www.example.com
+api.example.com
+thirdparty.example.com
+foo.internal.example.com
+out-of-scope.com

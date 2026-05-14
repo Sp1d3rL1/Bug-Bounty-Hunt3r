@@ -1,0 +1,82 @@
+{
+  "api_base": "https://api.x.ai/v1",
+  "model": "grok-4.3",
+  "fallback_model": "grok-4.1-fast-reasoning",
+  "date_window": {
+    "from_date": "2025-01-01",
+    "to_date": "2026-05-05"
+  },
+  "cache_header": {
+    "x-grok-conv-id": "replace-with-a-stable-uuid-for-prefix-cache"
+  },
+  "search_tools": {
+    "x_search": true,
+    "web_search": true,
+    "default_allowed_x_handles": [],
+    "default_allowed_domains": []
+  },
+  "tavily": {
+    "enabled_as_optional_verifier": true,
+    "api_base": "https://api.tavily.com",
+    "primary_use": [
+      "extract non-X source URLs before Grok expansion when --tavily-preverify is enabled",
+      "attach compact web context before discovery when --tavily-context is enabled",
+      "post-process cards with tavily-verify-run before apply-run"
+    ],
+    "not_primary_for": [
+      "native X post/thread search",
+      "unbounded crawling",
+      "claim generation without primary source URLs"
+    ],
+    "defaults": {
+      "search_depth": "basic",
+      "extract_depth": "basic",
+      "max_results": 5,
+      "context_chars": 1200
+    }
+  },
+  "report_intelligence": {
+    "enabled": true,
+    "default_sources": "public_all",
+    "storage_depth": "summary_links_evidence_only",
+    "paths": {
+      "kb_root": "docs/intelligence_kb/reports",
+      "data_root": "data/report_intel",
+      "ledger": "data/report_intel/report_ledger.tsv"
+    },
+    "optional_keys": [
+      "HACKERONE_API_USERNAME",
+      "HACKERONE_API_TOKEN",
+      "GITHUB_TOKEN",
+      "BUGCROWD_API_TOKEN"
+    ],
+    "source_policy": [
+      "public disclosed reports only",
+      "do not fetch private or undisclosed program content",
+      "KB stores summaries, links, evidence snippets, and hashes; no full article/report body"
+    ]
+  },
+  "safety_style": {
+    "mode": "clear_compliant_low_false_positive",
+    "rules": [
+      "authorized / Lab only / owned systems",
+      "synthetic data and test accounts only",
+      "test cards or sandbox for payment flows",
+      "minimal-impact proof, no production DoS",
+      "case cards are link-centric, not real-target reproduction manuals"
+    ]
+  },
+  "paths": {
+    "prompt_dir": "data/grok_research/prompts/2026-05-05/expansion_batches",
+    "runs_dir": "data/grok_api/runs",
+    "discovery_dir": "data/grok_api/discovery"
+  },
+  "evidence_policy": {
+    "require_concrete_source_for_every_claim": true,
+    "no_speculation_or_fabrication": true,
+    "verify_search_results": true,
+    "conflict_behavior": "output_complete_corrected_content_with_conflict_notes",
+    "unchanged_behavior": "return_verification_only_do_not_repeat_old_content",
+    "unverified_behavior": "confidence_low_and_needs_review"
+  }
+}

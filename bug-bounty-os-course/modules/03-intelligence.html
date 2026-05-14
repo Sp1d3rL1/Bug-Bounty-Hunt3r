@@ -1,0 +1,217 @@
+<section class="module" id="module-3" style="background: var(--color-bg)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">03</span>
+      <h1 class="module-title">情报流水线</h1>
+      <p class="module-subtitle">从 X/Twitter 上的碎片帖子，到你可以立刻在真实目标上使用的结构化技巧</p>
+    </header>
+
+    <div class="module-body">
+
+      <!-- Screen 1: The problem -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">为什么情报这么难收集？</h2>
+        <p>想象你订阅了 100 份学术期刊，每天新增 200 篇论文——但你每天只有 30 分钟阅读时间。你会错过绝大多数有价值的内容。</p>
+        <p>这就是 Bug Bounty 情报的现状。X 上每天有几十条有价值的猎人帖子，HackerOne 每月发布数百份公开报告，PortSwigger 研究博客持续产出新技术——根本看不完。</p>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">🔑</div>
+          <div class="callout-content">
+            <strong class="callout-title">这套系统的解法</strong>
+            <p>用 <span class="term" data-definition="xAI 是 Elon Musk 创立的 AI 公司，Grok 是他们的 AI 模型。Grok 能实时搜索 X/Twitter 上的内容，这让它非常适合抓取最新的安全研究讨论。">Grok API</span> 自动完成"阅读 + 提炼 + 结构化"，把人从重复劳动里解放出来，只做最需要判断力的事：验证和行动。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: The workflow animated -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">情报从哪里来，流到哪里去</h2>
+
+        <div class="flow-animation" data-steps='[
+          {"highlight":"flow-actor-1","label":"Step 1: 你在 docs/intelligence/x_grok_workflow.md 里找到高信号搜索查询"},
+          {"highlight":"flow-actor-1","label":"Step 2: Grok API 收到查询，搜索 X 和网页，提取最近90天相关帖子","packet":true,"from":"actor-1","to":"actor-2"},
+          {"highlight":"flow-actor-2","label":"Step 3: Grok API Agent 解析结果，提炼成结构化 JSON：漏洞类型、前置条件、核心 trick、可迁移目标"},
+          {"highlight":"flow-actor-2","label":"Step 4: 可选地，Tavily 作为第二意见验证非 X 来源的 URL 真实性","packet":true,"from":"actor-2","to":"actor-3"},
+          {"highlight":"flow-actor-3","label":"Step 5: Tavily 搜索并提取 URL 内容，返回验证结果"},
+          {"highlight":"flow-actor-2","label":"Step 6: grok_kb_validate.py 做质量把关，检查必填字段和高风险词","packet":true,"from":"actor-3","to":"actor-2"},
+          {"highlight":"flow-actor-4","label":"Step 7: 通过验证的卡片写入 Intelligence KB（Obsidian Markdown）","packet":true,"from":"actor-2","to":"actor-4"},
+          {"highlight":"flow-actor-4","label":"Step 8: 你打开知识库，找到今天最相关的技巧，映射到授权目标上测试"}
+        ]'>
+          <div class="flow-actors">
+            <div class="flow-actor" id="flow-actor-1">
+              <div class="flow-actor-icon">🔍</div>
+              <span>你 + 查询</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-2">
+              <div class="flow-actor-icon">🤖</div>
+              <span>Grok Agent</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-3">
+              <div class="flow-actor-icon">🌐</div>
+              <span>Tavily</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-4">
+              <div class="flow-actor-icon">📚</div>
+              <span>Intel KB</span>
+            </div>
+          </div>
+
+          <div class="flow-packet" id="flow-packet"></div>
+          <div class="flow-step-label" id="flow-label">点击"下一步"追踪情报的旅程</div>
+
+          <div class="flow-controls">
+            <button class="btn flow-next-btn">下一步</button>
+            <button class="btn flow-reset-btn">重置</button>
+            <span class="flow-progress"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: The code -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">Grok 的"指令手册"长什么样</h2>
+        <p>每次收集情报，Grok 都有一套严格的指令。这是 <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg-warm); padding: 2px 6px; border-radius: 4px;">x_grok_workflow.md</code> 里的一段 Grok 分析提示词，看看每行在说什么：</p>
+
+        <div class="translation-block animate-in">
+          <div class="translation-code">
+            <span class="translation-label">CODE</span>
+            <pre><code><span class="code-line"><span class="code-string">You are my bug bounty intelligence analyst.</span></span>
+<span class="code-line"><span class="code-string">Extract only actionable techniques from these</span></span>
+<span class="code-line"><span class="code-string">X posts. For each item return: title,</span></span>
+<span class="code-line"><span class="code-string">vulnerability class, prerequisite,</span></span>
+<span class="code-line"><span class="code-string">exact trick, why it works,</span></span>
+<span class="code-line"><span class="code-string">authorized-only validation steps,</span></span>
+<span class="code-line"><span class="code-string">automation potential,</span></span>
+<span class="code-line"><span class="code-string">false-positive risk,</span></span>
+<span class="code-line"><span class="code-string">and which target types it maps to.</span></span>
+<span class="code-line"><span class="code-string">Ignore motivational content.</span></span></code></pre>
+          </div>
+          <div class="translation-english">
+            <span class="translation-label">PLAIN ENGLISH</span>
+            <div class="translation-lines">
+              <p class="tl">扮演情报分析员，不要只是总结</p>
+              <p class="tl">只提取可以立刻行动的技巧，跳过"加油打气"类内容</p>
+              <p class="tl">每条技巧必须包含：标题...</p>
+              <p class="tl">漏洞类型（IDOR？OAuth bypass？）</p>
+              <p class="tl">前置条件（需要什么账号权限？）</p>
+              <p class="tl">具体 trick 步骤</p>
+              <p class="tl">为什么这个漏洞存在（原理）</p>
+              <p class="tl">如何在授权范围内安全验证</p>
+              <p class="tl">能否自动化检测，误报风险多高</p>
+              <p class="tl">这个 trick 适用于哪类目标</p>
+              <p class="tl">纯励志内容直接丢掉，不要浪费 token</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <strong class="callout-title">Token 是什么？</strong>
+            <p><span class="term" data-definition="Token（词元）：AI 模型处理文本的计量单位，大约相当于 0.75 个英文单词。用 AI API 是按 token 计费的，就像打长途电话按分钟计费。发送和接收的文字越多，花费越多。">Token</span> 是 AI 模型处理文本的基本单位，也是费用的计量单位。这个提示词被精心设计，让 Grok 跳过无用内容，节省你的 API 费用。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: Trick card anatomy -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">一张技巧卡片有什么</h2>
+        <p>情报经过 Grok 提炼后，变成标准化的"技巧卡片"存进知识库。每张卡都有固定的字段：</p>
+
+        <div class="badge-list animate-in">
+          <div class="badge-item">
+            <code class="badge-code">标题</code>
+            <span class="badge-desc">简短的技巧名称，如"invoice_id IDOR via export endpoint"</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">漏洞类型</code>
+            <span class="badge-desc">IDOR、OAuth bypass、GraphQL mass assignment 等分类</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">前置条件</code>
+            <span class="badge-desc">需要两个账号？需要付费订阅？需要特定 API 版本？</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">核心 trick</code>
+            <span class="badge-desc">具体操作步骤，可以直接用于测试</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">可迁移目标</code>
+            <span class="badge-desc">这个 trick 最可能在哪类平台上奏效</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">来源 URL</code>
+            <span class="badge-desc">每条声明必须有来源——这是系统的质量底线</span>
+          </div>
+          <div class="badge-item">
+            <code class="badge-code">置信度 / 风险等级</code>
+            <span class="badge-desc">high/medium/low；low/medium/high——帮你决定优先测哪个</span>
+          </div>
+        </div>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">🔬</div>
+          <div class="callout-content">
+            <strong class="callout-title">关键工程决策</strong>
+            <p>知识库里的每条记录都有来源 URL。<code>grok_kb_validate.py</code> 会拒绝任何没有来源的卡片。这防止了 AI 幻觉：Grok 生成内容，必须能指向真实的来源才算数。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 5: Quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">情报系统知识检验</h2>
+
+        <div class="quiz-container" id="quiz-module3">
+          <div class="quiz-question-block"
+               data-correct="opt-b"
+               data-explanation-right="正确！Grok 只是提炼工具，它能总结 X 帖子，但不能判断一个漏洞在你的目标上是否真实存在。你必须自己用两个测试账号验证。"
+               data-explanation-wrong="不对。技巧卡片告诉你可以在哪类目标上尝试，但具体这个目标、这个功能是否真的有漏洞，Grok 不知道——只有你手工测试才知道。">
+            <h3 class="quiz-question">你在知识库里找到一张高置信度的"OAuth state 参数缺失"技巧卡。下一步你应该？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>把技巧卡片里的步骤直接复制到报告里提交</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>在授权目标上，按技巧卡里的手动验证步骤，用自己的测试账号亲自确认</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>等 Grok API Agent 自动完成验证后再行动</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-question-block"
+               data-correct="opt-a"
+               data-explanation-right="对！Tavily 是可选的第二意见，专门用来验证非 X 来源的 URL 真实性——它不替代 Grok，只是补充。有了它，你就不需要手动打开每个博客链接验证 Grok 有没有编造内容。"
+               data-explanation-wrong="再想想——Tavily 不是用来搜索新技巧的，也不是替代 Grok 的。它的角色是独立核实 Grok 引用的外部链接，验证内容是否真实存在。">
+            <h3 class="quiz-question">系统中 Tavily 的作用是什么？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>独立验证 Grok 引用的非 X 来源 URL，防止 AI 编造链接</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>替代 Grok 搜索 X 上的最新帖子</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>自动测试目标 URL 是否存在漏洞</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <button class="quiz-check-btn" onclick="checkQuiz('quiz-module3')">检查答案</button>
+          <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module3')">重新作答</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>

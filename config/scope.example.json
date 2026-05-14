@@ -1,0 +1,42 @@
+{
+  "program_name": "example-program",
+  "legal_ack": false,
+  "authorized_scope_note": "Paste the official platform scope URL and your authorization note here. Set legal_ack=true only after confirming scope.",
+  "mode": "passive_safe",
+  "in_scope_domains": [
+    "example.com",
+    "*.example.com"
+  ],
+  "out_of_scope_domains": [
+    "thirdparty.example.com",
+    "*.internal.example.com"
+  ],
+  "seed_urls": [
+    "https://www.example.com"
+  ],
+  "recon": {
+    "passive_subdomain": true,
+    "amass_passive": false,
+    "active_crawl": false,
+    "screenshots": false,
+    "nuclei_low_risk": true
+  },
+  "limits": {
+    "httpx_rate": 25,
+    "nuclei_rate": 15,
+    "katana_rate": 10,
+    "timeout_seconds": 900,
+    "random_delay_seconds": [1, 4]
+  },
+  "nuclei": {
+    "include_tags": ["exposure", "misconfig", "takeover", "tech"],
+    "exclude_tags": ["dos", "bruteforce", "brute-force", "intrusive", "fuzz", "fuzzing", "exploit", "rce", "lfi", "sqli"],
+    "exclude_severity": ["critical"]
+  },
+  "notifications": {
+    "enabled": false,
+    "discord_webhook_env": "DISCORD_WEBHOOK_URL",
+    "telegram_bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "telegram_chat_id_env": "TELEGRAM_CHAT_ID"
+  }
+}

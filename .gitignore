@@ -1,0 +1,10 @@
+data/
+logs/
+*.log
+*.sqlite
+*.db
+.env
+config/scope.*.json
+!config/scope.example.json
+__pycache__/
+*.pyc

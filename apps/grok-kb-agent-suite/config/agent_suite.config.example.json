@@ -1,0 +1,69 @@
+{
+  "name": "grok-kb-agent-suite",
+  "version": "0.1.0",
+  "project_root": "../../..",
+  "api_agent_script": "scripts/grok_api_agent.py",
+  "kb_validate_script": "scripts/grok_kb_validate.py",
+  "kb_build_index_script": "scripts/grok_kb_build_index.py",
+  "default_model": "grok-4.3",
+  "date_window": {
+    "from_date": "2025-01-01",
+    "to_date": "2026-05-05"
+  },
+  "defaults": {
+    "use_search": true,
+    "max_output_tokens": 7000,
+    "batch_size": 5,
+    "human_review_required_before_apply": true,
+    "tavily_preverify": false,
+    "tavily_verify_mode": "default"
+  },
+  "tavily": {
+    "enabled_as_optional_verifier": true,
+    "api_base": "https://api.tavily.com",
+    "search_depth": "basic",
+    "extract_depth": "basic",
+    "max_results": 5,
+    "context_chars": 1200,
+    "x_url_policy": "prefer_grok_x_search"
+  },
+  "report_intelligence": {
+    "default_sources": "public_all",
+    "default_storage": "summary_links_evidence_only",
+    "default_limit": 25,
+    "date_window": {
+      "from_date": "2025-01-01",
+      "to_date": "2026-05-06"
+    },
+    "optional_api_keys": [
+      "HACKERONE_API_USERNAME",
+      "HACKERONE_API_TOKEN",
+      "GITHUB_TOKEN",
+      "BUGCROWD_API_TOKEN"
+    ],
+    "job_actions": [
+      "report_discover",
+      "report_cluster",
+      "report_enrich",
+      "report_apply"
+    ]
+  },
+  "boundaries": [
+    "authorized / Lab only / owned systems",
+    "synthetic data and test accounts only",
+    "payment flows use sandbox/test cards only",
+    "minimal-impact proof",
+    "no production DoS or destructive validation"
+  ],
+  "evidence_policy": {
+    "baseline": "Every claim must have a concrete source URL. No speculation or fabricated facts.",
+    "required_statuses": [
+      "verified_full_update",
+      "conflict_full_update",
+      "unchanged_verification_only",
+      "needs_review"
+    ],
+    "conflict_behavior": "full corrected output",
+    "unchanged_behavior": "verification result only"
+  }
+}

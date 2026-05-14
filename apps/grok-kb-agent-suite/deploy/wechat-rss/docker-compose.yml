@@ -1,0 +1,46 @@
+# wechat-rss bridge — local Docker stack
+#
+# Why this exists:
+#   The ``wechat_rss`` connector (apps/grok-kb-agent-suite/backend/connectors/wechat_rss.py)
+#   does NOT scrape WeChat directly. It expects a local RSS bridge that converts
+#   public-account articles to Atom/RSS. We use RSSHub as the bridge — it has
+#   battle-tested WeChat (微信公众号) routes via :code:`/wechat/...` and is
+#   actively maintained.
+#
+# Quick start:
+#   make wechat-rss-up        # starts on http://127.0.0.1:8080
+#   make wechat-rss-down      # stops the stack
+#
+# After the bridge is up, configure each public account in the upstream router
+# (RSSHub supports ``/wechat/ce/{biz}`` which delegates to chuansongme.com, plus
+# third-party adapters such as ``/wechatmp/wgcce`` if available). For each
+# account, paste the resolved RSS URL into ``docs/intelligence/sources.yaml``
+# under the matching ``id``.
+
+services:
+  rsshub:
+    image: diygod/rsshub:latest
+    container_name: bbos-rsshub
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:1200"
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: redis
+      REDIS_URL: redis://bbos-rsshub-redis:6379
+      # If you need the corporate proxy, uncomment and adjust:
+      # PROXY_PROTOCOL: http
+      # PROXY_HOST: host.docker.internal
+      # PROXY_PORT: 7890
+    depends_on:
+      - rsshub-redis
+
+  rsshub-redis:
+    image: redis:alpine
+    container_name: bbos-rsshub-redis
+    restart: unless-stopped
+    volumes:
+      - rsshub-redis-data:/data
+
+volumes:
+  rsshub-redis-data:

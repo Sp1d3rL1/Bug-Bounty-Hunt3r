@@ -1,0 +1,2008 @@
+{
+  "communities": {
+    "0": [
+      "scripts_bb_intel_pipeline_utc_now",
+      "scripts_grok_api_agent_append_verification_metadata",
+      "scripts_grok_api_agent_cmd_apply_run",
+      "scripts_grok_api_agent_cmd_discover",
+      "scripts_grok_api_agent_now_run_id",
+      "scripts_report_intel_agent_append_channel_watchlist",
+      "scripts_report_intel_agent_blocked_reason_for_text",
+      "scripts_report_intel_agent_boolish",
+      "scripts_report_intel_agent_build_report_indexes",
+      "scripts_report_intel_agent_candidate_id",
+      "scripts_report_intel_agent_card_records_from_run",
+      "scripts_report_intel_agent_catalog_sources_for",
+      "scripts_report_intel_agent_cluster_key",
+      "scripts_report_intel_agent_cmd_apply_manual_channel_catalog",
+      "scripts_report_intel_agent_cmd_build_index",
+      "scripts_report_intel_agent_cmd_catalog_build",
+      "scripts_report_intel_agent_cmd_cluster",
+      "scripts_report_intel_agent_cmd_discover_catalog",
+      "scripts_report_intel_agent_cmd_enrich",
+      "scripts_report_intel_agent_cmd_export_manual_channel_index",
+      "scripts_report_intel_agent_cmd_import_manual",
+      "scripts_report_intel_agent_cmd_import_manual_channel_results",
+      "scripts_report_intel_agent_cmd_manual_channel_prompts",
+      "scripts_report_intel_agent_cmd_triage_sources",
+      "scripts_report_intel_agent_cmd_validate",
+      "scripts_report_intel_agent_cmd_validate_discovery_records",
+      "scripts_report_intel_agent_destination_for",
+      "scripts_report_intel_agent_discover_github_advisories",
+      "scripts_report_intel_agent_discover_github_security_lab",
+      "scripts_report_intel_agent_discover_hackerone_api",
+      "scripts_report_intel_agent_discover_source_from_catalog",
+      "scripts_report_intel_agent_discover_with_tavily",
+      "scripts_report_intel_agent_discover_with_tavily_catalog",
+      "scripts_report_intel_agent_domain_of",
+      "scripts_report_intel_agent_ensure_layout",
+      "scripts_report_intel_agent_extract_context_for_cluster",
+      "scripts_report_intel_agent_frontmatter",
+      "scripts_report_intel_agent_guess_platform",
+      "scripts_report_intel_agent_h1_headers",
+      "scripts_report_intel_agent_http_json",
+      "scripts_report_intel_agent_http_text",
+      "scripts_report_intel_agent_infer_collection_policy",
+      "scripts_report_intel_agent_infer_entry_type",
+      "scripts_report_intel_agent_infer_tier_for_manual_record",
+      "scripts_report_intel_agent_load_all_manual_records",
+      "scripts_report_intel_agent_load_manual_import",
+      "scripts_report_intel_agent_load_source_catalog",
+      "scripts_report_intel_agent_make_candidate",
+      "scripts_report_intel_agent_manual_channel_record_id",
+      "scripts_report_intel_agent_manual_record_to_source",
+      "scripts_report_intel_agent_merge_cluster",
+      "scripts_report_intel_agent_normalize_manual_channel_row",
+      "scripts_report_intel_agent_normalize_manual_import",
+      "scripts_report_intel_agent_normalize_source_entry",
+      "scripts_report_intel_agent_normalize_source_id_text",
+      "scripts_report_intel_agent_normalize_url",
+      "scripts_report_intel_agent_optional_headers",
+      "scripts_report_intel_agent_parse_date",
+      "scripts_report_intel_agent_parse_sources",
+      "scripts_report_intel_agent_py",
+      "scripts_report_intel_agent_rationale_1642",
+      "scripts_report_intel_agent_rationale_1718",
+      "scripts_report_intel_agent_read_channel_watchlist",
+      "scripts_report_intel_agent_read_jsonish",
+      "scripts_report_intel_agent_read_manual_channel_input",
+      "scripts_report_intel_agent_redact_blocked_manual_raw_text",
+      "scripts_report_intel_agent_sanitize_allowed_url",
+      "scripts_report_intel_agent_sanitize_report_markdown",
+      "scripts_report_intel_agent_sha256_16",
+      "scripts_report_intel_agent_source_matches_tier",
+      "scripts_report_intel_agent_source_metadata_snapshot",
+      "scripts_report_intel_agent_source_score",
+      "scripts_report_intel_agent_tavily_available",
+      "scripts_report_intel_agent_title_for",
+      "scripts_report_intel_agent_unique",
+      "scripts_report_intel_agent_with_source_metadata",
+      "scripts_report_intel_agent_write_channel_watchlist_md",
+      "scripts_report_intel_agent_write_discovery_run",
+      "scripts_report_intel_agent_write_gray_research_protocol",
+      "scripts_report_intel_agent_write_jsonl",
+      "scripts_report_intel_agent_write_manual_channel_index",
+      "scripts_report_intel_agent_write_source_catalog_md"
+    ],
+    "1": [
+      "scripts_grok_api_agent_api_json",
+      "scripts_grok_api_agent_card_doc_kind",
+      "scripts_grok_api_agent_card_scaffold",
+      "scripts_grok_api_agent_category_dir_for",
+      "scripts_grok_api_agent_cmd_batch_fetch",
+      "scripts_grok_api_agent_cmd_batch_status",
+      "scripts_grok_api_agent_cmd_batch_submit",
+      "scripts_grok_api_agent_cmd_expand_prompts",
+      "scripts_grok_api_agent_cmd_list_missing",
+      "scripts_grok_api_agent_cmd_make_prompts_from_discovery",
+      "scripts_grok_api_agent_cmd_tavily_verify_run",
+      "scripts_grok_api_agent_compact_text",
+      "scripts_grok_api_agent_ensure_required_scaffold",
+      "scripts_grok_api_agent_is_http_url",
+      "scripts_grok_api_agent_is_x_url",
+      "scripts_grok_api_agent_kb_excerpt_for_destination",
+      "scripts_grok_api_agent_load_dotenv",
+      "scripts_grok_api_agent_make_batch_requests",
+      "scripts_grok_api_agent_optimized_expansion_prompt",
+      "scripts_grok_api_agent_parse_json_text",
+      "scripts_grok_api_agent_parse_prompt_items",
+      "scripts_grok_api_agent_py",
+      "scripts_grok_api_agent_rationale_1107",
+      "scripts_grok_api_agent_rationale_296",
+      "scripts_grok_api_agent_rationale_444",
+      "scripts_grok_api_agent_rationale_527",
+      "scripts_grok_api_agent_rationale_620",
+      "scripts_grok_api_agent_require_api_key",
+      "scripts_grok_api_agent_require_tavily_key",
+      "scripts_grok_api_agent_response_text",
+      "scripts_grok_api_agent_responses_request_body",
+      "scripts_grok_api_agent_safe_filename",
+      "scripts_grok_api_agent_sha16",
+      "scripts_grok_api_agent_should_tavily_verify",
+      "scripts_grok_api_agent_source_urls_from_card",
+      "scripts_grok_api_agent_source_urls_from_item",
+      "scripts_grok_api_agent_tavily_api_json",
+      "scripts_grok_api_agent_tavily_context_for_discovery",
+      "scripts_grok_api_agent_tavily_context_for_item",
+      "scripts_grok_api_agent_tavily_extract",
+      "scripts_grok_api_agent_tavily_options_from_args",
+      "scripts_grok_api_agent_tavily_search",
+      "scripts_grok_api_agent_unique_urls",
+      "scripts_grok_api_agent_usage_line",
+      "scripts_grok_api_agent_verify_card_with_tavily",
+      "scripts_grok_api_agent_write_run_manifest",
+      "scripts_grok_api_agent_yaml_quote"
+    ],
+    "2": [
+      "scripts_bb_intel_pipeline_build_parser",
+      "scripts_bb_intel_pipeline_cards_count",
+      "scripts_bb_intel_pipeline_combine_discovery_items",
+      "scripts_bb_intel_pipeline_env_file_values",
+      "scripts_bb_intel_pipeline_final_qa",
+      "scripts_bb_intel_pipeline_jsonl_count",
+      "scripts_bb_intel_pipeline_merge_technique_ledger",
+      "scripts_bb_intel_pipeline_now_id",
+      "scripts_bb_intel_pipeline_preflight",
+      "scripts_bb_intel_pipeline_py",
+      "scripts_bb_intel_pipeline_run_cmd",
+      "scripts_bb_intel_pipeline_run_report_pipeline",
+      "scripts_bb_intel_pipeline_run_technique_pipeline",
+      "scripts_diff_assets_py",
+      "scripts_diff_assets_read_set",
+      "scripts_grok_api_agent_build_arg_parser",
+      "scripts_grok_api_agent_sanitize_markdown",
+      "scripts_grok_kb_apply_dom_expansions_apply_one",
+      "scripts_grok_kb_apply_dom_expansions_clean_quoted",
+      "scripts_grok_kb_apply_dom_expansions_dom_to_markdown",
+      "scripts_grok_kb_apply_dom_expansions_extract_blocks",
+      "scripts_grok_kb_apply_dom_expansions_py",
+      "scripts_grok_kb_apply_dom_expansions_rationale_26",
+      "scripts_grok_kb_apply_dom_expansions_read_prompt_dests",
+      "scripts_grok_kb_apply_dom_expansions_sanitize_text",
+      "scripts_grok_kb_apply_expansions_py",
+      "scripts_grok_kb_apply_expansions_rationale_19",
+      "scripts_grok_kb_apply_expansions_rationale_33",
+      "scripts_grok_kb_apply_expansions_reconstruct_generic_code",
+      "scripts_notify_main",
+      "scripts_notify_post_json",
+      "scripts_notify_py",
+      "scripts_recon_pipeline_domains_from_config",
+      "scripts_recon_pipeline_filter_scope",
+      "scripts_recon_pipeline_py",
+      "scripts_recon_pipeline_sh",
+      "scripts_recon_pipeline_summarize_httpx_jsonl",
+      "scripts_recon_pipeline_urls_from_config",
+      "scripts_recon_pipeline_which",
+      "scripts_recon_pipeline_write_lines",
+      "scripts_scope_guard_host_matches",
+      "scripts_scope_guard_is_allowed",
+      "scripts_scope_guard_load_config",
+      "scripts_scope_guard_normalize_host",
+      "scripts_scope_guard_py"
+    ],
+    "3": [
+      "apps_grok_kb_agent_suite_backend_workflows_py",
+      "apps_grok_kb_agent_suite_frontend_app_js",
+      "backend_workflows_build_command",
+      "frontend_app",
+      "frontend_app_action_labels",
+      "frontend_app_api",
+      "frontend_app_applyi18n",
+      "frontend_app_bindjob",
+      "frontend_app_bindlanguageswitches",
+      "frontend_app_bindrevealobserver",
+      "frontend_app_bindroutelinks",
+      "frontend_app_chip",
+      "frontend_app_currentjobs",
+      "frontend_app_currentlang",
+      "frontend_app_escapehtml",
+      "frontend_app_flashtarget",
+      "frontend_app_formdata",
+      "frontend_app_friendlyaction",
+      "frontend_app_getroutefromhash",
+      "frontend_app_i18n",
+      "frontend_app_initializechrome",
+      "frontend_app_jobrundir",
+      "frontend_app_latestbyaction",
+      "frontend_app_normalizelang",
+      "frontend_app_providerrows",
+      "frontend_app_pulseifchanged",
+      "frontend_app_refreshhealth",
+      "frontend_app_refreshjobs",
+      "frontend_app_refreshskills",
+      "frontend_app_refreshworkflowstates",
+      "frontend_app_renderrecommendation",
+      "frontend_app_renderreviewsummary",
+      "frontend_app_revealactiveroute",
+      "frontend_app_routealiases",
+      "frontend_app_routeto",
+      "frontend_app_showtoast",
+      "frontend_app_statusbadge",
+      "frontend_app_statuslabel",
+      "frontend_app_submitjob",
+      "frontend_app_t",
+      "frontend_app_updaterefreshstamp",
+      "frontend_app_updatescrollprogress",
+      "frontend_app_validroutes"
+    ],
+    "4": [
+      "16_websocket_subscription_introspection_aw_junaid",
+      "18_firebase_rule_enumeration_intigriti",
+      "20_mobile_vs_desktop_user_agent_intigriti",
+      "3_bac_via_http_method_swap_thexssrat",
+      "4_array_based_batching_andre_baptista",
+      "batch_003_prompt_md_25",
+      "batch_005_md_9",
+      "batch_007_prompt_md_multi_http_method_fuzzing_for_hidden_routes_apis",
+      "batch_008_prompt_md_21",
+      "batch_009_prompt_md_14",
+      "batch_015_prompt_md_cloudenum_s3scanner_for_buckets",
+      "batch_032_prompt_md_business_logic_race_condition_idor_in_fintech_recharge_history_api",
+      "batch_032_prompt_md_frontegg_workspace_level_cross_tenant_manipulation",
+      "case_derived_11_unauth_idor_on_nasa_gitlab_users_api_pii_hostnames_exposed",
+      "case_derived_18_price_manipulation_in_public_bug_bounty_program_subscription_plans",
+      "case_derived_20_s3_xss_via_bucket_misconfig_bucketlist_tool",
+      "case_derived_22_frontegg_workspace_level_cross_tenant_manipulation",
+      "case_derived_24_graphql_idor_in_shopify_staff_access_cross_shop_billing_data",
+      "case_derived_2_graphql_introspection_to_admin_takeover_via_unauthenticated_mutations",
+      "new_2024_2026_103_3_saml_authentication_bypass_checklist_for_bug_bounty",
+      "new_2024_2026_105_4_race_condition_multiple_refund_abuse",
+      "new_2024_2026_106_1_client_side_path_traversal_exploiting_csrf_in_header_based_auth_scenarios",
+      "new_2024_2026_20_agent_stdout_leakage_of_creds_via_debug_prints_in_llm_skills_supply_chain",
+      "new_2024_2026_22_gcs_bucket_data_exfil_via_signed_url_copy",
+      "new_2024_2026_22_postman_public_workspace_recon_for_apis",
+      "new_2024_2026_7_azure_blob_anonymous_container_access_check",
+      "new_2024_2026_index",
+      "niche_tricks_16_subgroupid_manipulation_for_unauthorized_post_creation",
+      "niche_tricks_201_1_what_bugs_you_should_look_for_in_a_graphql_api_bug_bounty_case_study",
+      "niche_tricks_24_graphql_introspection_batching_for_data_leak_abuse",
+      "niche_tricks_case_derived_10_oauth_param_injection_in_nextjs_auth0_returnto",
+      "niche_tricks_case_derived_11_next_js_single_request_dos_via_framework_resource_leak",
+      "niche_tricks_case_derived_12_autogpt_ssrf_protection_bypass_to_internal_services",
+      "niche_tricks_case_derived_1_500_oauth_account_fusion_pre_takeover_attack"
+    ],
+    "5": [
+      "bug_bounty_os_course_main",
+      "bug_bounty_os_course_main_block",
+      "bug_bounty_os_course_main_challenge",
+      "bug_bounty_os_course_main_container",
+      "bug_bounty_os_course_main_correctbtn",
+      "bug_bounty_os_course_main_currentmoduleindex",
+      "bug_bounty_os_course_main_descel",
+      "bug_bounty_os_course_main_diagram",
+      "bug_bounty_os_course_main_feedback",
+      "bug_bounty_os_course_main_hidetooltip",
+      "bug_bounty_os_course_main_initchat",
+      "bug_bounty_os_course_main_initdnd",
+      "bug_bounty_os_course_main_initflow",
+      "bug_bounty_os_course_main_js",
+      "bug_bounty_os_course_main_layer",
+      "bug_bounty_os_course_main_modules",
+      "bug_bounty_os_course_main_navdots",
+      "bug_bounty_os_course_main_positiontooltip",
+      "bug_bounty_os_course_main_progressbar",
+      "bug_bounty_os_course_main_revealobserver",
+      "bug_bounty_os_course_main_selected",
+      "bug_bounty_os_course_main_showtooltip",
+      "bug_bounty_os_course_main_target",
+      "bug_bounty_os_course_main_tip",
+      "bug_bounty_os_course_main_updatenavdots",
+      "bug_bounty_os_course_main_updateprogress"
+    ],
+    "6": [
+      "101_2_graphql_endpoint_mass_user_enumeration",
+      "101_4_race_conditions_and_business_logic_in_microservices_for_2026_bug_bounties_grok_api",
+      "21_http_3_protocol_smuggling_via_header_handling_libcurl_cve",
+      "aws_s3",
+      "batch_011_prompt",
+      "batch_011_prompt_md_12",
+      "batch_011_prompt_md_14",
+      "batch_011_prompt_md_15",
+      "batch_011_prompt_md_16",
+      "batch_011_prompt_md_24",
+      "batch_018_prompt_md_h2_cl_desync_via_early_response_gadgets_for_response_queue_poisoning",
+      "batch_018_prompt_md_http_2_request_tunnelling_for_web_cache_poisoning_portswigger_lab_technique",
+      "niche_tricks_case_derived_24_jwt_claim_forging_for_arbitrary_tenant_role_in_multi_service_saas",
+      "resource_hackerone_graphql_and_oauth_top_reports_2025_2026",
+      "review_queue_25_critical_thinking_bug_bounty_podcast_attacking_oauth_2_1",
+      "technique_graphql_introspection_enabled_leading_to_idor_and_authorization_bypass",
+      "technique_race_conditions_and_business_logic_in_microservices_for_2026_bug_bounties",
+      "techniques_evergreen_new_context_case_derived_15_oauth_dynamic_client_registration_open_redirect_to_full_read_ssrf",
+      "techniques_evergreen_new_context_case_derived_18_prompt_injection_to_sandbox_escape_rce_in_google_antigravity_ai_ide",
+      "techniques_evergreen_new_context_case_derived_20_full_read_ssrf_in_gitlab_analytics_dashboard_bypassing_localhost",
+      "techniques_evergreen_new_context_case_derived_2_ssrf_protection_bypass_in_autogpt_ai_agent_tool",
+      "techniques_evergreen_new_context_case_derived_5_ssrf_indirect_prompt_injection_chain_in_ai_assistant_feature",
+      "techniques_evergreen_new_context_case_derived_6_real_ssrf_via_ipv6_redirects_on_hackerone",
+      "techniques_new_2024_2026_case_derived_1_breaking_pingora_http_request_smuggling_cache_poisoning_in_cloudflare_s_r",
+      "web_api_saas_graphql"
+    ],
+    "7": [
+      "scripts_grok_kb_enrich_archetype_sections",
+      "scripts_grok_kb_enrich_case_path_for",
+      "scripts_grok_kb_enrich_detailed_case_markdown",
+      "scripts_grok_kb_enrich_detailed_tech_markdown",
+      "scripts_grok_kb_enrich_load_rows",
+      "scripts_grok_kb_enrich_py",
+      "scripts_grok_kb_enrich_risk",
+      "scripts_grok_kb_enrich_targets",
+      "scripts_grok_kb_ingest_append_ledger",
+      "scripts_grok_kb_ingest_case_dir_for",
+      "scripts_grok_kb_ingest_classify_category",
+      "scripts_grok_kb_ingest_clean_cell",
+      "scripts_grok_kb_ingest_freshness",
+      "scripts_grok_kb_ingest_normalize_obj",
+      "scripts_grok_kb_ingest_parse_rows",
+      "scripts_grok_kb_ingest_py",
+      "scripts_grok_kb_ingest_rationale_36",
+      "scripts_grok_kb_ingest_slugify",
+      "scripts_grok_kb_ingest_target_list",
+      "scripts_grok_kb_ingest_tech_dir_for",
+      "scripts_grok_kb_ingest_write_case_card",
+      "scripts_grok_kb_ingest_write_tech_card",
+      "scripts_grok_kb_ingest_yaml_list"
+    ],
+    "8": [
+      "10_postmessage_listener_with_target_com_wildcard_cors_misconfig_to_home_automation_takeo_postmessage_iot_case",
+      "25_postmessage_wildcard_origin_samesite_lax_to_pii_leak_samesite_lax",
+      "8_asn_lookup_pivot_from_js_api_ips",
+      "batch_001_prompt_md_github_actions_cache_poisoning_for_supply_chain",
+      "batch_014_prompt_md_vhost_fuzzing_with_ffuf_on_ips",
+      "batch_016_prompt_aditya_bhatt",
+      "batch_016_prompt_aonan_guan",
+      "batch_016_prompt_bugcrowd_guest_researchers",
+      "batch_016_prompt_html_comment_injection_pi",
+      "batch_016_prompt_indirect_prompt_injection_pdf",
+      "batch_016_prompt_multiple_hunters_post_message",
+      "batch_016_prompt_postmessage_csrf_no_origin_check",
+      "batch_016_prompt_postmessage_wildcard_origin_pii_leak",
+      "batch_017_prompt_md_14",
+      "batch_053_prompt_md_21",
+      "batch_058_prompt_md_21",
+      "batch_058_prompt_md_3",
+      "batch_058_prompt_md_5",
+      "batch_058_prompt_md_6",
+      "bugcrowd_blog",
+      "concept_postmessage",
+      "medium_obfuscator",
+      "review_queue_4_2025_github_recon_checklist_for_bug_hunters"
+    ],
+    "9": [
+      "apps_grok_kb_agent_suite_backend_server_py",
+      "apps_grok_kb_agent_suite_backend_state_py",
+      "backend_server_env_file_has",
+      "backend_server_env_file_has_all",
+      "backend_server_handler",
+      "backend_server_handler_do_get",
+      "backend_server_handler_do_options",
+      "backend_server_handler_do_post",
+      "backend_server_handler_log_message",
+      "backend_server_handler_send",
+      "backend_server_handler_serve_static",
+      "backend_server_json_bytes",
+      "backend_state_job_path",
+      "backend_state_list_jobs",
+      "backend_state_load_job",
+      "backend_state_new_job",
+      "backend_state_save_job",
+      "backend_state_tail_text",
+      "backend_state_utc_ts",
+      "backend_workflows_run_subprocess",
+      "basehttprequesthandler"
+    ],
+    "10": [
+      "102-4-jwt-md-cheatsheet-with-2025-2026-real-world-cves_jwt-cheatsheet-2025-2026-cves",
+      "104-1-the-depths-of-bola-and-idor_bola-idor-graphql",
+      "105-5-refunds-one-of-the-most-underrated-engineering-problems_refund-engineering-business-logic",
+      "2-asn-pivot-on-ips-from-js-api-responses_asn-pivot-js-ips",
+      "25_test_card_acceptance_in_production_payment_flow",
+      "_index_niche_tricks_index",
+      "batch_002_prompt_0xyz_",
+      "batch_002_prompt_wayback_private_content_access",
+      "batch_005_md_11",
+      "batch_009_prompt_md_19",
+      "batch_013_prompt_md_fareid_parameter_tampering_for_unauthorized_subscription_pricing",
+      "batch_019_prompt_md_array_idor_in_graphql_by_wrapping_ids_in_nested_objects",
+      "batch_022_prompt_md_5",
+      "batch_041_prompt_md_10",
+      "batch_041_prompt_md_23",
+      "batch_044_prompt_10",
+      "batch_045_prompt_md_how_i_bypassed_premium_subscription_escalated_privileges_using_a_0_vcc",
+      "batch_047_prompt_md_9",
+      "case-derived-12-jwt-logic-confusion-bypassing-authentication_jwt-algorithm-confusion-bypass",
+      "concept_data_leakage_in_prod",
+      "deployment_vps_deployment_guide"
+    ],
+    "11": [
+      "batch_023_prompt_access_control_enterprise_invitation",
+      "batch_023_prompt_jeewan_bhatta",
+      "batch_023_prompt_low_priv_api_access",
+      "batch_023_prompt_montaser_mohsen",
+      "batch_023_prompt_ontinue_researchers",
+      "batch_023_prompt_teams_guest_access_bypass",
+      "batch_027_prompt_1",
+      "batch_027_prompt_10",
+      "batch_027_prompt_2",
+      "batch_027_prompt_6",
+      "batch_027_prompt_7",
+      "batch_028_prompt_md_5",
+      "batch_034_prompt_1",
+      "batch_037_prompt_joshua_rogers",
+      "batch_037_prompt_jwt_theft_via_oauth_redirect",
+      "batch_037_prompt_oauth_param_injection",
+      "batch_037_prompt_shah_kaif",
+      "concept_access_control_idor",
+      "topic_02_api_bola_idor_krishnakumar",
+      "topic_12_niche_tricks_ssh_key_authority_rce"
+    ],
+    "12": [
+      "17_idor_in_saved_payments_api_on_zomato_multi_tenant",
+      "18_1500_idor_fetching_5m_images_via_object_id_swap",
+      "7_idor_in_multi_tenant_api_via_uuid_swap_in_device_info_endpoint_idor",
+      "7_tenant_admin_idor_allowing_cross_tenant_file_deletion_idor",
+      "batch_002_prompt_bola_bypass_mass_assignment",
+      "batch_002_prompt_fuzzing_rbac_ids",
+      "batch_002_prompt_manoj",
+      "batch_002_prompt_multiple_hunters",
+      "batch_003_prompt_md_15",
+      "batch_029_prompt_md_4",
+      "batch_035_prompt_md_idor_fetching_5_million_images_via_broken_access_control",
+      "concept_api_bola_idor",
+      "concept_broken_access_control",
+      "review_queue_15_finding_broken_access_control_in_multi_tenant_systems_practical_techniques",
+      "review_queue_19_backend_mastery_multi_tenant_isolation_failures_in_b2b_saas",
+      "review_queue_23_bugquest_2026_day_23_spot_basic_idor_advanced_variants_in_api",
+      "review_queue_23_vulnerability_chaining_for_multi_tenant_isolation_breaches_in_saas",
+      "techniques_evergreen_new_context_case_derived_11_idor_fetching_5_million_images_via_broken_access_control",
+      "techniques_evergreen_new_context_case_derived_1_finding_an_idor_in_user_profile_api_a_15_000_journey_to_critical",
+      "techniques_new_2024_2026_13_testing_static_keywords_like_my_vs_tenant_id_for_cross_tenant_access"
+    ],
+    "13": [
+      "advisory_ghsa_25rp_h46x_2hjm",
+      "advisory_ghsa_3x8w_4f7p_xxc2",
+      "advisory_ghsa_45m8_cpm2_3v65",
+      "advisory_ghsa_6c2x_gcp3_gp73",
+      "architecture_md_grok_kb_agent_suite",
+      "batch_039_prompt_md_cve_2025_22146_sentry_saml_sso_auth_bypass",
+      "boundary_sanitizer_skill_md_boundary_sanitizer",
+      "cost_observer_skill_md_cost_observer",
+      "github_frontier_notes_md_github_frontier_agent_notes",
+      "index_html_grok_kb_guided_workbench",
+      "kb_writer_skill_md_kb_writer",
+      "prompt_compressor_skill_md_prompt_compressor",
+      "qa_gate_skill_md_qa_gate",
+      "report_enrich_prompt_open_webui_ldap_empty_password_authentication_bypass",
+      "report_intelligence_skill_md_report_intelligence",
+      "source_finder_skill_md_source_finder",
+      "source_verifier_skill_md_source_verifier",
+      "structured_expander_skill_md_structured_expander",
+      "tavily_verifier_skill_md_tavily_verifier"
+    ],
+    "14": [
+      "15_servicenow_now_assist_second_order_prompt_injection_agent_to_agent_data_exfil",
+      "6_curxecute_cve_2025_54135_prompt_injection_rce_in_cursor_ide_via_mcp_config",
+      "7_vanna_ai_prompt_injection_to_rce_cve_2024_5565_via_text_to_sql_vanna_ai_rce_case",
+      "9_langchain_graphcypherqachain_prompt_injection_to_sqli_cve_2024_8309_langchain_prompt_injection_case",
+      "batch_017_prompt_md_17",
+      "batch_048_prompt_md_chatgpt_azure_backdoor_via_domain_allow_list_prompt_injection_month_of_ai_bugs",
+      "batch_048_prompt_md_slack_ai_indirect_prompt_injection_data_exfil_from_private_channels",
+      "batch_049_prompt_1",
+      "batch_049_prompt_13",
+      "batch_049_prompt_21",
+      "batch_049_prompt_7",
+      "batch_049_prompt_9",
+      "case_derived_4_github_copilot_config_hijack_via_prompt_injection_month_of_ai_bugs",
+      "concept_prompt_injection_tool_calling",
+      "servicenow_now_assist_saas",
+      "topic_10_ai_llm_saas_aonan_guan"
+    ],
+    "15": [
+      "6_1500_pii_leak_via_graphql_field_level_permission_bypass_authorization_bypass",
+      "batch_012_prompt_10",
+      "batch_012_prompt_21",
+      "batch_020_prompt_1",
+      "batch_020_prompt_14",
+      "batch_020_prompt_2",
+      "batch_020_prompt_3",
+      "batch_020_prompt_9",
+      "batch_021_prompt_md_critical_idor_privilege_escalation_in_role_permission_management",
+      "batch_053_prompt_md_23",
+      "bugcrowd_public_programs",
+      "case_derived_11_how_i_found_5_oauth_misconfigurations_leading_to_pre_account_takeover",
+      "concept_mass_data_exposure",
+      "concept_missing_role_validation",
+      "concept_undocumented_mutation",
+      "review_queue_17_common_oauth_vulnerabilities_checklist_bug_bounty_focus"
+    ],
+    "16": [
+      "16_subdomain_takeover_check_with_subzy",
+      "18_csp_header_mining_for_internal_subs",
+      "23_azure_storage_account_cheat_sheet_recon_tricks_azure_storage_recon_case",
+      "7_alterx_permutation_scanning",
+      "batch_006_prompt_2",
+      "batch_006_prompt_5_niche",
+      "batch_012_prompt_13",
+      "batch_012_prompt_17",
+      "batch_012_prompt_24",
+      "batch_046_prompt_md_7",
+      "concept_storage_recon",
+      "concept_subdomain_discovery",
+      "web_app_spa_with_fetch",
+      "xhr"
+    ],
+    "17": [
+      "13_negative_quantity_addon_for_discount_exploitation",
+      "batch_015_prompt_md_invoice_idor_for_unauthorized_access_refund_manipulation",
+      "batch_022_prompt_md_22",
+      "batch_028_prompt_md_4",
+      "batch_033_prompt_11_hidden",
+      "batch_033_prompt_14",
+      "batch_033_prompt_18",
+      "batch_036_prompt_md_6",
+      "e_commerce_rental_saas",
+      "hackerone_platform",
+      "medium_0xm394tr0n",
+      "stripo_ai_hub",
+      "wordfence_blog",
+      "x_shreerajaput"
+    ],
+    "18": [
+      "apps_grok_kb_agent_suite_tests_test_suite_py",
+      "tests_test_suite_load_report_agent",
+      "tests_test_suite_test_evidence_policy_in_api_agent",
+      "tests_test_suite_test_files_exist",
+      "tests_test_suite_test_gray_items_do_not_cluster",
+      "tests_test_suite_test_manual_channel_redaction_policy",
+      "tests_test_suite_test_manual_channel_results_import_and_policy",
+      "tests_test_suite_test_manual_import_requires_authorization",
+      "tests_test_suite_test_python_compile",
+      "tests_test_suite_test_report_intel_schema_and_clustering",
+      "tests_test_suite_test_report_markdown_policy",
+      "tests_test_suite_test_report_source_catalog_policy",
+      "tests_test_suite_test_skill_manifest"
+    ],
+    "19": [
+      "readme_bug_bounty_hunting_os",
+      "readme_graphify",
+      "readme_recon_pipeline",
+      "readme_safe_automation_rules",
+      "readme_scope_example_json",
+      "readme_x_grok_workflow",
+      "start_here_apisec",
+      "start_here_burp_suite",
+      "start_here_htb_academy",
+      "start_here_pentesterlab",
+      "start_here_portswigger"
+    ],
+    "20": [
+      "batch_028_prompt_md_3",
+      "nextcloud_api",
+      "platform_report_3185083",
+      "platform_report_3307874",
+      "readme_grok_kb_agent_suite",
+      "readme_report_intelligence",
+      "readme_tavily_verifier",
+      "start_here_hackerone_3304830",
+      "start_here_hackerone_3307874",
+      "start_here_hackerone_3486727",
+      "start_here_monero_rpc"
+    ],
+    "21": [
+      "_index_researcher_writeups",
+      "undated_api_fuzzing_for_bug_bounty_skills_lobehub",
+      "undated_archive_critical_thinking_bug_bounty_podcast",
+      "undated_bug_bounty_for_claude_code_ai_agent_skill_hub",
+      "undated_bug_bounty_operator_practice_fardin_iqbal",
+      "undated_github_insecrez_bug_bounty_writeups_repository_of_bug_bounty_writeups_github",
+      "undated_powerful_guide_to_bug_bounty_writeups_a_positive_path_to_learning_and_earning_0xgz",
+      "undated_reddit_bug_bounty_exploiting_an_idor_vulnerability_in_dubsmash_s_updatesound_api",
+      "undated_saas_security_how_bug_bounty_hunters_are_keeping_the_cloud_safe",
+      "undated_top_10_web_hacking_techniques_of_2025_call_for_nominations"
+    ],
+    "22": [
+      "12_dompurify_3_1_3_3_1_5_bypass_via_unicode_normalization_touppercase_context_switch",
+      "20_fastmail_dompurify_bb_sponsorship_css_sanitizer_bug_hunter_report_dompurify",
+      "batch_006_prompt_21",
+      "batch_006_prompt_5",
+      "batch_006_prompt_6",
+      "batch_032_prompt_md_dompurify_prototype_pollution_to_xss_bypass_cve_2026_41238_via_custom_element_handling",
+      "email",
+      "topic_07_client_side_dom_cspt_client_side_path_traversal_to_account_takeover_xss",
+      "topic_07_client_side_dom_cspt_renwa",
+      "web_service"
+    ],
+    "23": [
+      "01_intro_html_bug_bounty_os",
+      "02_actors_html_bug_bounty_os",
+      "03_intelligence_html_bug_bounty_os",
+      "04_recon_html_bug_bounty_os",
+      "05_debugging_html_bug_bounty_os",
+      "_base_html_bug_bounty_os",
+      "_footer_html_bug_bounty_os",
+      "data_grok_course_search_snapshot_md",
+      "index_html_bug_bounty_os"
+    ],
+    "24": [
+      "14_cloudflare_pingora_default_cache_key_poisoning_host_ignored_pingora_cache_poisoning_case",
+      "8_next_js_cache_poisoning_via_204_responses_cve_2025_49826_nextjs_cache_poisoning_case",
+      "batch_033_prompt_11_codeqleaked",
+      "batch_033_prompt_11_nextjs",
+      "batch_044_prompt_17",
+      "batch_044_prompt_22",
+      "batch_044_prompt_8",
+      "batch_044_prompt_9_044",
+      "concept_cache_poisoning"
+    ],
+    "25": [
+      "scripts_grok_kb_build_index_build_dir_index",
+      "scripts_grok_kb_build_index_py",
+      "scripts_grok_kb_curate_meta",
+      "scripts_grok_kb_curate_obs_link",
+      "scripts_grok_kb_curate_py",
+      "scripts_grok_kb_curate_score",
+      "scripts_grok_kb_curate_title",
+      "scripts_report_intel_agent_rel_link"
+    ],
+    "26": [
+      "asp_net_core",
+      "batch_034_prompt_10",
+      "batch_034_prompt_13",
+      "batch_050_prompt_17",
+      "batch_050_prompt_19",
+      "batch_052_prompt_md_4",
+      "kestrel_servers",
+      "proxies_with_chunked_parsing_quirks"
+    ],
+    "27": [
+      "105_3_business_logic_bypass_allows_setting_read_access_role_without_pro_plan_subscript",
+      "21_webhook_signature_missing_mostta",
+      "batch_017_prompt_md_12",
+      "batch_045_prompt_md_business_logic_vulnerability_in_dells_payment_api",
+      "batch_045_prompt_md_subscription_bypass_leading_to_full_access_to_paid_features",
+      "infosec_writeups",
+      "medium_mostta",
+      "topic_06_payment_subscription_billing_hossam_hamada"
+    ],
+    "28": [
+      "adnanthekhan_blog",
+      "batch_002_prompt_actions_credential_exposure",
+      "batch_002_prompt_adnan_khan",
+      "batch_002_prompt_adnan_khan_runner",
+      "batch_002_prompt_runner_image_rce",
+      "batch_024_prompt_md_8",
+      "johnstawinski_blog"
+    ],
+    "29": [
+      "107_3_what_s_coming_to_our_github_actions_2026_security_roadmap_ci_cd_supply_chain",
+      "batch_024_prompt_md_18",
+      "case_derived_16_hackerbot_claw_autonomous_github_actions_exploitation_2026_github_actions_exploitation_technique",
+      "github_actions_ai",
+      "start_here_ai_prompt_injection",
+      "start_here_cicd_supply_chain"
+    ],
+    "30": [
+      "batch_037_prompt_abhijeet_kumawat",
+      "batch_037_prompt_anonymous_hunter_medium",
+      "batch_037_prompt_belal_shohaip",
+      "batch_037_prompt_google_oauth_misconfiguration",
+      "batch_037_prompt_jwt_alg_none_attack",
+      "batch_037_prompt_oauth_misbinding_vulnerability"
+    ],
+    "31": [
+      "2_ssrf_protection_bypass_in_autogpt_ai_agent_tool_ssrf",
+      "batch_034_prompt_12",
+      "batch_034_prompt_9",
+      "concept_idor",
+      "start_here_oauth",
+      "start_here_saml"
+    ],
+    "32": [
+      "7_gotta_cache_em_all_novel_cache_deception_and_poisoning_via_url_parsing_qu",
+      "7_gotta_cache_em_all_novel_cache_deception_and_poisoning_via_url_parsing_quirks_cache_deception_case",
+      "case_derived_14_cloudflare_pingora_default_cache_key_poisoning_host_ignored",
+      "cdn",
+      "cloudflare_pingora",
+      "concept_cache_deception_poisoning"
+    ],
+    "33": [
+      "2_how_i_discovered_a_web_cache_deception_attack_exposing_pii_a_real_world_case_study_cache_deception",
+      "7_subscription_paywall_bypass_leading_to_talent_profile_access_and_pii_disclosure",
+      "gray_research_protocol_discord",
+      "gray_research_protocol_marketplace",
+      "gray_research_protocol_reddit",
+      "gray_research_protocol_telegram"
+    ],
+    "34": [
+      "api_platform",
+      "batch_026_prompt_md_from_idor_to_bypass_fixed_bug_still_exposed_6_4m_users_data_part_2",
+      "bug_tracking_api",
+      "case_derived_13_bola_in_lovable_vibe_coding_api_cross_project_source_db_leak",
+      "case_derived_20_h1_2487889_idor_on_bugs_json_exposing_private_report_details",
+      "saas"
+    ],
+    "35": [
+      "14_gau_wayback_for_historical_endpoints_endpoints",
+      "23_permutation_found_staging2_internal_critical_vuln_logic_flaw",
+      "25_archive_gf_patterns_for_sensitive_files_disclosure",
+      "github_amrelsagaei",
+      "intigriti_blog",
+      "wolfsec1337_medium"
+    ],
+    "36": [
+      "batch_008_prompt_md_8",
+      "techniques_evergreen_new_context_24_api_versioning_bypass_legacy_v1_endpoints_lack_patches_in_saas",
+      "techniques_evergreen_new_context_case_derived_13_prototype_pollution_to_rce_in_project_update_api",
+      "techniques_evergreen_new_context_case_derived_21_mass_assignment_idor_in_rest_api_for_privilege_escalation",
+      "techniques_evergreen_new_context_case_derived_7_idor_in_multi_tenant_api_via_uuid_swap_in_device_info_endpoint"
+    ],
+    "37": [
+      "104_5_state_of_api_security_2026_report_api_security",
+      "case_derived_6_full_workspace_account_takeover_via_jwt_alg_none_jwt_alg_none",
+      "start_here_bola",
+      "start_here_graphql",
+      "start_here_jwt"
+    ],
+    "38": [
+      "batch_050_prompt_14",
+      "batch_050_prompt_16",
+      "batch_050_prompt_8",
+      "concept_dompurify",
+      "concept_prototype_pollution"
+    ],
+    "39": [
+      "batch_023_prompt_anonymous_hunter_reddit",
+      "batch_023_prompt_pre_account_takeover_oauth_email",
+      "batch_023_prompt_rikesh_baniya",
+      "batch_023_prompt_sso_account_takeover",
+      "batch_041_prompt_md_4"
+    ],
+    "40": [
+      "batch_059_prompt_amr_elsagaei",
+      "batch_059_prompt_postmessage_bugs_video",
+      "review_queue_1_bug_bounty_hunting_methodology_2025",
+      "review_queue_2_bug_bounty_recon_for_everyone",
+      "review_queue_4_a_complete_bug_bounty_roadmap_for_beginners_2026"
+    ],
+    "41": [
+      "batch_059_prompt_itsrishika",
+      "batch_059_prompt_payment_bypass_lab",
+      "batch_059_prompt_price_manipulation_subscription",
+      "batch_059_prompt_scander_0x",
+      "techniques_new_2024_2026_case_derived_6_reusing_a_one_time_coupon_code_multiple_times"
+    ],
+    "42": [
+      "batch_051_prompt_pingora_smuggling_cache_poisoning",
+      "batch_051_prompt_pingora_transfer_encoding_cve",
+      "batch_051_prompt_xclow3n",
+      "batch_051_prompt_xclow3n_breaking_pingora",
+      "cloudflare_pingora_ingress"
+    ],
+    "43": [
+      "106_3_cspt_client_side_path_traversal",
+      "18_cspt_levels_practical_attacks_hunter_x_post_reference_cspt_levels_case",
+      "1_client_side_path_traversal_cspt_to_account_takeover_xss_via_profile_url_traversal_cspt_case",
+      "concept_cspt",
+      "start_here_business_logic"
+    ],
+    "44": [
+      "batch_051_prompt_candy_wong",
+      "batch_051_prompt_cl_te_request_smuggling",
+      "batch_051_prompt_http_1_1_request_smuggling",
+      "batch_051_prompt_under_code_testing_hunter"
+    ],
+    "45": [
+      "14_oauth_query_parameter_injection_in_nextjs_auth0",
+      "6_opera_ssh_key_authority_rce_via_group_access_rule_manipulation",
+      "batch_005_md_7",
+      "case_oauth_query_parameter_injection_in_next_js_withpageauthrequired"
+    ],
+    "46": [
+      "batch_059_prompt_embrace_the_red",
+      "batch_059_prompt_gemini_memory_prompt_injection",
+      "batch_059_prompt_google_threat_intelligence",
+      "batch_059_prompt_google_threat_report_prompt_injection"
+    ],
+    "47": [
+      "10_authenticated_katana_crawling",
+      "22_cspt_to_jsonp_xss_hunter_x_report_cspt",
+      "batch_016_prompt_batuhan_aydin",
+      "web_apps"
+    ],
+    "48": [
+      "11_sveltespill_cache_deception_in_sveltekit_vercel",
+      "apps_with_path_mapping_caches",
+      "batch_043_prompt_md_web_cache_deception_when_a_404_still_leaks_sensitive_data",
+      "case_derived_23_web_cache_deception_via_path_mapping_exploitation_portswigger_lab_real_w"
+    ],
+    "49": [
+      "1_i_found_an_idor_worth_20000_pii_exposure_via_staging_api_idor_staging_api_idor_case",
+      "7_idor_in_jwt_protected_card_viewer_api_jwt_idor_case",
+      "batch_003_prompt_md_8",
+      "concept_bola_idor_1"
+    ],
+    "50": [
+      "docs_intelligence_kb_00_index_grokapiresponses",
+      "docs_intelligence_kb_00_index_kb",
+      "docs_intelligence_kb_04_grok_api_agent_tavily"
+    ],
+    "51": [
+      "batch_055_prompt_md_3",
+      "techniques_evergreen_new_context_case_derived_10_stored_xss_in_apple_developer_portal",
+      "techniques_evergreen_new_context_case_derived_4_reflected_xss_in_cloudflare_ai_playground_oauth_handler_cve_2026_1721"
+    ],
+    "52": [
+      "batch_008_prompt_md_19",
+      "techniques_evergreen_new_context_case_derived_12_race_condition_broken_access_control_leading_to_super_admin_creation",
+      "techniques_evergreen_new_context_case_derived_25_business_logic_race_condition_idor_in_fintech_recharge_history_api"
+    ],
+    "53": [
+      "180_day_schedule_180_day_execution_plan",
+      "grok_course_purchase_ranking_2026_course_purchase_ranking",
+      "readme_course_purchase_matrix"
+    ],
+    "54": [
+      "batch_055_prompt_md_21",
+      "techniques_new_2024_2026_case_derived_10_graphql_introspection_enabled_on_shopify_storefront_api",
+      "topic_04_graphql_schema_md_circular_fragment_recursive_query_abuse_for_dos"
+    ],
+    "55": [
+      "23_xss_via_shodan_in_globalprotect_affects_bug_bounty_programs",
+      "batch_042_prompt_md_reflected_xss_in_cloudflare_ai_playground_oauth_handler_cve_2026_1721",
+      "batch_042_prompt_md_stored_xss_in_apple_developer_portal"
+    ],
+    "56": [
+      "105_2_business_logic_error_bypassing_payment_with_test_cards_business_logic",
+      "105_2_business_logic_error_bypassing_payment_with_test_cards_payment_test_cards_case",
+      "10_business_logic_error_bypassing_payment_with_test_cards_in_production_data_in_prod_acceptance"
+    ],
+    "57": [
+      "8_slack_ai_indirect_prompt_injection_data_exfil_from_private_channels_prompt_injection_data_leakage",
+      "8_slack_ai_indirect_prompt_injection_data_exfil_from_private_channels_slack_ai_prompt_injection_case",
+      "case_derived_10_leakage_of_hidden_elements_via_prompt_injection_in_llm_browser_agents_llm_agent"
+    ],
+    "58": [
+      "batch_026_prompt_md_gitlab_read_api_token_write_mutation_via_missing_graphql_authz",
+      "batch_039_prompt_md_autogpt_ssrf_protection_bypass_to_internal_services",
+      "batch_039_prompt_md_full_read_ssrf_in_gitlab_analytics_dashboard_bypassing_localhost"
+    ],
+    "59": [
+      "13_paramspider_arjun_for_hidden_params",
+      "batch_015_prompt_md_github_dorking_for_leaked_subs_secrets",
+      "batch_015_prompt_md_js_linkfinder_gf_patterns_for_secrets"
+    ],
+    "60": [
+      "20_coupon_stacking_via_parallel_api_calls",
+      "23_negative_cart_total_for_wallet_credit_exploit",
+      "e_commerce_wallet_billing"
+    ],
+    "61": [
+      "11_cloudenum_s3scanner_for_buckets_cloud_assets",
+      "11_cloudenum_s3scanner_for_buckets_cloud_enum_tool",
+      "11_cloudenum_s3scanner_for_buckets_s3_scanner_tool"
+    ],
+    "62": [
+      "20_naabu_httpx_pipeline_after_subfinder",
+      "9_amass_track_for_new_subdomains",
+      "concept_service_discovery"
+    ],
+    "63": [
+      "english_report_template_english_report_template",
+      "program_selection_global_program_selection_criteria",
+      "target_dossier_template_target_dossier_template"
+    ],
+    "64": [
+      "106_2_cspt_resources_maxence_schmitt",
+      "107_1_client_side_path_traversal_cspt_renwa",
+      "batch_005_md_13"
+    ],
+    "65": [
+      "scripts_grok_kb_validate_check_file",
+      "scripts_grok_kb_validate_py"
+    ],
+    "66": [
+      "report_enrich_prompt_files_drop_share_links_for_end_to_end_encrypted_folders_allowed_to_drop_files_into_oth",
+      "report_enrich_prompt_improper_input_validation_on_exported_deep_link_handler_crashes_filedisplayactivity_on"
+    ],
+    "67": [
+      "report_enrich_prompt_ghsl_2025_093_praisonai",
+      "report_enrich_prompt_ghsl_2025_121_ghsl_2025_123_nocodb"
+    ],
+    "68": [
+      "topic_02_api_bola_idor_anonhunter6",
+      "topic_02_api_bola_idor_mohaseenk"
+    ],
+    "69": [
+      "frontend_design_skill_selection_skill",
+      "frontend_design_skill_selection_ui_animation"
+    ],
+    "70": [
+      "docs_intelligence_kb_cases_public_reports_20_h1_2487889_idor_on_bugs_json_h1report",
+      "topic_02_api_bola_idor_anonhunter20"
+    ],
+    "71": [
+      "review_queue_22_intigriti_bug_bytes_235_real_ssrf_ipv6_and_idor_methodology",
+      "review_queue_25_intigriti_2025_bug_bounty_tips_mega_thread_20_niche"
+    ],
+    "72": [
+      "batch_038_prompt_md_sign_in_as_anyone_bypassing_saml_sso_with_parser_differentials",
+      "review_queue_9_the_fragile_lock_novel_saml_authentication_bypasses"
+    ],
+    "73": [
+      "techniques_new_2024_2026_case_derived_16_kerish_s_web_cache_deception_css_append_on_dynamic_path_cloudflare",
+      "techniques_new_2024_2026_case_derived_20_sitecore_html_cache_poisoning_leading_to_rce"
+    ],
+    "74": [
+      "techniques_new_2024_2026_6_gcs_testpermissions_api_for_permission_enumeration",
+      "techniques_new_2024_2026_case_derived_13_azure_blob_storage_anonymous_access_gateway"
+    ],
+    "75": [
+      "batch_024_prompt_md_1_2",
+      "topic_09_cloud_cicd_artifacts_yaron_avital"
+    ],
+    "76": [
+      "seed_sources_community",
+      "seed_sources_intigriti"
+    ],
+    "77": [
+      "22_business_logic_flaw_in_subscription_paywall_for_profile_access_direct_access",
+      "22_business_logic_flaw_in_subscription_paywall_for_profile_access_subscription_paywall_bypass_case"
+    ],
+    "78": [
+      "3_rce_via_group_access_validation_flaw_in_ssh_key_authority_open_source_tool_authorization_rce",
+      "3_rce_via_group_access_validation_flaw_in_ssh_key_authority_open_source_tool_ssh_key_auth_rce_case"
+    ],
+    "79": [
+      "23_trix_editor_1000_bounty_via_smart_paste_handling_editor_bypass",
+      "23_trix_editor_1000_bounty_via_smart_paste_handling_trix_editor_case"
+    ],
+    "80": [
+      "5_multi_tenant_isolation_failure_via_client_controlled_x_prm_tenantid_header_multitenant_isolation_case",
+      "5_multi_tenant_isolation_failure_via_client_controlled_x_prm_tenantid_header_tenant_isolation_bola"
+    ],
+    "81": [
+      "10_stored_xss_in_apple_developer_portal_XSS",
+      "10_stored_xss_in_apple_developer_portal_apple_developer_xss_case"
+    ],
+    "82": [
+      "24_jwt_claim_forging_for_arbitrary_tenant_role_in_multi_service_saas_jwt_auth_bypass",
+      "24_jwt_claim_forging_for_arbitrary_tenant_role_in_multi_service_saas_jwt_forging_case"
+    ],
+    "83": [
+      "102_1_dos_via_mutation_aliasing_in_graphql_account_recovery_api_graphql_dos",
+      "102_1_dos_via_mutation_aliasing_in_graphql_account_recovery_api_graphql_dos_case"
+    ],
+    "84": [
+      "8_pwn_request_in_google_s_flank_github_actions_workflow_actions_script_injection",
+      "8_pwn_request_in_google_s_flank_github_actions_workflow_github_actions_injection_case"
+    ],
+    "85": [
+      "2_critical_idor_privilege_escalation_in_role_permission_management_idor_privilege_escalation_case",
+      "2_critical_idor_privilege_escalation_in_role_permission_management_privilege_escalation"
+    ],
+    "86": [
+      "18_prompt_injection_in_github_actions_ai_agents_claude_copilot_actions_prompt_injection",
+      "18_prompt_injection_in_github_actions_ai_agents_claude_copilot_github_actions_ai_prompt_injection_case"
+    ],
+    "87": [
+      "12_jwt_logic_confusion_bypassing_authentication_algorithm_confusion",
+      "12_jwt_logic_confusion_bypassing_authentication_jwt_algorithm_confusion_case"
+    ],
+    "88": [
+      "20_saml_xsw_novel_bypasses_via_void_canonicalization_saml_xsw_case",
+      "20_saml_xsw_novel_bypasses_via_void_canonicalization_xml_signature_wrapping_xsw"
+    ],
+    "89": [
+      "8_account_takeover_using_sso_login_account_linking",
+      "8_account_takeover_using_sso_login_sso_ato_case"
+    ],
+    "90": [
+      "manual_channel_sources_bbre_premium",
+      "source_catalog_hackerone_hacktivity_api"
+    ],
+    "91": [
+      "manual_channel_sources_bugcrowd_community_discord",
+      "source_catalog_bugcrowd_crowdstream"
+    ],
+    "92": [
+      "batch_017_prompt_md_17_2",
+      "e_commerce_refund_logic"
+    ],
+    "93": [
+      "batch_003_prompt_md_5",
+      "graphql_apis_with_rate_limits"
+    ],
+    "94": [
+      "batch_051_prompt_coupon_reuse_logic_flaw",
+      "batch_051_prompt_tarekmohamed"
+    ],
+    "95": [
+      "102_2_oauth_account_fusion_pre_takeover_via_email_matching_bypass",
+      "web_api_saas_oauth"
+    ],
+    "96": [
+      "104_3_idor_hunting_tips",
+      "rest_graphql_apis"
+    ],
+    "97": [
+      "batch_047_prompt_md_5",
+      "google_gemini_saas"
+    ],
+    "98": [
+      "apps_using_magic_link_auth",
+      "batch_036_prompt_md_13"
+    ],
+    "99": [
+      "batch_053_prompt_md_17",
+      "general_graphql_apis"
+    ],
+    "100": [
+      "batch_022_prompt_md_14",
+      "room_template_api"
+    ],
+    "101": [
+      "batch_009_prompt_md_19_2",
+      "oauth_account_linking_systems"
+    ],
+    "102": [
+      "batch_028_prompt_md_16",
+      "portal_api"
+    ],
+    "103": [
+      "22_object_limit_overriding_with_large_pagination_in_queries_graphql_api",
+      "22_object_limit_overriding_with_large_pagination_in_queries_limit_override_technique"
+    ],
+    "104": [
+      "24_array_idor_in_graphql_by_wrapping_ids_in_nested_objects_array_idor_technique",
+      "24_array_idor_in_graphql_by_wrapping_ids_in_nested_objects_graphql_mutation"
+    ],
+    "105": [
+      "14_fareid_parameter_tampering_for_unauthorized_subscription_pricing_fareid_tamper_technique",
+      "14_fareid_parameter_tampering_for_unauthorized_subscription_pricing_saas_checkout"
+    ],
+    "106": [
+      "case_derived_1_i_found_an_idor_worth_20000_pii_exposure_via_staging_api_idor_api_endpoint",
+      "case_derived_1_i_found_an_idor_worth_20000_pii_exposure_via_staging_api_idor_idor_technique"
+    ],
+    "107": [
+      "case_derived_24_account_takeover_via_google_oauth_misconfiguration_oauth_misconfig_technique",
+      "case_derived_24_account_takeover_via_google_oauth_misconfiguration_public_bb_program"
+    ],
+    "108": [
+      "case_derived_9_langchain_graphcypherqachain_prompt_injection_to_sqli_cve_2024_8309_langchain_agent",
+      "case_derived_9_langchain_graphcypherqachain_prompt_injection_to_sqli_cve_2024_8309_prompt_injection_sqli_technique"
+    ],
+    "109": [
+      "case_derived_3_invisible_prompt_injection_via_unicode_tag_characters_in_hackerone_hai_ai_hackerone_hai_ai",
+      "case_derived_3_invisible_prompt_injection_via_unicode_tag_characters_in_hackerone_hai_ai_unicode_prompt_injection_technique"
+    ],
+    "110": [
+      "case_derived_10_postmessage_listener_with_target_com_wildcard_cors_misconfig_to_home_aut_postmessage_cors_technique",
+      "case_derived_10_postmessage_listener_with_target_com_wildcard_cors_misconfig_to_home_aut_web_iot_integration"
+    ],
+    "111": [
+      "14_directive_overloading_batching_for_dos_in_graphql_directive_overloading_technique",
+      "14_directive_overloading_batching_for_dos_in_graphql_graphql_api"
+    ],
+    "112": [
+      "106_5_dom_xss_using_web_messages_and_javascript_url_dom_xss_technique",
+      "106_5_dom_xss_using_web_messages_and_javascript_url_web_app"
+    ],
+    "113": [
+      "case_derived_6_cache_poisoning_reloaded_deep_dive_into_cve_2025_4366_and_pingora_s_reque_cache_poisoning_technique",
+      "case_derived_6_cache_poisoning_reloaded_deep_dive_into_cve_2025_4366_and_pingora_s_reque_cloudflare_pingora"
+    ],
+    "114": [
+      "case_derived_7_tenant_admin_idor_allowing_cross_tenant_file_deletion_cross_tenant_idor_technique",
+      "case_derived_7_tenant_admin_idor_allowing_cross_tenant_file_deletion_multi_tenant_saas"
+    ],
+    "115": [
+      "case_derived_8_prototype_pollution_gadget_in_meta_fbevents_js_to_cookie_manipulation_gal_prototype_pollution_technique",
+      "case_derived_8_prototype_pollution_gadget_in_meta_fbevents_js_to_cookie_manipulation_gal_web_tracking_lib"
+    ],
+    "116": [
+      "101_1_graphql_introspection_enabled_leading_to_idor_and_authorization_bypass_fintech_graphql",
+      "101_1_graphql_introspection_enabled_leading_to_idor_and_authorization_bypass_graphql_introspection_bypass_technique"
+    ],
+    "117": [
+      "11_field_suggestion_abuse_to_rebuild_schema_blindly_field_suggestion_abuse_technique",
+      "11_field_suggestion_abuse_to_rebuild_schema_blindly_hardened_graphql_api"
+    ],
+    "118": [
+      "case_derived_8_slack_ai_indirect_prompt_injection_data_exfil_from_private_channels_indirect_prompt_injection_technique",
+      "case_derived_8_slack_ai_indirect_prompt_injection_data_exfil_from_private_channels_slack_ai"
+    ],
+    "119": [
+      "case_derived_8_cross_tenant_improper_access_control_in_import_flow_cross_tenant_access_control_technique",
+      "case_derived_8_cross_tenant_improper_access_control_in_import_flow_saas_collaboration_platform"
+    ],
+    "120": [
+      "21_referrer_policy_override_dompurify_bypass_for_oauth_ato_dompurify_bypass_technique",
+      "21_referrer_policy_override_dompurify_bypass_for_oauth_ato_oauth_flow"
+    ],
+    "121": [
+      "case_derived_15_bulk_report_submission_via_named_query_batching_in_h1_graphql_hackerone_graphql",
+      "case_derived_15_bulk_report_submission_via_named_query_batching_in_h1_graphql_query_batching_technique"
+    ],
+    "122": [
+      "case_derived_2_critical_idor_privilege_escalation_in_role_permission_management_idor_privilege_escalation_technique",
+      "case_derived_2_critical_idor_privilege_escalation_in_role_permission_management_saas_enterprise_platform"
+    ],
+    "123": [
+      "5_s3_bucket_takeover_via_nosuchbucket_error",
+      "concept_bucket_takeover"
+    ],
+    "124": [
+      "batch_052_prompt_md_18",
+      "concept_graphql_mutation"
+    ],
+    "125": [
+      "102_5_misconfigured_sso_leading_to_account_takeover",
+      "concept_sso_session_token_exchange_flaw"
+    ],
+    "126": [
+      "batch_030_prompt_md_25",
+      "concept_ci_cd_rce"
+    ],
+    "127": [
+      "201_5_claude_bug_bounty_hunter_ai_assisted_recon_for_oauth_and_graphql",
+      "concept_oauth_token_issues_graphql_abuse_idor_ssrf"
+    ],
+    "128": [
+      "17_react2shell_scanner_for_next_js_intigriti",
+      "case_derived_5_still_running_http_1_1_candy_wong"
+    ],
+    "129": [
+      "case_derived_8_github_hidden_unicode_bypass_joshua_rogers",
+      "case_derived_9_nextjs_auth0_joshua_rogers"
+    ],
+    "130": [
+      "case_derived_16_pre_account_takeover_anonymous_hunter",
+      "case_derived_18_chatgpt_azure_backdoor_johann_rehberger"
+    ],
+    "131": [
+      "case_derived_20_microsoft_teams_guest_access_cross_tenant_policy_bypass_guest_access",
+      "case_derived_20_microsoft_teams_guest_access_cross_tenant_policy_bypass_microsoft_teams"
+    ],
+    "132": [
+      "8_json_nested_id_wrapping_bypass_for_outer_auth_validation_idor_bypass",
+      "8_json_nested_id_wrapping_bypass_for_outer_auth_validation_json_api"
+    ],
+    "133": [
+      "21_otp_bypass_via_response_manipulation_otp_bypass",
+      "21_otp_bypass_via_response_manipulation_response_manipulation"
+    ],
+    "134": [
+      "case_derived_2_echoleak_cve_2025_32711_zero_click_indirect_prompt_injection_data_exfil_i_microsoft_365_copilot",
+      "case_derived_2_echoleak_cve_2025_32711_zero_click_indirect_prompt_injection_data_exfil_i_prompt_injection"
+    ],
+    "135": [
+      "scripts_grok_kb_source_check_py"
+    ],
+    "136": [
+      "batch_008_expanded"
+    ],
+    "137": [
+      "report_enrich_prompt_ghsl_2025_114_chromium"
+    ],
+    "138": [
+      "report_enrich_prompt_ghsl_2025_120_sentry"
+    ],
+    "139": [
+      "report_enrich_prompt_ghsl_2025_129_woocommerce"
+    ],
+    "140": [
+      "config_sample_hosts_txt"
+    ],
+    "141": [
+      "data_example_program_20260504t102216z_subdomains_raw_txt"
+    ],
+    "142": [
+      "data_example_program_20260504t102216z_seed_urls_txt"
+    ],
+    "143": [
+      "data_example_program_20260504t102216z_seed_domains_txt"
+    ],
+    "144": [
+      "topic_04_graphql_schema_error_error"
+    ],
+    "145": [
+      "topic_02_api_bola_idor_cyberjoker"
+    ],
+    "146": [
+      "topic_02_api_bola_idor_cyber_shree"
+    ],
+    "147": [
+      "topic_02_api_bola_idor_0d_asbawy"
+    ],
+    "148": [
+      "topic_02_api_bola_idor_zaid_zrf"
+    ],
+    "149": [
+      "topic_02_api_bola_idor_vuln_x"
+    ],
+    "150": [
+      "topic_02_api_bola_idor_dedrknex"
+    ],
+    "151": [
+      "topic_02_api_bola_idor_herish"
+    ],
+    "152": [
+      "topic_02_api_bola_idor_anonhunter11"
+    ],
+    "153": [
+      "topic_02_api_bola_idor_cyberjoker2"
+    ],
+    "154": [
+      "topic_02_api_bola_idor_h1researcher13"
+    ],
+    "155": [
+      "topic_02_api_bola_idor_ahmed78752911"
+    ],
+    "156": [
+      "topic_02_api_bola_idor_amansharma"
+    ],
+    "157": [
+      "topic_02_api_bola_idor_al1enr00t"
+    ],
+    "158": [
+      "topic_02_api_bola_idor_manojxshrestha"
+    ],
+    "159": [
+      "topic_02_api_bola_idor_shivangmauryaa"
+    ],
+    "160": [
+      "topic_02_api_bola_idor_tinopreter"
+    ],
+    "161": [
+      "topic_02_api_bola_idor_manojapi21"
+    ],
+    "162": [
+      "topic_02_api_bola_idor_wordfencebbhunter"
+    ],
+    "163": [
+      "topic_02_api_bola_idor_intigritiresearchers"
+    ],
+    "164": [
+      "topic_02_api_bola_idor_h1reporthunter24"
+    ],
+    "165": [
+      "topic_02_api_bola_idor_bountieshub_intigriti"
+    ],
+    "166": [
+      "topic_09_cloud_cicd_artifacts_error"
+    ],
+    "167": [
+      "topic_03_oauth_sso_jwt_magic_link_p_ahacker1"
+    ],
+    "168": [
+      "topic_03_oauth_sso_jwt_magic_link_janlele91"
+    ],
+    "169": [
+      "topic_03_oauth_sso_jwt_magic_link_0xacb"
+    ],
+    "170": [
+      "topic_03_oauth_sso_jwt_magic_link_chocapikk"
+    ],
+    "171": [
+      "topic_03_oauth_sso_jwt_magic_link_zakharfedotkin"
+    ],
+    "172": [
+      "topic_03_oauth_sso_jwt_magic_link_khaledahmed107"
+    ],
+    "173": [
+      "topic_03_oauth_sso_jwt_magic_link_sl4x0"
+    ],
+    "174": [
+      "topic_03_oauth_sso_jwt_magic_link_uzayransari"
+    ],
+    "175": [
+      "topic_03_oauth_sso_jwt_magic_link_doyensec"
+    ],
+    "176": [
+      "topic_03_oauth_sso_jwt_magic_link_digvijaygholase"
+    ],
+    "177": [
+      "topic_03_oauth_sso_jwt_magic_link_mhmodgm54"
+    ],
+    "178": [
+      "topic_03_oauth_sso_jwt_magic_link_hackrkid"
+    ],
+    "179": [
+      "topic_03_oauth_sso_jwt_magic_link_sentryreporter"
+    ],
+    "180": [
+      "topic_03_oauth_sso_jwt_magic_link_gr3pme"
+    ],
+    "181": [
+      "_index_platform_reports"
+    ],
+    "182": [
+      "_index_x_discussions"
+    ],
+    "183": [
+      "resources_accounts_to_follow"
+    ],
+    "184": [
+      "resources_newsletters_forums_discords"
+    ],
+    "185": [
+      "review_queue_10_cloudfox_cloud_attack_surface_mapper"
+    ],
+    "186": [
+      "review_queue_readme"
+    ],
+    "187": [
+      "review_queue_17_api_bug_bounty_mastery_2026_hidden_endpoints_bola_chains"
+    ],
+    "188": [
+      "techniques_evergreen_new_context_case_derived_16_csrf_despite_x_frame_options_in_ai_workflow_endpoint"
+    ],
+    "189": [
+      "techniques_evergreen_new_context_case_derived_23_xss_via_shodan_in_globalprotect_affects_bug_bounty_programs"
+    ],
+    "190": [
+      "techniques_evergreen_new_context_case_derived_3_rce_via_group_access_validation_flaw_in_ssh_key_authority_open_source_too"
+    ],
+    "191": [
+      "techniques_evergreen_new_context_case_derived_17_idor_in_saved_payments_api_on_zomato_multi_tenant"
+    ],
+    "192": [
+      "techniques_evergreen_new_context_index"
+    ],
+    "193": [
+      "techniques_new_2024_2026_case_derived_18_shopify_partner_portal_limited_privilege_referral_creation"
+    ],
+    "194": [
+      "batch_038_prompt_md_prototype_pollution_to_rce_in_project_update_api"
+    ],
+    "195": [
+      "batch_038_prompt_md_logical_2fa_email_verification_bypass_via_pre_2fa_jwt_acceptance"
+    ],
+    "196": [
+      "batch_038_prompt_md_bulk_report_submission_via_named_query_batching_in_h1_graphql"
+    ],
+    "197": [
+      "batch_035_prompt_md_slack_integration_allowing_unauthorized_workspace_self_join_bypassing_settings"
+    ],
+    "198": [
+      "batch_021_prompt_md_graphql_introspection_enabled_on_shopify_storefront_api"
+    ],
+    "199": [
+      "batch_021_prompt_md_graphql_introspection_on_wiki_subdomain_leading_to_schema_sensitive_data"
+    ],
+    "200": [
+      "batch_021_prompt_md_trix_editor_1000_bounty_via_smart_paste_handling"
+    ],
+    "201": [
+      "topic_04_graphql_schema_md_object_limit_overriding_with_large_pagination_in_queries"
+    ],
+    "202": [
+      "12_race_condition_broken_access_control_leading_to_super_admin_creation"
+    ],
+    "203": [
+      "102_3_ruby_saml_parser_differential_saml_sso_authentication_bypass_cve_2025_25291_cve"
+    ],
+    "204": [
+      "106_4_december_ctf_challenge_chaining_xs_leaks_and_postmessage_xss"
+    ],
+    "205": [
+      "5_still_running_http_1_1_in_2026_your_website_might_be_exposed_to_http_request_smuggling_request_smuggling_case"
+    ],
+    "206": [
+      "104_2_from_idor_to_sql_injection_in_graphql_websocket_escalated_to_pii_leak_bola_idor_graphql"
+    ],
+    "207": [
+      "platform_report_3521434"
+    ],
+    "208": [
+      "platform_report_3320669"
+    ],
+    "209": [
+      "platform_report_3580511"
+    ],
+    "210": [
+      "batch_005_md_3"
+    ],
+    "211": [
+      "batch_008_prompt_md_2"
+    ],
+    "212": [
+      "batch_008_prompt_md_1"
+    ],
+    "213": [
+      "batch_053_prompt_md_20"
+    ],
+    "214": [
+      "batch_053_prompt_md_24"
+    ],
+    "215": [
+      "batch_029_prompt_md_13"
+    ],
+    "216": [
+      "batch_029_prompt_md_20"
+    ],
+    "217": [
+      "batch_029_prompt_md_8"
+    ],
+    "218": [
+      "batch_029_prompt_md_8_2"
+    ],
+    "219": [
+      "batch_047_prompt_md_3"
+    ],
+    "220": [
+      "batch_047_prompt_md_2"
+    ],
+    "221": [
+      "batch_047_prompt_md_10"
+    ],
+    "222": [
+      "batch_024_prompt_md_1"
+    ],
+    "223": [
+      "batch_024_prompt_md_16"
+    ],
+    "224": [
+      "batch_030_prompt_md_12"
+    ],
+    "225": [
+      "batch_030_prompt_md_3"
+    ],
+    "226": [
+      "batch_030_prompt_md_23"
+    ],
+    "227": [
+      "batch_030_prompt_md_18"
+    ],
+    "228": [
+      "batch_055_prompt_md_15"
+    ],
+    "229": [
+      "batch_055_prompt_md_17"
+    ],
+    "230": [
+      "batch_055_prompt_md_13"
+    ],
+    "231": [
+      "batch_041_prompt_md_5"
+    ],
+    "232": [
+      "batch_041_prompt_md_20"
+    ],
+    "233": [
+      "batch_060_prompt_md_22"
+    ],
+    "234": [
+      "batch_060_prompt_md_25"
+    ],
+    "235": [
+      "batch_060_prompt_md_18"
+    ],
+    "236": [
+      "batch_022_prompt_md_19"
+    ],
+    "237": [
+      "batch_022_prompt_md_8"
+    ],
+    "238": [
+      "batch_058_prompt_md_16"
+    ],
+    "239": [
+      "batch_036_prompt_md_18"
+    ],
+    "240": [
+      "batch_036_prompt_md_24"
+    ],
+    "241": [
+      "batch_036_prompt_md_7"
+    ],
+    "242": [
+      "batch_017_prompt_md_19"
+    ],
+    "243": [
+      "batch_003_prompt_md_12"
+    ],
+    "244": [
+      "batch_009_prompt_md_22"
+    ],
+    "245": [
+      "batch_009_prompt_md_22_2"
+    ],
+    "246": [
+      "batch_046_prompt_md_8"
+    ],
+    "247": [
+      "batch_046_prompt_md_10"
+    ],
+    "248": [
+      "batch_046_prompt_md_3"
+    ],
+    "249": [
+      "batch_046_prompt_md_18"
+    ],
+    "250": [
+      "batch_052_prompt_md_15"
+    ],
+    "251": [
+      "batch_052_prompt_md_6"
+    ],
+    "252": [
+      "batch_052_prompt_md_16"
+    ],
+    "253": [
+      "batch_028_prompt_md_11"
+    ],
+    "254": [
+      "case_derived_2_idor_in_user_profile_api_15k_critical_via_parameter_swap"
+    ],
+    "255": [
+      "case_derived_25_graphql_introspection_on_wiki_subdomain_leading_to_schema_sensitive_data"
+    ],
+    "256": [
+      "case_derived_19_500_uuid_swap_idor_in_device_management_api"
+    ],
+    "257": [
+      "case_derived_23_1_click_cspt_to_stored_id_rogue_sentry_put_csrf"
+    ],
+    "258": [
+      "case_derived_7_dos_via_mutation_aliasing_in_graphql_account_recovery"
+    ],
+    "259": [
+      "case_derived_18_cspt_levels_practical_attacks_hunter_x_post_reference"
+    ],
+    "260": [
+      "case_derived_2_how_i_discovered_a_web_cache_deception_attack_exposing_pii_a_real_world_c"
+    ],
+    "261": [
+      "case_derived_15_reusing_one_time_coupon_tarekmohamed"
+    ],
+    "262": [
+      "201_2_graphql_bug_bounty_2026_securityelites"
+    ],
+    "263": [
+      "case_derived_8_business_logic_flaw_hgr00x"
+    ],
+    "264": [
+      "case_derived_9_next_js_cache_poisoning_allam_rachid"
+    ],
+    "265": [
+      "case_derived_3_oauth_authentication_bypass_janlele91"
+    ],
+    "266": [
+      "case_derived_2_sign_in_as_anyone_p"
+    ],
+    "267": [
+      "case_derived_23_cve_2025_22146_sentry_sentry_private_bb_reporter"
+    ],
+    "268": [
+      "case_derived_3_web_cache_deception_validbyaccident"
+    ],
+    "269": [
+      "case_derived_22_business_logic_flaw_in_subscription_paywall_for_profile_access_subscription_paywall"
+    ],
+    "270": [
+      "4_multi_http_method_fuzzing_for_hidden_routes_apis_http_method_fuzzing"
+    ],
+    "271": [
+      "case_derived_21_logical_2fa_email_verification_bypass_via_pre_2fa_jwt_acceptance_pre_2fa_jwt"
+    ],
+    "272": [
+      "21_capitalization_nested_object_tricks_for_bola_bypass_in_mass_assignment_mass_assignment"
+    ],
+    "273": [
+      "case_derived_7_subscription_paywall_bypass_leading_to_talent_profile_access_and_pii_disc_pii_disclosure"
+    ],
+    "274": [
+      "1_nested_json_idor_bypass_nested_json"
+    ],
+    "275": [
+      "101_5_hackerone_graphql_and_oauth_top_reports_2025_2026_hackerone_reports"
+    ],
+    "276": [
+      "22_parameter_discovery_for_sqli_xss_ssrf_via_6_methods_parameter_discovery"
+    ],
+    "277": [
+      "case_derived_11_business_logic_bypass_allows_setting_read_access_role_without_pro_plan_s_saas_collaboration"
+    ],
+    "278": [
+      "case_derived_1_subscription_bypass_leading_to_full_access_to_paid_features_subscription_bypass"
+    ],
+    "279": [
+      "case_derived_17_slack_integration_allowing_unauthorized_workspace_self_join_bypassing_se_slack"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07,
+    "1": 0.1,
+    "2": 0.08,
+    "3": 0.11,
+    "4": 0.08,
+    "5": 0.1,
+    "6": 0.09,
+    "7": 0.17,
+    "8": 0.09,
+    "9": 0.18,
+    "10": 0.14,
+    "11": 0.13,
+    "12": 0.11,
+    "13": 0.11,
+    "14": 0.2,
+    "15": 0.14,
+    "16": 0.15,
+    "17": 0.16,
+    "18": 0.24,
+    "19": 0.18,
+    "20": 0.18,
+    "21": 0.38,
+    "22": 0.24,
+    "23": 0.22,
+    "24": 0.22,
+    "25": 0.32,
+    "26": 0.29,
+    "27": 0.25,
+    "28": 0.33,
+    "29": 0.33,
+    "30": 0.33,
+    "31": 0.33,
+    "32": 0.33,
+    "33": 0.33,
+    "34": 0.33,
+    "35": 0.33,
+    "36": 0.4,
+    "37": 0.4,
+    "38": 0.6,
+    "39": 0.4,
+    "40": 0.4,
+    "41": 0.4,
+    "42": 0.5,
+    "43": 0.4,
+    "44": 0.5,
+    "45": 0.67,
+    "46": 0.5,
+    "47": 0.5,
+    "48": 0.5,
+    "49": 0.5,
+    "50": 0.67,
+    "51": 0.67,
+    "52": 0.67,
+    "53": 1.0,
+    "54": 0.67,
+    "55": 0.67,
+    "56": 0.67,
+    "57": 0.67,
+    "58": 0.67,
+    "59": 0.67,
+    "60": 0.67,
+    "61": 1.0,
+    "62": 0.67,
+    "63": 0.67,
+    "64": 0.67,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 1.0,
+    "264": 1.0,
+    "265": 1.0,
+    "266": 1.0,
+    "267": 1.0,
+    "268": 1.0,
+    "269": 1.0,
+    "270": 1.0,
+    "271": 1.0,
+    "272": 1.0,
+    "273": 1.0,
+    "274": 1.0,
+    "275": 1.0,
+    "276": 1.0,
+    "277": 1.0,
+    "278": 1.0,
+    "279": 1.0
+  },
+  "gods": [
+    {
+      "id": "scripts_notify_main",
+      "label": "main()",
+      "degree": 40
+    },
+    {
+      "id": "_index_niche_tricks_index",
+      "label": "niche_tricks Index",
+      "degree": 28
+    },
+    {
+      "id": "scripts_grok_api_agent_cmd_discover",
+      "label": "cmd_discover()",
+      "degree": 25
+    },
+    {
+      "id": "scripts_report_intel_agent_ensure_layout",
+      "label": "ensure_layout()",
+      "degree": 21
+    },
+    {
+      "id": "new_2024_2026_index",
+      "label": "New 2024-2026 Techniques Index",
+      "degree": 16
+    },
+    {
+      "id": "scripts_bb_intel_pipeline_utc_now",
+      "label": "utc_now()",
+      "degree": 14
+    },
+    {
+      "id": "scripts_report_intel_agent_make_candidate",
+      "label": "make_candidate()",
+      "degree": 14
+    },
+    {
+      "id": "scripts_report_intel_agent_normalize_manual_channel_row",
+      "label": "normalize_manual_channel_row()",
+      "degree": 14
+    },
+    {
+      "id": "readme_bug_bounty_hunting_os",
+      "label": "Bug Bounty Hunting Operating System",
+      "degree": 14
+    },
+    {
+      "id": "scripts_grok_kb_ingest_slugify",
+      "label": "slugify()",
+      "degree": 13
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Bug Bounty Hunting Operating System",
+      "target": "Recon Pipeline Script",
+      "source_files": [
+        "README.md",
+        "scripts/recon_pipeline.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories; peripheral node `Recon Pipeline Script` unexpectedly reaches hub `Bug Bounty Hunting Operating System`"
+    },
+    {
+      "source": "Bug Bounty Hunting Operating System",
+      "target": "GraphQL",
+      "source_files": [
+        "README.md",
+        "apps/grok-kb-agent-suite/data/runs/bb_pipeline_7bd5cb5a7984/techniques/expand/prompts/batch_201.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Bug Bounty Hunting Operating System",
+      "target": "OAuth 2.0",
+      "source_files": [
+        "README.md",
+        "apps/grok-kb-agent-suite/data/runs/bb_pipeline_7bd5cb5a7984/techniques/expand/prompts/batch_201.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Common OAuth Vulnerabilities Checklist (Bug Bounty Focus)",
+      "target": "GraphQL Introspection to Admin Takeover via Unauthenticated Mutations",
+      "source_files": [
+        "docs/intelligence_kb/review_queue/17-common-oauth-vulnerabilities-checklist-bug-bounty-focus.md",
+        "data/grok_research/prompts/2026-05-05/expansion_batches/batch_020.prompt.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Common OAuth Vulnerabilities Checklist (Bug Bounty Focus)` unexpectedly reaches hub `GraphQL Introspection to Admin Takeover via Unauthenticated Mutations`"
+    },
+    {
+      "source": "Ultimate Recon Guide for Bug Bounty Hunters 2025",
+      "target": "2025 GitHub Recon Checklist for Bug Hunters",
+      "source_files": [
+        "data/grok_research/prompts/2026-05-05/expansion_batches/batch_058.prompt.md",
+        "docs/intelligence_kb/review_queue/4-2025-github-recon-checklist-for-bug-hunters.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `2025 GitHub Recon Checklist for Bug Hunters` unexpectedly reaches hub `Ultimate Recon Guide for Bug Bounty Hunters 2025`"
+    }
+  ],
+  "tokens": {
+    "input": 750609,
+    "output": 257892
+  }
+}

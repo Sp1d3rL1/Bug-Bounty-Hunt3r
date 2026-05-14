@@ -1,0 +1,835 @@
+# Bug Bounty Intelligence Sources — Machine-Readable Catalog
+#
+# Schema (each list entry):
+#   id          unique slug, kebab-case
+#   name        human-readable
+#   url         primary feed/url
+#   connector   one of: rss_generic | youtube_channel | github_repo | cve_kev | wechat_rss | cn_forum
+#   cadence     5-field cron, defaults handled per-connector
+#   density     H | M | L
+#   region      en | cn | jp | kr | sea | web3 | ai | global
+#   tags        inline list e.g. [oauth, recon]
+#   enabled     true|false (default true)
+#
+# Connector-specific extras:
+#   github_repo:    repo (owner/name), feed (commits|releases|tags), branch
+#   cve_kev:        feed (nvd_recent|cisa_kev|osv|zdi), days, ecosystem, limit
+#   youtube_channel: channel_id (preferred over url)
+#   wechat_rss:     biz (wechat biz id, documentation only)
+#   cn_forum:       flavour (discuz|discourse|rss)
+#
+# Loader: apps/grok-kb-agent-suite/backend/connectors/base.py::load_sources_yaml
+# Strict subset of YAML — keep one key per line, no nested mappings.
+
+# ============================================================
+# 1. ENGLISH RESEARCH BLOGS (rss_generic, region=en, density=H)
+# ============================================================
+- id: portswigger-research
+  name: PortSwigger Research
+  url: https://portswigger.net/research/rss
+  connector: rss_generic
+  cadence: 0 */6 * * *
+  density: H
+  region: en
+  tags: [web, http, smuggling, cache]
+- id: assetnote
+  name: Assetnote Research
+  url: https://www.assetnote.io/resources/rss.xml
+  connector: rss_generic
+  cadence: 5 */6 * * *
+  density: H
+  region: en
+  tags: [recon, saas, edge]
+- id: watchtowr-labs
+  name: watchtowr Labs
+  url: https://labs.watchtowr.com/rss/
+  connector: rss_generic
+  cadence: 10 */6 * * *
+  density: H
+  region: en
+  tags: [edge, 0day, appliance]
+- id: project-zero
+  name: Project Zero
+  url: https://googleprojectzero.blogspot.com/feeds/posts/default
+  connector: rss_generic
+  cadence: 15 */6 * * *
+  density: H
+  region: en
+  tags: [browser, kernel, 0day]
+- id: synacktiv
+  name: Synacktiv Publications
+  url: https://www.synacktiv.com/en/publications.rss
+  connector: rss_generic
+  cadence: 20 */6 * * *
+  density: H
+  region: en
+  tags: [pentest, redteam]
+- id: ncc-group
+  name: NCC Group Research
+  url: https://research.nccgroup.com/feed/
+  connector: rss_generic
+  cadence: 25 */6 * * *
+  density: H
+  region: en
+  tags: [research, audit]
+- id: trail-of-bits
+  name: Trail of Bits Blog
+  url: https://blog.trailofbits.com/feed/
+  connector: rss_generic
+  cadence: 30 */6 * * *
+  density: H
+  region: en
+  tags: [audit, web3]
+- id: doyensec
+  name: Doyensec Blog
+  url: https://blog.doyensec.com/atom.xml
+  connector: rss_generic
+  cadence: 35 */6 * * *
+  density: M
+  region: en
+  tags: [appsec]
+- id: include-security
+  name: Include Security
+  url: https://blog.includesecurity.com/feed/
+  connector: rss_generic
+  cadence: 40 */6 * * *
+  density: M
+  region: en
+  tags: [appsec]
+- id: praetorian
+  name: Praetorian Blog
+  url: https://www.praetorian.com/blog/feed/
+  connector: rss_generic
+  cadence: 45 */6 * * *
+  density: M
+  region: en
+  tags: [redteam]
+- id: pd-blog
+  name: ProjectDiscovery Blog
+  url: https://blog.projectdiscovery.io/rss/
+  connector: rss_generic
+  cadence: 50 */6 * * *
+  density: M
+  region: en
+  tags: [tools, recon]
+- id: detectify-labs
+  name: Detectify Labs
+  url: https://labs.detectify.com/feed/
+  connector: rss_generic
+  cadence: 55 */6 * * *
+  density: M
+  region: en
+  tags: [recon, web]
+- id: securitum
+  name: Securitum Research
+  url: https://research.securitum.com/feed/
+  connector: rss_generic
+  cadence: 0 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [appsec]
+- id: github-sec-lab
+  name: GitHub Security Lab
+  url: https://github.blog/tag/github-security-lab/feed/
+  connector: rss_generic
+  cadence: 5 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [github, codeql]
+- id: orange-tsai
+  name: Orange Tsai
+  url: https://blog.orange.tw/feeds/posts/default
+  connector: rss_generic
+  cadence: 10 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [web, smuggling]
+- id: sam-curry
+  name: Sam Curry Blog
+  url: https://samcurry.net/feed
+  connector: rss_generic
+  cadence: 15 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [recon, automotive]
+- id: embrace-the-red
+  name: Embrace The Red
+  url: https://embracethered.com/blog/index.xml
+  connector: rss_generic
+  cadence: 20 1,7,13,19 * * *
+  density: H
+  region: ai
+  tags: [llm, prompt-injection]
+- id: simon-willison
+  name: Simon Willison
+  url: https://simonwillison.net/atom/everything/
+  connector: rss_generic
+  cadence: 25 1,7,13,19 * * *
+  density: H
+  region: ai
+  tags: [llm, tooling]
+
+# ============================================================
+# 2. NEWSLETTERS / WEEKLIES / PODCASTS (rss_generic, density=H)
+# ============================================================
+- id: tldr-sec
+  name: tl;dr sec
+  url: https://tldrsec.com/feed.xml
+  connector: rss_generic
+  cadence: 30 8 * * 1-5
+  density: H
+  region: en
+  tags: [newsletter, weekly]
+- id: ct-newsletter
+  name: Critical Thinking Newsletter
+  url: https://www.criticalthinkingpodcast.io/feed.xml
+  connector: rss_generic
+  cadence: 0 9 * * 1
+  density: H
+  region: en
+  tags: [bb, podcast-newsletter]
+- id: bbre-substack
+  name: Bug Bounty Reports Explained
+  url: https://bbre.substack.com/feed
+  connector: rss_generic
+  cadence: 0 9 * * 2
+  density: H
+  region: en
+  tags: [bb, writeup]
+- id: intigriti-bug-bytes
+  name: Intigriti Bug Bytes
+  url: https://blog.intigriti.com/feed/
+  connector: rss_generic
+  cadence: 0 9 * * 3
+  density: H
+  region: en
+  tags: [bb, weekly]
+- id: hackerone-blog
+  name: HackerOne Blog
+  url: https://www.hackerone.com/blog/rss.xml
+  connector: rss_generic
+  cadence: 0 10 * * *
+  density: M
+  region: en
+  tags: [platform, h1]
+- id: bugcrowd-blog
+  name: Bugcrowd Blog
+  url: https://www.bugcrowd.com/feed/
+  connector: rss_generic
+  cadence: 5 10 * * *
+  density: M
+  region: en
+  tags: [platform, bugcrowd]
+- id: risky-biz
+  name: Risky Business
+  url: https://risky.biz/feeds/risky-business/
+  connector: rss_generic
+  cadence: 0 11 * * 4
+  density: M
+  region: en
+  tags: [news, podcast]
+
+# ============================================================
+# 3. WEB3 (rss_generic, region=web3)
+# ============================================================
+- id: immunefi-blog
+  name: Immunefi Blog
+  url: https://immunefi.com/blog/rss.xml
+  connector: rss_generic
+  cadence: 0 */8 * * *
+  density: H
+  region: web3
+  tags: [web3, immunefi]
+- id: rekt-news
+  name: Rekt News
+  url: https://rekt.news/rss/feed.xml
+  connector: rss_generic
+  cadence: 10 */8 * * *
+  density: H
+  region: web3
+  tags: [web3, hacks]
+- id: samczsun
+  name: samczsun
+  url: https://samczsun.com/rss.xml
+  connector: rss_generic
+  cadence: 20 */8 * * *
+  density: M
+  region: web3
+  tags: [web3, evm]
+
+# ============================================================
+# 4. ASIA (rss_generic, region=jp/kr/sea)
+# ============================================================
+- id: jpcert
+  name: JPCERT/CC
+  url: https://www.jpcert.or.jp/rss/jpcert-en.rdf
+  connector: rss_generic
+  cadence: 0 */6 * * *
+  density: H
+  region: jp
+  tags: [cert]
+- id: ipa-jp
+  name: IPA Japan
+  url: https://www.ipa.go.jp/security/jvn/rss/jvn.rdf
+  connector: rss_generic
+  cadence: 5 */6 * * *
+  density: M
+  region: jp
+  tags: [cert, advisory]
+- id: flatt-security
+  name: Flatt Security Blog
+  url: https://blog.flatt.tech/rss
+  connector: rss_generic
+  cadence: 10 */6 * * *
+  density: M
+  region: jp
+  tags: [appsec]
+- id: ahnlab-asec
+  name: AhnLab ASEC
+  url: https://asec.ahnlab.com/en/feed/
+  connector: rss_generic
+  cadence: 15 */6 * * *
+  density: M
+  region: kr
+  tags: [apt, threat]
+- id: vincss
+  name: VinCSS
+  url: https://blog.vincss.net/rss/
+  connector: rss_generic
+  cadence: 20 */6 * * *
+  density: M
+  region: sea
+  tags: [research]
+- id: viettel-cs
+  name: Viettel Cyber Security
+  url: https://blog.viettelcybersecurity.com/rss/
+  connector: rss_generic
+  cadence: 25 */6 * * *
+  density: M
+  region: sea
+  tags: [redteam]
+
+# ============================================================
+# 5. CHINESE FORUMS / SITES (rss_generic, region=cn)
+# ============================================================
+- id: anquanke
+  name: 安全客
+  url: https://api.anquanke.com/data/v1/rss
+  connector: rss_generic
+  cadence: 0 */3 * * *
+  density: H
+  region: cn
+  tags: [news, advisory]
+- id: freebuf
+  name: FreeBuf
+  url: https://www.freebuf.com/feed
+  connector: rss_generic
+  cadence: 10 */3 * * *
+  density: M
+  region: cn
+  tags: [news, web]
+- id: seebug-paper
+  name: Seebug Paper
+  url: https://paper.seebug.org/rss/
+  connector: rss_generic
+  cadence: 20 */3 * * *
+  density: H
+  region: cn
+  tags: [research, poc]
+
+# ============================================================
+# 6. CHINESE FORUMS via cn_forum
+# ============================================================
+- id: linuxdo-security-tag
+  name: linux.do security tag
+  url: https://linux.do/tag/security.rss
+  connector: cn_forum
+  flavour: discourse
+  cadence: 0 */4 * * *
+  density: M
+  region: cn
+  tags: [forum, community]
+- id: linuxdo-vuln-tag
+  name: linux.do 漏洞 tag
+  url: https://linux.do/tag/%E6%BC%8F%E6%B4%9E.rss
+  connector: cn_forum
+  flavour: discourse
+  cadence: 5 */4 * * *
+  density: M
+  region: cn
+  tags: [forum, community]
+- id: 90sec-latest
+  name: 90sec Latest
+  url: https://forum.90sec.com/latest.rss
+  connector: cn_forum
+  flavour: discourse
+  cadence: 10 */4 * * *
+  density: M
+  region: cn
+  tags: [forum, redteam]
+- id: 52pojie-android-pentest
+  name: 52pojie 移动安全 板块
+  url: https://www.52pojie.cn/forum.php?mod=rss&fid=24
+  connector: cn_forum
+  flavour: discuz
+  cadence: 15 */4 * * *
+  density: M
+  region: cn
+  tags: [mobile, reverse]
+
+# ============================================================
+# 7. WECHAT PUBLIC ACCOUNTS (wechat_rss via local bridge)
+# Replace BIZ_PLACEHOLDER with real biz id after bridge bootstrap.
+# Pattern: http://127.0.0.1:8080/feed/<bridge-id>.atom
+# ============================================================
+- id: wechat-ctsrc
+  name: 携程安全应急响应中心
+  url: http://127.0.0.1:8080/feed/ctsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 30 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-tsrc
+  name: 腾讯安全应急响应中心
+  url: http://127.0.0.1:8080/feed/tsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 35 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-asrc
+  name: 阿里安全响应中心
+  url: http://127.0.0.1:8080/feed/asrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 40 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-bsrc
+  name: 百度安全应急响应中心
+  url: http://127.0.0.1:8080/feed/bsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 45 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-mtsrc
+  name: 美团安全应急响应中心
+  url: http://127.0.0.1:8080/feed/mtsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 50 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-bytesrc
+  name: 字节跳动安全中心
+  url: http://127.0.0.1:8080/feed/bytesrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 55 9 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-jsrc
+  name: 京东安全应急响应中心
+  url: http://127.0.0.1:8080/feed/jsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 0 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-dsrc
+  name: 滴滴安全应急响应中心
+  url: http://127.0.0.1:8080/feed/dsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 5 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-misrc
+  name: 小米安全中心
+  url: http://127.0.0.1:8080/feed/misrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 10 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-bilibili
+  name: 哔哩哔哩安全应急响应中心
+  url: http://127.0.0.1:8080/feed/bilisrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 15 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-nsrc
+  name: 网易安全中心
+  url: http://127.0.0.1:8080/feed/nsrc.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 20 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src]
+- id: wechat-xinanzhilu
+  name: 信安之路
+  url: http://127.0.0.1:8080/feed/xinanzhilu.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 25 10 * * *
+  density: H
+  region: cn
+  tags: [wechat, redteam]
+- id: wechat-leishen
+  name: 雷神众测
+  url: http://127.0.0.1:8080/feed/leishen.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 30 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, src, crowd]
+- id: wechat-changting
+  name: 长亭安全
+  url: http://127.0.0.1:8080/feed/changting.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 35 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, tools]
+- id: wechat-knownsec-404
+  name: 知道创宇 404 实验室
+  url: http://127.0.0.1:8080/feed/knownsec404.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 40 10 * * *
+  density: H
+  region: cn
+  tags: [wechat, research]
+- id: wechat-anheng
+  name: 安恒安全研究院
+  url: http://127.0.0.1:8080/feed/anheng.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 45 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, research]
+- id: wechat-sangfor
+  name: 深信服千里目实验室
+  url: http://127.0.0.1:8080/feed/sangfor.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 50 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, research]
+- id: wechat-anying
+  name: 暗影安全
+  url: http://127.0.0.1:8080/feed/anying.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 55 10 * * *
+  density: M
+  region: cn
+  tags: [wechat, redteam]
+- id: wechat-teamt5
+  name: TeamT5
+  url: http://127.0.0.1:8080/feed/teamt5.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 0 11 * * *
+  density: M
+  region: cn
+  tags: [wechat, apt]
+- id: wechat-vulpecker
+  name: 360 漏洞研究院 / Vulpecker Team
+  url: http://127.0.0.1:8080/feed/vulpecker.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 5 11 * * *
+  density: M
+  region: cn
+  tags: [wechat, 0day]
+- id: wechat-moan
+  name: 默安玄甲实验室
+  url: http://127.0.0.1:8080/feed/moan.atom
+  connector: wechat_rss
+  biz: BIZ_PLACEHOLDER
+  cadence: 10 11 * * *
+  density: M
+  region: cn
+  tags: [wechat, web]
+
+# ============================================================
+# 8. YOUTUBE CHANNELS (youtube_channel)
+# channel_id is critical; url is constructed automatically.
+# ============================================================
+- id: yt-ctbb
+  name: Critical Thinking BB Podcast
+  channel_id: UCT39w8DQuvA0vY7uIwoStdg
+  connector: youtube_channel
+  cadence: 0 8 * * *
+  density: H
+  region: en
+  tags: [bb, podcast]
+- id: yt-nahamsec
+  name: NahamSec
+  channel_id: UCCZDt7MuC3Hzs6IH4xODLBw
+  connector: youtube_channel
+  cadence: 5 8 * * *
+  density: H
+  region: en
+  tags: [bb, recon]
+- id: yt-bbre
+  name: Bug Bounty Reports Explained
+  channel_id: UCFG_hbpb6FdFBLVTVrtSj4w
+  connector: youtube_channel
+  cadence: 10 8 * * *
+  density: H
+  region: en
+  tags: [bb, writeup]
+- id: yt-stok
+  name: STÖK
+  channel_id: UCQN2DsjnYH60SFBIA6IkNwg
+  connector: youtube_channel
+  cadence: 15 8 * * *
+  density: M
+  region: en
+  tags: [bb, methodology]
+- id: yt-insiderphd
+  name: InsiderPhD
+  channel_id: UCPiN9NPjIer8Do9gUFxKv7A
+  connector: youtube_channel
+  cadence: 20 8 * * *
+  density: M
+  region: en
+  tags: [api, bb]
+- id: yt-ippsec
+  name: IppSec
+  channel_id: UCa6eh7gCkpPo5XXUDfygQQA
+  connector: youtube_channel
+  cadence: 25 8 * * *
+  density: M
+  region: en
+  tags: [htb, methodology]
+- id: yt-defcon
+  name: DEF CON
+  channel_id: UC6Om9kAkl32dWlDSNlDS9Iw
+  connector: youtube_channel
+  cadence: 30 8 * * *
+  density: H
+  region: en
+  tags: [conf]
+- id: yt-blackhat
+  name: Black Hat
+  channel_id: UCJ6q9Ie29ajGqKApbLqfBOg
+  connector: youtube_channel
+  cadence: 35 8 * * *
+  density: H
+  region: en
+  tags: [conf]
+- id: yt-offensivecon
+  name: OffensiveCon
+  channel_id: UCDsYDV6gmru-jD3wMHqdSyA
+  connector: youtube_channel
+  cadence: 40 8 * * *
+  density: H
+  region: en
+  tags: [conf]
+
+# ============================================================
+# 9. GITHUB REPOS (github_repo)
+# ============================================================
+- id: gh-nuclei-templates
+  name: nuclei-templates (commits)
+  repo: projectdiscovery/nuclei-templates
+  feed: commits
+  branch: main
+  connector: github_repo
+  cadence: 0 */3 * * *
+  density: H
+  region: en
+  tags: [nuclei, templates]
+- id: gh-trickest-cve
+  name: trickest/cve (commits)
+  repo: trickest/cve
+  feed: commits
+  connector: github_repo
+  cadence: 10 */3 * * *
+  density: H
+  region: en
+  tags: [cve, poc]
+- id: gh-poc-in-github
+  name: nomi-sec/PoC-in-GitHub (commits)
+  repo: nomi-sec/PoC-in-GitHub
+  feed: commits
+  connector: github_repo
+  cadence: 20 */3 * * *
+  density: H
+  region: en
+  tags: [cve, poc]
+- id: gh-h1-reports
+  name: reddelexc/hackerone-reports (commits)
+  repo: reddelexc/hackerone-reports
+  feed: commits
+  connector: github_repo
+  cadence: 30 */3 * * *
+  density: H
+  region: en
+  tags: [h1, writeup]
+- id: gh-defihacklabs
+  name: SunWeb3Sec/DeFiHackLabs (commits)
+  repo: SunWeb3Sec/DeFiHackLabs
+  feed: commits
+  connector: github_repo
+  cadence: 40 */3 * * *
+  density: H
+  region: web3
+  tags: [web3, poc]
+- id: gh-c4-reports
+  name: code-423n4/reports (commits)
+  repo: code-423n4/reports
+  feed: commits
+  connector: github_repo
+  cadence: 50 */3 * * *
+  density: H
+  region: web3
+  tags: [web3, audit]
+- id: gh-tob-publications
+  name: trailofbits/publications (commits)
+  repo: trailofbits/publications
+  feed: commits
+  connector: github_repo
+  cadence: 0 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [audit]
+- id: gh-spearbit-portfolio
+  name: spearbit/portfolio (commits)
+  repo: spearbit/portfolio
+  feed: commits
+  connector: github_repo
+  cadence: 10 1,7,13,19 * * *
+  density: M
+  region: web3
+  tags: [audit]
+- id: gh-bambdas
+  name: PortSwigger/bambdas (releases)
+  repo: PortSwigger/bambdas
+  feed: releases
+  connector: github_repo
+  cadence: 20 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [burp, scripts]
+- id: gh-bchecks
+  name: PortSwigger/BChecks (releases)
+  repo: PortSwigger/BChecks
+  feed: releases
+  connector: github_repo
+  cadence: 30 1,7,13,19 * * *
+  density: M
+  region: en
+  tags: [burp, scripts]
+- id: gh-vrt
+  name: bugcrowd/vulnerability-rating-taxonomy (releases)
+  repo: bugcrowd/vulnerability-rating-taxonomy
+  feed: releases
+  connector: github_repo
+  cadence: 0 5 * * 1
+  density: L
+  region: en
+  tags: [vrt, taxonomy]
+- id: gh-payloads
+  name: swisskyrepo/PayloadsAllTheThings (releases)
+  repo: swisskyrepo/PayloadsAllTheThings
+  feed: releases
+  connector: github_repo
+  cadence: 0 5 * * 2
+  density: M
+  region: en
+  tags: [payloads]
+- id: gh-hacktricks
+  name: HackTricks-wiki/hacktricks (commits)
+  repo: HackTricks-wiki/hacktricks
+  feed: commits
+  connector: github_repo
+  cadence: 0 1,9,17 * * *
+  density: M
+  region: en
+  tags: [hacktricks]
+- id: gh-threekiii-poc
+  name: Threekiii/Awesome-POC (commits)
+  repo: Threekiii/Awesome-POC
+  feed: commits
+  connector: github_repo
+  cadence: 5 1,9,17 * * *
+  density: M
+  region: cn
+  tags: [poc]
+
+# ============================================================
+# 10. CVE / KEV (cve_kev)
+# ============================================================
+- id: cve-nvd-recent
+  name: NVD recent CVEs (14d)
+  url: https://services.nvd.nist.gov/rest/json/cves/2.0
+  connector: cve_kev
+  feed: nvd_recent
+  days: 14
+  cadence: 0 1,9,17 * * *
+  density: H
+  region: global
+  tags: [cve]
+- id: cve-cisa-kev
+  name: CISA Known Exploited Vulnerabilities
+  url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+  connector: cve_kev
+  feed: cisa_kev
+  cadence: 30 7 * * *
+  density: H
+  region: global
+  tags: [cve, exploited]
+- id: cve-osv-pypi
+  name: OSV PyPI feed
+  url: https://api.osv.dev/v1/query
+  connector: cve_kev
+  feed: osv
+  ecosystem: PyPI
+  limit: 50
+  cadence: 0 6 * * *
+  density: M
+  region: global
+  tags: [cve, osv, pypi]
+- id: cve-osv-npm
+  name: OSV npm feed
+  url: https://api.osv.dev/v1/query
+  connector: cve_kev
+  feed: osv
+  ecosystem: npm
+  limit: 50
+  cadence: 10 6 * * *
+  density: M
+  region: global
+  tags: [cve, osv, npm]
+- id: cve-zdi
+  name: ZDI Advisories
+  url: https://www.zerodayinitiative.com/blog?format=rss
+  connector: cve_kev
+  feed: zdi
+  cadence: 0 5,17 * * *
+  density: H
+  region: global
+  tags: [cve, zdi]

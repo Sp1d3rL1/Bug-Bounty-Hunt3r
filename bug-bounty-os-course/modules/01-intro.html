@@ -1,0 +1,183 @@
+<section class="module" id="module-1" style="background: var(--color-bg)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">01</span>
+      <h1 class="module-title">这个系统究竟是什么？</h1>
+      <p class="module-subtitle">一套把"找漏洞赚钱"这件事变成可执行工作流的作战系统</p>
+    </header>
+
+    <div class="module-body">
+
+      <!-- Screen 1: What is bug bounty -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">你建了什么</h2>
+        <p>想象有一家大型科技公司，他们的网站可能藏着安全漏洞。他们无法雇用足够的工程师来找出所有漏洞，所以他们张贴告示："找到漏洞就给奖金。" 这就是 <span class="term" data-definition="Bug Bounty（漏洞赏金）：企业公开邀请外部安全研究员测试他们的系统，找到安全漏洞后支付奖金。就像悬赏捉拿逃犯的布告，只不过猎的是代码里的漏洞。">Bug Bounty</span>。</p>
+        <p>你建造的这个系统，不是单纯的工具箱——它是一套完整的<strong>作战操作系统</strong>，把以下四件事串联在一起：</p>
+
+        <div class="pattern-cards stagger-children animate-in">
+          <div class="pattern-card animate-in" style="border-top: 3px solid var(--color-actor-2)">
+            <div class="pattern-icon" style="background: var(--color-info-light)">📚</div>
+            <h4 class="pattern-title">学习路线</h4>
+            <p class="pattern-desc">6个月课程购买矩阵，从 Burp Pro 到 BSCP 认证，每月预算清晰</p>
+          </div>
+          <div class="pattern-card animate-in" style="border-top: 3px solid var(--color-actor-1)">
+            <div class="pattern-icon" style="background: var(--color-accent-light)">🧠</div>
+            <h4 class="pattern-title">情报引擎</h4>
+            <p class="pattern-desc">用 Grok API 自动从 X/Twitter 提取最新漏洞技巧，转化为可执行的"技巧卡片"</p>
+          </div>
+          <div class="pattern-card animate-in" style="border-top: 3px solid var(--color-actor-5)">
+            <div class="pattern-icon" style="background: var(--color-success-light)">🤖</div>
+            <h4 class="pattern-title">自动侦察</h4>
+            <p class="pattern-desc">在 VPS 上跑流水线：发现子域名、探活、低风险漏洞扫描，安全默认</p>
+          </div>
+          <div class="pattern-card animate-in" style="border-top: 3px solid var(--color-actor-4)">
+            <div class="pattern-icon" style="background: #FDF5E0">📝</div>
+            <h4 class="pattern-title">报告体系</h4>
+            <p class="pattern-desc">英文漏洞报告模板、目标档案、API/OAuth/支付专项检查清单</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: The journey traced -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">想象你提交了第一个漏洞</h2>
+        <p>你在某个 SaaS 平台的 API 里发现：用户 A 可以访问用户 B 的发票。让我们追踪这一刻背后，这个系统做了什么：</p>
+
+        <div class="step-cards animate-in">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <strong>情报来源</strong>
+              <p>三周前，Grok API 从 X 上一位知名猎人的帖子里提取了 "invoice_id IDOR" 技巧，存进知识库</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <strong>目标发现</strong>
+              <p>VPS 上的 subfinder 每天凌晨发现这家公司新增了一个 api.v2 子域名，diff 通知发到了你的 Discord</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <strong>手工验证</strong>
+              <p>你用两个测试账号，按 API/BOLA/IDOR 检查清单逐项测试，30分钟找到漏洞</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <strong>报告提交</strong>
+              <p>用英文漏洞报告模板，写出清晰的步骤复现、影响说明和修复建议，提交到平台</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <strong class="callout-title">关键洞察</strong>
+            <p>大多数 Bug Bounty 系统只是工具列表。这个系统是完整的飞轮：情报→目标→测试→报告，每个环节都自动化到能自动化的地方，人工介入只发生在最关键的验证和决策点。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: The 6-month arc -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">6个月的路线图</h2>
+        <p>这套系统不是"安装好就能用"，它是一张6个月的成长地图。每个月有明确的目标和交付物：</p>
+
+        <div class="flow-steps animate-in">
+          <div class="flow-step">
+            <div class="flow-step-num">M1</div>
+            <p>Web 基础<br>PortSwigger + 20篇报告分析</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step-num">M2</div>
+            <p>API 专项<br>APIsec + Hacking APIs</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step-num">M3</div>
+            <p>VPS 自动化<br>选3-5个目标项目</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step-num">M4</div>
+            <p>支付逻辑<br>业务漏洞深挖</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step-num">M5-6</div>
+            <p>认证冲刺<br>BSCP 或 CWES</p>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">🎯</div>
+          <div class="callout-content">
+            <strong class="callout-title">6个月目标</strong>
+            <p>至少1个私邀项目，或3个稳定的有效提交项目池。这不是"学完就行"——这是职业化的起点。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: Quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">检验一下你的理解</h2>
+
+        <div class="quiz-container" id="quiz-module1">
+          <div class="quiz-question-block"
+               data-correct="opt-b"
+               data-explanation-right="对了。自动化只是变化提醒——发现了新资产或变化后，你必须手工验证，才能写进报告。这是这套系统最核心的安全默认原则。"
+               data-explanation-wrong="不对。自动化的输出不能直接提交。Nuclei 扫出来的结果可能是误报，提交前必须手工确认。想想如果你提交了个假漏洞，平台会怎么看你？">
+            <h3 class="quiz-question">你在 VPS 上跑 Nuclei 扫描，发现了一个看起来像配置错误的结果。下一步你应该？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>直接把扫描报告截图提交到漏洞赏金平台</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>先手工验证这个结果是真实的、在授权 scope 内，再撰写报告提交</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>继续扫描找更多结果，积累成一批再一起提交</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-question-block"
+               data-correct="opt-c"
+               data-explanation-right="正确！SaaS 多租户、API-first、fintech/billing 这类目标有复杂的业务逻辑，这套系统的检查清单和情报引擎专门针对这类目标优化。"
+               data-explanation-wrong="想想这套系统的核心检查清单——API/OAuth/GraphQL、支付/业务逻辑。这些针对的是什么类型的产品？">
+            <h3 class="quiz-question">这套系统的检查清单和情报引擎最适合针对哪类目标？</h3>
+            <div class="quiz-options">
+              <button class="quiz-option" data-value="opt-a" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>个人博客和静态网站</span>
+              </button>
+              <button class="quiz-option" data-value="opt-b" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>游戏公司的客户端程序</span>
+              </button>
+              <button class="quiz-option" data-value="opt-c" onclick="selectOption(this)">
+                <div class="quiz-option-radio"></div>
+                <span>SaaS 多租户平台、API-first 服务、fintech/支付类产品</span>
+              </button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <button class="quiz-check-btn" onclick="checkQuiz('quiz-module1')">检查答案</button>
+          <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module1')">重新作答</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>
